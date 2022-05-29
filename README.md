@@ -62,3 +62,7 @@ interface.
 16. Namespace
 17. Packages
 18. Built in tool
+19. list comprehension
+20. repr()
+21. difference between running the code in vs code and jupyter notebook
+22. assert (basic debugging) - to set a breakpoint
