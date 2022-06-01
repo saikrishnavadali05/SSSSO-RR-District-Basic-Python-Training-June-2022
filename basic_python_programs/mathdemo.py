@@ -1,0 +1,15 @@
+from math import *
+
+print(sqrt(25))
+print(pow(2, 3))
+print(pi)
+print(trunc(-2.3))
+print(cos(0))
+print(sin(0))
+print(fabs(-2.3))
+print(factorial(5))
+print(fmod(5, 2))
+print(fmod(5, -2))
+print(5 % 2)
+print(5 % -2)
+print(modf(7.8))

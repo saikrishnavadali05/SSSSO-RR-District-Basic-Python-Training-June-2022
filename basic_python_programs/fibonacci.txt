@@ -1,0 +1,25 @@
+# Fibonacci series: the sum of two elements defines the next
+
+def fib1():
+  n1, n2 = 0, 1
+  while n2 < 15:
+    print(n2)
+When the Python interpreter reads a source file, it executes all of 
+the code found in it.
+
+Before executing the code, it will define few special variables. 
+For example, if the python interpreter is running that module 
+(the source file) as the main program, it sets 
+the special __name__ variable to have a value "__main__". 
+If this file is being imported from another module, __name__ will be 
+set to the module's name.
+
+Why is the following check done: Sometimes you write a module 
+(fibonacci.py file) where it can be executed directly. 
+Alternatively, it can also be imported and used in another module. 
+By doing the main check, you can have that code only execute when 
+you want to run the module as a program and not have it execute 
+when someone just wants to import your module and call your functions 
+themselves.
+
+if __name__ == "__main__":

@@ -1,0 +1,4 @@
+import PackageDemo.mod1
+
+if __name__ == '__main__': 
+  PackageDemo.mod1.main()
