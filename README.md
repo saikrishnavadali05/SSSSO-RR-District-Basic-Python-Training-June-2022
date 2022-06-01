@@ -1,6 +1,11 @@
 # SSSO-RR-District-Basic-Python-Training-June-2022
 Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District in the month of June 2022.
 
+# Setting up git and github
+1. ![programming knowledge channel - How to Install Git on Windows 10 + Setting Up Git and GitHub on Windows 10](https://www.youtube.com/watch?v=bb_LoXAC-zE)
+2. ![How to install python 3.10 on windows 10/11](https://www.youtube.com/watch?v=AwIXfaGEN4c)
+3. ![How to install visual studio code on windows 10/11](https://www.youtube.com/watch?v=JPZsB_6yHVo)
+
 ## List of Topics that will be covered under this training
 1. Start up for python Language
 1. Installation of python
