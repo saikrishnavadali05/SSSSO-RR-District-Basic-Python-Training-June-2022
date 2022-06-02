@@ -1,4 +1,4 @@
-Basic Python Assignment
+# Basic Python Assignment Questions
 
 1) Write a program to print the sum of the digits. For example if the input is 123, the 
 result should be 6.
@@ -39,4 +39,6 @@ user. Similar to Unix tail command.
 19) Write a program to count the number of words in an input file. Accept filename as 
 input from the user.
 20) Write a script that accepts a comma separated list of words and prints a hypen 
-separated list of words in sorted orde
+separated list of words in sorted ordered :
+> Input: b,c,a,d,a,e,b,f
+> Output: a-a-b-b-c-d-e-f
