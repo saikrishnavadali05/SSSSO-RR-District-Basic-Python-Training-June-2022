@@ -71,3 +71,92 @@ interface.
 20. repr()
 21. difference between running the code in vs code and jupyter notebook
 22. assert (basic debugging) - to set a breakpoint
+
+
+### **What is Python?**
+<span style="color: blue;">**Python** is a general-purpose high-level programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Its standard library is large and comprehensive. This makes it easy developers to learn python. Additionally, python supports objects, modules, threads, exception-handling, and automatic memory management which help in modelling real-world problems and building applications to solve these problems. Python is also used in Machine Learning, Artificial Intelligence, Web Development, Web Scraping, and various other domains.</span>
+
+<br />
+
+### **Applications of Python?**
+<span style="color: blue;">Python has grown to become part of web-based, desktop-based, graphic design, scientific, and computational applications.
+
+- GUI based desktop applications
+  > Tkinter, PyQT, Kivy, WxPython, PyGUI these are most widely used and best Python graphical user interface frameworks available.
+
+- Graphic design, image processing applications, Games.
+  >OpenCV, Pillow, SimpleITK are some libraries of image processing .
+  
+- Web frameworks and applications.
+  >Django, Flask, TurboGears, web2py and some other Python web framework are used for Python Web development.
+
+- Business applications 
+  > Python is also used to build ERP and e-commerce systems like Oodo, Tryton, OpenERP.
+
+- Operating Systems
+  >Linux, FreeBSD, Windows, macOS are the operating systems.
+
+- Database Access 
+  > MySQL, PostgreSQL, MongoDB are some database servers used by Python.
+
+- Scientific and Numeric
+  > Python has many libraries for scientific and numeric such as Numpy, Pandas, Scipy, Scikit-learn, etc.
+
+- Prototyping 
+  > 
+- Software Development
+
+  >Scons, Buildbot, Apache Gump, Round up, Trac.
+
+<br />
+  
+### How do programming languages support problem decomposition?
+
+<span style="color: blue;">Python supports multiple programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages, Python is often used as a scripting language.
+
+<span style="color: blue;">If you have to work with several C libraries, and the usual C write/compile/test/re-compile cycle is slow. You need to develop software more quickly. Possibly, perhaps you have written a program that could use an extension language, and you do not want to design a language, write and debug an interpreter for it, then tie it into your application.
+
+<span style="color: blue;">Python allows you to split up your program in modules that can be reused in other Python programs. It comes with a large collection of standard modules that you can use as the basis of your programs. There are also built-in modules that provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.
+
+<br />
+
+### What is an interpreter?
+<span style="color: blue;">An interpreter is a program that reads and executes code. This includes source code, pre-compiled code, and scripts. Common interpreters include Perl, Python, and Ruby interpreters, which execute Perl, Python, and Ruby code respectively. 
+
+<span style="color: blue;">If we write a Python code in a text file with a name like hello.py. How does that code Run? There is program installed on your computer named "python3" or "python", and its job is looking at and running your Python code. This type of program is called an "interpreter".
+
+<br />
+
+### How To Get An Interpreter?
+<span style="color: blue;">There are 2 easy ways to get the interpreter:
+
+  - <span style="color: blue;"> Open a command-line terminal. Mac: run the "Terminal" app in the Utilities folder. Windows: type "powershell" in the lower left, this opens the Windows command line terminal. In the terminal type the command "python3" ("python" on Windows, or sometimes "py"). This runs the interpreter program directly. On the Mac type ctrl-d to exit (on Windows ctrl-z).
+
+  - <span style="color: blue;"> If you have PyCharm installed, at the lower-left of any window, click the Python Console tab. Or use the Tools > Python Console menu item to open an interpreter window within PyCharm.
+
+<span style="color: blue;"> When commands are read from a tty, the interpreter is said to be in interactive mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs (‘>>> ‘); for continuation lines it prompts with the secondary prompt, by default three dots (‘...’). The interpreter prints a welcome message stating its version number and a copyright notice before printing the first prompt.
+
+<span style="color: blue;"> Continuation lines are needed when entering a multi-line construct. As an example, look at this if statement:
+
+![](https://github.com/saikrishnavadali05/python3_ebook/blob/master/Images/Screenshot%202022-01-31%20110438.jpg?raw=true)
+
+
+### Comparison of python with other Languages?
+  
+Column | Python | Java   | C++    | C 
+:----- | :----: | -----: | :----: | -----:
+Compilation | Interpreter| Compiler | Compiler | Compiler
+Learning and code | Very easy to learn  | difficult | difficult  | difficult
+Code of lines  | Very less  | less lines | more lines  | bulk of lines
+project building  | Very less expensive  | expensive | more expensive  | most expensive
+Resources  | Many resources  | less compared to python | less  | less
+  
+<br />
+ 
+### Versions of python?
+  They are two versions
+    1. Version 2
+    2. Version 3 
+  The main difference between version 2 and version 3 is stablity of the code increases and they are some changes in the syntax and also increase in speed of execution of code. So, Now version 2 has no support or resources so everyone should have latest version in their Local system.
+  
+ <br />
