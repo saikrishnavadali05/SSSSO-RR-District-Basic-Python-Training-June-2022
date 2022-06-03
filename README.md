@@ -160,3 +160,20 @@ Resources  | Many resources  | less compared to python | less  | less
   The main difference between version 2 and version 3 is stablity of the code increases and they are some changes in the syntax and also increase in speed of execution of code. So, Now version 2 has no support or resources so everyone should have latest version in their Local system.
   
  <br />
+
+  ### Why should we learn Python?
+  
+  By the start of 2022 :
+PyPi (Python Package Index) has > 3,50,000 Python packages (almost all of them are free and open source).
+10 million+ (1 crore+) python developers are flourishing all around the world (Huge python developer community).
+
+In the mid of 2021 :
+6,200 companies (around the world) have used (90% of their code is written only in) Python for their platforms.
+10,000+ Python job ads on Glassdoor.
+14,000+ Python openings on Indeed.
+
+The number might have doubled by now (i.e., Feb 2022).
+
+A Rapid growth is being observed in the world of Python.
+Because, Python is very easy to read, write and understand.
+Learning Python is not as difficult as it looks, but it’s definitely worth your efforts.
