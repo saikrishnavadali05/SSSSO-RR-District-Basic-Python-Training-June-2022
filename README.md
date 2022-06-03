@@ -177,3 +177,39 @@ The number might have doubled by now (i.e., Feb 2022).
 A Rapid growth is being observed in the world of Python.
 Because, Python is very easy to read, write and understand.
 Learning Python is not as difficult as it looks, but it’s definitely worth your efforts.
+  
+In #india, python developers are being paid well... What is the reason? click to see more...
+
+4.27 lpa ----> 9.09 lpa ----> 11.5 lpa
+
+The average salary of an entry-level Py developer - ₹427,293.
+The average salary of a mid-level Py developer - ₹909,818.
+The average salary of an experienced Py developer - ₹1,150,000.
+
+The reason is simple and straight forward. Many of the top companies use python extensively. This list contains but not limited to only software companies. In fact, python is being used even by Bio-scientists, Chemical Scientists, etc..
+
+Top Financial Companies such as
+1. Goldman Sachs
+2. JP Morgan Chase
+3. PayPal
+
+Large Tech Companies like
+4. Google #google
+5. Dropbox #dropbox
+6. Netflix #netflix
+7. Meta #Meta (Facebook), #instagram
+8. Uber
+9. Twilio
+10. Mozilla
+11. Reddit
+12. Increment
+
+Government Agencies including :
+13. The Consumer Financial Protection Bureau (CFPB)
+14. NASA
+15. United States Central Intelligence Agency (CIA)
+16. U.S. Securities and Exchange Commission (US SEC)
+17. Department of the Navy and National Institute of Standards and Technology (NIST)
+
+The list goes on and on... all of them use python extensively.
+Python programmers are very high in demand now-a-days..
