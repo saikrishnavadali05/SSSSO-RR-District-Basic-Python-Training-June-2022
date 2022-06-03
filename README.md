@@ -213,3 +213,15 @@ Government Agencies including :
 
 The list goes on and on... all of them use python extensively.
 Python programmers are very high in demand now-a-days..
+
+A person can become very rich in software industry if he is proficient in the aspects that I have listed below. Click to see more...
+
+
+Web Development using Python :
+1. Python
+2. Django / Flask
+3. HTML
+4. CSS
+5. JavaScript
+
+The best and most productive field to flourish today is web development using python.
