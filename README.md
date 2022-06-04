@@ -192,10 +192,14 @@ Availability of Learning and Reusable Resources  | High  | High | Less  | Less
 ### Famous and Most used versions of python? <a name="1.8"></a>
 
 They are two versions
-1. Version 2
-2. Version 3
+1. 1989, Implementation of Python as a successor of ```ABC Programming Language``` started.
+2. 1991, Python 0.9
+3. 1994, Python 1.0
+4. 2000, Python 2.0 (Popular)
+5. 2008, Python 3.0 (Famous)
+6. 2022, Python 3.10 (Very Very Famous and Huge Developer Community)
 
-* The main difference between version 2 and version 3 is **stablity of the code increases** and they are some changes in the syntax and also increase in **speed of execution of code**. So, Now version 2 has no support or resources so everyone should have latest version in their Local system.
+* The main difference between version 2 and version 3 is **the stablity of the code has increased a lot** and there were a few changes in the syntax and also increase in **speed of execution of code**. So, Now version 2 has no support or resources so everyone should have latest version in their Local system.
   
  <br />
 
