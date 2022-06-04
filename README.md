@@ -145,7 +145,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 ### What is an interpreter? <a name="1.5"></a>
 
-1. An **interpreter** is a program that reads and executes code. This includes source code, pre-compiled code, and scripts. 
+1. An **interpreter** is a program that reads and executes code line-by-line. This includes source code, pre-compiled code, and scripts. 
 2. Common interpreters include Perl, Python, and Ruby interpreters, which execute Perl, Python, and Ruby code respectively. 
 3. If we write a Python code in a text file with a name like hello.py. How does that code Run? There is a program installed on your computer named "python3" or "python", and its job is to look at and run your Python code. This type of program is called an "interpreter".
 
