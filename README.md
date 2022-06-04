@@ -23,14 +23,14 @@ interface.
 9. Debugging the code 
 10. Print function
 3. Escape sequences
-1. \n Newline 
-2. \r Return 
-3. \b Backspace
-4. \\ Backslash
-5. \” Double quote
-6. \’ Single quote
-7. \t Tab
-8. \a Alarm
+    * '\n' - Newline character
+    * '\r' - Return character
+    * '\b' - Backspace character
+    * '\\' - Backslash character
+    * '\”' - Double quote character
+    * '\’' - Single quote character
+    * '\t' - Tab character
+    * '\a' - Alarm character
 4. Data Types
 1. Integers
 2. Floating point
@@ -154,16 +154,17 @@ Resources  | Many resources  | less compared to python | less  | less
 <br />
  
 ### Versions of python?
-  They are two versions
-    1. Version 2
-    2. Version 3 
-  The main difference between version 2 and version 3 is stablity of the code increases and they are some changes in the syntax and also increase in speed of execution of code. So, Now version 2 has no support or resources so everyone should have latest version in their Local system.
+They are two versions
+1. Version 2
+2. Version 3
+
+* The main difference between version 2 and version 3 is stablity of the code increases and they are some changes in the syntax and also increase in speed of execution of code. So, Now version 2 has no support or resources so everyone should have latest version in their Local system.
   
  <br />
 
-  ### Why should we learn Python?
+### Why should we learn Python?
   
-  By the start of 2022 :
+By the start of 2022 :
 PyPi (Python Package Index) has > 3,50,000 Python packages (almost all of them are free and open source).
 10 million+ (1 crore+) python developers are flourishing all around the world (Huge python developer community).
 
@@ -188,40 +189,41 @@ The average salary of an experienced Py developer - ₹1,150,000.
 
 The reason is simple and straight forward. Many of the top companies use python extensively. This list contains but not limited to only software companies. In fact, python is being used even by Bio-scientists, Chemical Scientists, etc..
 
-Top Financial Companies such as
-1. Goldman Sachs
-2. JP Morgan Chase
-3. PayPal
+> Top Financial Companies
+* Goldman Sachs
+* JP Morgan Chase
+* PayPal
 
-Large Tech Companies like
-4. Google #google
-5. Dropbox #dropbox
-6. Netflix #netflix
-7. Meta #Meta (Facebook), #instagram
-8. Uber
-9. Twilio
-10. Mozilla
-11. Reddit
-12. Increment
+> Large Tech Companies
+* Google #google
+* Dropbox #dropbox
+* Netflix #netflix
+* Meta #Meta (Facebook), #instagram
+* Uber
+* Twilio
+* Mozilla
+* Reddit
+* Increment
 
-Government Agencies including :
-13. The Consumer Financial Protection Bureau (CFPB)
-14. NASA
-15. United States Central Intelligence Agency (CIA)
-16. U.S. Securities and Exchange Commission (US SEC)
-17. Department of the Navy and National Institute of Standards and Technology (NIST)
+> Government Agencies
+* The Consumer Financial Protection Bureau (CFPB)
+* NASA
+* United States Central Intelligence Agency (CIA)
+* Securities and Exchange Commission (US SEC)
+* Department of the Navy and National Institute of Standards and Technology (NIST)
 
 The list goes on and on... all of them use python extensively.
 Python programmers are very high in demand now-a-days..
 
-A person can become very rich in software industry if he is proficient in the aspects that I have listed below. Click to see more...
+> Easy way to become rich
+A person can become very rich in software industry if he is an expert in web development using python.
 
 
 Web Development using Python :
-1. Python
-2. Django / Flask
-3. HTML
-4. CSS
-5. JavaScript
+* Python
+* Django / Flask
+* HTML
+* CSS
+* JavaScript
 
 The best and most productive field to flourish today is web development using python.
