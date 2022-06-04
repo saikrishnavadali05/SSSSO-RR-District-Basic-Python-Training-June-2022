@@ -23,7 +23,6 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Versions of python](#1.8)
 	* [Why should we learn Python](#1.9)
 2. About Python
-	* History
 	* Indentation
 	* Continuation lines
 	*  Command line interface coding
@@ -131,6 +130,10 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 <br />
   
+[go to List of Topics](#top)
+
+<br />
+
 ### How do programming languages support problem decomposition? <a name="1.4"></a>
 
 1. **Python** supports multiple programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages, Python is often used as a **scripting language**.
@@ -174,9 +177,13 @@ Column | Python | Java   | C++    | C
 Compilation | Interpreter| Compiler | Compiler | Compiler
 Learning and code | Very easy to learn  | Difficult | Difficult  | Difficult
 Code of lines  | Very less  | Less lines | More lines  | Bulk of lines
-project building  | Very less expensive  | Expensive | More expensive  | most expensive
+project building  | Very less expensive  | Expensive | More expensive  | Most expensive
 Resources  | Many resources  | Less compared to python | Less  | Very less
   
+<br />
+
+[go to List of Topics](#top)
+
 <br />
  
 ### Versions of python? <a name="1.8"></a>
@@ -254,3 +261,7 @@ A person can become very rich in software industry if he is an expert in web dev
 * JavaScript
 
 The best and most productive field to flourish today is **web development** using python.
+
+[go to List of Topics](#top)
+
+<br />
