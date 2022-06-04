@@ -131,7 +131,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 <br />
   
-[go to List of contents](#top)
+[go to List of Topics](#top)
 
 <br />
 
@@ -183,7 +183,7 @@ Resources  | Many resources  | Less compared to python | Less  | Very less
   
 <br />
 
-[go to List of contents](#top)
+[go to List of Topics](#top)
 
 <br />
  
@@ -263,6 +263,6 @@ A person can become very rich in software industry if he is an expert in web dev
 
 The best and most productive field to flourish today is **web development** using python.
 
-[go to List of contents](#top)
+[go to List of Topics](#top)
 
 <br />
