@@ -208,7 +208,7 @@ They are two versions
 **10,000+** Python job ads on **Glassdoor**.
 **14,000+** Python openings on **Indeed**.
 
-3. The number might have **doubled** by now (i.e., Feb 2022).
+3. The number might have **doubled** by now (i.e., June 2022).
 
 4. A Rapid growth is being observed in the world of Python.
 Because, Python is **very easy to read, write and understand**.
