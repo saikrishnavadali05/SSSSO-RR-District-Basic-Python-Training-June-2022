@@ -178,7 +178,7 @@ Column | Python | Java   | C++    | C
 Compilation | Interpreter| Compiler | Compiler | Compiler
 Learning and code | Very easy to learn  | Difficult | Difficult  | Difficult
 Code of lines  | Very less  | Less lines | More lines  | Bulk of lines
-project building  | Very less expensive  | Expensive | More expensive  | most expensive
+project building  | Very less expensive  | Expensive | More expensive  | Most expensive
 Resources  | Many resources  | Less compared to python | Less  | Very less
   
 <br />
