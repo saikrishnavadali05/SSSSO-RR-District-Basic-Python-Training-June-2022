@@ -92,8 +92,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 1. **Python** is a **general-purpose high-level** programming language. Being a general-purpose language, it can be used to build almost any type of application with the right **tools** or **libraries**. 
 2. Its standard library is large and comprehensive. This makes it easy for **developers** to learn python. 
-3. Additionally, python supports **objects**, **modules**, **threads**, **exception-handling**, and **automatic memory management** which help in modeling real-world problems and building applications to solve these problems. 
-4. Python is also used in **Machine Learning** ,  **Artificial Intelligence** , **Web Development**, **Web Scraping**, and various other domains.
+3. Additionally, python supports **objects**, **modules**, **threads**, **exception-handling**, and **automatic memory management** which will help in modeling real-world problems and building applications to solve those problems. 
+4. Python is widely used among the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, and various other trending domains.
 
 ### **Applications of Python?** <a name="1.3"></a>
 
