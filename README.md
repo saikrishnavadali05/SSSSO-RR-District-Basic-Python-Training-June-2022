@@ -16,7 +16,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [History of Python](#1.1)
 	* [What is Python](#1.2)
 	* [Applications of Python](#1.3)
-	* [How do programming languages support problem decomposition](#1.4)
+	* [How does Python Programming Language support a Complex Problem Decomposition](#1.4)
 	* [What is an interpreter](#1.5)
 	* [How To Open and Run the Interpreter Which is installed](#1.6)
 	* [Comparison of python with other Languages](#1.7)
@@ -131,7 +131,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 <br />
 
-### How do programming languages support problem decomposition? <a name="1.4"></a>
+### How does Python Programming Language support a Complex Problem Decomposition? <a name="1.4"></a>
 
 1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages. Python is often used as a **scripting language**.
 2. If you have to work with several C libraries, and the usual is order of C is
