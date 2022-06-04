@@ -86,7 +86,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 ## **History of Python** <a name="1.1"></a>
 
-**Python** was developed by ***Guido van Rossum*** and was released first on **February 20, 1991**. It is one of the most widely-used and loved programming languages. It is also a **free** and **open-source language** with very simple and clean syntax.
+**Python** was developed by ***Guido van Rossum*** and was released first on **February 20, 1991** (31 years ago). It is one of the most widely-used and loved programming languages. It is also a **free** and **open-source language** with very simple and clean syntax.
 
 ### **What is Python?** <a name="1.2"></a>
 
