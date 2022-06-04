@@ -5,6 +5,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 1. Saturday - Evening - 6pm to 8pm
 2. Sunday - Morning - 8am to 10am
 
+> Total - 4 hours of training sessions per week
+
 # Setting up git and github, python 3.10, VS Code
 1. [programming knowledge channel - How to Install Git on Windows 10 + Setting Up Git and GitHub on Windows 10](https://www.youtube.com/watch?v=bb_LoXAC-zE)
 2. [How to install python 3.10 on windows 10/11](https://www.youtube.com/watch?v=AwIXfaGEN4c)
