@@ -137,9 +137,9 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 ### How do programming languages support problem decomposition? <a name="1.4"></a>
 
-1. **Python** supports multiple programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages, Python is often used as a **scripting language**.
+1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages. Python is often used as a **scripting language**.
 2. If you have to work with several C libraries, and the usual is order of C is
-	>write code/compile code/test code/re-compile code 
+	> write code -> compile it -> test it -> re-write -> re-compile the code -> re-test.
 	* So, The cycle is slow. You need to develop **software** more quickly. Possibly, perhaps you have written a program that could use an **extension language**, and you do not want to design a language, write and debug an interpreter for it, then tie it into your application.
 
 3. **Python** allows you to split up your program in modules that can be **reused** into other Python programs. It comes with a **large collection** of standard modules that you can use as the basis of your programs. 
