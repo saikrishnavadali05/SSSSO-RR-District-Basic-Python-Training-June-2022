@@ -273,7 +273,7 @@ Python programmers are very high in demand now-a-days..
 * CSS
 * JavaScript
 
-The best and most productive field to flourish today is **web development** using python.
+The best and most productive field to flourish today is **web development** using python. Which is also popularly known as **Full Stack Python**
 
 [go to List of Topics](#top)
 
