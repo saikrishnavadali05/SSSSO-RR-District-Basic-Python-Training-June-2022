@@ -123,7 +123,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
   > Python has many libraries for scientific and numeric such as Numpy, Pandas, Scipy, Scikit-learn, etc.
 
 - Prototyping 
-  > 
+  > Developers can quickly write test/validation code which gives the expected results for small to medium data sets.
+
 - Software Development
 
   >Scons, Buildbot, Apache Gump, Round up, Trac.
