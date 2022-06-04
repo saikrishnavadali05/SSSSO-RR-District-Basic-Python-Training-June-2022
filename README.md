@@ -197,7 +197,7 @@ Out of which, versions after ```Python 3.4 ``` are the most widely used ones.
 1. 1989, Implementation of Python as a successor of ```ABC Programming Language``` started.
 2. 1991, Python 0.9
 3. 1994, Python 1.0
-4. 2000, Python 2.0 (Popular)
+4. 2000, Python 2.0 (was popular, but no longer supported since Jan 1, 2020).
 5. 2008, Python 3.0 (Famous)
 6. 2022, Python 3.10 (Very Very Famous and Huge Developer Community)
 
