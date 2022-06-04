@@ -150,10 +150,10 @@ interface.
 Column | Python | Java   | C++    | C 
 :----- | :----: | -----: | :----: | -----:
 Compilation | Interpreter| Compiler | Compiler | Compiler
-Learning and code | Very easy to learn  | difficult | difficult  | difficult
-Code of lines  | Very less  | less lines | more lines  | bulk of lines
-project building  | Very less expensive  | expensive | more expensive  | most expensive
-Resources  | Many resources  | less compared to python | less  | less
+Learning and coding Difficulty level | Very easy to learn  | difficult | difficult  | difficult
+Lines of Code  | Very less  | less lines | more lines  | bulk of lines
+Cost incurred in project building  | Very less expensive  | expensive | more expensive  | most expensive
+Resource Requirement  | Many resources  | less compared to python | less  | less
   
 <br />
  
