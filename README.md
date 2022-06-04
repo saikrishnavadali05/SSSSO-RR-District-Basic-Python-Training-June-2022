@@ -137,7 +137,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	> write code -> compile it -> test it -> re-write -> re-compile the code -> re-test.
 	* So, The cycle is slow. You need to develop **software** more quickly. Possibly, perhaps you have written a program that could use an **extension language**, and you do not want to design a language, write and debug an interpreter for it, then tie it into your application.
 
-3. **Python** allows you to split up your program in modules that can be **reused** into other Python programs. It comes with a **large collection** of standard modules that you can use as the basis of your programs. 
+3. **Python** allows you to split up your big program (program with many lines of code) into modules that can be **reused**, even into other Python programs as well. It comes with a **large collection** of standard modules that you can use as the basis of your programs, instead of writing code for each and everything from scratch.
 4. There are also built-in modules that provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.
 
 <br />
