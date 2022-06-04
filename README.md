@@ -78,7 +78,7 @@ interface.
 
 
 ### **What is Python?**
-<span style="color: blue;">**Python** is a general-purpose high-level programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Its standard library is large and comprehensive. This makes it easy developers to learn python. Additionally, python supports objects, modules, threads, exception-handling, and automatic memory management which help in modelling real-world problems and building applications to solve these problems. Python is also used in Machine Learning, Artificial Intelligence, Web Development, Web Scraping, and various other domains.</span>
+<span style="color: blue;">**Python**</span> is a general-purpose high-level programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Its standard library is large and comprehensive. This makes it easy developers to learn python. Additionally, python supports objects, modules, threads, exception-handling, and automatic memory management which help in modelling real-world problems and building applications to solve these problems. Python is also used in Machine Learning, Artificial Intelligence, Web Development, Web Scraping, and various other domains.</span>
 
 <br />
 
