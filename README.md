@@ -166,6 +166,10 @@ They are two versions
   
  <br />
 
+### Major implementations of python
+
+> CPython, PyPy, Stackless Python, MicroPython, CircuitPython, IronPython, Jython.
+
 ### Why should we learn Python?
   
 By the start of 2022 :
@@ -231,3 +235,9 @@ Web Development using Python :
 * JavaScript
 
 The best and most productive field to flourish today is web development using python.
+   
+## References
+
+1. https://www.jython.org/
+2. https://en.wikipedia.org/wiki/Jython
+3. https://en.wikipedia.org/wiki/Python_(programming_language)#
