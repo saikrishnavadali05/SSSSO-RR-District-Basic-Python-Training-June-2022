@@ -217,7 +217,9 @@ Learning Python is not as difficult as it looks, but it’s definitely **worth y
 	*	The average salary of an ***entry-level*** Py developer - ***₹427,293****.
 	*	The average salary of a ***mid-level*** Py developer - ***₹909,818***.
 	*	The average salary of an ***experienced*** Py developer - ***₹1,150,000***.
+
 7. *The reason is simple and straight forward*. Many of the top companies use python extensively. The following list contains, but not limited to only software companies. In fact, python is being used even by Bio-scientists, Chemical Scientists, etc..
+
 8. Examples of companies that use Python extensively are
 
 > Top Financial Companies
@@ -236,12 +238,15 @@ Learning Python is not as difficult as it looks, but it’s definitely **worth y
 * Reddit
 * Increment
 
-> Government Agencies
+> US Government Agencies
 * The Consumer Financial Protection Bureau (CFPB)
 * NASA
 * United States Central Intelligence Agency (CIA)
 * Securities and Exchange Commission (US SEC)
 * Department of the Navy and National Institute of Standards and Technology (NIST)
+
+> Important Multi National Companies that use python extensively
+* Nokia, HPE, Dell, Novell, emc2, vmware, mindtree, OLA, Persistent, GSLabs, Macropace, Xentrix, etc
 
 The list goes on and on... all of them use python extensively.
 Python programmers are very high in demand now-a-days..
