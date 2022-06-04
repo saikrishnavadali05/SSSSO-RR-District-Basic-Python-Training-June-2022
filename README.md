@@ -164,8 +164,9 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
     - > In Visual Studio Code : Terminal > New Terminal
 
-2. When commands are read from a **tty**, the interpreter is said to be in **interactive** mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs **(‘>>> ‘)**; 
-3. For continuation lines it prompts with the secondary prompt, by default three dots **(‘...’)**. The interpreter prints a welcome message stating its version number and a copyright notice before printing the first prompt.
+2. When commands are read from a **tty**, the interpreter is said to be in **interactive** mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs **(‘>>> ‘)**. ```>>>``` this symbol is called as ```chevron prompt```. It means that python interpreter is in ```interactive mode```, waiting for user input.
+ 
+3. For continuation lines it prompts with the secondary prompt, by default three dots **(‘...’)**. The interpreter prints a welcome message stating its version number and a copyright notice before printing the first prompt. ```...``` in this context, should not be compared (or) correlated with ```... <ellipsis>``` operator of python.
 
 4. Continuation lines are needed when entering a multi-line construct. As an example, look at this if statement:
 
