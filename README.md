@@ -18,7 +18,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Applications of Python](#1.3)
 	* [How do programming languages support problem decomposition](#1.4)
 	* [What is an interpreter](#1.5)
-	* [How To Get An Interpreter](#1.6)
+	* [How To Open and Run the Interpreter Which is installed](#1.6)
 	* [Comparison of python with other Languages](#1.7)
 	* [Famous and Most used versions of python](#1.8)
 	* [Why should we learn Python](#1.9)
@@ -151,13 +151,18 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 <br />
 
-### How To Get An Interpreter? <a name="1.6"></a>
+### How To Open and Run the Interpreter which was installed? <a name="1.6"></a>
 
-1. There are 2 easy ways to get the interpreter:
+1. There are 2 easy ways to open the interpreter:
 
-	  -  Open a command-line terminal. **Mac** : run the "Terminal" app in the Utilities folder. **Windows**: type "powershell" in the lower left, this opens the Windows command line terminal. In the terminal type the command "python3" ("python" on Windows, or sometimes "py"). This runs the interpreter program directly. On the Mac type ctrl-d to exit (on Windows ctrl-z).
+	  - Open a command-line terminal or command prompt.
+    - **Mac** : run the "Terminal" app in the Utilities folder.
+    - **Windows**: Type "Command Prompt" in the search box, this opens the Windows command prompt terminal. In the terminal, type the command "python3" or "python" or sometimes "py". This runs the interpreter program directly.
+    - press ```ctrl+d``` or ```ctrl+z``` or ```type exit()``` to exit the interpreter.
 
-	  - If you have **PyCharm** installed, at the lower-left of any window, click the Python Console tab. Or use the Tools > Python Console menu item to open an interpreter window within PyCharm.
+	  - If you have **Visual Studio Code** installed, at the top of the VS Code window, click on the **Terminal** option. And then click on the **New Terminal** option.
+
+    - > In Visual Studio Code : Terminal > New Terminal
 
 2. When commands are read from a **tty**, the interpreter is said to be in **interactive** mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs **(‘>>> ‘)**; 
 3. For continuation lines it prompts with the secondary prompt, by default three dots **(‘...’)**. The interpreter prints a welcome message stating its version number and a copyright notice before printing the first prompt.
