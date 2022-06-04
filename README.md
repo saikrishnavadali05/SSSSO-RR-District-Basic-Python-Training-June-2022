@@ -126,9 +126,10 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 - Software Development
   >Scons, Buildbot, Apache Gump, Round up, Trac.
 <br />
-[go to List of Topics](#top)
-<br />
 
+[go to List of Topics](#top)
+
+<br />
 ### How do programming languages support problem decomposition? <a name="1.4"></a>
 
 1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages. Python is often used as a **scripting language**.
