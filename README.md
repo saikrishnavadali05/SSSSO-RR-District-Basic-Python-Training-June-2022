@@ -10,16 +10,17 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 2. [How to install python 3.10 on windows 10/11](https://www.youtube.com/watch?v=AwIXfaGEN4c)
 3. [How to install visual studio code on windows 10/11](https://www.youtube.com/watch?v=JPZsB_6yHVo)
 
-## List of Topics that will be covered under this training
-1. Start up for python Language
-	* What is Python
-	* Applications of Python
-	* How do programming languages support problem decomposition
-	* What is an interpreter
-	* How To Get An Interpreter
-	* Comparison of python with other Languages
-	* Versions of python
-	*  Why should we learn Python
+## List of Topics that will be covered under this training <a name="top"></a>
+1. [Start up for python Language] (#1)
+	* [History of Python] (#1.1)
+	* [What is Python] (#1.2)
+	* [Applications of Python] (#1.3)
+	* [How do programming languages support problem decomposition] (#1.4)
+	* [What is an interpreter] (#1.5)
+	* [How To Get An Interpreter] (#1.6)
+	* [Comparison of python with other Languages] (#1.7)
+	* [Versions of python] (#1.8)
+	* [Why should we learn Python] (#1.9)
 2. About Python
 	* History
 	* Indentation
@@ -81,7 +82,14 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 22. assert (basic debugging) - to set a breakpoint
 23. What editors are required to use in python 
 
-### **What is Python?**
+## **Start up for python Language** <a name="1"></a>
+
+## **History of Python** <a name="1.1"></a>
+
+**Python** was developed by ***Guido van Rossum*** and was released first on **February 20, 1991**. It is one of the most widely-used and loved programming languages. It is also a **free** and **open-source language** with very simple and clean syntax.
+
+### **What is Python?** <a name="1.2"></a>
+
 1. **Python** is a **general-purpose high-level** programming language. Being a general-purpose language, it can be used to build almost any type of application with the right **tools** or **libraries**. 
 2. Its standard library is large and comprehensive. This makes it easy for **developers** to learn python. 
 3. Additionally, python supports **objects**, **modules**, **threads**, **exception-handling**, and **automatic memory management** which help in modeling real-world problems and building applications to solve these problems. 
@@ -89,7 +97,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 <br />
 
-### **Applications of Python?**
+### **Applications of Python?** <a name="1.3"></a>
+
 1. **Python** has grown to become part of web-based, desktop-based, graphic design, scientific, and computational applications.
 
 - GUI based desktop applications
@@ -121,7 +130,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 <br />
   
-### How do programming languages support problem decomposition?
+### How do programming languages support problem decomposition? <a name="1.4"></a>
 
 1. **Python** supports multiple programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages, Python is often used as a **scripting language**.
 2. If you have to work with several C libraries, and the usual is order of C is
@@ -133,14 +142,16 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 <br />
 
-### What is an interpreter?
+### What is an interpreter? <a name="1.5"></a>
+
 1. An **interpreter** is a program that reads and executes code. This includes source code, pre-compiled code, and scripts. 
 2. Common interpreters include Perl, Python, and Ruby interpreters, which execute Perl, Python, and Ruby code respectively. 
 3. If we write a Python code in a text file with a name like hello.py. How does that code Run? There is a program installed on your computer named "python3" or "python", and its job is to look at and run your Python code. This type of program is called an "interpreter".
 
 <br />
 
-### How To Get An Interpreter?
+### How To Get An Interpreter? <a name="1.6"></a>
+
 1. There are 2 easy ways to get the interpreter:
 
 	  -  Open a command-line terminal. **Mac** : run the "Terminal" app in the Utilities folder. **Windows**: type "powershell" in the lower left, this opens the Windows command line terminal. In the terminal type the command "python3" ("python" on Windows, or sometimes "py"). This runs the interpreter program directly. On the Mac type ctrl-d to exit (on Windows ctrl-z).
@@ -155,7 +166,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 ![](https://github.com/saikrishnavadali05/python3_ebook/blob/master/Images/Screenshot%202022-01-31%20110438.jpg?raw=true)
 
 
-### Comparison of python with other Languages?
+### Comparison of python with other Languages? <a name="1.7"></a>
   
 Column | Python | Java   | C++    | C 
 :----- | :----: | -----: | :----: | -----:
@@ -167,7 +178,8 @@ Resources  | Many resources  | Less compared to python | Less  | Very less
   
 <br />
  
-### Versions of python?
+### Versions of python? <a name="1.8"></a>
+
 They are two versions
 1. Version 2
 2. Version 3
@@ -176,7 +188,7 @@ They are two versions
   
  <br />
 
-### Why should we learn Python?
+### Why should we learn Python? <a name="1.9"></a>
   
 1. By the **start** of 2022 :
 **PyPi** (Python Package Index) has > **3,50,000** Python packages (almost all of them are free and open source).
