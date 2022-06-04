@@ -250,8 +250,7 @@ Learning Python is not as difficult as it looks, but it’s definitely **worth y
 The list goes on and on... all of them use python extensively.
 Python programmers are very high in demand now-a-days..
 
-> Easy way to become rich
-A person can become very rich in software industry if he is an expert in web development using python.
+> One easy way to become rich in the software industry is to learn and perform : **web development using python**.
 
 9. Web Development using Python :
 * Python
