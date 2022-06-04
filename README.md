@@ -213,15 +213,15 @@ They are two versions
 Because, Python is **very easy to read, write and understand**.
 Learning Python is not as difficult as it looks, but it’s definitely **worth your efforts**.
   
-5. In #india, python developers are being paid well... What is the reason? click to see more...
+5. In #india, python developers are being paid well... What is the reason?
 
 		**4.27 lpa ----> 9.09 lpa ----> 11.5 lpa**
 
-6. Salaries depends on **experience** level
+6. The following are the average salaries based on different **experience** levels
 	*	The average salary of an ***entry-level*** Py developer - ***₹427,293****.
 	*	The average salary of a ***mid-level*** Py developer - ***₹909,818***.
 	*	The average salary of an ***experienced*** Py developer - ***₹1,150,000***.
-7. The reason is simple and straight forward. Many of the top companies use python extensively. This list contains but not limited to only software companies. In fact, python is being used even by Bio-scientists, Chemical Scientists, etc..
+7. *The reason is simple and straight forward*. Many of the top companies use python extensively. The following list contains, but not limited to only software companies. In fact, python is being used even by Bio-scientists, Chemical Scientists, etc..
 8. Examples of companies that use Python extensively are
 
 > Top Financial Companies
