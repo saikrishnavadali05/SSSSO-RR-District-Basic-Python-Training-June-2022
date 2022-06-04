@@ -99,7 +99,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 ### **Applications of Python?** <a name="1.3"></a>
 
-1. **Python** has grown to become part of web-based, desktop-based, graphic design, scientific, and computational applications.
+> **Python** has grown to become part of web-based, desktop-based, graphic design, scientific, and computational applications.
 
 - GUI based desktop applications
   > Tkinter, PyQT, Kivy, WxPython, PyGUI these are most widely used and best Python graphical user interface frameworks available.
