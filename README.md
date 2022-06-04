@@ -176,9 +176,9 @@ Column | Python | Java   | C++    | C
 :----- | :----: | -----: | :----: | -----:
 Code Executor | Interpreter| Compiler | Compiler | Compiler
 Learning and Coding Difficulty Level | Very Easy | Medium | Medium  | Easy
-Number of Lines of Code (SLOC)  | Very less  | Less lines | More lines  | Bulk of lines
-Costs incurred to Build the Applications  | Very less expensive  | Expensive | More expensive  | Most expensive
-Availability of Learning and Reusable Resources  | Many resources  | Less compared to python | Less  | Very less
+Number of Lines of Code (SLOC)  | Very less  | Less | Many | Extremely Many
+Costs incurred to Build Applications  | Less Expensive  | Expensive | More expensive  | Most expensive
+Availability of Learning and Reusable Resources  | High  | High | Less  | Less
   
 <br />
 
