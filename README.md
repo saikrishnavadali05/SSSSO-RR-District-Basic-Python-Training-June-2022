@@ -174,11 +174,11 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
   
 Column | Python | Java   | C++    | C 
 :----- | :----: | -----: | :----: | -----:
-Compilation | Interpreter| Compiler | Compiler | Compiler
-Learning and code | Very easy to learn  | Difficult | Difficult  | Difficult
-Code of lines  | Very less  | Less lines | More lines  | Bulk of lines
-project building  | Very less expensive  | Expensive | More expensive  | Most expensive
-Resources  | Many resources  | Less compared to python | Less  | Very less
+Code Executor | Interpreter| Compiler | Compiler | Compiler
+Learning and Coding Difficulty Level | Very Easy | Medium | Medium  | Easy
+Number of Lines of Code (SLOC)  | Very less  | Less lines | More lines  | Bulk of lines
+Costs incurred to Build the Applications  | Very less expensive  | Expensive | More expensive  | Most expensive
+Availability of Learning and Reusable Resources  | Many resources  | Less compared to python | Less  | Very less
   
 <br />
 
