@@ -20,7 +20,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [What is an interpreter](#1.5)
 	* [How To Get An Interpreter](#1.6)
 	* [Comparison of python with other Languages](#1.7)
-	* [Versions of python](#1.8)
+	* [Famous and Most used versions of python](#1.8)
 	* [Why should we learn Python](#1.9)
 2. About Python
 	* Indentation
@@ -182,7 +182,7 @@ Availability of Learning and Reusable Resources  | High  | High | Less  | Less
 
 <br />
  
-### Versions of python? <a name="1.8"></a>
+### Famous and Most used versions of python? <a name="1.8"></a>
 
 They are two versions
 1. Version 2
