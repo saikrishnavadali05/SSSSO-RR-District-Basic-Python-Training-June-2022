@@ -180,10 +180,10 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 Column | Python | Java   | C++    | C 
 :----- | :----: | -----: | :----: | -----:
 Code Executor | Interpreter| Compiler | Compiler | Compiler
-Learning and Coding Difficulty Level | Very Easy | Medium | Medium  | Easy
+Learning and Coding Difficulty Level | Very Easy | Medium | Medium  | Difficult
 Number of Lines of Code (SLOC)  | Very less  | Less | Many | Extremely Many
 Costs incurred to Build Applications  | Less Expensive  | Expensive | More expensive  | Most expensive
-Availability of Learning and Reusable Resources  | High  | High | Less  | Less
+Availability of Learning and Reusable Resources  | Very High  | High | Less  | Less
   
 <br />
 
@@ -226,7 +226,7 @@ Learning Python is not as difficult as it looks, but it’s definitely **worth y
   
 5. In #india, python developers are being paid well... What is the reason?
 
-		**4.27 lpa ----> 9.09 lpa ----> 11.5 lpa**
+		4.27 lpa ----> 9.09 lpa ----> 11.5 lpa
 
 6. The following are the average salaries based on different **experience** levels
 	*	The average salary of an ***entry-level*** Py developer - ***₹427,293****.
