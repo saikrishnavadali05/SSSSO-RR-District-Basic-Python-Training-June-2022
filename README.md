@@ -78,12 +78,13 @@ interface.
 
 
 ### **What is Python?**
-<span style="color: blue;">**Python** is a general-purpose high-level programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Its standard library is large and comprehensive. This makes it easy developers to learn python. Additionally, python supports objects, modules, threads, exception-handling, and automatic memory management which help in modelling real-world problems and building applications to solve these problems. Python is also used in Machine Learning, Artificial Intelligence, Web Development, Web Scraping, and various other domains.</span>
-
+<span style="color: blue;">
+   **Python** is a general-purpose high-level programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Its standard library is large and comprehensive. This makes it easy developers to learn python. Additionally, python supports objects, modules, threads, exception-handling, and automatic memory management which help in modelling real-world problems and building applications to solve these problems. Python is also used in Machine Learning, Artificial Intelligence, Web Development, Web Scraping, and various other domains.
+</span>
 <br />
-
 ### **Applications of Python?**
-<span style="color: blue;">Python has grown to become part of web-based, desktop-based, graphic design, scientific, and computational applications.
+<span style="color: blue;">
+   Python has grown to become part of web-based, desktop-based, graphic design, scientific, and computational applications.
 
 - GUI based desktop applications
   > Tkinter, PyQT, Kivy, WxPython, PyGUI these are most widely used and best Python graphical user interface frameworks available.
@@ -111,12 +112,11 @@ interface.
 - Software Development
 
   >Scons, Buildbot, Apache Gump, Round up, Trac.
-
 <br />
-  
 ### How do programming languages support problem decomposition?
 
-<span style="color: blue;">Python supports multiple programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages, Python is often used as a scripting language.
+<span style="color: blue;">
+   Python supports multiple programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages, Python is often used as a scripting language.
 
 <span style="color: blue;">If you have to work with several C libraries, and the usual C write/compile/test/re-compile cycle is slow. You need to develop software more quickly. Possibly, perhaps you have written a program that could use an extension language, and you do not want to design a language, write and debug an interpreter for it, then tie it into your application.
 
