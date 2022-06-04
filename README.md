@@ -12,7 +12,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 ## List of Topics that will be covered under this training <a name="top"></a>
 
-1. [Start up for python Language](#1)
+1. [Let's begin the Python Show](#1)
 	* [History of Python](#1.1)
 	* [What is Python](#1.2)
 	* [Applications of Python](#1.3)
@@ -82,7 +82,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 22. assert (basic debugging) - to set a breakpoint
 23. What editors are required to use in python 
 
-### **1. Start up for python Language** <a name="1"></a>
+### **1. Let's begin the Python Show** <a name="1"></a>
 
 ## **History of Python** <a name="1.1"></a>
 
