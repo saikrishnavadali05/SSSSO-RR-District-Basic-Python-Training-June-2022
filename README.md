@@ -82,7 +82,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 22. assert (basic debugging) - to set a breakpoint
 23. What editors are required to use in python 
 
-## **Start up for python Language** <a name="1"></a>
+### **1. Start up for python Language** <a name="1"></a>
 
 ## **History of Python** <a name="1.1"></a>
 
