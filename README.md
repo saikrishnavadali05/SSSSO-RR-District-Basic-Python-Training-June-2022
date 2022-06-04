@@ -23,7 +23,6 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Versions of python](#1.8)
 	* [Why should we learn Python](#1.9)
 2. About Python
-	* History
 	* Indentation
 	* Continuation lines
 	*  Command line interface coding
