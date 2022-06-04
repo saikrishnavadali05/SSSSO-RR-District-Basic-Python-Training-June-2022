@@ -11,16 +11,17 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 3. [How to install visual studio code on windows 10/11](https://www.youtube.com/watch?v=JPZsB_6yHVo)
 
 ## List of Topics that will be covered under this training <a name="top"></a>
-1. [Start up for python Language] (#1)
-	* [History of Python] (#1.1)
-	* [What is Python] (#1.2)
-	* [Applications of Python] (#1.3)
-	* [How do programming languages support problem decomposition] (#1.4)
-	* [What is an interpreter] (#1.5)
-	* [How To Get An Interpreter] (#1.6)
-	* [Comparison of python with other Languages] (#1.7)
-	* [Versions of python] (#1.8)
-	* [Why should we learn Python] (#1.9)
+
+1. [Start up for python Language](#1)
+	* [History of Python](#1.1)
+	* [What is Python](#1.2)
+	* [Applications of Python](#1.3)
+	* [How do programming languages support problem decomposition](#1.4)
+	* [What is an interpreter](#1.5)
+	* [How To Get An Interpreter](#1.6)
+	* [Comparison of python with other Languages](#1.7)
+	* [Versions of python](#1.8)
+	* [Why should we learn Python](#1.9)
 2. About Python
 	* History
 	* Indentation
