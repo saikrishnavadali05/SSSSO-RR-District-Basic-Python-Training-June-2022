@@ -24,15 +24,15 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Comparison of python with other Languages](#1.7)
 	* [Famous and Most used versions of python](#1.8)
 	* [Why should we learn Python](#1.9)
-2. About Python
-	* Indentation
-	* Continuation lines
-	*  Command line interface coding
-	* Writing python scripts in a file and running it in the command line
-	interface
-	* Commenting in python
-	*  Debugging the code 
-	*  Print function
+2. [About Python](#2)
+	* [Indentation](#2.1)
+	* [Continuation lines](#2.2)
+	* [Command line interface coding](#2.3)
+	* [Writing python scripts in a file and running it in the command line
+	interface](#2.4)
+	* [Commenting in python](#2.5)
+	* [Debugging the code](#2.6)
+	* [Print function](#2.7)
 3. Escape sequences
     * '\n' - Newline character
     * '\r' - Return character
