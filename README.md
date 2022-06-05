@@ -32,7 +32,6 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Commenting in python](#2.4)
 	* [Print function](#2.5)
 	* [Header for Python script](#2.6)
-
 3. [Escape sequences](#3)
     * '\n' - [Newline character](#3)
     * '\r' - [Return character](#3)
@@ -164,13 +163,11 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 1. There are 2 easy ways to open the interpreter:
 
-	  - Open a command-line terminal or command prompt.
+    - Open a command-line terminal or command prompt.
     - **Mac** : run the "Terminal" app in the Utilities folder.
     - **Windows**: Type "Command Prompt" in the search box, this opens the Windows command prompt terminal. In the terminal, type the command "python3" or "python" or sometimes "py". This runs the interpreter program directly.
     - press ```ctrl+d``` or ```ctrl+z``` or ```type exit()``` to exit the interpreter.
-
-	  - If you have **Visual Studio Code** installed, at the top of the VS Code window, click on the **Terminal** option. And then click on the **New Terminal** option.
-
+    - If you have **Visual Studio Code** installed, at the top of the VS Code window, click on the **Terminal** option. And then click on the **New Terminal** option.
     - > In Visual Studio Code : Terminal > New Terminal
 
 2. When commands are read from a **tty**, the interpreter is said to be in **interactive** mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs **(‘>>> ‘)**. ```>>>``` this symbol is called as ```chevron prompt```. It means that python interpreter is in ```interactive mode```, waiting for user input.
@@ -382,7 +379,7 @@ else:
   
   1. This is the basic function which is used to print the content on the screen. This function always give a new line.
   2. Syntax for the **print** function
-		>print (objects, sep = '', end = '\n')
+	> ```python print (objects, sep = '', end = '\n')```
 	    * objects can be more than one.
 	    * Here, **sep** and **end** are **optional**. **sep** is used to seperate objects and **end** is used to tell what it should do at the end of statement.
 3. Examples of the print function are
