@@ -61,34 +61,34 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 7. Operators
 	* Numeric 
 	* Comparison
-	*  Identity
+	* Identity
 	* Membership
 	* Assignment
-	*  Logical
+	* Logical
 8. Conditional statements
-	* If
-	* If else
-	* Nested If elif else
+	* if
+	* if - else
+	* Nested if-elif-else
 9. Loops
-	* While
-	*  for
+	* while
+	* for
 10.  Lists
 	* list comprehension 
 11. Tuples 
 12. Dictionaries
 13. File Handling
 	* Read 
-	*  Write
-	* delete
+	* Write
+	* Delete
 14. Functions
 15. Exception Handling
 16. Modules
-17. Namespace
+17. Namespaces
 18. Packages
 19. Built in tools
-20. repr()
-21. difference between running the code in vs code and jupyter notebook
-22. assert (basic debugging) - to set a breakpoint
+20. Function : ```repr()```
+21. Difference between running the code in vs code and jupyter notebook
+22. Keyword : ```assert``` (basic debugging) - to set a breakpoint
 23. What editors are required to use in python 
 
 ## **1. Let's begin the Python Show** <a name="1"></a>
