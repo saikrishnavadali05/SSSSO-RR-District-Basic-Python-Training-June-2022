@@ -25,70 +25,71 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Famous and Most used versions of python](#1.8)
 	* [Why should we learn Python](#1.9)
 2. [About Python](#2)
-	* [Indentation](#2.1)
-	* [Continuation lines](#2.2)
 	* [Writing python scripts in a file and running it in the command line
-	interface](#2.3)
-	* [Commenting in python](#2.4)
-	* [Print function](#2.5)
-	* [Header for Python script](#2.6)
-3. [Escape sequences](#3)
-    * '\n' - [Newline character](#3)
-    * '\r' - [Return character](#3)
-    * '\b' - [Backspace character](#3)
-    * '\\' - [Backslash character](#3)
-    * '\”' - [Double quote character](#3)
-    * '\’' - [Single quote character](#3)
-    * '\t' - [Tab character](#3)
-    * '\a' - [Alarm character](#3)
-    * [Exercise - 1](#3.1)
-4. [Variables](#4) 
-	* [Naming conventions of variables](#4.1)
-	* [Creating good names](#4.2)
-	* [Exercise-2](#4.3)
-5. [Data Types](#5)
-	* [Integers](#5.1)
-	* [Floating point](#5.2)
-	* [Complex](#5.3)
-	* [boolean](#5.4)
-	* [Conversion of one data type to another](#5.5)
-	* [Exercise-3](#5.6)
-6. [User Input](#6)
-	* [Input function](#6.1)
-	* [Command line parameters](#6.2)
-	* [Exercise - 4](#6.3)
+	interface](#2.1)
+	* [Commenting in python](#2.2)
+	* [Print function](#2.3)
+	* [Header for Python script](#2.4)
+	* [Indentation](#2.5)
+	* [Continuation lines](#2.6)
+3. [Variables](#3)
+	* [Python Variables](#3.1)
+	* [Naming conventions of variables](#3.2)
+	* [Creating good names](#3.3)
+	* [Exercise-1](#3.4)
+4. [Data Types](#4)
+	* [Integers](#4.1)
+	* [Floating point](#4.2)
+	* [Complex](#4.3)
+	* [boolean](#4.4)
+	* [Conversion of one data type to another](#4.5)
+	* [Exercise-2](#4.6)
+5. [User Input](#5)
+	* [Input function](#5.1)
+	* [Command line parameters](#5.2)
+	* [Exercise - 3](#5.3)
+6. [Escape sequences](#6)
+    * '\n' - [Newline character](#6)
+    * '\r' - [Return character](#6)
+    * '\b' - [Backspace character](#6)
+    * '\\' - [Backslash character](#6)
+    * '\”' - [Double quote character](#6)
+    * '\’' - [Single quote character](#6)
+    * '\t' - [Tab character](#6)
+    * '\a' - [Alarm character](#6)
+    * [Exercise - 4](#6.1)
 7. Operators
 	* Numeric 
 	* Comparison
-	* Identity
+	*  Identity
 	* Membership
 	* Assignment
-	* Logical
+	*  Logical
 8. Conditional statements
-	* if
-	* if - else
-	* Nested if-elif-else
+	* If
+	* If else
+	* Nested If elif else
 9. Loops
-	* while
-	* for
-10. Lists
-	* List Comprehension
+	* While
+	*  for
+10.  Lists
+	* list comprehension 
 11. Tuples 
-13. Dictionaries
-14. File Handling
+12. Dictionaries
+13. File Handling
 	* Read 
-	* Write
-	* Delete
-15. Functions
-16. Exception Handling
-17. Modules
-18. Namespaces
-19. Packages
-20. Built in tools
-21. Function : ```repr()```
-22. Difference between running the code in vs code and jupyter notebook
-23. Keyword : ```assert``` (basic debugging) - to set a breakpoint
-24. What editors are required to use in python 
+	*  Write
+	* delete
+14. Functions
+15. Exception Handling
+16. Modules
+17. Namespace
+18. Packages
+19. Built in tools
+20. repr()
+21. difference between running the code in vs code and jupyter notebook
+22. assert (basic debugging) - to set a breakpoint
+23. What editors are required to use in python 
 
 ## **1. Let's begin the Python Show** <a name="1"></a>
 
@@ -163,11 +164,13 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 1. There are 2 easy ways to open the interpreter:
 
-    - Open a command-line terminal or command prompt.
+	  - Open a command-line terminal or command prompt.
     - **Mac** : run the "Terminal" app in the Utilities folder.
     - **Windows**: Type "Command Prompt" in the search box, this opens the Windows command prompt terminal. In the terminal, type the command "python3" or "python" or sometimes "py". This runs the interpreter program directly.
     - press ```ctrl+d``` or ```ctrl+z``` or ```type exit()``` to exit the interpreter.
-    - If you have **Visual Studio Code** installed, at the top of the VS Code window, click on the **Terminal** option. And then click on the **New Terminal** option.
+
+	  - If you have **Visual Studio Code** installed, at the top of the VS Code window, click on the **Terminal** option. And then click on the **New Terminal** option.
+
     - > In Visual Studio Code : Terminal > New Terminal
 
 2. When commands are read from a **tty**, the interpreter is said to be in **interactive** mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs **(‘>>> ‘)**. ```>>>``` this symbol is called as ```chevron prompt```. It means that python interpreter is in ```interactive mode```, waiting for user input.
@@ -288,48 +291,7 @@ The best and most productive field to flourish today is **web development** usin
 
 ## **About Python** <a name="2"></a>
 
-### **Indentation** <a name="2.1"></a>
-
-  1. **Indentation** plays a very important role in writing **python script**.
-  2. The meaning of indentation is the proper **arranging** of the lines of code in the script.
-  3. For arranging we can either use **Tab** or **Space**. But the right way is to use Tab which makes our code to write easily.
-  4. Now let's understand with an example
-  
-  ```python
-# Convert the command line parameters to numbers
-num1 = 20
-num2 = 25
-
-# Determine which number is largest and perform the subtraction
-if num1 > num2:
-    diff = num1 - num2
-    print(num1, "-", num2, "=", diff)
-else:
-    diff = num2 - num1
-    print(num2, "-", num1, "=", diff)
-  ```
-  
-  From the above example, we can see there is a white space after the **if** line it is given because the lines should be executed only when the 'If' condition satisfies. Similarly for the 'else' condition. 
-  
-<br />
-  
- ### **Continuation lines** <a name="2.2"></a>
- 
-  1. If we are writing one big statement that occupies more than one line then we will be using this character \\. 
-  2. This character \ should be the end of the line.
-  3. For example 
-   ```python
-     print("My company \
-     name is \
-     Multiple Wishes.")
-   ```
-   when we run the script the output is
-   <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/11.jpg" alt="Continuation lines" width="600"/>
-
-<br />
-  
-  
- ### **python scripts and its execution** <a name="2.3"></a>
+ ### **python scripts and its execution** <a name="2.1"></a>
   
   1. A computer program is a sequence of instructions in a programming language that a computer can execute or interpret.
   2. The basic difference between a **scripting language** and other general purpose programming languages such as C, C++, JAVA is that scripting languages do not need an additional step of compilation and rather they are interpreted, whereas programming languages are compiled and hence need a compilation step to convert the high-level language to machine code.
@@ -347,7 +309,7 @@ else:
   
   <br />
   
-  ### **Commenting in python** <a name="2.4"></a>
+  ### **Commenting in python** <a name="2.2"></a>
   
   1. Comments are text portions that clarify what the program does and how it functions. 
   2. The character used for commenting is #.
@@ -362,6 +324,12 @@ else:
   #more than just one line
   print("Hello, World!")
   ```
+  
+  ```console
+  #output
+  Hello, World!
+  ```
+  
   ```python
   '''
   This is a comment
@@ -372,14 +340,19 @@ else:
   '''
   print("Hello, World!")
   ```
+ 
+   ```console
+  #output
+  Hello, World!
+  ```
   
  <br />
 
-### **Print function** <a name="2.5"></a>
+### **Print function** <a name="2.3"></a>
   
-  1. This is the basic function which is used to print the content on the screen. This function always give a new line.
+  1. This is the baisc function which is used to print the content on the screen. This function always give a new line
   2. Syntax for the **print** function
-	> ```python print (objects, sep = '', end = '\n')```
+		>print (objects, sep = ':', end = '\n')
 	    * objects can be more than one.
 	    * Here, **sep** and **end** are **optional**. **sep** is used to seperate objects and **end** is used to tell what it should do at the end of statement.
 3. Examples of the print function are
@@ -387,7 +360,7 @@ else:
         print("My name is Ramesh", "studying in IIT")
       ```      
    *  From the above print statement "My name is Ramesh" is expression -1 and "studying in IIT" expression -2.
-  * Prints the expressions with spaces between them
+   * Prints the expressions with spaces between them
       ```python
          print("My name is Ramesh", "studying in IIT", sep=':', end=' ')
       ```
@@ -399,7 +372,7 @@ else:
   
    <br />
    
- ### **Header for Python script** <a name="2.6"></a>
+ ### **Header for Python script** <a name="2.4"></a>
   
   1. The header is very important for the program because when anybody wants to understand your program or if you want to revise this program in the future the header will be very helpful to tell how code works.
   
@@ -439,12 +412,13 @@ print("substraction ", sub)
 print("multiply ", multiply)
 print("division ", div)
 print("exponentation ", expo)
-  
+``` 
 
-running script
-PS C:\Users\Documents\Training\code> python operations.py
-  
-output
+* running script
+> PS C:\Users\Documents\Training\code> python operations.py
+
+```console
+# output
   
 Give first number 12
 Give second number 2
@@ -458,61 +432,59 @@ exponentation  144
 ```
 <br />
    
-   
-## **Escape sequences** <a name="3"></a>
-  
-  1.  The character **\\** represents the beginning of an escape sequence.
-  2. Table of escape sequence
-  
-Sequences | represents 
-:----- | :----: 
-\b | backspace
-\n | newline
-\t | tab
-\r | return
-\a | bell
-\\\ | backslash
-\\" | double quote
-\\' | single quote
-  3. examples of escape sequences statements
-  <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/20.jpg" alt="Escape Sequences" width="500"/>
-    
-<br />
+### **Indentation** <a name="2.5"></a>
 
+  1. **Indentation** plays a very important role in writing **python script**.
+  2. The meaning of indentation is the proper **arranging** of the lines of code in the script.
+  3. For arranging we can either use **Tab** or **Space**. But the right way is to use Tab which makes our code to write easily.
+  4. Now let's understand with an example
   
-### **Exercise - 1** <a name="3.1"></a>
-
-  1. Write a script to print the following statements using print statement
-  
-    - Truth can only be found in one place: the code.
-    - You have baked a really lovely cake, but then you have used dog shit for frosting.
-    - On two occasions, I have been asked [by members of Parliament], Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?
-  
-  2. Write a script to print the following statements using escape sequences
-  
-    - "Talk is 'cheap'. Show me the code."
-    - "I'm not a great programmer! I'm just a good programmer with great habits."
-    - "If your ship doesn’t come in, swim out to it?"
-  
-  3. write a script to print the following shape using print statement
   ```python
-           * 
-       * python * 
-     * is  *  a    * 
-   * good  * programming * language * 
- * to * learn * for * beginners * 
- ```
-  4. Write a script to print the following menu using escape sequences and ring the bell sound when the order has finished printing **Thank you, Visit Again!!!!!**.
-  
-  <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/22.jpg" alt="Escape Sequences" width="300"/>
- 
-  
- <br />
-  
+# Convert the command line parameters to numbers
+num1 = 7
+num2 = 10
 
-## **Variables** <a name="4"></a>
+# Determine which number is largest and perform the subtraction
+if num1 > num2:
+    diff = num1 - num2
+    print(num1, "-", num2, "=", diff)
+else:
+    diff = num2 - num1
+    print(num2, "-", num1, "=", diff)
+  ```
   
-### **Python Variable** <a name="4.1"></a>
+ * running script
+> PS C:\Users\Documents\Training\code> python indentation.py 
+
+```console
+# output
+  
+10 - 7 = 3
+```
+  
+  From the above example, we can see there is a white space after the **if** line it is given because the lines should be executed only when the 'If' condition satisfies. Similarly for the 'else' condition. 
+  
+<br />
+  
+ ### **Continuation lines** <a name="2.6"></a>
+ 
+  1. If we are writing one big statement that occupies more than one line then we will be using this character \\. 
+  2. This character \ should be the end of the line.
+  3. For example 
+   ```python
+     print("My company \
+     name is \
+     Multiple Wishes.")
+   ```
+   when we run the script the output is
+   <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/11.jpg" alt="Continuation lines" width="600"/>
+
+<br /> 
+   
+
+## **Variables** <a name="3"></a>
+  
+### **Python Variable** <a name="3.1"></a>
 
 1. **Variable** is a name that is used to refer to **memory location**. 
 2. Python variable is also known as an identifier and used to hold value. Variable names can be a group of both the letters and digits, but they have to begin with a letter or an underscore.No need to mention the datatype of the variable because python automatically detects the type of the variable. 
@@ -544,7 +516,7 @@ Here we get output as <class 'int'> because integer value is assigned to variabl
 
 <br />
   
-### **Naming conventions of variables** <a name="4.2"></a>
+### **Naming conventions of variables** <a name="3.2"></a>
   
 They are two types we can create a variable name
   1. Snake Case : This looks like instead of space we use underscore(_). For example is **name_of_the_student**
@@ -553,7 +525,7 @@ They are two types we can create a variable name
   
 <br />
 
-### **Creating good names** <a name="4.3"></a>
+### **Creating good names** <a name="3.3"></a>
 
 1. Variable names should have **meaningful** and also it should **represent something**.
 2. Meaningful variable names can make our **code more readable**, **easier to debug code** and also **maintain it**. 
@@ -564,7 +536,7 @@ They are two types we can create a variable name
   
 <br />
 
-### **Exercise-2** <a name="4.4"></a>
+### **Exercise-1** <a name="3.4"></a>
 
   1. Create a variable as **student_name** and assign the value as **Ramesh** to the variable.
   2. given the problem to substract 5 and 10, using variables: number_1 and number_2. fill in the below code as
@@ -588,7 +560,7 @@ age of suresh is 22.
 
 <br />
   
-## **Data Types** <a name="5"></a>
+## **Data Types** <a name="4"></a>
 
 1. **Variables** can hold values, and every value has a data-type. 
 2. **Data-types** in Python can be either mutable or immutable. 
@@ -608,7 +580,7 @@ age of suresh is 22.
 
 <br />
   
-### **Integer data type** <a name="5.1"></a>
+### **Integer data type** <a name="4.1"></a>
 
 1. The **integer** data type has only numbers without decimals in it. The numbers are either positive or negative.
 2. Examples:
@@ -618,7 +590,7 @@ age of suresh is 22.
 ```
 <br />
 
-### **Floating-point data type** <a name="5.2"></a>
+### **Floating-point data type** <a name="4.2"></a>
 
 1. The **floating** point data is the having decimal point after integers.
 2.  2. Examples:
@@ -637,7 +609,7 @@ overs_bowled = 4.3
   
 <br />
 
-### **Complex data type** <a name="5.3"></a>
+### **Complex data type** <a name="4.3"></a>
 
   1. The **complex** data type is has an imaginary part in it. The imaginary part is represent with **j**.
   2. Examples
@@ -647,7 +619,7 @@ overs_bowled = 4.3
   ```
  <br />
  
-### **Boolean data type** <a name="5.4"></a>
+### **Boolean data type** <a name="4.4"></a>
 
   1. It has two values True and False
   2.  Examples
@@ -664,7 +636,7 @@ overs_bowled = 4.3
 
 <br />
 
-### **Conversion of one data type to another** <a name="5.5"></a>
+### **Conversion of one data type to another** <a name="4.5"></a>
 
   1. We can **convert** from int to float, int to complex, float to int, float to complex.
   2. We can not convert the complex to int or float data types.
@@ -689,7 +661,7 @@ output
 <br />
  
  
-### **Exercise - 3** <a name="5.6"></a>
+### **Exercise - 2** <a name="4.6"></a>
 
   1. Tell the given type of the variable 
   ```python
@@ -698,9 +670,8 @@ output
     
   A. int
   B. <class 'int'> 
-  C. <class 'integer'>
-  D. integer
-  E. <class 'str'>
+  C. <class 'str'>
+  D. string
   ```
   2. which method is ised to find the type of the variable for **a = 20**
   ```python
@@ -735,11 +706,11 @@ output
   ```
   <br />
 
-## **User input** <a name="6"></a>
+## **User input** <a name="5"></a>
 
   1. They are two methods where user can give input and they are using input function and another one is using command line parameters.
 
-### **input function**  <a name="6.1"></a>
+### **input function**  <a name="5.1"></a>
  
   3. the input functions always gives only string. whatever the input given by the user the input function changes into string.
   
@@ -755,6 +726,7 @@ output
   print(type(converted_age_of_user_to_integer))
   print(converted_age_of_user_to_integer)
   ```
+  
   ```console
   output
   Name of the user: Ram
@@ -769,30 +741,32 @@ output
   ```
   
   <br />
+  
  
-### **Command line parameters** <a name="6.2"></a>
+### **Command line parameters** <a name="5.2"></a>
 
  1. Command line parameters are also called as Command line arguments.
  2. The values or parameters are provided in the command to run the program.
- 3. A list of strings named ```argv``` is provided inside the code for values.
+ 3. A list of strings named **argv** is provided inside the code for values.
  4. Each value given in the command is consider as string and also have infinite number of values that are separated with spaces.
- 5. To use ```argv``` we should import the module into the script
+ 5. To use **argv** we should import the module into the script
  ```python
   from sys import argv
   ```
- 6. The variable argv[n] may be used to access each command line parameter in our program.
+ 6. The variable ```argv[n]``` may be used to access each command line parameter in our program.
      - Here n is index of the value.
-     - argv[0] is script name and argv[1], argv[2], etc are contains values.
+     - ```argv[0]``` is script name and ```argv[1]```, ```argv[2]```, etc are contains values.
      - Example
       PS C:\Users\Documents\Training\code> python test.py Ram 15 70.45
-        1. test.py is argv[0]
+        1. test.py is ```argv[0]```
         2. They are three command line parameters
-          - Ram is argv[1]
-          - 15 is argv[2] 
-          - 70.45 is argv[3]
+          - Ram is ```argv[1]```
+          - 15 is ```argv[2]``` 
+          - 70.45 is ```argv[3]```
     
   Examples for **command line parameters**
   Python script
+  
   ```python
     from sys import argv
     num1 = argv[1]
@@ -803,29 +777,30 @@ output
     add2 = num3 + num4
     print("The total add1 is", add1)
     print("The total add2 is", add2)
+  ```
+  running script
     
-    running script
+  > PS C:\Users\Documents\Training\code> python command_line_parameter.py  10 20 30 40
     
-    PS C:\Users\Documents\Training\code> python command_line_parameter.py  10 20 30 40
+  ```console
+  # output
     
-    output
-    
-    The total add1 is 1020
-    The total add1 is 70
+  The total add1 is 1020
+  The total add1 is 70
   ```
   1. From the above script we have things to remember are
-      - By default argv consider any value as string so if we specify the data type properly at the time of assigning then it can be worked as the result we thought.
+      * By default **argv** consider any value as string so if we specify the data type properly at the time of assigning then it can be worked as the result we thought.
      
  <br />
     
- ### **Exercise - 4** <a name="6.3"></a>
+ ### **Exercise - 3** <a name="5.3"></a>
  
  1. Write the script asking the user to give two integers and multiply them 
  2. Take the command line parameter any name you want (C:> C:\Users\Documents\Training\code> python command_line_parameter.py Girish and print in the following paragraph.
 ```python    
 Girish is very good boy who helps everyone and also Girish participates in all the sports and cultural meet. Girish hobbies are playing virtual games and also watching movies.
 ```
- 3. Write the script for calculating area of triangle ( ask user to enter base and height).
+ 3. Write the script for calculating area of trainagle ( ask user to enter base and height).
  4. Write the script of the student form(name_of_student, class_studying, college_name, city_lives) that accepts as command line parameters and prints as
  ```python
   student_name : Hareesh
@@ -836,3 +811,51 @@ Girish is very good boy who helps everyone and also Girish participates in all t
     
  <br />
 
+ ## **Escape sequences** <a name="6"></a>
+  
+  1.  The character **\\** represents the beginning of an escape sequence.
+  2. Table of escape sequence
+  
+Sequences | represents 
+:----- | :----: 
+\b | backspace
+\n | newline
+\t | tab
+\r | return
+\a | bell
+\\\ | backslash
+\\" | double quote
+\\' | single quote
+  3. examples of escape sequences statements
+  <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/20.jpg" alt="Escape Sequences" width="500"/>
+    
+<br />
+
+  
+### **Exercise - 4** <a name="6.1"></a>
+
+  1. Write a script to print the following statements using print statement
+  
+    - Truth can only be found in one place: the code.
+    - You have baked a really lovely cake, but then you have used dog shit for frosting.
+    - On two occasions, I have been asked [by members of Parliament], Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?
+  
+  2. Write a script to print the following statements using escape sequences
+  
+    - "Talk is 'cheap'. Show me the code."
+    - "I'm not a great programmer! I'm just a good programmer with great habits."
+    - "If your ship doesn’t come in, swim out to it?"
+  
+  3. write a script to print the following shape using print statement
+  ```python
+           * 
+       * python * 
+     * is  *  a    * 
+   * good  * programming * language * 
+ * to * learn * for * beginners * 
+ ```
+  4. Write a script to print the following menu using escape sequences and ring the bell sound when the order has finished printing **Thank you, Visit Again!!!!!**.
+  
+  <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/22.jpg" alt="Escape Sequences" width="300"/>
+  
+  <br />
