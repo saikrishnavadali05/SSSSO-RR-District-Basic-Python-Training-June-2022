@@ -359,6 +359,22 @@ else:
   ```python
       # print("I like learning Python Language")
   ```
+  ```python
+  #This is a comment
+  #written in
+  #more than just one line
+  print("Hello, World!")
+  ```
+  ```python
+  '''
+  This is a comment
+  written in
+  more than just one line
+  
+  Multiline comment
+  '''
+  print("Hello, World!")
+  ```
   
  <br />
 
