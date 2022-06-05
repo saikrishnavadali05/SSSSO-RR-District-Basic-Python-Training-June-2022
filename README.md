@@ -754,7 +754,8 @@ output
   converted_age_of_user_to_integer = int(input("Age of the user: "))
   print(type(converted_age_of_user_to_integer))
   print(converted_age_of_user_to_integer)
-  
+  ```
+  ```console
   output
   Name of the user: Ram
   <class 'str'>
