@@ -300,8 +300,8 @@ The best and most productive field to flourish today is **web development** usin
   
   ```python
 # Convert the command line parameters to numbers
-num1 = float(argv[1])
-num2 = float(argv[2])
+num1 = 20
+num2 = 25
 
 # Determine which number is largest and perform the subtraction
 if num1 > num2:
