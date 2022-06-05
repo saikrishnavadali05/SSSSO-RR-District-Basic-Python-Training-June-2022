@@ -134,6 +134,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 - Software Development
   > Scons, Buildbot, Apache Gump, Round up, Trac.
+  
 <br />
 
 [go to List of Topics](#top)
@@ -284,6 +285,8 @@ Python programmers are very high in demand now-a-days..
 
 The best and most productive field to flourish today is **web development** using python. Which is also popularly known as **Full Stack Python**
 
+<br />
+
 [go to List of Topics](#top)
 
 <br />
@@ -370,7 +373,11 @@ The best and most productive field to flourish today is **web development** usin
 4. After executing the two print statement examples the answers are
        <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/19.jpg" alt="Print function" width="600"/>
   
-   <br />
+ <br />
+   
+ [go to List of Topics](#top)
+
+<br />
    
  ### **Header for Python script** <a name="2.4"></a>
   
@@ -482,6 +489,10 @@ else:
 <br /> 
    
 
+[go to List of Topics](#top)
+
+<br />
+
 ## **Variables** <a name="3"></a>
   
 ### **Python Variable** <a name="3.1"></a>
@@ -557,6 +568,10 @@ sky is blue,
 Mango is yellow,
 age of suresh is 22.
   
+
+<br />
+
+[go to List of Topics](#top)
 
 <br />
   
@@ -705,6 +720,10 @@ output
   D. 0.2569e-6 
   ```
   <br />
+  
+  [go to List of Topics](#top)
+
+<br />
 
 ## **User input** <a name="5"></a>
 
@@ -810,6 +829,10 @@ Girish is very good boy who helps everyone and also Girish participates in all t
  ```
     
  <br />
+ 
+ [go to List of Topics](#top)
+
+<br />
 
  ## **Escape sequences** <a name="6"></a>
   
@@ -859,3 +882,8 @@ Sequences | represents
   <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/22.jpg" alt="Escape Sequences" width="300"/>
   
   <br />
+  
+  [go to List of Topics](#top)
+
+<br />
+
