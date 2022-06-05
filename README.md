@@ -703,6 +703,7 @@ output
   B. <class 'int'> 
   C. <class 'integer'>
   D. integer
+  E. <class 'str'>
   ```
   2. which method is ised to find the type of the variable for **a = 20**
   ```python
