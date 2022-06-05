@@ -46,7 +46,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 4. [Variables](#4) 
 	* [Naming conventions of variables](#4.1)
 	* [Creating good names](#4.2)
-	* [Exerciswe-2](#4.3)
+	* [Exercise-2](#4.3)
 5. [Data Types](#5)
 	* [Integers](#5.1)
 	* [Floating point](#5.2)
