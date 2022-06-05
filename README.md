@@ -380,7 +380,7 @@ else:
 
 ### **Print function** <a name="2.5"></a>
   
-  1. This is the baisc function which is used to print the content on the screen. This function always give a new line
+  1. This is the basic function which is used to print the content on the screen. This function always give a new line.
   2. Syntax for the **print** function
 		>print (objects, sep = '', end = '\n')
 	    * objects can be more than one.
