@@ -774,9 +774,9 @@ output
 
  1. Command line parameters are also called as Command line arguments.
  2. The values or parameters are provided in the command to run the program.
- 3. A list of strings named **argv** is provided inside the code for values.
+ 3. A list of strings named ```argv``` is provided inside the code for values.
  4. Each value given in the command is consider as string and also have infinite number of values that are separated with spaces.
- 5. To use **argv** we should import the module into the script
+ 5. To use ```argv``` we should import the module into the script
  ```python
   from sys import argv
   ```
