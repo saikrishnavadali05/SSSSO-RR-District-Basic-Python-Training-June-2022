@@ -334,9 +334,14 @@ else:
   
  ### **python scripts and its execution** <a name="2.3"></a>
   
-  1. The scripts of python are written in a file and must be saved with an extension .py. Then, at the time of execution, the python interpreter can understand that it is running the python file.
-  2. for executing the python file the command is **python filename.py**
-  3. Example - The script present in python file
+  1. A computer program is a sequence of instructions in a programming language that a computer can execute or interpret.
+  2. The basic difference between a **scripting language** and other general purpose programming languages such as C, C++, JAVA is that scripting languages do not need an additional step of compilation and rather they are interpreted, whereas programming languages are compiled and hence need a compilation step to convert the high-level language to machine code.
+  3. Scripting Languages are mainly written to automate many tasks with as less code as possible.
+  4. Scripting languages support "script," which is small program written for a specific runtime environment. These are interpreted at runtime rather than compiled.
+  5. The scripts of python are written in a file and must be saved with an extension .py. Then, at the time of execution, the python interpreter can understand that it is running the python file.
+  6. The scripting language refers to dynamic high-level, general-purpose interpreted languages such as Python, Perl, etc.
+  7. for executing the python file the command is **python filename.py**
+  8. Example - The script present in python file
    ```python
       print("I like learning Python Language")
   ```
