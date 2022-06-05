@@ -567,7 +567,7 @@ They are two types we can create a variable name
   
 <br />
 
-### **Eercise-2** <a name="4.4"></a>
+### **Exercise-2** <a name="4.4"></a>
 
   1. Create a variable as **student_name** and assign the value as **Ramesh** to the variable.
   2. given the problem to substract 5 and 10, using variables: number_1 and number_2. fill in the below code as
@@ -826,7 +826,7 @@ output
 ```python    
 Girish is very good boy who helps everyone and also Girish participates in all the sports and cultural meet. Girish hobbies are playing virtual games and also watching movies.
 ```
- 3. Write the script for calculating area of trainagle ( ask user to enter base and height).
+ 3. Write the script for calculating area of triangle ( ask user to enter base and height).
  4. Write the script of the student form(name_of_student, class_studying, college_name, city_lives) that accepts as command line parameters and prints as
  ```python
   student_name : Hareesh
