@@ -386,7 +386,7 @@ else:
   1. The header is very important for the program because when anybody wants to understand your program or if you want to revise this program in the future the header will be very helpful to tell how code works.
   
 ```python
-#(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-    % PI-THORN %    (**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-
+#(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-    % PYTHON %    (**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-
 #
 #
 #
@@ -400,7 +400,7 @@ else:
 #  python addition.py 
 #
 #
-#(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-    % PI-THORN %    (**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-
+#(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-    % PYTHON %    (**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-
 
 #user input
 
