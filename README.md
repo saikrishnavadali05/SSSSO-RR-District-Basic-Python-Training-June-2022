@@ -567,7 +567,7 @@ They are two types we can create a variable name
   
 <br />
 
-### **Eercise-2** <a name="4.4"></a>
+### **Exercise-2** <a name="4.4"></a>
 
   1. Create a variable as **student_name** and assign the value as **Ramesh** to the variable.
   2. given the problem to substract 5 and 10, using variables: number_1 and number_2. fill in the below code as
