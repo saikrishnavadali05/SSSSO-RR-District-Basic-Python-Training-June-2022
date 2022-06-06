@@ -58,13 +58,14 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     * '\t' - [Tab character](#6)
     * '\a' - [Alarm character](#6)
     * [Exercise - 4](#6.1)
-7. Operators
-	* Numeric 
-	* Comparison
-	* Identity
-	* Membership
-	* Assignment
-	* Logical
+7. [Operators](#7)
+	* [Numeric](#7.1)
+	* [Comparison](#7.2)
+	* [Identity](#7.3)
+	* [Membership](#7.4)
+	* [Assignment](#7.5)
+	* [Logical](#7.6)
+	* [Exercise- 5](#7.7)
 8. Conditional statements
 	* If
 	* If else
@@ -921,6 +922,294 @@ Sequences | represents
   <br />
   
   [go to List of Topics](#top)
+  
+  <br />
+    
+## **Operators** <a name="7"></a>
+
+### **Numeric Operators** <a name="7.1"></a>
+
+> +, -, *, **, /, //, %
+
+Examples
+```python
+  # Addition
+  >>> 4 + 7
+  11
+  # Subtraction
+  >>> 8 - 3
+  4
+  # Multiplication
+  >>> 3 * 5
+  15
+  # Exponent 
+  >>> 3 ** 3 
+  27
+  # Floor division
+  >>> 44 // 8
+  5
+  # Integer division
+  >>> 44 / 8
+  5.5
+  # modulus divison
+  >>> 44 % 8
+  4
+```
+  
+python script
+  
+```python
+current = 5
+resistance = 100
+voltage = current * resistance
+print("The given current is", current, "and resistance is", resistance, "So the total voltage flows in the circuit is", voltage, "V")
+```
+
+```console
+#output
+
+  The given current is 5 and resistance is 100 So the total voltage flows in the circuit is 500 V
+```
+  <br />
+
+### **Assignment Operators** <a name="7.2"></a>
+
+> +=, -=, *=, **=, /=, //=, %= 
+  
+Examples
+``` python
+x += y # is same as x = x + y
+x -= y # is same as x = x - y
+x *= y # is same as x = x * y
+x **= y # is same as x = x ** y
+x /= y # is same as x = x / y
+x //= y # is same as x = x // y
+x %= y # is same as x = x % y
+``` 
+
+```python
+x = 2
+y = 3
+x += y
+print(x)
+x = x - y
+print(x)
+x = x * y
+print(x)
+x = x ** y
+print(x)
+x/= y
+print(x)
+x //= y
+print(x)
+x %= y
+print(x)
+```
+```console
+# output
+5
+2
+6
+216
+72.0
+24.0
+0.0
+```
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Comparison Operators** <a name="7.3"></a>
+
+> >, <, >=, <=, ==, !=
+               
+Examples
+```python
+  # greater than
+  >>> 7 > 4
+  True
+  # less than
+  >>> 7 < 4
+  False
+  # greater than or equla to 
+  >>> 7 >= 7
+  True
+  # less than
+  >>> 7 <= 7
+  True
+  # equal to
+  >>> 7 == 7
+  True
+  # not equal to
+  >>> 7 != 7
+  False
+```
+
+  <br />
+
+### **Logical Operators** <a name="7.4"></a>
+> and, or, not
+
+  1. **and** if the both the statements are ***true*** then we get final answer as ***true***.	
+  2. **or** if any one of the two statements is ***true*** then we get the final answer as ***true***.	
+  3. **not**	it gives inverse of the final answer, when final answer is ***false*** then it gives ***true***. 
+ 
+Examples
+```python
+ a = 10
+ b = 5
+ print( a > b and b == 5)
+ print( b < a or b == 2)
+ print(not( a > b ))
+ ```
+ ```console
+ # output
+  
+  True
+  True
+  False
+``` 
+
+ <br />
+ 
+  
+### **Membership Operators** <a name="7.5"></a> 
+
+> in, not in
+
+  1. **in** if a value is present in the given list then it returns True.
+  2. **not in** if a value is not present in the given list then it returns True.
+  
+Examples
+```python
+names = ["Ramesh", "Suresh", "Ganesh"]
+print("Ramesh" in names) # in operator
+```
+```console
+# output
+
+True
+```
+ 
+```python
+names = ["Ramesh", "Suresh", "Ganesh"]
+print("Hareesh" in names) # not in operator
+```
+```console  
+#output
+
+True
+```
+
+ <br />
+  
+### **Identity Operators** <a name="7.6"></a> 
+
+ > is, is not
+ 
+  1. **is** 	if both variables have the object same then it gives result as ***True***.
+  2. **is not** if both variables have the different object then it gives result as ***True***.
+  
+Examples
+```python
+a = ["Suresh", "Ganesh"]
+c = a
+b = ["Suresh", "Ganesh"]
+  
+print(a == b) # a is equal to b then returns True
+print(a is c) # c is the same object as a it gives True  
+print(a is b) # a is not the same object as b, has a same values returns False 
+```
+
+```console
+
+# output
+
+True
+True
+False  
+  
+```
+  
+```python
+a = ["Suresh", "Ganesh"]
+c = a
+b = ["Suresh", "Ganesh"]
+  
+print(a != b) # a is equal to b then returns False.
+print(a is not c) # c is the same object as a it gives False. 
+print(a is not b) # a is not the same object as b, has a same values returns True. 
+```
+```console
+
+# output
+
+False
+False
+True
+```
+  
+<br /> 
+
+[go to List of Topics](#top)
+
+<br />
+
+
+ ### **Exercise - 5** <a name="7.7"></a> 
+  
+ 1. Tell the answer for given Expression
+ ```python
+ print(20 / 2)
+ A. 10.0
+ B. 10
+ C. 10.00
+ ```
+ 2. Go through the code 
+ ```python
+a = 5
+b = 10
+if x ** 2 > 50 and y < 50:
+print(x, y)
+                            
+A. 5 10
+B. No Answer                         
+C. 25 10                         
+```
+3. See the expression and give answer
+```python
+print(45 - 3 ** 3) / 6
+                          
+A. 74,088
+B. 18                       
+C. 3  
+```
+4. Go through the code and give the all the values
+```python
+a = 2
+b = 10
+c = 6
+a += b  #12
+b %=c   #4
+print(a, b)
+print(c > b)
+print(a == (a + b + c) - 20)
+d = a < c or a != 12
+print(d)
+```
+5. Go through the code
+```python
+x = "kumari"
+y = "ma"
+print(y not in x)
+```
+ 
+<br /> 
+
+[go to List of Topics](#top)
 
 <br />
 
