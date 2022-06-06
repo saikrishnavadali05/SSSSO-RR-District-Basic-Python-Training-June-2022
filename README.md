@@ -966,7 +966,7 @@ print("The given current is", current, "and resistance is", resistance, "So the 
 ```
 
 ```console
-#output
+# output
 
   The given current is 5 and resistance is 100 So the total voltage flows in the circuit is 500 V
 ```
@@ -1099,7 +1099,7 @@ names = ["Ramesh", "Suresh", "Ganesh"]
 print("Hareesh" in names) # not in operator
 ```
 ```console  
-#output
+# output
 
 True
 ```
