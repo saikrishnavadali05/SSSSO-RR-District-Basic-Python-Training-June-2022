@@ -651,6 +651,43 @@ overs_bowled = 4.3
 
 <br />
 
+### Frozen sets
+  
+1. The method frozenset  in Python takes an iterable object as input and renders it immutable. Simply put, it renders iterable things unchangeable by freezing them.
+2. In Python, a frozenset is the same as a set, except that frozensets are immutable, which implies that once generated, elements from the frozenset cannot be added or deleted. 
+3. This method accepts any iterable object as input and turns it to an immutable object. The element order is not guaranteed to be kept.
+  
+ 
+```python
+person = {"name": "Ram", "age": 21, "sex": "male"}
+
+f_Set = frozenset(person)
+print('The frozen set', f_Set)
+```
+  
+```console
+# output
+The frozen set is: frozenset({'name', 'sex', 'age'})
+  
+```
+ use of  dictionary as an iterable for frozen set, the set is created using just the dictionary's keys.
+  
+ 
+ ```python
+ # converting a list into a frozenset using the frozenset() function.
+  
+list = ['sai', 'ram', 'shyam']
+y = frozenset(list)
+print(y)
+ ```
+  
+ ```console
+ # output
+
+ frozenset({'sai', 'ram', 'shyam'})
+ ```
+<br />
+
 ### **Conversion of one data type to another** <a name="4.5"></a>
 
   1. We can **convert** from int to float, int to complex, float to int, float to complex.
