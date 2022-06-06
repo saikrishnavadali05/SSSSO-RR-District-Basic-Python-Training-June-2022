@@ -60,11 +60,11 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     * [Exercise - 4](#6.1)
 7. [Operators](#7)
 	* [Numeric](#7.1)
-	* [Comparison](#7.2)
-	* [Identity](#7.3)
-	* [Membership](#7.4)
-	* [Assignment](#7.5)
-	* [Logical](#7.6)
+	* [Assignment](#7.2)
+	* [Comparision](#7.3)
+	* [Logical](#7.4)
+	* [Membership](#7.5)
+	* [Identity](#7.6)
 	* [Exercise- 5](#7.7)
 8. Conditional statements
 	* If
