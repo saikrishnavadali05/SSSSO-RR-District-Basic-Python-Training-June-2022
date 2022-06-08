@@ -32,65 +32,83 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Header for Python script](#2.4)
 	* [Indentation](#2.5)
 	* [Continuation lines](#2.6)
-3. [Variables](#3)
-	* [Python Variables](#3.1)
-	* [Naming conventions of variables](#3.2)
-	* [Creating good names](#3.3)
-	* [Exercise-1](#3.4)
-4. [Data Types](#4)
-	* [Integers](#4.1)
-	* [Floating point](#4.2)
-	* [Complex](#4.3)
-	* [boolean](#4.4)
-	* [Conversion of one data type to another](#4.5)
-	* [Exercise-2](#4.6)
+3. [Data Types](#3)
+	* [Integers](#3.1)
+	* [Floating point](#3.2)
+	* [Complex](#3.3)
+	* [boolean](#3.4)
+	* [frozen sets](#3.5)
+	* [Conversion of one data type to another](#3.6)
+	* [Exercise-1](#3.7)
+4. [Variables](#4)
+	* [Python Variables](#4.1)
+	* [Naming conventions of variables](#4.2)
+	* [Creating good names](#4.3)
+	* [Exercise-2](#4.4)
 5. [User Input](#5)
 	* [Input function](#5.1)
 	* [Command line parameters](#5.2)
 	* [Exercise - 3](#5.3)
-6. [Escape sequences](#6)
-    * '\n' - [Newline character](#6)
-    * '\r' - [Return character](#6)
-    * '\b' - [Backspace character](#6)
-    * '\\' - [Backslash character](#6)
-    * '\”' - [Double quote character](#6)
-    * '\’' - [Single quote character](#6)
-    * '\t' - [Tab character](#6)
-    * '\a' - [Alarm character](#6)
-    * [Exercise - 4](#6.1)
-7. [Operators](#7)
-	* [Numeric](#7.1)
-	* [Assignment](#7.2)
-	* [Comparision](#7.3)
-	* [Logical](#7.4)
-	* [Membership](#7.5)
-	* [Identity](#7.6)
-	* [Exercise- 5](#7.7)
-8. Conditional statements
+6. [Operators](#6)
+	* [Numeric](#6.1)
+	* [Assignment](#6.2)
+	* [Comparision](#6.3)
+	* [Logical](#6.4)
+	* [Membership](#6.5)
+	* [Identity](#6.6)
+	* [Exercise- 4](#6.7)
+7. [strings](#7)
+	* [Indexing](#7.1)
+	* [Object Identity](#7.2)
+	* [Program using builtin function](#7.3)
+	* [Formatting with .format method](#7.4)
+	* [Important points to remember](#7.5)
+	* [builtin functions, methods of string](#7.6)
+	* [Exercise-5](#7.7)
+8. [Escape sequences](#8)
+    * '\n' - [Newline character](#8)
+    * '\r' - [Return character](#8)
+    * '\b' - [Backspace character](#8)
+    * '\\' - [Backslash character](#8)
+    * '\”' - [Double quote character](#8)
+    * '\’' - [Single quote character](#8)
+    * '\t' - [Tab character](#8)
+    * '\a' - [Alarm character](#8)
+    * [Exercise - 6](#8.1)	
+9. Conditional statements
 	* If
 	* If else
 	* Nested If elif else
-9. Loops
+10. Loops
 	* While
 	*  for
-10.  Lists
+11.  Lists
 	* list comprehension 
-11. Tuples 
-12. Dictionaries
-13. File Handling
+12. Tuples 
+13. Dictionaries
+14. File Handling
 	* Read 
 	*  Write
 	* delete
-14. Functions
-15. Exception Handling
-16. Modules
-17. Namespace
-18. Packages
-19. Built in tools
-20. repr()
-21. difference between running the code in vs code and jupyter notebook
-22. assert (basic debugging) - to set a breakpoint
-23. What editors are required to use in python 
+15. Functions
+16. Exception Handling
+17. Modules
+18. Namespace
+19. Packages
+20. Built in tools
+21. repr()
+22. difference between running the code in vs code and jupyter notebook
+23. assert (basic debugging) - to set a breakpoint
+24. What editors are required to use in python 
+
+## Answers <a name="answers"></a>
+
+1. [Exercise - 1](#E-1)
+2. [Exercise - 2](#E-2)
+3. [Exercise - 3](#E-3)
+4. [Exercise - 4](#E-4)
+5. [Exercise - 5](#E-5)
+6. [Exercise - 6](#E-6)
 
 ## **1. Let's begin the Python Show** <a name="1"></a>
 
@@ -487,96 +505,13 @@ else:
    when we run the script the output is
    <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/11.jpg" alt="Continuation lines" width="600"/>
 
-<br /> 
-   
+<br />   
 
 [go to List of Topics](#top)
 
 <br />
 
-## **Variables** <a name="3"></a>
-  
-### **Python Variable** <a name="3.1"></a>
-
-1. **Variable** is a name that is used to refer to **memory location**. 
-2. Python variable is also known as an identifier and used to hold value. Variable names can be a group of both the **letters** and **digits**, but they have to begin with a letter or an underscore. No need to mention the datatype of the variable because python automatically detects the type of the variable. 
-3. Variables names are **case sensitive** for example they are two variables **amount** and another variable is **Amount**. Both the variables are different.
- 
-```python
-x = 10
-_x = 20
-```
-Here the variable ```x``` and ```_x``` refers to an integer object.
-Examples of variables are
-```python
-name = 'Ram'
-Weight = 60
-height = 80.50
-```
-
-We can get the data type of any object by using the type() function:
-Example : 
-```python
-Print the data type of the variable x:
-
->>> x = 5
->>> print(type(x)) 
-<class 'int'>
->>>
-```
-Here we get output as <class 'int'> because integer value is assigned to variable.
-
-<br />
-  
-### **Naming conventions of variables** <a name="3.2"></a>
-  
-They are two types we can create a variable name
-  1. **Snake Case** : This looks like instead of space we use **underscore(_)**. For example is **name_of_the_student**
-  2. **Camel Case** : This looks like for each new word it starts with **capital letter**. For example is **NameOfTheStudent**
-  3. My view : In my view I prefer to use Snake case because it is easy to understand and also it is recommended by organization of python. 
-  
-<br />
-
-### **Creating good names** <a name="3.3"></a>
-
-1. Variable names should have **meaningful** and also it should **represent something**.
-2. Meaningful variable names can make our **code more readable**, **easier to debug code** and also **maintain it**. 
-3. Examples:  
-   -  n  -                    do not know what is n
-   -  name   -                able to understand but what name
-   -  name_of_the_student  -  yes, very easy to understand
-  
-<br />
-
-### **Exercise-1** <a name="3.4"></a>
-
-  1. Create a variable as **student_name** and assign the value as **Ramesh** to the variable.
-  2. given the problem to substract 5 and 10, using variables: ```number_1``` and ```number_2```. fill in the below code as
-  ```python 
-  _  =  _
-  number_2 = _
-  print(x _ y)
-  ``` 
-  3. Write a script that defines the following variables
-  ```python
-  colour = "blue"
-  fruit = "Mango"
-  number = 22
-  article = "is"
-  ```
-use the variables above to print the following statements exactly 
-sky is blue,
-Mango is yellow,
-age of suresh is 22.
-  
-
-<br />
-
-[go to List of Topics](#top)
-
-<br />
-  
-## **Data Types** <a name="4"></a>
+## **Data Types** <a name="3"></a>
 
 1. **Variables** can hold values, and every value has a data-type. 
 2. **Data-types** in Python can be either mutable or immutable. 
@@ -596,7 +531,7 @@ age of suresh is 22.
 
 <br />
   
-### **Integer data type** <a name="4.1"></a>
+### **Integer data type** <a name="3.1"></a>
 
 1. The **integer** data type has only numbers without decimals in it. The numbers are either positive or negative.
 2. Examples:
@@ -606,7 +541,7 @@ age of suresh is 22.
 ```
 <br />
 
-### **Floating-point data type** <a name="4.2"></a>
+### **Floating-point data type** <a name="3.2"></a>
 
 1. The **floating** point data is the having decimal point after integers.
 2.  2. Examples:
@@ -625,7 +560,7 @@ overs_bowled = 4.3
   
 <br />
 
-### **Complex data type** <a name="4.3"></a>
+### **Complex data type** <a name="3.3"></a>
 
   1. The **complex** data type is has an imaginary part in it. The imaginary part is represent with **j**.
   2. Examples
@@ -635,7 +570,7 @@ overs_bowled = 4.3
   ```
  <br />
  
-### **Boolean data type** <a name="4.4"></a>
+### **Boolean data type** <a name="3.4"></a>
 
   1. It has two values **True** and **False**
   2.  Examples
@@ -652,7 +587,7 @@ overs_bowled = 4.3
 
 <br />
 
-### **Frozen sets**
+### **Frozen sets** <a name="3.5"></a>
   
 1. The method frozenset  in Python takes an iterable object as input and renders it immutable. Simply put, it renders iterable things unchangeable by freezing them.
 2. In Python, a frozenset is the same as a set, except that frozensets are immutable, which implies that once generated, elements from the frozenset cannot be added or deleted. 
@@ -689,7 +624,7 @@ print(y)
  ```
 <br />
 
-### **Conversion of one data type to another** <a name="4.5"></a>
+### **Conversion of one data type to another** <a name="3.6"></a>
 
   1. We can **convert** from int to float, int to complex, float to int, float to complex.
   2. We can not convert the complex to int or float data types.
@@ -714,43 +649,50 @@ output
 <br />
  
  
-### **Exercise - 2** <a name="4.6"></a>
+### **Exercise - 1** <a name="3.7"></a>
 
-  1. Tell the given type of the variable 
+  1. Tell the given **type** of the **variable** (single choice)
+  
   ```python
-  name = "Mahesh"
-  type(name)  
+name = "Mahesh"
+b = type(name)
+print(b)
     
   A. int
   B. <class 'int'> 
   C. <class 'str'>
   D. string
   ```
-  2. which method is ised to find the type of the variable for **a = 20**
+  2. which method is used to find the type of the variable for **a = 20** (single choice)
+  
   ```python
   A. print(a)
   B. int(a) 
   C. str(a)
   D. type(a)
   ```
-  3. Tell the correct answers from the following
+  3. Tell the correct **answers** from the following (multiple choice)
+  
   ```python
   A. a = "10"
   B. b = "ram21" 
   C. c = 12
   D. 1_d = 6 
   ```
-  4. assign the value to the variable and print it.
-  ```python
+  4. assign the **value** to the **variable** and print it.(short answer)
+ 
+ ```python
   wonders_of_world = 
   print()
   ```
-  5. write a word in the for the variable and print it 
+  5. write a **word** in the for the **variable** and print it (short answer)
+  
   ```python
   planet_near_to_sun=
   print()
   ```
-  6. Write the scientific notation for given float number 0.002569 is
+  6. Write the **scientific notation** for given float number **0.002569** is (single choice)
+  
   ```python
   A. 2569e-5
   B. 2.569e-3
@@ -759,9 +701,97 @@ output
   ```
   <br />
   
-  [go to List of Topics](#top)
+  [go to Answers](#answers)
 
 <br />
+
+  [go to List of Topics](#top)
+  
+  <br />
+
+## **Variables** <a name="4"></a>
+  
+### **Python Variable** <a name="4.1"></a>
+
+1. **Variable** is a name that is used to refer to **memory location**. 
+2. Python variable is also known as an identifier and used to hold value. Variable names can be a group of both the **letters** and **digits**, but they have to begin with a letter or an underscore. No need to mention the datatype of the variable because python automatically detects the type of the variable. 
+3. Variables names are **case sensitive** for example they are two variables **amount** and another variable is **Amount**. Both the variables are different.
+ 
+```python
+x = 10
+_x = 20
+```
+Here the variable ```x``` and ```_x``` refers to an integer object.
+Examples of variables are
+```python
+name = 'Ram'
+Weight = 60
+height = 80.50
+```
+
+We can get the data type of any object by using the type() function:
+Example : 
+```python
+Print the data type of the variable x:
+
+>>> x = 5
+>>> print(type(x)) 
+<class 'int'>
+>>>
+```
+Here we get output as <class 'int'> because integer value is assigned to variable.
+
+<br />
+  
+### **Naming conventions of variables** <a name="4.2"></a>
+  
+They are two types we can create a variable name
+  1. **Snake Case** : This looks like instead of space we use **underscore(_)**. For example is **name_of_the_student**
+  2. **Camel Case** : This looks like for each new word it starts with **capital letter**. For example is **NameOfTheStudent**
+  3. **My view** : In my view I prefer to use Snake case because it is easy to understand and also it is recommended by organization of python. 
+  
+<br />
+
+### **Creating good names** <a name="4.3"></a>
+
+1. Variable names should have **meaningful** and also it should **represent something**.
+2. Meaningful variable names can make our **code more readable**, **easier to debug code** and also **maintain it**. 
+3. Examples:  
+   -  n  -                    do not know what is n
+   -  name   -                able to understand but what name
+   -  name_of_the_student  -  yes, very easy to understand
+  
+<br />
+
+### **Exercise-2** <a name="4.4"></a>
+
+  1. Create a variable as **student_name** and assign the value as **Ramesh** to the variable.
+  2. given the problem to substract 10 and 5, using variables: ```number1``` and ```number2``` and store the final result in ```number3```. print the final output.   
+  3. Write a script that defines the following variables
+  ```python
+  colour = "blue"
+  fruit = "Mango"
+  number = 22
+  article = "is"
+  ```
+* use the variables above to print the following statements exactly 
+```python
+sky is blue, Mango is yellow, age of suresh is 22 .
+```  
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+
 
 ## **User input** <a name="5"></a>
 
@@ -872,62 +902,10 @@ Girish is very good boy who helps everyone and also Girish participates in all t
 
 <br />
 
- ## **Escape sequences** <a name="6"></a>
-  
-  1.  The character **\\** represents the beginning of an escape sequence.
-  2. Table of escape sequence
-  
-Sequences | represents 
-:----- | :----: 
-\b | backspace
-\n | newline
-\t | tab
-\r | return
-\a | bell
-\\\ | backslash
-\\" | double quote
-\\' | single quote
-  3. examples of escape sequences statements
-  <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/20.jpg" alt="Escape Sequences" width="500"/>
-    
-<br />
 
-  
-### **Exercise - 4** <a name="6.1"></a>
+## **Operators** <a name="6"></a>
 
-  1. Write a script to print the following statements using print statement
-  
-    - Truth can only be found in one place: the code.
-    - You have baked a really lovely cake, but then you have used dog shit for frosting.
-    - On two occasions, I have been asked [by members of Parliament], Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?
-  
-  2. Write a script to print the following statements using escape sequences
-  
-    - "Talk is 'cheap'. Show me the code."
-    - "I'm not a great programmer! I'm just a good programmer with great habits."
-    - "If your ship doesn’t come in, swim out to it?"
-  
-  3. write a script to print the following shape using print statement
-  ```python
-           * 
-       * python * 
-     * is  *  a    * 
-   * good  * programming * language * 
- * to * learn * for * beginners * 
- ```
-  4. Write a script to print the following menu using escape sequences and ring the bell sound when the order has finished printing **Thank you, Visit Again!!!!!**.
-  
-  <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/22.jpg" alt="Escape Sequences" width="300"/>
-  
-  <br />
-  
-  [go to List of Topics](#top)
-  
-  <br />
-    
-## **Operators** <a name="7"></a>
-
-### **Numeric Operators** <a name="7.1"></a>
+### **Numeric Operators** <a name="6.1"></a>
 
 > +, -, *, **, /, //, %
 
@@ -972,7 +950,7 @@ print("The given current is", current, "and resistance is", resistance, "So the 
 ```
   <br />
 
-### **Assignment Operators** <a name="7.2"></a>
+### **Assignment Operators** <a name="6.2"></a>
 
 > +=, -=, *=, **=, /=, //=, %= 
   
@@ -1022,7 +1000,7 @@ print(x)
 
 <br />
 
-### **Comparison Operators** <a name="7.3"></a>
+### **Comparison Operators** <a name="6.3"></a>
 
 > <, >=, <=, ==, !=, >
                
@@ -1050,7 +1028,7 @@ Examples
 
   <br />
 
-### **Logical Operators** <a name="7.4"></a>
+### **Logical Operators** <a name="6.4"></a>
 > and, or, not
 
   1. ```and``` if the both the statements are ```True``` then we get final answer as ```True```.	
@@ -1076,7 +1054,7 @@ Examples
  <br />
  
   
-### **Membership Operators** <a name="7.5"></a> 
+### **Membership Operators** <a name="6.5"></a> 
 
 > in, not in
 
@@ -1106,7 +1084,7 @@ True
 
  <br />
   
-### **Identity Operators** <a name="7.6"></a> 
+### **Identity Operators** <a name="6.6"></a> 
 
  > is, is not
  
@@ -1159,7 +1137,7 @@ True
 <br />
 
 
- ### **Exercise - 5** <a name="7.7"></a> 
+ ### **Exercise - 5** <a name="6.7"></a> 
   
  1. Tell the answer for given Expression
  ```python
@@ -1212,4 +1190,355 @@ print(y not in x)
 [go to List of Topics](#top)
 
 <br />
+
+## **Strings** <a name="7"></a>
+
+1. Strings can be enclosed in **single quotes** or **double quotes**.
+
+> Example :- "Multiple_wishes" 'Multiple_wishes'
+
+2. In the case of string handling, the operator ```+``` is used to concatenate two strings as the operation "Multiple"+" Wishes" returns "Multiple Wishes".
+
+<br />
+
+### **Indexing** <a name="7.1"></a>
+
+1. To retrieve an element of the list, we use the **index** operator ```[ ]``` :
+
+&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    3&nbsp;&nbsp;&nbsp;&nbsp;    4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    5&nbsp;&nbsp;&nbsp;&nbsp;    6&nbsp;&nbsp;&nbsp;&nbsp;    7&nbsp;&nbsp;&nbsp;&nbsp;    - Indexing
+
+&nbsp;&nbsp;↓   &nbsp;&nbsp;&nbsp;&nbsp; ↓&nbsp; &nbsp;&nbsp;&nbsp;   ↓&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   ↓&nbsp;&nbsp;&nbsp;&nbsp;    ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ↓&nbsp;&nbsp;&nbsp;&nbsp;    ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ↓
+
+'M',&nbsp;&nbsp; 'U', &nbsp;&nbsp;'L',&nbsp;&nbsp;&nbsp; 'T', &nbsp;&nbsp;'I', &nbsp;&nbsp;'P', &nbsp;&nbsp;'L', &nbsp;&nbsp;&nbsp;'E', 
+
+&nbsp;&nbsp;↑   &nbsp;&nbsp;&nbsp;&nbsp; ↑&nbsp; &nbsp;&nbsp;&nbsp;   ↑&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   ↑&nbsp;&nbsp;&nbsp;&nbsp;    ↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ↑&nbsp;&nbsp;&nbsp;&nbsp;    ↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ↑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;-8&nbsp;&nbsp;&nbsp;&nbsp;    -7&nbsp;&nbsp;&nbsp;    -6&nbsp;&nbsp;&nbsp;    -5&nbsp;&nbsp;&nbsp;    -4&nbsp;&nbsp;&nbsp;    -3&nbsp;&nbsp;&nbsp;    -2&nbsp;&nbsp;&nbsp;    -1&nbsp;&nbsp;&nbsp;   -Reverse indexing
+
+Example :-
+```python
+name = multiple
+print(name[3])
+```
+```console
+	
+#Output:
+t
+```
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Object Identity** <a name="7.2"></a>
+
+1. In Python, every created **object** identifies **uniquely** in Python. 
+2. Python provides the guaranteed that **no two objects will have the same identifier**. The built-in **id()** function, is used to identify the object identifier.
+3. Example
+```python
+a = 50  
+b = a  
+print("Id of a variable is",id(a))  
+print("Id of b variable is",id(b))  
+# Reassigned variable a  
+a = 500  
+print("Id of a variable is",id(a))
+```
+
+```console
+Output:
+Id of a variable is 140734982691168
+Id of b variable is 140734982691168
+Id of a variable is 2822056960944
+```
+<br />	
+	
+
+### **Program using builtin function**: <a name="7.3"></a>
+
+1. The below examples gives the idea of how to **access**, **update**, **format**, **slicing**, **concatenating** and **escape** strings
+2. Example -1
+
+```python
+str1 = "Multiple_Wishes"
+str2 = "Py_wishes"
+print("Id number for str1 is ", id(str1), "\n" "Id number for str2 is ", id(str2))
+# str1[1] = 'a' # illegal, since strings are (immmutable)
+# new string created from old ones
+str1 = str1[:1] + 'i' + str1[6:]
+print("by indexing and adding i str1 is :", str1, str2)
+print("Now str1,str2 id's are: ", id(str1), id(str2))
+Name = "Multiple_Wishes"
+print("Finding the letter index ", Name.index('e'))
+print(Name.index('is'))
+print('a' in Name)
+print(Name.upper(), Name.lower())
+print(Name.replace('p', 'b'))
+Symbol = ";"
+print(Symbol.join(('Multiple_Wishes', 'Hyd', 'India')))
+Name = "Multiple_Wishes"
+print("Printing name 3times: ", Name*3, "\n" "Length of name is: ",len(Name))
+print(Name[0:10])
+Str_name = "hello123"
+print("Is Str_name contains numbers: ", Str_name.isalnum(), "\n" "Is string name contains Alphabets: ", Str_name.isalpha())
+val = "123"
+print(val.isdigit())
+Name = "Multiple_Wishes"
+print(Name.isalpha())
+```
+```console
+
+#Output:
+Id number for str1 is  1608101425520 
+Id number for str2 is  1608101425264
+by indexing and adding i str1 is : Mile_Wishes Py_wishes
+Now str1,str2 id's are:  1608106224688 1608101425264
+Finding the letter index  7
+10
+False
+MULTIPLE_WISHES multiple_wishes
+Multible_Wishes
+Multiple_Wishes;Hyd;India
+Printing name 3times:  Multiple_WishesMultiple_WishesMultiple_Wishes 
+Length of name is:  15
+Multiple_W
+Is Str_name contains numbers:  True 
+Is string name contains Alphabets:  False
+True
+False
+```
+* Function eval( ) evaluates the passed string as a Python expression and returns the result. For example, eval("1 + 2") interprets and executes the expression "1 + 2" and returns the result (3).
+
+3. Example -2
+
+
+```python
+# Using Backslash to continue statements
+a = 2 + \
+1.5 * 3
+print("a = ", a)
+b = eval("5.2") + 3
+print("b = ", b)
+print(eval("4 < 10"))
+print(eval("'Multiple_wishes '  * 5"))
+print(eval("abs(-11)"))
+print(eval('"Multiple_Wishes".upper()'))
+# print(eval('os.getcwd()'))
+c = eval("2.3") + 2
+print("c = ", c, type(c))
+d = "3.2" + "3"
+print("d = ", d, type(d))
+# use the implicit continuation inside parenthesis
+e = ([5, 12, 13, 200])
+print("e1 = ", e)
+```
+
+```console
+
+#Output:
+a =  6.5
+b =  8.2
+True
+Multiple_wishes Multiple_wishes Multiple_wishes Multiple_wishes Multiple_wishes 
+11
+MULTIPLE_WISHES
+c =  4.3 <class 'float'>
+d =  3.23 <class 'str'>
+e1 =  [5, 12, 13, 200]
+```
+<br />
+  
+[go to List of Topics](#top)
+
+<br />
+
+### **Formatting with .format method** <a name="7.4"></a>
+   
+1. Example:
+```python
+string_name = "multiple_wishes"
+print(f"Name of the string is : {string_name}")
+#or
+print("Name of the string is : {}".format(string_name))
+```
+```console
+#Output :
+Name of the string is : multiple_wishes
+Name of the string is : multiple_wishes
+```
+Here by using .format the string_name is insterted in ```{}```.
+
+<br />
+  
+## **Important points to remember** <a name="7.5"></a>
+
+1. Python includes methods for converting any value to a string, such as ```repr()`` and ```str()```.
+2. The ```str()``` method is intended to yield **human-readable** representations of values, whereas ```repr()``` is intended to provide **interpreter-readable** representations . When providing output for end users, almost always use str.
+3. The repr function is mostly for **troubleshooting and exploration**. For example, if you think a string has non-printing characters or a float contains a little rounding mistake, repr will disclose it but str may not.
+4. example
+```python
+s="genesis"
+"""
+   The string 'genesis' has the name s connected to it. When you call str(s), 
+   the interpreter replaces s with 'genesis' and then calls str('genesis').
+"""
+print(str(s))
+print(repr(s))
+```
+ 
+ ```console
+ #output
+ 
+ genesis
+'genesis'
+```
+
+<br /> 
+
+### **Python has builtin functions, methods & keywords for string. They are used for program:** <a name="7.6"></a>
+
+- [Python Built in Functions](https://github.com/saikrishnavadali05/python3_ebook/blob/36c9f6d569020420975b78432e6f093a21c3829c/Methods&keywords/PYTHON_BUILTIN_FUNCTION.MD)
+- [Python String Methods](https://github.com/saikrishnavadali05/python3_ebook/blob/36c9f6d569020420975b78432e6f093a21c3829c/Methods&keywords/STRING_BUILTIN_METHODS.md)
+- [Python keywords](https://github.com/saikrishnavadali05/python3_ebook/blob/36c9f6d569020420975b78432e6f093a21c3829c/Methods&keywords/Python%20Keywords.MD)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+  
+ ## **Exercise-5** <a name="7.7"></a>
+  
+ 1. Write a script that make a new string with the given string. Collect all the capital letters from string and make a new string
+ ```python
+  Example - Python_Is_VERY_Easy_LanguagE -    output looks PIVERYELE
+ ```
+ 2. Write a script that can convert the given lower string to upper case string
+ ```python
+ Example - python   -   output looks PYTHON
+ ```
+ 3. Write a script that can replace the first character in string 
+ ```python
+ Example - Cython  -   output looks Python
+ ```
+ 
+<br />  
+
+[go to List of Topics](#top)
+
+<br />
+
+ ## **Escape sequences** <a name="8"></a>
+  
+  1.  The character ```\``` represents the beginning of an escape sequence.
+  2. Table of escape sequence
+  
+Sequences | represents 
+:----- | :----: 
+\b | backspace
+\n | newline
+\t | tab
+\r | return
+\a | bell
+\\\ | backslash
+\\" | double quote
+\\' | single quote
+
+3. examples of escape sequences statements
+
+```python
+>>> print("He's \"very good\" boy.\n")
+He's "very good" boy.
+
+>>> print("He's \"very good\" boy.")
+He's "very good" boy.
+>>> print("He\tis\tvery\tgood\tboy.")
+He      is      very    good    boy.
+```
+    
+<br />
+
+
+  
+### **Exercise - 6** <a name="8.1"></a>
+
+  1. Write a script to print the following statements using print statement
+  
+    - Truth can only be found in one place: the code.
+    - You have baked a really lovely cake, but then you have used dog shit for frosting.
+    - On two occasions, I have been asked [by members of Parliament], Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?
+  
+  2. Write a script to print the following statements using escape sequences
+  
+    - "Talk is 'cheap'. Show me the code."
+    - "I'm not a great programmer! I'm just a good programmer with great habits."
+    - "If your ship doesn’t come in, swim out to it?"
+  
+  3. write a script to print the following shape using print statement
+  ```python
+           * 
+       * python * 
+     * is  *  a    * 
+   * good  * programming * language * 
+ * to * learn * for * beginners * 
+ ```
+  4. Write a script to print the following menu using escape sequences and ring the bell sound when the order has finished printing **Thank you, Visit Again!!!!!**.
+  
+  <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/22.jpg" alt="Escape Sequences" width="300"/>
+  
+  <br />
+  
+  [go to List of Topics](#top)
+  
+  <br />
+    
+## **Answers**
+
+### Exercie - 1 Answers <a name="E-1"></a>
+
+1. C
+2. D
+3. A, B, C
+4. 
+```console
+#output
+
+wonders_of_world = 7
+print(wonders_of_world)
+```
+5. 
+```console
+#output
+
+planet_near_to_sun = "Mercury"
+print(planet_near_to_sun)
+```
+6. B
+
+### Exercie - 2 Answers <a name="E-2"></a>
+
+1. student_name = "Ramesh"
+2. 
+```console
+#output
+
+number1 = 10
+number2 = 5
+number3 = number1 + number2
+print(number3)
+
+```
+3. 
+colour = "blue"
+fruit = "Mango"
+number = 22
+article = "is"
+
+print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  article, number , ".")
+
+### Exercie - 3 Answers <a name="E-3"></a>
+### Exercie - 4 Answers <a name="E-4"></a>
+### Exercie - 5 Answers <a name="E-5"></a>
+### Exercie - 6 Answers <a name="E-6"></a>
 
