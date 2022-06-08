@@ -766,12 +766,7 @@ They are two types we can create a variable name
 ### **Exercise-2** <a name="4.4"></a>
 
   1. Create a variable as **student_name** and assign the value as **Ramesh** to the variable.
-  2. given the problem to substract 5 and 10, using variables: ```number_1``` and ```number_2```. fill in the below code as
-  ```python 
-  _  =  _
-  number_2 = _
-  print(x _ y)
-  ``` 
+  2. given the problem to substract 10 and 5, using variables: ```number1``` and ```number2``` and store the final result in ```number3```. print the final output.   
   3. Write a script that defines the following variables
   ```python
   colour = "blue"
@@ -779,17 +774,24 @@ They are two types we can create a variable name
   number = 22
   article = "is"
   ```
-use the variables above to print the following statements exactly 
+* use the variables above to print the following statements exactly 
+```python
 sky is blue,
 Mango is yellow,
 age of suresh is 22.
-  
+```  
+
+
+[go to Answers](#answers)
+
+<br />
 
 <br />
 
 [go to List of Topics](#top)
 
 <br />
+
 
 
 ## **User input** <a name="5"></a>
@@ -1494,7 +1496,7 @@ He      is      very    good    boy.
     
 ## **Answers**
 
-### Exercie - 1 Answers
+### Exercie - 1 Answers <a name="E-1"></a>
 
 1. C
 2. D
@@ -1514,3 +1516,30 @@ planet_near_to_sun = "Mercury"
 print(planet_near_to_sun)
 ```
 6. B
+
+### Exercie - 2 Answers <a name="E-2"></a>
+
+1. student_name = "Ramesh"
+2. 
+```console
+#output
+
+number1 = 10
+number2 = 5
+number3 = number1 + number2
+print(number3)
+
+```
+3. 
+colour = "blue"
+fruit = "Mango"
+number = 22
+article = "is"
+
+print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  article, number , ".")
+
+### Exercie - 3 Answers <a name="E-3"></a>
+### Exercie - 4 Answers <a name="E-4"></a>
+### Exercie - 5 Answers <a name="E-5"></a>
+### Exercie - 6 Answers <a name="E-6"></a>
+
