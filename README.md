@@ -776,11 +776,10 @@ They are two types we can create a variable name
   ```
 * use the variables above to print the following statements exactly 
 ```python
-sky is blue,
-Mango is yellow,
-age of suresh is 22.
+sky is blue, Mango is yellow, age of suresh is 22 .
 ```  
 
+<br />
 
 [go to Answers](#answers)
 
