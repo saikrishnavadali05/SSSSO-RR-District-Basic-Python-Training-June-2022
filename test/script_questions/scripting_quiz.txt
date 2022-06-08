@@ -1,0 +1,106 @@
+scripting (15 minutes)
+
+
+1. can you print the output of the given question (see image)
+
+answer. I like to play games
+
+2. addition of a and b and the answer is (see image)
+
+answer. 15
+
+3. write the output that is printed on the command prompt (exactly) (see image)
+
+answer. <class 'str'>
+
+4. write the print stement that prints the following answer
+  
+ 	mahesh-is-very-talented-boy
+
+answer. print("mahesh", "is", "very","talented","boy", sep='-')
+
+5. write the print stement that prints the following answer and they are 4 spaces between the each word. Use "sep" in
+  the print statement
+
+	mahesh    is    very    talented    boy
+
+answer. print("mahesh", "is", "very","talented","boy", sep='	')
+
+6.  write the print stement that prints the following answer using only one print statement 
+
+	When you fill your heart
+	with righteousness, your life
+	as a human on earth
+	is fulfilled
+
+answer. print("When you fill your heart",  
+    "with righteousness, your life", 
+    "as a human on earth",
+    "is fulfilled", sep = "\n")
+
+7. write a python script of converting
+
+	1. float to complex
+	2. int to float
+	3. complex to int
+	
+	given 
+	x = 5
+	y = 10.4
+	z = 7 + 3j
+answer. 
+
+x = 5
+y = 10.4
+z = 7 + 3j
+
+convert1 = float(x) #convert from int to float 
+convert2 = complex(y) #convert from float to complex 
+
+print(convert1)
+print(convert2)
+
+
+# conversion is not possible from complex to int
+
+
+8. Write the python script of average of three numbers
+
+	given 
+		number1 = 14
+		number2 = 16
+		number3 = 18
+
+output should be
+
+	the average of three numbers are 16.0
+
+answer. 
+
+number1 = 14
+number2 = 16
+number3 = 18
+
+average = (number1 + number2 + number3) / 3
+print("the average of three numbers are", average)
+
+9. write the python script for area of rectangle
+
+ given
+	length = 10
+	breadth = 15
+
+output should be
+
+	the area of the rectangle is 150
+
+
+answer
+
+length = 10
+breadth = 15
+
+area_rectangle = length * breadth
+print("the area of the rectangle is", area_rectangle)
+
+10. 

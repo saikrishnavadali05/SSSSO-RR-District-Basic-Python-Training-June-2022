@@ -58,13 +58,14 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     * '\t' - [Tab character](#6)
     * '\a' - [Alarm character](#6)
     * [Exercise - 4](#6.1)
-7. Operators
-	* Numeric 
-	* Comparison
-	*  Identity
-	* Membership
-	* Assignment
-	*  Logical
+7. [Operators](#7)
+	* [Numeric](#7.1)
+	* [Assignment](#7.2)
+	* [Comparision](#7.3)
+	* [Logical](#7.4)
+	* [Membership](#7.5)
+	* [Identity](#7.6)
+	* [Exercise- 5](#7.7)
 8. Conditional statements
 	* If
 	* If else
@@ -314,9 +315,9 @@ The best and most productive field to flourish today is **web development** usin
   
   ### **Commenting in python** <a name="2.2"></a>
   
-  1. Comments are text portions that clarify what the program does and how it functions. 
-  2. The character used for commenting is #.
-  3. The Python interpreter ignores the following text from where the character # starts.
+  1. **Comments** are text portions that clarify what the program does and how it functions. 
+  2. The character used for commenting is ```#```.
+  3. The Python interpreter ignores the following text from where the character ```#``` starts.
   4. Example
   ```python
       # print("I like learning Python Language")
@@ -353,9 +354,9 @@ The best and most productive field to flourish today is **web development** usin
 
 ### **Print function** <a name="2.3"></a>
   
-  1. This is the baisc function which is used to print the content on the screen. This function always give a new line
+  1. This is the basic function which is used to print the content on the screen. This function always give a **new line**
   2. Syntax for the **print** function
-		>print (objects, sep = ':', end = '\n')
+		> print (objects, sep = ':', end = '\n')
 	    * objects can be more than one.
 	    * Here, **sep** and **end** are **optional**. **sep** is used to seperate objects and **end** is used to tell what it should do at the end of statement.
 3. Examples of the print function are
@@ -381,7 +382,7 @@ The best and most productive field to flourish today is **web development** usin
    
  ### **Header for Python script** <a name="2.4"></a>
   
-  1. The header is very important for the program because when anybody wants to understand your program or if you want to revise this program in the future the header will be very helpful to tell how code works.
+  1. The **header** is very important for the program because when anybody wants to understand your program or if you want to revise this program in the future the header will be very helpful to tell how **code works**.
   
 ```python
 #(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-    % PYTHON %    (**/*+-(**/*+-(**/*+-(**/*+-(**/*+-(**/*+-
@@ -469,14 +470,14 @@ else:
 10 - 7 = 3
 ```
   
-  From the above example, we can see there is a white space after the **if** line it is given because the lines should be executed only when the 'If' condition satisfies. Similarly for the 'else' condition. 
+  From the above example, we can see there is a white space after the ```if``` line it is given because the lines should be executed only when the ```If``` condition satisfies. Similarly for the 'else' condition. 
   
 <br />
   
  ### **Continuation lines** <a name="2.6"></a>
  
-  1. If we are writing one big statement that occupies more than one line then we will be using this character \\. 
-  2. This character \ should be the end of the line.
+  1. If we are writing one big statement that occupies more than one line then we will be using this character ```\```. 
+  2. This character ```\``` should be the end of the line.
   3. For example 
    ```python
      print("My company \
@@ -498,14 +499,14 @@ else:
 ### **Python Variable** <a name="3.1"></a>
 
 1. **Variable** is a name that is used to refer to **memory location**. 
-2. Python variable is also known as an identifier and used to hold value. Variable names can be a group of both the letters and digits, but they have to begin with a letter or an underscore.No need to mention the datatype of the variable because python automatically detects the type of the variable. 
-3. Variables names are case sensitive for example they are two variables **amount** and another variable is **Amount**. Both the variables are different.
+2. Python variable is also known as an identifier and used to hold value. Variable names can be a group of both the **letters** and **digits**, but they have to begin with a letter or an underscore. No need to mention the datatype of the variable because python automatically detects the type of the variable. 
+3. Variables names are **case sensitive** for example they are two variables **amount** and another variable is **Amount**. Both the variables are different.
  
 ```python
 x = 10
 _x = 20
 ```
-Here the variable 'x' and '_x'refers to an integer object.
+Here the variable ```x``` and ```_x``` refers to an integer object.
 Examples of variables are
 ```python
 name = 'Ram'
@@ -530,8 +531,8 @@ Here we get output as <class 'int'> because integer value is assigned to variabl
 ### **Naming conventions of variables** <a name="3.2"></a>
   
 They are two types we can create a variable name
-  1. Snake Case : This looks like instead of space we use underscore(_). For example is **name_of_the_student**
-  2. Camel Case : This looks like for each new word it starts with capital letter. For example is **NameOfTheStudent**
+  1. **Snake Case** : This looks like instead of space we use **underscore(_)**. For example is **name_of_the_student**
+  2. **Camel Case** : This looks like for each new word it starts with **capital letter**. For example is **NameOfTheStudent**
   3. My view : In my view I prefer to use Snake case because it is easy to understand and also it is recommended by organization of python. 
   
 <br />
@@ -550,7 +551,7 @@ They are two types we can create a variable name
 ### **Exercise-1** <a name="3.4"></a>
 
   1. Create a variable as **student_name** and assign the value as **Ramesh** to the variable.
-  2. given the problem to substract 5 and 10, using variables: number_1 and number_2. fill in the below code as
+  2. given the problem to substract 5 and 10, using variables: ```number_1``` and ```number_2```. fill in the below code as
   ```python 
   _  =  _
   number_2 = _
@@ -579,7 +580,7 @@ age of suresh is 22.
 
 1. **Variables** can hold values, and every value has a data-type. 
 2. **Data-types** in Python can be either mutable or immutable. 
-3. A mutable object can be changed after it is created, and an immutable object cannot. Objects of built-in types like (int, float, bool, str, tuple, frozenset) are immutable. Objects of built-in types like (list, set, dict) are mutable. Custom classes are generally mutable.
+3. A **mutable** object can be changed after it is created, and an **immutable** object cannot. Objects of built-in types like (int, float, bool, str, tuple, frozenset) are immutable. Objects of built-in types like (list, set, dict) are mutable. Custom classes are generally mutable.
 
 |  Class | Description |Immutable  |
 | ------ | ------ | ------ |
@@ -636,7 +637,7 @@ overs_bowled = 4.3
  
 ### **Boolean data type** <a name="4.4"></a>
 
-  1. It has two values True and False
+  1. It has two values **True** and **False**
   2.  Examples
   ```python
   ram_age = 25
@@ -651,7 +652,7 @@ overs_bowled = 4.3
 
 <br />
 
-### Frozen sets
+### **Frozen sets**
   
 1. The method frozenset  in Python takes an iterable object as input and renders it immutable. Simply put, it renders iterable things unchangeable by freezing them.
 2. In Python, a frozenset is the same as a set, except that frozensets are immutable, which implies that once generated, elements from the frozenset cannot be added or deleted. 
@@ -727,10 +728,10 @@ output
   ```
   2. which method is ised to find the type of the variable for **a = 20**
   ```python
-  A. print(i)
-  B. int(i) 
-  C. str(i)
-  D. type(i)
+  A. print(a)
+  B. int(a) 
+  C. str(a)
+  D. type(a)
   ```
   3. Tell the correct answers from the following
   ```python
@@ -764,7 +765,7 @@ output
 
 ## **User input** <a name="5"></a>
 
-  1. They are two methods where user can give input and they are using input function and another one is using command line parameters.
+  1. They are **two** methods where user can give input and they are using **input function** and another one is using **command line parameters**.
 
 ### **input function**  <a name="5.1"></a>
  
@@ -921,6 +922,294 @@ Sequences | represents
   <br />
   
   [go to List of Topics](#top)
+  
+  <br />
+    
+## **Operators** <a name="7"></a>
+
+### **Numeric Operators** <a name="7.1"></a>
+
+> +, -, *, **, /, //, %
+
+Examples
+```python
+  # Addition
+  >>> 4 + 7
+  11
+  # Subtraction
+  >>> 8 - 3
+  4
+  # Multiplication
+  >>> 3 * 5
+  15
+  # Exponent 
+  >>> 3 ** 3 
+  27
+  # Floor division
+  >>> 44 // 8
+  5
+  # Integer division
+  >>> 44 / 8
+  5.5
+  # modulus divison
+  >>> 44 % 8
+  4
+```
+  
+python script
+  
+```python
+current = 5
+resistance = 100
+voltage = current * resistance
+print("The given current is", current, "and resistance is", resistance, "So the total voltage flows in the circuit is", voltage, "V")
+```
+
+```console
+# output
+
+  The given current is 5 and resistance is 100 So the total voltage flows in the circuit is 500 V
+```
+  <br />
+
+### **Assignment Operators** <a name="7.2"></a>
+
+> +=, -=, *=, **=, /=, //=, %= 
+  
+Examples
+``` python
+x += y # is same as x = x + y
+x -= y # is same as x = x - y
+x *= y # is same as x = x * y
+x **= y # is same as x = x ** y
+x /= y # is same as x = x / y
+x //= y # is same as x = x // y
+x %= y # is same as x = x % y
+``` 
+
+```python
+x = 2
+y = 3
+x += y
+print(x)
+x = x - y
+print(x)
+x = x * y
+print(x)
+x = x ** y
+print(x)
+x/= y
+print(x)
+x //= y
+print(x)
+x %= y
+print(x)
+```
+```console
+# output
+5
+2
+6
+216
+72.0
+24.0
+0.0
+```
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Comparison Operators** <a name="7.3"></a>
+
+> >, <, >=, <=, ==, !=
+               
+Examples
+```python
+  # greater than
+  >>> 7 > 4
+  True
+  # less than
+  >>> 7 < 4
+  False
+  # greater than or equla to 
+  >>> 7 >= 7
+  True
+  # less than
+  >>> 7 <= 7
+  True
+  # equal to
+  >>> 7 == 7
+  True
+  # not equal to
+  >>> 7 != 7
+  False
+```
+
+  <br />
+
+### **Logical Operators** <a name="7.4"></a>
+> and, or, not
+
+  1. **and** if the both the statements are ***true*** then we get final answer as ***true***.	
+  2. **or** if any one of the two statements is ***true*** then we get the final answer as ***true***.	
+  3. **not**	it gives inverse of the final answer, when final answer is ***false*** then it gives ***true***. 
+ 
+Examples
+```python
+ a = 10
+ b = 5
+ print( a > b and b == 5)
+ print( b < a or b == 2)
+ print(not( a > b ))
+ ```
+ ```console
+ # output
+  
+  True
+  True
+  False
+``` 
+
+ <br />
+ 
+  
+### **Membership Operators** <a name="7.5"></a> 
+
+> in, not in
+
+  1. **in** if a value is present in the given list then it returns True.
+  2. **not in** if a value is not present in the given list then it returns True.
+  
+Examples
+```python
+names = ["Ramesh", "Suresh", "Ganesh"]
+print("Ramesh" in names) # in operator
+```
+```console
+# output
+
+True
+```
+ 
+```python
+names = ["Ramesh", "Suresh", "Ganesh"]
+print("Hareesh" in names) # not in operator
+```
+```console  
+# output
+
+True
+```
+
+ <br />
+  
+### **Identity Operators** <a name="7.6"></a> 
+
+ > is, is not
+ 
+  1. **is** 	if both variables have the object same then it gives result as ***True***.
+  2. **is not** if both variables have the different object then it gives result as ***True***.
+  
+Examples
+```python
+a = ["Suresh", "Ganesh"]
+c = a
+b = ["Suresh", "Ganesh"]
+  
+print(a == b) # a is equal to b then returns True
+print(a is c) # c is the same object as a it gives True  
+print(a is b) # a is not the same object as b, has a same values returns False 
+```
+
+```console
+
+# output
+
+True
+True
+False  
+  
+```
+  
+```python
+a = ["Suresh", "Ganesh"]
+c = a
+b = ["Suresh", "Ganesh"]
+  
+print(a != b) # a is equal to b then returns False.
+print(a is not c) # c is the same object as a it gives False. 
+print(a is not b) # a is not the same object as b, has a same values returns True. 
+```
+```console
+
+# output
+
+False
+False
+True
+```
+  
+<br /> 
+
+[go to List of Topics](#top)
+
+<br />
+
+
+ ### **Exercise - 5** <a name="7.7"></a> 
+  
+ 1. Tell the answer for given Expression
+ ```python
+ print(20 / 2)
+ A. 10.0
+ B. 10
+ C. 10.00
+ ```
+ 2. Go through the code 
+ ```python
+a = 5
+b = 10
+if x ** 2 > 50 and y < 50:
+print(x, y)
+                            
+A. 5 10
+B. No Answer                         
+C. 25 10                         
+```
+3. See the expression and give answer
+```python
+print(45 - 3 ** 3) / 6
+                          
+A. 74,088
+B. 18                       
+C. 3  
+```
+4. Go through the code and give the all the values
+```python
+a = 2
+b = 10
+c = 6
+a += b  #12
+b %=c   #4
+print(a, b)
+print(c > b)
+print(a == (a + b + c) - 20)
+d = a < c or a != 12
+print(d)
+```
+5. Go through the code
+```python
+x = "kumari"
+y = "ma"
+print(y not in x)
+```
+ 
+<br /> 
+
+[go to List of Topics](#top)
 
 <br />
 
