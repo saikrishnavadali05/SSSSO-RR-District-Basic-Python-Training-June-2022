@@ -1,15 +1,25 @@
 scripting (15 minutes)
 
 
-1. can you print the output of the given question (see image)
+1. can you print the output of the given question 
+
+	print("I like to play games")
 
 answer. I like to play games
 
-2. addition of a and b and the answer is (see image)
+2. addition of a and b and the answer is
+
+>>> a = 10
+>>> b = 5
+>>> c = a + b
+>>> c
 
 answer. 15
 
-3. write the output that is printed on the command prompt (exactly) (see image)
+3. write the output that is printed on the command prompt (exactly)
+
+>>> place = "Visakhapatnam-44"
+>>> type(place)
 
 answer. <class 'str'>
 
