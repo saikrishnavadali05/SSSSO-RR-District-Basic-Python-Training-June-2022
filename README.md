@@ -58,6 +58,13 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Identity](#6.6)
 	* [Exercise- 4](#6.7)
 7. [strings](#7)
+	* [Indexing](#7.1)
+	* [Object Identity](#7.2)
+	* [Program using builtin function](#7.3)
+	* [Formatting with .format method](#7.4)
+	* [Important points to remember](#7.5)
+	* [builtin functions, methods of string](#7.6)
+	* [Exercise-5](#7.7)
 8. [Escape sequences](#8)
     * '\n' - [Newline character](#8)
     * '\r' - [Return character](#8)
@@ -67,33 +74,41 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     * '\’' - [Single quote character](#8)
     * '\t' - [Tab character](#8)
     * '\a' - [Alarm character](#8)
-    * [Exercise - 6](#8.1)
-
-8. Conditional statements
+    * [Exercise - 6](#8.1)	
+9. Conditional statements
 	* If
 	* If else
 	* Nested If elif else
-9. Loops
+10. Loops
 	* While
 	*  for
-10.  Lists
+11.  Lists
 	* list comprehension 
-11. Tuples 
-12. Dictionaries
-13. File Handling
+12. Tuples 
+13. Dictionaries
+14. File Handling
 	* Read 
 	*  Write
 	* delete
-14. Functions
-15. Exception Handling
-16. Modules
-17. Namespace
-18. Packages
-19. Built in tools
-20. repr()
-21. difference between running the code in vs code and jupyter notebook
-22. assert (basic debugging) - to set a breakpoint
-23. What editors are required to use in python 
+15. Functions
+16. Exception Handling
+17. Modules
+18. Namespace
+19. Packages
+20. Built in tools
+21. repr()
+22. difference between running the code in vs code and jupyter notebook
+23. assert (basic debugging) - to set a breakpoint
+24. What editors are required to use in python 
+
+## Answers <a name="answers"></a>
+
+1. [Exercise - 1](#E-1)
+2. [Exercise - 2](#E-2)
+3. [Exercise - 3](#E-3)
+4. [Exercise - 4](#E-4)
+5. [Exercise - 5](#E-5)
+6. [Exercise - 6](#E-6)
 
 ## **1. Let's begin the Python Show** <a name="1"></a>
 
@@ -636,41 +651,48 @@ output
  
 ### **Exercise - 1** <a name="3.7"></a>
 
-  1. Tell the given type of the variable 
+  1. Tell the given **type** of the **variable** (single choice)
+  
   ```python
-  name = "Mahesh"
-  type(name)  
+name = "Mahesh"
+b = type(name)
+print(b)
     
   A. int
   B. <class 'int'> 
   C. <class 'str'>
   D. string
   ```
-  2. which method is ised to find the type of the variable for **a = 20**
+  2. which method is used to find the type of the variable for **a = 20** (single choice)
+  
   ```python
   A. print(a)
   B. int(a) 
   C. str(a)
   D. type(a)
   ```
-  3. Tell the correct answers from the following
+  3. Tell the correct **answers** from the following (multiple choice)
+  
   ```python
   A. a = "10"
   B. b = "ram21" 
   C. c = 12
   D. 1_d = 6 
   ```
-  4. assign the value to the variable and print it.
-  ```python
+  4. assign the **value** to the **variable** and print it.(short answer)
+ 
+ ```python
   wonders_of_world = 
   print()
   ```
-  5. write a word in the for the variable and print it 
+  5. write a **word** in the for the **variable** and print it (short answer)
+  
   ```python
   planet_near_to_sun=
   print()
   ```
-  6. Write the scientific notation for given float number 0.002569 is
+  6. Write the **scientific notation** for given float number **0.002569** is (single choice)
+  
   ```python
   A. 2569e-5
   B. 2.569e-3
@@ -679,9 +701,13 @@ output
   ```
   <br />
   
-  [go to List of Topics](#top)
+  [go to Answers](#answers)
 
 <br />
+
+  [go to List of Topics](#top)
+  
+  <br />
 
 ## **Variables** <a name="4"></a>
   
@@ -1164,7 +1190,7 @@ print(y not in x)
 
 <br />
 
-## **Strings**
+## **Strings** <a name="7"></a>
 
 1. Strings can be enclosed in **single quotes** or **double quotes**.
 
@@ -1174,7 +1200,7 @@ print(y not in x)
 
 <br />
 
-### **Indexing**
+### **Indexing** <a name="7.1"></a>
 
 1. To retrieve an element of the list, we use the **index** operator ```[ ]``` :
 
@@ -1204,7 +1230,7 @@ t
 
 <br />
 
-### **Object Identity**
+### **Object Identity** <a name="7.2"></a>
 
 1. In Python, every created **object** identifies **uniquely** in Python. 
 2. Python provides the guaranteed that **no two objects will have the same identifier**. The built-in **id()** function, is used to identify the object identifier.
@@ -1228,7 +1254,7 @@ Id of a variable is 2822056960944
 <br />	
 	
 
-### **Program using builtin function**:
+### **Program using builtin function**: <a name="7.3"></a>
 
 1. The below examples gives the idea of how to **access**, **update**, **format**, **slicing**, **concatenating** and **escape** strings
 2. Example -1
@@ -1326,7 +1352,7 @@ e1 =  [5, 12, 13, 200]
 
 <br />
 
-### **Formatting with .format method**
+### **Formatting with .format method** <a name="7.4"></a>
    
 1. Example:
 ```python
@@ -1344,7 +1370,7 @@ Here by using .format the string_name is insterted in ```{}```.
 
 <br />
   
-## **Important points**
+## **Important points to remember** <a name="7.5"></a>
 
 1. Python includes methods for converting any value to a string, such as ```repr()`` and ```str()```.
 2. The ```str()``` method is intended to yield **human-readable** representations of values, whereas ```repr()``` is intended to provide **interpreter-readable** representations . When providing output for end users, almost always use str.
@@ -1369,7 +1395,7 @@ print(repr(s))
 
 <br /> 
 
-### **Python has builtin functions, methods & keywords for string. They are used for program:**
+### **Python has builtin functions, methods & keywords for string. They are used for program:** <a name="7.6"></a>
 
 - [Python Built in Functions](https://github.com/saikrishnavadali05/python3_ebook/blob/36c9f6d569020420975b78432e6f093a21c3829c/Methods&keywords/PYTHON_BUILTIN_FUNCTION.MD)
 - [Python String Methods](https://github.com/saikrishnavadali05/python3_ebook/blob/36c9f6d569020420975b78432e6f093a21c3829c/Methods&keywords/STRING_BUILTIN_METHODS.md)
@@ -1381,7 +1407,7 @@ print(repr(s))
 
 <br />
   
- ## **Exercise-5**
+ ## **Exercise-5** <a name="7.7"></a>
   
  1. Write a script that make a new string with the given string. Collect all the capital letters from string and make a new string
  ```python
@@ -1466,3 +1492,25 @@ He      is      very    good    boy.
   
   <br />
     
+## **Answers**
+
+### Exercie - 1 Answers
+
+1. C
+2. D
+3. A, B, C
+4. 
+```console
+#output
+
+wonders_of_world = 7
+print(wonders_of_world)
+```
+5. 
+```console
+#output
+
+planet_near_to_sun = "Mercury"
+print(planet_near_to_sun)
+```
+6. B
