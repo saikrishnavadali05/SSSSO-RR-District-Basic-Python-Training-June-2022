@@ -1024,7 +1024,7 @@ print(x)
 
 ### **Comparison Operators** <a name="7.3"></a>
 
-> >, <, >=, <=, ==, !=
+> <, >=, <=, ==, !=, >
                
 Examples
 ```python
@@ -1053,9 +1053,9 @@ Examples
 ### **Logical Operators** <a name="7.4"></a>
 > and, or, not
 
-  1. **and** if the both the statements are ***true*** then we get final answer as ***true***.	
-  2. **or** if any one of the two statements is ***true*** then we get the final answer as ***true***.	
-  3. **not**	it gives inverse of the final answer, when final answer is ***false*** then it gives ***true***. 
+  1. ```and``` if the both the statements are ```True``` then we get final answer as ```True```.	
+  2. ```or``` if any one of the two statements is ```True``` then we get the final answer as ```True```.	
+  3. ```not```	it gives inverse of the final answer, when final answer is ```False``` then it gives ```True```. 
  
 Examples
 ```python
@@ -1080,8 +1080,8 @@ Examples
 
 > in, not in
 
-  1. **in** if a value is present in the given list then it returns True.
-  2. **not in** if a value is not present in the given list then it returns True.
+  1. ```in``` : if a value is **present** in the given list, ```in``` returns ```True```.
+  2. ```not in``` : if a value is **not present** in the given list, ```not in``` returns ```True```.
   
 Examples
 ```python
@@ -1110,8 +1110,8 @@ True
 
  > is, is not
  
-  1. **is** 	if both variables have the object same then it gives result as ***True***.
-  2. **is not** if both variables have the different object then it gives result as ***True***.
+  1. ```is``` 	if the objects of both the variables to be same, ```is``` shows the result to be ```True```.
+  2. ```is not``` if the objects of both the variables are different, ```is not``` shows the result to be ```True```.
   
 Examples
 ```python
