@@ -2271,7 +2271,7 @@ Jan
 {}
 ```
 
-Example problem 2 using dictionary:
+> Another example program to illustrate the usage and purpose of a dictionary in python
 
 ```python
 Dict_my = {}
@@ -2397,7 +2397,7 @@ d 4
 
 > Example : OrderDictionary3.py
 
-**Deletion and Re-Insertion** - Deleting and re-inserting the same key will push it to the back as OrderedDict, however, maintains the order of insertion.
+**Deletion and Re-Insertion** - Deleting and re-inserting the same key will push it to the back as ```OrderedDict```, however, maintains the order of insertion.
 
 ```python
 from collections import OrderedDict
