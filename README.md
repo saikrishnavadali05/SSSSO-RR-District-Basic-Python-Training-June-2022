@@ -76,25 +76,24 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     * '\a' - [Alarm character](#8)
     * [Exercise - 6](#8.1)	
 9. Conditional statements
-	* If
-	* If else
-	* Nested If elif else
+	* if
+	* if else
+	* Nested if elif else
 10. Loops
 	* While
-	*  for
-11.  Lists
-	* list comprehension 
+	* for
+11. Lists
 12. Tuples 
 13. Dictionaries
-14. File Handling
+14. Functions
+15. File Handling
 	* Read 
-	*  Write
+	* Write
 	* delete
-15. Functions
-16. Exception Handling
 17. Modules
-18. Namespace
+18. Namespaces
 19. Packages
+16. Exception Handling
 20. Built in tools
 21. repr()
 22. difference between running the code in vs code and jupyter notebook
