@@ -1,6 +1,6 @@
 ### Detailed videos on working with Git and GitHub:
 1. [Git Tutorial for Beginners by Telusko](https://www.youtube.com/playlist?list=PLsyeobzWxl7q2eaUkorLZExfd7qko9sZC)
-2. Tutorials by Simplilearn https://youtube.com/playlist?list=PLEiEAq2VkUUJs7lyLgSsRlnd9syrFBzSM
+2. [Tutorials by Simplilearn](https://youtube.com/playlist?list=PLEiEAq2VkUUJs7lyLgSsRlnd9syrFBzSM)
 
 ### git commands to setup in your local pc:
 ```
@@ -10,7 +10,7 @@ git config --global user.email "<github_email>"
 
 ### useful and needed git commands:
 ```
-git clone https://github.com/gauthamdasu/DMACS-Learn-Python.git
+git clone https://github.com/saikrishnavadali05/SSSSO-RR-District-Basic-Python-Training-June-2022.git
 git config --get remote.origin.url
 git config –global user.name "[name]"
 git config –global user.email "[email address]"
