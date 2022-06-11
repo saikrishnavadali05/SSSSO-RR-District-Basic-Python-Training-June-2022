@@ -10,7 +10,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 > Total - 4 hours of training sessions per week
 
 ## Rewards
-> Top 10 Contributors to this Repository will get Special Rewards from the SSSSO RR District Python Training Organizers
+> Top 10 Contributors to this Repository will get a Merit Certificate and Special Rewards from the SSSSO RR District Python Training Organizers
 
 # Setting up git and github, python 3.10, VS Code
 
