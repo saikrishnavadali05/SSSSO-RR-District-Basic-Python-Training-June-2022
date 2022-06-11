@@ -1160,7 +1160,8 @@ True
  1. Tell the answer for given Expression without running it using python interpreter
  ```python
  print(20 / 2)
- 
+ ```
+ ```console
  A. 10.0
  B. 10
  C. 10.00
@@ -1171,7 +1172,8 @@ a = 5
 b = 10
 if a ** 2 > 50 and b < 50:
     print(a, b)
-                            
+```
+```console
 A. 5 10
 B. No Answer                         
 C. 25 10                         
@@ -1180,7 +1182,8 @@ C. 25 10
 ```python
 number = (45 - 3 ** 3) / 6
 print(number)
-                          
+```
+```console
 A. 4.0
 B. 3.0                       
 C. 18.0  
@@ -1377,7 +1380,7 @@ e1 =  [5, 12, 13, 200]
 
 <br />
 
-### **Formatting with .format method** <a name="7.4"></a>
+### **Formatting with ```.format method```** <a name="7.4"></a>
    
 1. Example:
 ```python
@@ -1525,20 +1528,20 @@ If your ship doesn 't come in, \swim\ out to it?
     
 ## **Answers**
 
-### Exercie - 1 Answers <a name="E-1"></a>
+### Exercise - 1 <a name="E-1"></a>
 
 1. C
 2. D
 3. A, B, C
 4. 
-```console
+```python
 #output
 
 wonders_of_world = 7
 print(wonders_of_world)
 ```
 5. 
-```console
+```python
 #output
 
 planet_near_to_sun = "Mercury"
@@ -1548,11 +1551,11 @@ print(planet_near_to_sun)
 
   <br />
   
-### Exercie - 2 Answers <a name="E-2"></a>
+### Exercise - 2 <a name="E-2"></a>
 
 1. student_name = "Ramesh"
 2. 
-```console
+```python
 #output
 
 number1 = 10
@@ -1562,19 +1565,20 @@ print(number3)
 
 ```
 3. 
+```python
 colour = "blue"
 fruit = "Mango"
 number = 22
 article = "is"
 
 print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  article, number , ".")
-
+```
   <br />
   
-### Exercie - 3 Answers <a name="E-3"></a>
+### Exercise - 3 <a name="E-3"></a>
 
 1. Solution code
-```console
+```python
 number1 = int(input("Enter the first number "))
 number2 = int(input("Enter the second number "))
 
@@ -1583,7 +1587,7 @@ print("The multiplication of two numbers is", multiplication)
 ```
 
 2. Solution code
-```console
+```python
 from sys import argv
 
 name = argv[1]
@@ -1592,7 +1596,7 @@ print(name, "is very good boy who helps everyone and also",name, "participates i
 ```
 
 3. Solution code
-```console
+```python
 base = float(input("Enter the base of the triangle "))
 height = float(input("Enter the height of the triangle "))
 
@@ -1601,7 +1605,7 @@ print("The area of triangle is ", area_triangle)
 ```
 
 4. Solution code
-```console
+```python
 name = argv[1]
 year = argv[2]
 name_of_college = argv[3]
@@ -1616,7 +1620,7 @@ print("city_lives   :", lives)
 
  <br />
  
-### Exercie - 4 Answers <a name="E-4"></a>
+### Exercise - 4 <a name="E-4"></a>
 
 1. A
 2. B
@@ -1630,16 +1634,16 @@ False
 
  <br />
  
-### Exercie - 5 Answers <a name="E-5"></a>
+### Exercise - 5  <a name="E-5"></a>
 
 1. Solution code
-```console
+```python
 string = "python"
 print(string.upper())
 ```
 
 2. Solution code
-```console
+```python
 string = "Cython"
 
 result = string.replace("C", "P", 1)
@@ -1656,10 +1660,10 @@ print(result)
 
 <br />
 
-### Exercie - 6 Answers <a name="E-6"></a>
+### Exercise - 6 <a name="E-6"></a>
 
 1. Solution code
-```console
+```python
 print("Talk is \'cheap\'. Show me the code.")
 print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
 print("If your ship doesn \'t come in, \\swim\\ out to it?")
