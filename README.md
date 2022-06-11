@@ -86,22 +86,24 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [While](#10)
     - [for](#10)
 11. [Lists](#11)
-12. [Tuples](#12)
-13. [Dictionaries](#13)
-14. Functions
-15. Exception Handling
-16. File Handling
+12. [range function](#12)
+13. [Tuples](#13)
+14. [Sets](#14)
+15. [Dictionaries](#15)
+16. Functions
+17. Exception Handling
+18. File Handling
     - Read
     - Write
     - delete
-17. Modules
-18. Namespace
-19. Packages
-20. Built in tools
-21. repr()
-22. difference between running the code in vs code and jupyter notebook
-23. assert (basic debugging) - to set a breakpoint
-24. What editors are required to use in python
+19. Modules
+20. Namespace
+21. Packages
+22. Built in tools
+23. repr()
+24. difference between running the code in vs code and jupyter notebook
+25. assert (basic debugging) - to set a breakpoint
+26. What editors are required to use in python
 
 ## Answers <a name="answers"></a>
 
@@ -1615,172 +1617,10 @@ If your ship doesn 't come in, \swim\ out to it?
   [go to List of Topics](#top)
   
   <br />
-    
-## **Answers**
+   
+## **Conditional statements** <a name="9"></a>
 
-### Exercise - 1 <a name="E-1"></a>
-
-1. C
-2. D
-3. A, B, C
-4.
-
-```python
-#output
-
-wonders_of_world = 7
-print(wonders_of_world)
-```
-
-5.
-
-```python
-#output
-
-planet_near_to_sun = "Mercury"
-print(planet_near_to_sun)
-```
-
-6. B
-
-  <br />
-  
-### Exercise - 2 <a name="E-2"></a>
-
-1. student_name = "Ramesh"
-2.
-
-```python
-#output
-
-number1 = 10
-number2 = 5
-number3 = number1 + number2
-print(number3)
-
-```
-
-3.
-
-```python
-colour = "blue"
-fruit = "Mango"
-number = 22
-article = "is"
-
-print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  article, number , ".")
-```
-
-  <br />
-  
-### Exercise - 3 <a name="E-3"></a>
-
-1. Solution code
-
-```python
-number1 = int(input("Enter the first number "))
-number2 = int(input("Enter the second number "))
-
-multiplication = number1 * number2
-print("The multiplication of two numbers is", multiplication)
-```
-
-2. Solution code
-
-```python
-from sys import argv
-
-name = argv[1]
-
-print(name, "is very good boy who helps everyone and also",name, "participates in all the sports and cultural meet.", name, "hobbies are playing virtual games and also watching movies.")
-```
-
-3. Solution code
-
-```python
-base = float(input("Enter the base of the triangle "))
-height = float(input("Enter the height of the triangle "))
-
-area_triangle = (base * height) / 2
-print("The area of triangle is ", area_triangle)
-```
-
-4. Solution code
-
-```python
-name = argv[1]
-year = argv[2]
-name_of_college = argv[3]
-lives = argv[4]
-
-
-print("student_name :", name)
-print("class        :", year)
-print("college_name :", name_of_college)
-print("city_lives   :", lives)
-```
-
- <br />
- 
-### Exercise - 4 <a name="E-4"></a>
-
-1. A
-2. B
-3. B
-4. 12 4
-   True
-   False
-   False
-5. False
-
- <br />
- 
-### Exercise - 5  <a name="E-5"></a>
-
-1. Solution code
-
-```python
-string = "python"
-print(string.upper())
-```
-
-2. Solution code
-
-```python
-string = "Cython"
-
-result = string.replace("C", "P", 1)
-print(result)
-```
-
-3. Solution code
-
-```python
-string = "Python"
-
-result = string.center(14,"*")
-print(result)
-```
-
-4. 1
-
-<br />
-
-### Exercise - 6 <a name="E-6"></a>
-
-1. Solution code
-
-```python
-print("Talk is \'cheap\'. Show me the code.")
-print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
-print("If your ship doesn \'t come in, \\swim\\ out to it?")
-```
-
-2. Solution code
-
-## **Conditional statements**
-
-### `if` statement:
+### `if` statement: <a name="9.1"></a>
 
 `if` statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not based on certain conditions that we provide after the `if` keyword i.e, if a certain condition is satisified or `True`, then the block of statements under if will be executed. if that condition is not satisfied or `False`, the statements that are under the `if` block are not executed. For an `if` statememt, the `elif` and `else` blocks are optional. while writing `if` statements, we should make sure that, we are writing the code with **proper indentation**, otherwise the code execution stops, displaying indentation related errors.
 
@@ -1849,7 +1689,7 @@ greater than zero
 
  <br /> 
   
-  ## **Exercise - 7** 
+### **Exercise - 7**  <a name="E-7"></a>
   
   1. Write a script to check whether the given year is a *leap year* or not. The input i.e., year, should be given during script execution itself. i.e, as a command line parameter.
   2. Write a script to check whether the given number is *odd or even* by requesting input from the user, using ```input()``` function.
@@ -1864,37 +1704,52 @@ greater than zero
  
   
    <br /> 
- 
-## **Loops**
   
+  [go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Loops**<a name="10"></a>
+
 ### While loop
-  1. syntax for ```while``` is 
-  ```console
-    While expression:
-      code to write
-  ```
+
+1. syntax for `while` is
+
+```console
+  While expression:
+    code to write
+```
+
     - the code in the while executes continously as long as the expression evaluates to be true.
     - When the expression evaluates as False, then the loop terminates.
-  2. Examples of ```while``` loop
-  ```python
-  i = 2
-  while i > 0:
-    print(" i is ", i)
-    i = i - 1
-  print("loop executed")
-  ```
-  ```console
-  running script
-  PS C:\Users\Documents\Training\code> python while_statement.py  
-  
-  output
-  i is  2
-  i is  1
-  loop executed
-  ```
-  
-### ```for``` loop
-<span style="color: blue;"> The ```for``` loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.
+
+2. Examples of `while` loop
+
+```python
+i = 2
+while i > 0:
+  print(" i is ", i)
+  i = i - 1
+print("loop executed")
+```
+
+```console
+running script
+PS C:\Users\Documents\Training\code> python while_statement.py
+
+output
+i is  2
+i is  1
+loop executed
+```
+
+### `for` loop
+
+<span style="color: blue;"> The `for` loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.
 
 Example:
 
@@ -2022,7 +1877,7 @@ month 10: october
 
  <br />
 
-## **Exercise - 8**
+### **Exercise - 8** <a name="E-8"></a>
 
 1.  write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
 
@@ -2045,8 +1900,16 @@ month 10: october
 ```
 
 <br />
+  
+  [go to Answers](#answers)
 
-## Lists
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Lists** <a name="11"></a>
 
 <span style="color: blue;"> A list in Python is used to store the sequence of various types of data. Python lists are ordered and mutable type its mean we can modify its element after it created. The items in the list are separated with the comma (,) and enclosed with the square brackets []. Lists can contain items of different types.
 
@@ -2058,19 +1921,28 @@ Basic examples
 >>> student = ["suresh", 80, 6.2] #list also contain different data types
 ```
 
-## ```range``` function:
+<br />  
+  [go to Answers](#answers)
 
-If you do need to iterate over a sequence of numbers, use the built-in function ```range()```. It generates lists containing arithmetic progressions:
+<br />
 
-Python’s ```range(1, 10)``` function returns a list of consecutive integers, in this case the list [1,2,3,4,5,6,7,8,9].
+[go to List of Topics](#top)
 
-So, the ```for``` statement ```for i in range(1, 10))``` is equivalent to:
+<br />
+
+## **`range` function:** <a name="12"></a>
+
+If you do need to iterate over a sequence of numbers, use the built-in function `range()`. It generates lists containing arithmetic progressions:
+
+Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list [1,2,3,4,5,6,7,8,9].
+
+So, the `for` statement `for i in range(1, 10))` is equivalent to:
 
 ```python
 for i in [1,2,3,4,5,6,7,8,9]
 ```
 
-An example scenario for ```range()```:
+An example scenario for `range()`:
 
 ```python
 for i in range(1, 5):
@@ -2081,6 +1953,7 @@ for i in range(0, 25, 5):
 print()
 print(list(range(0, -10, -2)))
 ```
+
 ```console
 Output:
 
@@ -2124,6 +1997,7 @@ print(a)
 b[1].append(25)
 print(b)
 ```
+
 ```console
 Output:
 
@@ -2154,7 +2028,7 @@ False
  <br />
    
  
- ## **Exercise - 9**
+### **Exercise - 9** <a name="E-9"></a>
   
  1. write output for the given questions
  ```python
@@ -2168,7 +2042,15 @@ False
 
   <br />  
   
-## Tuples:
+  [go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Tuples:** <a name="13"></a>
 
 <span style="color: blue;"> Tuples are like lists, but are ordered and immutable like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). They are enclosed by parentheses or nothing at all, rather than brackets.
 
@@ -2224,7 +2106,7 @@ output
  <br />
   
  
- ## **Exercise - 10**
+### **Exercise - 10** <a name="E-10"></a>
   
  1. Write a script and gives the final output
  ```python
@@ -2236,8 +2118,16 @@ output
  ```
   
 <br />
+  
+  [go to Answers](#answers)
 
-## Sets
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Sets** <a name="14"></a>
 
 1. sets can contain many values in it. It is deneoted with `{}`. The values in the set are unordered and also it delete the duplicate values. Once the set is created we can not update values but we can add values. In set we cannot access values with the help of index.
 2. Examples on sets
@@ -2275,9 +2165,9 @@ output
 {'Ramesh', 'Suresh', 'Mahesh'}
 ```
 
- <br />
+<br />
 
-## **Exercise - 11**
+### **Exercise - 11**
 
 1. Write a script that takes the following two sets as inputs and does the following operations on those sets :
 
@@ -2297,8 +2187,16 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 ```
 
 <br />
+  
+  [go to Answers](#answers)
 
-## Dictionary:
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Dictionary:** <a name="15"></a>
 
 <span style="color: blue;"> Dictionary (hash) which is also called associative arrays.
 Dictionary is a built-in Python Data Structure that is mutable. Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered. Deletion of an element from a dictionary can be done via pop(). The in operator works on dictionary keys.
@@ -2419,7 +2317,15 @@ by using range statement
 125
 ```
 
-## OrderedDict module
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **OrderedDict module** <a name="16"></a>
 
 <span style="color: blue;"> An OrderedDict is a dictionary subclass that remembers the order in which its contents are added, supporting the usual dict methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
 
@@ -2594,7 +2500,7 @@ c C
 <br />
  
  
- ## **Exercise - 12** 
+### **Exercise - 12** 
   1. Write a script and gives the final output
  ```python
  Given the dictionary  
@@ -2612,3 +2518,173 @@ c C
 ```
    
  <br />
+  
+  [go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Answers**
+
+### Exercise - 1 <a name="E-1"></a>
+
+1. C
+2. D
+3. A, B, C
+4.
+
+```python
+#output
+
+wonders_of_world = 7
+print(wonders_of_world)
+```
+
+5.
+
+```python
+#output
+
+planet_near_to_sun = "Mercury"
+print(planet_near_to_sun)
+```
+
+6. B
+
+  <br />
+  
+### Exercise - 2 <a name="E-2"></a>
+
+1. student_name = "Ramesh"
+2.
+
+```python
+#output
+
+number1 = 10
+number2 = 5
+number3 = number1 + number2
+print(number3)
+
+```
+
+3.
+
+```python
+colour = "blue"
+fruit = "Mango"
+number = 22
+article = "is"
+
+print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  article, number , ".")
+```
+
+  <br />
+  
+### Exercise - 3 <a name="E-3"></a>
+
+1. Solution code
+
+```python
+number1 = int(input("Enter the first number "))
+number2 = int(input("Enter the second number "))
+
+multiplication = number1 * number2
+print("The multiplication of two numbers is", multiplication)
+```
+
+2. Solution code
+
+```python
+from sys import argv
+
+name = argv[1]
+
+print(name, "is very good boy who helps everyone and also",name, "participates in all the sports and cultural meet.", name, "hobbies are playing virtual games and also watching movies.")
+```
+
+3. Solution code
+
+```python
+base = float(input("Enter the base of the triangle "))
+height = float(input("Enter the height of the triangle "))
+
+area_triangle = (base * height) / 2
+print("The area of triangle is ", area_triangle)
+```
+
+4. Solution code
+
+```python
+name = argv[1]
+year = argv[2]
+name_of_college = argv[3]
+lives = argv[4]
+
+
+print("student_name :", name)
+print("class        :", year)
+print("college_name :", name_of_college)
+print("city_lives   :", lives)
+```
+
+ <br />
+ 
+### Exercise - 4 <a name="E-4"></a>
+
+1. A
+2. B
+3. B
+4. 12 4
+   True
+   False
+   False
+5. False
+
+ <br />
+ 
+### Exercise - 5  <a name="E-5"></a>
+
+1. Solution code
+
+```python
+string = "python"
+print(string.upper())
+```
+
+2. Solution code
+
+```python
+string = "Cython"
+
+result = string.replace("C", "P", 1)
+print(result)
+```
+
+3. Solution code
+
+```python
+string = "Python"
+
+result = string.center(14,"*")
+print(result)
+```
+
+4. 1
+
+<br />
+
+### Exercise - 6 <a name="E-6"></a>
+
+1. Solution code
+
+```python
+print("Talk is \'cheap\'. Show me the code.")
+print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
+print("If your ship doesn \'t come in, \\swim\\ out to it?")
+```
+
+2. Solution code
