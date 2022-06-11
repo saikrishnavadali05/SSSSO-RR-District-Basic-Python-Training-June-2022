@@ -2031,7 +2031,7 @@ False
 ### **Exercise - 9** <a name="E-9"></a>
   
  1. write output for the given questions
- ```python
+ ```console
  1. [0, 2, 4, 6]
  2. [20, 16, 12, 8, 4]
  3. [-12, -6, 0, 6, 12]
@@ -2052,7 +2052,7 @@ False
 
 ## **Tuples:** <a name="13"></a>
 
-<span style="color: blue;"> Tuples are like lists, but are ordered and immutable like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). They are enclosed by parentheses or nothing at all, rather than brackets.
+Tuples are like lists, but are ordered and immutable like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). They are enclosed by parentheses or nothing at all, rather than brackets.
 
 ```python
 t1 = (12, 5, 8)
@@ -2071,7 +2071,8 @@ print(t3)
 # print(t1) throws error as we deleted t1
 print(type(t2[0]))
 print(type(t3))
-
+```
+```console
 Output:
 
 index 1 in t1 is : 5
@@ -2095,7 +2096,8 @@ phone_list = list(phone_tuple)
 phone_list.append("Realme")
 phone_tuple = tuple(phone_list)
 print(phone_tuple)
-
+```
+```console
 running script
 PS C:\Users\Documents\Training\code> python lists.py
 
@@ -2109,7 +2111,7 @@ output
 ### **Exercise - 10** <a name="E-10"></a>
   
  1. Write a script and gives the final output
- ```python
+ ```console
  given tuple Bikes = ("pulsar", "duke", "shine")
  1. give the total number of items present in the tuple.
  2. give the index number for shine in the tuple.
@@ -2129,8 +2131,8 @@ output
 
 ## **Sets** <a name="14"></a>
 
-1. sets can contain many values in it. It is deneoted with `{}`. The values in the set are unordered and also it delete the duplicate values. Once the set is created we can not update values but we can add values. In set we cannot access values with the help of index.
-2. Examples on sets
+1. A set contains uniques values in it. It is denoted with *curly braces :* `{}`. The values in the ```set``` are unordered and also it deletes the duplicate values. Once the ```set``` is created, we can not update the existing values. But new values can be added (appended). In ```set``` we cannot access values with the help of index, like in tuples and lists.
+2. A few examples on sets
 
 ```python
 name_set = {"Harish", "Ramesh", "Suresh"}
@@ -2148,7 +2150,7 @@ Ramesh
 Suresh
 ```
 
-`set` Methods examples
+> A Few examples of methods in a ```set```  
 
 ```python
 name_set = {"Harish", "Ramesh", "Suresh"}
@@ -2169,11 +2171,13 @@ output
 
 ### **Exercise - 11**
 
-1. Write a script that takes the following two sets as inputs and does the following operations on those sets :
+1. Write a python script that takes the following two sets as inputs and does the following operations on those sets :
 
-Input Sets :
+```python
+# Input Sets :
 set1 = {"maaza", "sprite", "fanta", "maaza"}
 set2 = {"pepsi", "frooti", "sprite", "maaza"}
+```
 
 ```console
  Operations to be done on those Sets :
@@ -2198,15 +2202,12 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 
 ## **Dictionary:** <a name="15"></a>
 
-<span style="color: blue;"> Dictionary (hash) which is also called associative arrays.
-Dictionary is a built-in Python Data Structure that is mutable. Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered. Deletion of an element from a dictionary can be done via pop(). The in operator works on dictionary keys.
+Dictionary (hash) which is also called associative arrays. Dictionary is a built-in Python Data Structure that is mutable. Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered. Deletion of an element from a dictionary can be done via ```pop()```. The in operator works on dictionary keys. As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
 
-<span style="color: red;">As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</span>
-
-Basic example
+> A basic dictionary example
 
 ```python
-  user_dist = {
+  user_dict = {
   "name": "Ganesh",
   "Age": 18,
   "Weight": 60,
@@ -2214,15 +2215,16 @@ Basic example
 }
 student = thisdict["name"]
 print(student)
+```
+```console
+Script Execution and Outputs
+PS C:\Users\Documents\Training\code> python dictonary.py
 
-running script
- PS C:\Users\Documents\Training\code> python dictonary.py
-
-output
- Ganesh
+Output : 
+Ganesh
 ```
 
-Example program using dictionary:
+> An example program to illustrate a simple dictionary:
 
 ```python
 months = {4: 'April', 2: 'Feb', 5: 'May', 1: 'Jan'}
@@ -2243,8 +2245,9 @@ print(months.get(1))
 # del months
 months.clear()
 print(months)
-
-Output:
+```
+```console
+# Output
 
 {4: 'April', 2: 'Feb', 5: 'May', 1: 'Jan'}
 April
@@ -2290,7 +2293,8 @@ print("Len = ", len(cubes))
 print("\nby using range statement")
 for i in range(1, 6):
     print(i ** 3)
-
+```
+```console
 Output:
 
 Dictionary with the use of Mixed Keys:
