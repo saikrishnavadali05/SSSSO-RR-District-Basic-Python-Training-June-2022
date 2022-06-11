@@ -9,6 +9,9 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 > Total - 4 hours of training sessions per week
 
+## Rewards
+> Top 10 Contributors to this Repository will get Special Rewards from the SSSSO RR District Python Training Organizers
+
 # Setting up git and github, python 3.10, VS Code
 
 1. [programming knowledge channel - How to Install Git on Windows 10 + Setting Up Git and GitHub on Windows 10](https://www.youtube.com/watch?v=bb_LoXAC-zE)
