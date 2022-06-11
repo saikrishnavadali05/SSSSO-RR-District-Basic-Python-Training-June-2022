@@ -872,23 +872,23 @@ sky is blue, Mango is yellow, age of suresh is 22 .
     num2 = argv[2]
     num3 = int(argv[3])
     num4 = int(argv[4])
-    add1 = num1 + num2
-    add2 = num3 + num4
-    print("The total add1 is", add1)
-    print("The total add2 is", add2)
+    addition1 = num1 + num2
+    addition2 = num3 + num4
+    print("The total addition1 result is", addition1)
+    print("The total addition2 result is", addition2)
   ```
   running script
     
   > PS C:\Users\Documents\Training\code> python command_line_parameter.py  10 20 30 40
     
   ```console
-  # output
+  # Output
     
-  The total add1 is 1020
-  The total add1 is 70
+  The total addition1 is 1020
+  The total addition2 is 70
   ```
-  1. From the above script we have things to remember are
-      * By default **argv** consider any value as string so if we specify the data type properly at the time of assigning then it can be worked as the result we thought.
+  1. From the above script, the following are the few aspects to be remembered :
+      * By default ```argv```, consider any input argument that we provide as a string. So, we should explicitly type cast the value that are passed to the program via ```argv```. We need to be clear of the data type that we will be type casting to within the program. So, the values that we send the program as input have to be  apt their to actual datatypes (they should be easily type casted back to their respective types).
      
  <br />
     
@@ -1552,4 +1552,3 @@ print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  art
 ### Exercie - 4 Answers <a name="E-4"></a>
 ### Exercie - 5 Answers <a name="E-5"></a>
 ### Exercie - 6 Answers <a name="E-6"></a>
-
