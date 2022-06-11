@@ -81,25 +81,24 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* Nested If elif else
 10. Loops
 	* While
-	*  for
-11.  Lists
-	* list comprehension 
+	* for
+11. Lists
 12. Tuples 
 13. Dictionaries
-14. File Handling
+15. Functions
+16. Exception Handling
+17. File Handling
 	* Read 
 	*  Write
 	* delete
-15. Functions
-16. Exception Handling
-17. Modules
-18. Namespace
-19. Packages
-20. Built in tools
-21. repr()
-22. difference between running the code in vs code and jupyter notebook
-23. assert (basic debugging) - to set a breakpoint
-24. What editors are required to use in python 
+18. Modules
+19. Namespace
+20. Packages
+21. Built in tools
+22. repr()
+23. difference between running the code in vs code and jupyter notebook
+24. assert (basic debugging) - to set a breakpoint
+25. What editors are required to use in python 
 
 ## Answers <a name="answers"></a>
 
