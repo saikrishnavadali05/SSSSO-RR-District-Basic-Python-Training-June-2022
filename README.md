@@ -1298,7 +1298,7 @@ print(y not in x)
 
 > Example :- "Multiple_wishes" 'Multiple_wishes'
 
-2. In the case of string handling, the operator `+` is used to concatenate two strings as the operation "Multiple"+" Wishes" returns "Multiple Wishes".
+2. In the case of string handling, the operator `+` is used to concatenate two strings as the operation ```"Multiple"```+```" Wishes"``` returns ```"Multiple Wishes"```.
 
 <br />
 
@@ -1338,8 +1338,8 @@ t
 ### **Object Identity** <a name="7.2"></a>
 
 1. In Python, every created **object** identifies **uniquely** in Python.
-2. Python provides the guaranteed that **no two objects will have the same identifier**. The built-in **id()** function, is used to identify the object identifier.
-3. Example
+2. Python provides the guaranteed that **no two objects will have the same identifier**. The built-in ```id()``` function, is used to identify the object identifier.
+> The following program illustrates the assignment and reassignment of values to objects.
 
 ```python
 a = 50
@@ -1362,8 +1362,9 @@ Id of a variable is 2822056960944
 
 ### **Program using builtin function**: <a name="7.3"></a>
 
-1. The below examples gives the idea of how to **access**, **update**, **format**, **slicing**, **concatenating** and **escape** strings
-2. Example -1
+1. The following examples demonstrate the usage and importance of  *accessing*, *updating*, *formating*, *slicing*, *concatenating* and *escaping* in strings
+
+> Example - 1
 
 ```python
 str1 = "Multiple_Wishes"
@@ -1392,9 +1393,7 @@ print(val.isdigit())
 Name = "Multiple_Wishes"
 print(Name.isalpha())
 ```
-
 ```console
-
 #Output:
 Id number for str1 is  1608101425520
 Id number for str2 is  1608101425264
@@ -1414,10 +1413,9 @@ Is string name contains Alphabets:  False
 True
 False
 ```
+The function ```eval()``` evaluates the passed string as a Python expression and returns the result. For example, ```eval("1 + 2")``` interprets and executes the expression ```"1 + 2"``` and returns the result (3).
 
-- Function eval( ) evaluates the passed string as a Python expression and returns the result. For example, eval("1 + 2") interprets and executes the expression "1 + 2" and returns the result (3).
-
-3. Example -2
+> Example - 2
 
 ```python
 # Using Backslash to continue statements
@@ -1477,7 +1475,7 @@ Name of the string is : multiple_wishes
 Name of the string is : multiple_wishes
 ```
 
-Here by using .format the string_name is insterted in `{}`.
+Here by using ```.format``` the ```string_name``` is inserted in `{}`.
 
 <br />
   
@@ -1522,25 +1520,29 @@ genesis
 
 1.  Write a script that can convert the given lower string to upper case string
 
-```python
-Example - python   -   output looks PYTHON
+```console
+For Example :
+Input string : python 
+Output string : PYTHON
 ```
 
 2.  Write a script that can replace the first character in string
 
-```python
-Example - Cython  -   output looks Python
+```console
+For Example :
+Input string : Cython
+Output string : Python
 ```
 
-3.  Write a script that prints the following output( use center method)
+3.  Write a script that prints the following output (use ```center()``` method)
 
-```python
-#output
+```console
+# output
 
 ****Python****
 ```
 
-4.  Go through the code and give the answer without running it in the python in interpreter
+4.  Please go through the code and provide the answer without running the code in any interpreter
 
 ```python
 string = "Hello, emma."
@@ -1589,18 +1591,18 @@ He      is      very    good    boy.
 
 ### **Exercise - 6** <a name="8.1"></a>
 
-1. Write a script to print the following statements using escape sequences and output should be
+1. Write a script to print the following statements using escape sequences and output should look like the following
 
-```python
-#output
+```console
+# output
 Talk is 'cheap'. Show me the code.
 I'm not a "great" programmer!I'm just a  good programmer with great habits.
 If your ship doesn 't come in, \swim\ out to it?
 ```
 
-2. write a script to print the following shape using print statement
+2. write a script to display the following shape using ```print()``` statements
 
-```python
+```console
          *
      * python *
    * is  *  a    *
