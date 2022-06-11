@@ -78,16 +78,16 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
    - '\t' - [Tab character](#8)
    - '\a' - [Alarm character](#8)
    - [Exercise - 6](#8.1)
-9. Conditional statements
-   - If
-   - If else
-   - Nested If elif else
-10. Loops
-    - While
-    - for
-11. Lists
-12. Tuples
-13. Dictionaries
+9. [Conditional statements](#9)
+   - [If](#9)
+   - [If else](#9)
+   - [Nested If elif else](#9)
+10. [Loops](#10)
+    - [While](#10)
+    - [for](#10)
+11. [Lists](#11)
+12. [Tuples](#12)
+13. [Dictionaries](#13)
 14. Functions
 15. Exception Handling
 16. File Handling
