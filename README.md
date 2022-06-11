@@ -1884,29 +1884,33 @@ month 10: october
 
 ### **Exercise - 8** <a name="E-8"></a>
 
-1.  write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
+1.  Write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
 
 ```console
  	input list = [7, 3, 9, -23, 0, -21, 2]
 	The output should show that the
-	largest number - 9, smallest number - -23
+	largest number is 9 and the smallest number is -23
 ```
 
-2.  write a script for factorial and take input from the command line parameter. using `while` and `for` loops
+2.  Write a script for factorial and take input from the command line parameter. using `while` and `for` loops
 
 ```console
- example factorial of 4! is 4 * 3 * 2 * 1 = 24
+For example, factorial of 4! is 4 * 3 * 2 * 1 = 24.
+Input of your code should take n as input.
+Output of your code should be n!
 ```
 
-3.  print the count of the given number using `while` and `for` loops. Take input from the user
+3.  Write a script to print the count of number of digits within the given input number using `while` and `for` loops. 
 
 ```console
- example is 123 the count of the given number is 3
+input from the user is 123.
+number of digits in the above number are 3.
+Hence the output count should return 3.
 ```
 
 <br />
   
-  [go to Answers](#answers)
+[go to Answers](#answers)
 
 <br />
 
@@ -1916,7 +1920,7 @@ month 10: october
 
 ## **Lists** <a name="11"></a>
 
-<span style="color: blue;"> A list in Python is used to store the sequence of various types of data. Python lists are ordered and mutable type its mean we can modify its element after it created. The items in the list are separated with the comma (,) and enclosed with the square brackets []. Lists can contain items of different types.
+A ```list``` in Python is used to store the sequence of various types of data. Python lists are ordered and mutable type its mean we can modify its element after it created. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
 
 Basic examples
 
@@ -1926,8 +1930,9 @@ Basic examples
 >>> student = ["suresh", 80, 6.2] #list also contain different data types
 ```
 
-<br />  
-  [go to Answers](#answers)
+<br />
+
+[go to Answers](#answers)
 
 <br />
 
@@ -1939,7 +1944,7 @@ Basic examples
 
 If you do need to iterate over a sequence of numbers, use the built-in function `range()`. It generates lists containing arithmetic progressions:
 
-Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list [1,2,3,4,5,6,7,8,9].
+Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
 
 So, the `for` statement `for i in range(1, 10))` is equivalent to:
 
@@ -1947,7 +1952,7 @@ So, the `for` statement `for i in range(1, 10))` is equivalent to:
 for i in [1,2,3,4,5,6,7,8,9]
 ```
 
-An example scenario for `range()`:
+> An example scenario containing the usage of `range()` function:
 
 ```python
 for i in range(1, 5):
@@ -1976,9 +1981,9 @@ Output:
 [0, -2, -4, -6, -8]
 ```
 
-It is possible to nest lists (create lists containing other lists).
+It is possible to nest a lists (create lists containing other lists) within another list.
 
-Example problem of nested lists:
+> An example code snippet to illustrate nested lists:
 
 ```python
 data = ["a", 'b', 10, 3]
@@ -2019,9 +2024,10 @@ length of data 6
 [5, [3, 10, 12, 20, 25], 30]
 ```
 
-Example of list with **membership** operators
+> An example code snippet of a list being used along with **membership** operators
 
- <br />
+<br />
+
 ```python
 >>> student = ["Ramesh", 80, 6.65]
 >>> "Ramesh" in stuff
@@ -2030,7 +2036,7 @@ True
 False
 ```
 
- <br />
+<br />
    
  
 ### **Exercise - 9** <a name="E-9"></a>
@@ -2093,7 +2099,7 @@ True
 <class 'tuple'>
 ```
 
-If we want to change or add values to the tuple then we can only achieve it by changing the tuple into list then update(add/remove) items to it and convert back to tuple.
+If we want to change or add values to the tuple then we can only achieve it by changing the ```tuple``` into ```list```, then update(add/remove) items to it and convert back to tuple.
 
 ```python
 phone_tuple = ("Redmi", "LG", "Apple")
@@ -2115,13 +2121,15 @@ output
  
 ### **Exercise - 10** <a name="E-10"></a>
   
- 1. Write a script and gives the final output
+ 1. Write a python script that does the following operations:
  ```console
- given tuple Bikes = ("pulsar", "duke", "shine")
+ Input to the script will be a tuple with bike names : ("pulsar", "duke", "shine")
+
+ *Script should* : 
  1. give the total number of items present in the tuple.
- 2. give the index number for shine in the tuple.
- 3. add the item splendor to the tuple.
- 4. remove the item duke from the tuple.
+ 2. give the index number for "shine" in the tuple.
+ 3. add the item "splendor" to the tuple.
+ 4. remove the item "duke" from the tuple.
  ```
   
 <br />
@@ -2136,8 +2144,8 @@ output
 
 ## **Sets** <a name="14"></a>
 
-1. A set contains uniques values in it. It is denoted with *curly braces :* `{}`. The values in the ```set``` are unordered and also it deletes the duplicate values. Once the ```set``` is created, we can not update the existing values. But new values can be added (appended). In ```set``` we cannot access values with the help of index, like in tuples and lists.
-2. A few examples on sets
+1. A ```set``` contains uniques values in it. It is denoted with *curly braces :* `{}`. The values in the ```set``` are unordered and also it deletes the duplicate values. Once the ```set``` is created, we can not update the existing values. But new values can be added (appended). In ```set``` we cannot access values with the help of index, which is possible in tuples and lists easily.
+2. A few examples of code snippets showing the usage of sets
 
 ```python
 name_set = {"Harish", "Ramesh", "Suresh"}
@@ -2209,7 +2217,7 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 
 Dictionary (hash) which is also called associative arrays. Dictionary is a built-in Python Data Structure that is mutable. Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered. Deletion of an element from a dictionary can be done via ```pop()```. The in operator works on dictionary keys. As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
 
-> A basic dictionary example
+> An example program to illustrate the creation and usage of a dictionary
 
 ```python
   user_dict = {
@@ -2229,7 +2237,7 @@ Output :
 Ganesh
 ```
 
-> An example program to illustrate a simple dictionary:
+> Another example program to illustrate a dictionary:
 
 ```python
 months = {4: 'April', 2: 'Feb', 5: 'May', 1: 'Jan'}
@@ -2363,7 +2371,7 @@ dict_items([('c', 1), ('b', 2), ('a', 3)])
 
 > Example : OrderDictionary2.py
 
-Key value Change: If the value of a certain key is changed, the position of the key remains unchanged in OrderedDict.
+Key value Change: Even if the value of a certain key is changed, the position of the key remains unchanged in an ```OrderedDict```.
 
 ```python
 from collections import OrderedDict
@@ -2549,7 +2557,7 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
 1. C
 2. D
 3. A, B, C
-4.
+4. Solution Code
 
 ```python
 #output
@@ -2558,7 +2566,7 @@ wonders_of_world = 7
 print(wonders_of_world)
 ```
 
-5.
+5. Solution Code
 
 ```python
 #output
@@ -2574,7 +2582,7 @@ print(planet_near_to_sun)
 ### Exercise - 2 <a name="E-2"></a>
 
 1. student_name = "Ramesh"
-2.
+2. Solution Code
 
 ```python
 #output
@@ -2586,7 +2594,7 @@ print(number3)
 
 ```
 
-3.
+3. Solution Code
 
 ```python
 colour = "blue"
@@ -2701,5 +2709,3 @@ print("Talk is \'cheap\'. Show me the code.")
 print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
 print("If your ship doesn \'t come in, \\swim\\ out to it?")
 ```
-
-2. Solution code
