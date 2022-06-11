@@ -801,16 +801,21 @@ sky is blue, Mango is yellow, age of suresh is 22 .
 
 ### **input function**  <a name="5.1"></a>
  
-  3. the input functions always gives only string. whatever the input given by the user the input function changes into string.
+  3. The ```input()``` function always takes the input given by user as a string by default. whatever input the user gives will automatically be converted to a string by the ```input()``` function.
+  4. The user should perform **type casting** to get back the actual type of the input that he provided to the program.
   
   Examples for **input function** 
   ```python
   name_of_user = input("Name of the user: ")
   print(type(name_of_user))
   print(name_of_user)
+  print()
+
   age_of_user = input("Age of the user: ")
   print(type(age_of_user))
   print(age_of_user)
+  print()
+  
   converted_age_of_user_to_integer = int(input("Age of the user: "))
   print(type(converted_age_of_user_to_integer))
   print(converted_age_of_user_to_integer)
@@ -818,12 +823,15 @@ sky is blue, Mango is yellow, age of suresh is 22 .
   
   ```console
   output
+
   Name of the user: Ram
   <class 'str'>
   Ram
+  
   Age of the user: 15
   <class 'str'>
   15
+  
   Age of the user: 15
   <class 'int'>
   15
