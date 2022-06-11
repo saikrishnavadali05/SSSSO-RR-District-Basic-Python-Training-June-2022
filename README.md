@@ -76,24 +76,25 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     * '\a' - [Alarm character](#8)
     * [Exercise - 6](#8.1)	
 9. Conditional statements
-	* if
-	* if else
-	* Nested if elif else
+	* If
+	* If else
+	* Nested If elif else
 10. Loops
 	* While
-	* for
-11. Lists
+	*  for
+11.  Lists
+	* list comprehension 
 12. Tuples 
 13. Dictionaries
-14. Functions
-15. File Handling
+14. File Handling
 	* Read 
-	* Write
+	*  Write
 	* delete
-17. Modules
-18. Namespaces
-19. Packages
+15. Functions
 16. Exception Handling
+17. Modules
+18. Namespace
+19. Packages
 20. Built in tools
 21. repr()
 22. difference between running the code in vs code and jupyter notebook
@@ -2239,7 +2240,8 @@ d.move_to_end('b', last=False)
 print('\nmove_to_end(last=False):')
 for k, v in d.items():
     print(k, v)
-
+```
+``` console
 Output:
 
 Before:
@@ -2282,14 +2284,15 @@ c C
  <br /> 
   
 ## Sets
-  1. sets can contain many values in it. It is deneoted with {}. The values in the set are unordered and also it delete the duplicate values. Once the set is created we can not update values but we can add values. In set we cannot access values with the help of index. 
+  1. sets can contain many values in it. It is deneoted with ```{}```. The values in the set are unordered and also it delete the duplicate values. Once the set is created we can not update values but we can add values. In set we cannot access values with the help of index. 
   2. Examples on sets
   
   ```python
   name_set = {"Harish", "Ramesh", "Suresh"}
   for i in name_set:
   print(i)
-  
+  ```
+  ```console
   running script
   PS C:\Users\Documents\Training\code> python set.py
   
@@ -2298,14 +2301,16 @@ c C
   Ramesh 
   Suresh
   ```
-  Set Methods examples
+  ```set``` Methods examples
   
   ```python
   name_set = {"Harish", "Ramesh", "Suresh"}
   name_set.add("Mahesh")
   name_set.remove("Harish")
   print(name_set)
-  
+  ```
+
+  ```console
   running script
   PS C:\Users\Documents\Training\code> python set_1.py
   
@@ -2618,3 +2623,8 @@ month 10: october
  ```
   
 <br /> 
+### Python Function
+<span style="color: blue;"> Functions are the most important aspect of an application. A function can be defined as the organized block of reusable code, which can be called whenever required. The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+
+The Function helps to programmer to break the program into the smaller part. It organizes the code very effectively and avoids the repetition of the code. As the program grows, function makes the program more organized.
+
