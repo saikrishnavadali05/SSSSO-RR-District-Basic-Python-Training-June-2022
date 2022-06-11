@@ -1667,4 +1667,946 @@ print("If your ship doesn \'t come in, \\swim\\ out to it?")
 2. Solution code
 
 
+## Lists
+
+<span style="color: blue;"> A list in Python is used to store the sequence of various types of data. Python lists are ordered and mutable type its mean we can modify its element after it created. The items in the list are separated with the comma (,) and enclosed with the square brackets []. Lists can contain items of different types.
+  
+Basic examples
+  
+```python
+>>> numbers = [0, 5, 8, 11, 12]
+>>> months = ["january", "March", "April"]
+>>> student = ["suresh", 80, 6.2] #list also contain different data types
+```
+  
+## list comprehension
+1. When you wish to build a new list based on the values of an existing list, list comprehension provides a concise syntax.
+2. example
+```python
+students = ["ram", "shyam", "mahesh", "suresh", "ramesh"]
+list_new = []
+for i in students:
+  if "h" in i:
+    list_new.append(i)
+print(list_new)
+
+output is the list ["shyam", "mahesh", "suresh", "ramesh"]
+```
+ #### using list comprehension
+  
+```python 
+students = ["ram", "shyam", "mahesh", "suresh", "ramesh"]
+list_new = [i for i in students if "h" in i]
+print(list_new)
+  
+output is the list ["shyam", "mahesh", "suresh", "ramesh"]
+```
+  
+Example for list using indexing, slicing, and methods:
+
+```python
+My_list = [8, 15, 3, 20]
+print("e1 = ", My_list)
+My_list.append(-2)
+print("e2 = ", My_list)
+del My_list[2]
+print("e3 = ", My_list)
+f = My_list[1:3] # array "slicing": elements 1 through 3-1 = 2
+print("f = ", f)
+print("e4 = ", My_list[1:]) # all elements starting with index 1
+print("e5 = ", My_list[:2]) # all elements upto but excluding index 2
+print("e6 = ", My_list[-1]) # means "1 item from the right end"
+My_list.insert(2, 25) # insert 25 at position 2
+print("e7 = ", My_list)
+print("e8 = ", My_list[::2]) # all elements upto end in steps of 2
+print(12 in My_list) # tests for membership; true, false
+print(20 in My_list)
+# finds the index within the list of the given value
+print("e9 = ", My_list.index(20))
+My_list.remove(20) # If element is not found it returns valueError
+print("e10 = ", My_list)
+
+Output:
+
+e1 =  [8, 15, 3, 20]
+e2 =  [8, 15, 3, 20, -2]
+e3 =  [8, 15, 20, -2]
+f =  [15, 20]
+e4 =  [15, 20, -2]
+e5 =  [8, 15]
+e6 =  -2
+e7 =  [8, 15, 25, 20, -2]
+e8 =  [8, 25, -2]
+False
+True
+e9 =  3
+e10 =  [8, 15, 25, -2]
+```
+Like string indices, list indices start at 0, and lists can be sliced, concatenated and so on.
+
+Example 2 for list:- 
+
+```python
+a = 5
+b = 10
+[a, b] = [b, a]  # Elegant way to swap two variables
+print("a = ", a, "b = ", b)
+# Multidimensional lists can be implemented as lists
+c = []
+c.append([1, 2])
+print("c = ", c)
+c.append([3, 4])
+print("c1 = ", c)
+x = 4 * [2]
+print("x = ", x)
+y = 3 * [x]  # [[2,2,2,2],[2,2,2,2],[2,2,2,2]]
+print("y = ", y)
+print("y1 ", y[1][2])  # y[in index 1][in index 1 printing value of index 2]
+print("id no for y", id(y))
+print("id no for index[1]y: ", id(y[1]))
+print("id no for index[1]y: ", id(y[2]))
+# As index values are same id no are same for 1&2
+y[0][2] = 1  # changing y[0] index, index[2] value as 1
+print("y2 ", y)
+
+Output:
+
+a =  10 b =  5
+c =  [[1, 2]]
+c1 =  [[1, 2], [3, 4]]
+x =  [2, 2, 2, 2]
+y =  [[2, 2, 2, 2], [2, 2, 2, 2], [2, 2, 2, 2]]
+y1  2
+id no for y 2872664392384
+id no for index[1]y:  2872668888896
+id no for index[1]y:  2872668888896
+y2  [[2, 2, 1, 2], [2, 2, 1, 2], [2, 2, 1, 2]]
+```
+<br />   
+ 
+ ## **Exercise-6**
+  
+ 1. write a script for given a list and get the final output
+ ```python
+ Given list Cars = ["polo", "i10", "punch"]
+    1. append "bettle" to the list
+    2. give the total number of items in the list.
+    3. place the "verna" to the list at the third position. 
+    4. Sort the list from descending order.
+    5. Duplicate the Cars list to backup list.
+    6. Remove the "punch" from the Cars list.
+```
+  
+<br /> 
+  
+## range function:
+
+<span style="color: blue;"> If you do need to iterate over a sequence of numbers, use the built-in function range(). It generates lists containing arithmetic progressions:
+
+<span style="color: blue;"> Python’s range(1, 10) function returns a list of consecutive integers, in this case the list [1,2,3,4,5,6,7,8,9].
+
+<span style="color: blue;"> So, the for statement (for i in range(1, 10)) is equivalent to:
+
+<span style="color: blue;"> for i in [1,2,3,4,5,6,7,8,9]
+
+Example problem for range:
+
+```python
+for i in range(1, 5):
+    print(i, " ", i * i)
+print()
+for i in range(0, 25, 5):
+    print(i, " ", i * i)
+print()
+print(list(range(0, -10, -2)))
+
+Output:
+
+1   1
+2   4
+3   9
+4   16
+
+0   0
+5   25
+10   100
+15   225
+20   400
+
+[0, -2, -4, -6, -8]
+```
+<span style="color: blue;"> It is possible to nest lists (create lists containing other lists).
+
+Example problem of nested lists:
+
+```python
+data = ["a", 'b', 10, 3]
+print(data)
+print(data[1], data[1:-1])
+print(data[:2], ['c', 3 * 1])
+data[2:3] = [20, 30]  # change items
+print(data)
+data[2:4] = []  # remove items
+print(data)
+data[2:2] = [15, 18, 22]  # insert items
+print(data)
+print("length of data", len(data))
+# nesting of lists
+a = [10, 20, 12, 3]
+b = [5, a, 30]
+print(b)
+print(b, b[1])
+a.sort()
+print(a)
+b[1].append(25)
+print(b)
+
+Output:
+
+['a', 'b', 10, 3]
+b ['b', 10]
+['a', 'b'] ['c', 3]
+['a', 'b', 20, 30, 3]
+['a', 'b', 3]
+['a', 'b', 15, 18, 22, 3]
+length of data 6
+[5, [10, 20, 12, 3], 30]
+[5, [10, 20, 12, 3], 30] [10, 20, 12, 3]
+[3, 10, 12, 20]
+[5, [3, 10, 12, 20, 25], 30]
+```
+
+ Example of list with membership operators
+ ```python
+ >>> student = ["Ramesh", 80, 6.65]
+ >>> "Ramesh" in stuff
+ True
+ >>> 80 not in stuff
+ False
+ ```
+ <br />
+   
+ 
+ ## **Exercise-7**
+  
+ 1. write output for the given questions
+ ```python
+ 1. [0, 2, 4, 6]
+ 2. [20, 16, 12, 8, 4]
+ 3. [-12, -6, 0, 6, 12]
+ 4. range(2, 5)
+ 5. range(12, -3, -3)
+ 6. range(10, 30, 10)
+ ```
+
+  <br />  
+  
+## Tuples:
+
+<span style="color: blue;"> Tuples are like lists, but are ordered and immutable like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). They are enclosed by parentheses or nothing at all, rather than brackets.
+
+```python
+t1 = (12, 5, 8)
+print("index 1 in t1 is :", t1[1])
+print(len(t1), max(t1), min(t1))
+# t1[0] = 10 # illegal, due to immutability
+t2 = ("hello", 5)
+t3 = (t1 + t2)
+print(t3)
+print(5 in t1)
+for val in t1:
+    print(val)
+print(t1[1:])
+del t1
+print(t3)
+# print(t1) throws error as we deleted t1
+print(type(t2[0]))
+print(type(t3))
+
+Output:
+
+index 1 in t1 is : 5
+3 12 5
+(12, 5, 8, 'hello', 5)
+True
+12
+5
+8
+(5, 8)
+(12, 5, 8, 'hello', 5)
+<class 'str'>
+<class 'tuple'>
+```
+  
+If we want to change or add values to the tuple then we can only achieve it by changing the tuple into list then update(add/remove) items to it and convert back to tuple.
+```python
+phone_tuple = ("Redmi", "LG", "Apple")
+phone_list = list(phone_tuple)
+phone_list.append("Realme")
+phone_tuple = tuple(phone_list)
+print(phone_tuple)
+
+running script
+PS C:\Users\Documents\Training\code> python lists.py 
+ 
+output
+('Redmi', 'LG', 'Apple', 'Realme')
+```
+ 
+ <br />
+  
+ 
+ ## **Exercise-8**
+  
+ 1. Write a script and gives the final output
+ ```python
+ given tuple Bikes = ("pulsar", "duke", "shine")
+ 1. give the total number of items present in the tuple.
+ 2. give the index number for shine in the tuple.
+ 3. add the item splendor to the tuple.
+ 4. remove the item duke from the tuple.
+ ```
+  
+<br />
+  
+  
+## Dictionary:
+  
+<span style="color: blue;"> Dictionary (hash) which is also called associative arrays.
+Dictionary is a built-in Python Data Structure that is mutable. Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered. Deletion of an element from a dictionary can be done via pop(). The in operator works on dictionary keys.
+
+<span style="color: red;">As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.</span>
+
+  
+  
+Basic example
+```python
+  user_dist = {
+  "name": "Ganesh",
+  "Age": 18,
+  "Weight": 60,
+  "Height": 5.8
+}
+student = thisdict["name"]
+print(student)
+
+running script
+ PS C:\Users\Documents\Training\code> python dictonary.py
+  
+output
+ Ganesh
+```
+  
+Example program using dictionary:
+
+```python
+months = {4: 'April', 2: 'Feb', 5: 'May', 1: 'Jan'}
+print(months)
+print(months[4])
+months[3] = 'March'
+print(months)
+print("keys assigned in dictionary :", months.keys())
+print("values assigned to keys :", months.values())
+del months[2]
+for key in months:
+    print(key, months[key])
+print(months.pop(3))
+print(months)
+print(5 in months)
+print(3 in months)
+print(months.get(1))
+# del months
+months.clear()
+print(months)
+
+Output:
+
+{4: 'April', 2: 'Feb', 5: 'May', 1: 'Jan'}
+April
+{4: 'April', 2: 'Feb', 5: 'May', 1: 'Jan', 3: 'March'}
+keys assigned in dictionary : dict_keys([4, 2, 5, 1, 3])
+values assigned to keys : dict_values(['April', 'Feb', 'May', 'Jan', 'March'])
+4 April
+5 May
+1 Jan
+3 March
+March
+{4: 'April', 5: 'May', 1: 'Jan'}
+True
+False
+Jan
+{}
+```
+Example problem 2 using dictionary:
+
+```python
+Dict_my = {}
+# Creating a Dictionary with Mixed keys
+Dict_my = {'Name': 'Multiple_wishes', 1: [1, 2]}
+Dict_my[1] = 5, 6
+Dict_my[2] = 2, 3, 4
+print("\nDictionary with the use of Mixed Keys: ")
+Dict_my[3] = {'Nested': {1: 'Hyderabad', 2: 'Telangana'}}
+print(Dict_my)
+print(Dict_my[3]['Nested'][2])
+# Creating a Dictionary with dict() method
+Dict_my = dict({1: 'Multiple_wishes', 2: 'Py_wishes', 3: 'Company'})
+print("\nDictionary with the use of dict(): ")
+print(Dict_my)
+# Creating a Dictionary with each item as a Pair
+Dict_my = dict([(1, 'Multiple_wishes'), (2, 'Hyderabad')])
+print("\nDictionary with each item as a pair: ")
+print(Dict_my)
+cubes = {1: 1, 2: 8, 3: 27, 4: 64, 5: 125}
+for i in cubes:
+    print(cubes[i])
+print("Len = ", len(cubes))
+print("\nby using range statement")
+for i in range(1, 6):
+    print(i ** 3)
+
+Output:
+
+Dictionary with the use of Mixed Keys: 
+{'Name': 'Multiple_wishes', 1: (5, 6), 2: (2, 3, 4), 3: {'Nested': {1: 'Hyderabad', 2: 'Telangana'}}}
+Telangana
+
+Dictionary with the use of dict(): 
+{1: 'Multiple_wishes', 2: 'Py_wishes', 3: 'Company'}
+
+Dictionary with each item as a pair: 
+{1: 'Multiple_wishes', 2: 'Hyderabad'}
+1
+8
+27
+64
+125
+Len =  5
+
+by using range statement
+1
+8
+27
+64
+125
+```
+
+## OrderedDict module
+
+<span style="color: blue;"> An OrderedDict is a dictionary subclass that remembers the order in which its contents are added, supporting the usual dict methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
+
+Example of OrderDictionary1 :
+
+```python
+from collections import OrderedDict
+od = OrderedDict()
+od['c'] = 1
+od['b'] = 2
+od['a'] = 3
+print(od.items())
+d = {}
+d['c'] = 1
+d['b'] = 2
+d['a'] = 3
+print(d.items())
+
+Output:
+
+odict_items([('c', 1), ('b', 2), ('a', 3)])
+dict_items([('c', 1), ('b', 2), ('a', 3)])
+```
+Example of OrderDictionary2 :
+
+<span style="color: blue;"> Key value Change: If the value of a certain key is changed, the position of the key remains unchanged in OrderedDict.
+
+```python
+from collections import OrderedDict
+print("Before:")
+od = OrderedDict()
+od['a'] = 1
+od['b'] = 2
+od['c'] = 3
+od['d'] = 4
+for key, value in od.items():
+    print(key, value)
+print("\nAfter:")
+od['c'] = 5
+for key, value in od.items():
+    print(key, value)
+
+Output:
+
+Before:
+a 1
+b 2
+c 3
+d 4
+
+After:
+a 1
+b 2
+c 5
+d 4
+```
+Example for OrderDictionary3:
+
+<span style="color: blue;"> Deletion and Re-Inserting: Deleting and re-inserting the same key will push it to the back as OrderedDict, however, maintains the order of insertion.
+
+```python
+from collections import OrderedDict
+print("Before deleting:")
+od = OrderedDict()
+od['a'] = 1
+od['b'] = 2
+od['c'] = 3
+od['d'] = 4
+for key, value in od.items():
+    print(key, value)
+print("\nAfter deleting:")
+od.pop('c')
+for key, value in od.items():
+    print(key, value)
+print("\nAfter re-inserting:")
+od['c'] = 3
+for key, value in od.items():
+    print(key, value)
+
+Output:
+
+Before deleting:
+a 1
+b 2
+c 3
+d 4
+
+After deleting:
+a 1
+b 2
+d 4
+
+After re-inserting:
+a 1
+b 2
+d 4
+c 3
+```
+Example of OrderDictionary4 :
+
+```python
+import collections
+d1 = {}
+d1['a'] = 'A'
+d1['b'] = 'B'
+d1['c'] = 'C'
+d2 = {}
+d2['c'] = 'C'
+d2['b'] = 'B'
+d2['a'] = 'A'
+print('dict:', d1 == d2)
+d1 = collections.OrderedDict()
+d1['a'] = 'A'
+d1['b'] = 'B'
+d1['c'] = 'C'
+d2 = collections.OrderedDict()
+d2['c'] = 'C'
+d2['b'] = 'B'
+d2['a'] = 'A'
+print('OrderedDict:', d1 == d2)
+
+Output:
+
+dict: True
+OrderedDict: False
+```
+Example for OrderDictionary5 :
+
+```python
+import collections
+d = collections.OrderedDict(
+[('a', 'A'), ('b', 'B'), ('c', 'C')]
+)
+print('Before:')
+for k, v in d.items():
+    print(k, v)
+d.move_to_end('b')
+print('\nmove_to_end():')
+for k, v in d.items():
+    print(k, v)
+d.move_to_end('b', last=False)
+print('\nmove_to_end(last=False):')
+for k, v in d.items():
+    print(k, v)
+
+Output:
+
+Before:
+a A
+b B
+c C
+
+move_to_end():
+a A
+c C
+b B
+
+move_to_end(last=False):
+b B
+a A
+c C
+```
+<span style="color: blue;"> The only difference between dict() and OrderedDict() is that: OrderedDict preserves the order in which the keys are inserted.
+  
+<br />
+ 
+ 
+ ## **Exercise-9** 
+  1. Write a script and gives the final output
+ ```python
+ Given the dictionary  
+  details = {
+              "name": "Steve",
+              "education": "Reed College",
+              "born": 1955
+            }
+ 1. get separately all the keys and values from the dictionary.
+ 2. add a key died and the value is 2011 to the dictionary.
+ 3. remove the education from the dictionary.
+ 4. duplicate the entire dictionary details to backup.
+ 5. I want the value of the key name from the dictionary.
+ 6. remove all elements form the dictionary.
+```
+   
+ <br /> 
+  
+## Sets
+  1. sets can contain many values in it. It is deneoted with {}. The values in the set are unordered and also it delete the duplicate values. Once the set is created we can not update values but we can add values. In set we cannot access values with the help of index. 
+  2. Examples on sets
+  
+  ```python
+  name_set = {"Harish", "Ramesh", "Suresh"}
+  for i in name_set:
+  print(i)
+  
+  running script
+  PS C:\Users\Documents\Training\code> python set.py
+  
+  output
+  Harish 
+  Ramesh 
+  Suresh
+  ```
+  Set Methods examples
+  
+  ```python
+  name_set = {"Harish", "Ramesh", "Suresh"}
+  name_set.add("Mahesh")
+  name_set.remove("Harish")
+  print(name_set)
+  
+  running script
+  PS C:\Users\Documents\Training\code> python set_1.py
+  
+  output
+  {'Ramesh', 'Suresh', 'Mahesh'}
+  ```
+
+ <br />
+
+  
+  ## **Exercise-10** 
+  1. Write a script and gives the final output
+ ```python 
+ Given sets are
+ set1 = {"maaza", "sprite", "fanta", "maaza"}
+ set2 = {"pepsi", "frooti", "sprite", "maaza"}
+ 1. remove the duplicate elements from the set1.
+ 2. add a item "7_up" to the set1.
+ 3. duplicate the elements of set1 to backup set.
+ 4. give union and intersetion of set1 and set2.
+ 5. difference of set1 from set2.
+ 6. remove pepsi element from the set2.
+ 7. remove all elements from set1
+```
+  
+<br />
+  
+ ## Frozen sets
+  
+1. The method frozenset  in Python takes an iterable object as input and renders it immutable. Simply put, it renders iterable things unchangeable by freezing them.
+2. In Python, a frozenset is the same as a set, except that frozensets are immutable, which implies that once generated, elements from the frozenset cannot be added or deleted. 
+3. This method accepts any iterable object as input and turns it to an immutable object. The element order is not guaranteed to be kept.
+  
+ 
+```python
+person = {"name": "Ram", "age": 21, "sex": "male"}
+
+f_Set = frozenset(person)
+print('The frozen set', f_Set)
+```
+  
+```console
+# output
+The frozen set is: frozenset({'name', 'sex', 'age'})
+  
+```
+ use of  dictionary as an iterable for frozen set, the set is created using just the dictionary's keys.
+  
+ 
+ ```python
+ # converting a list into a frozenset using the frozenset() function.
+  
+list = ['sai', 'ram', 'shyam']
+y = frozenset(list)
+print(y)
+ ```
+  
+ ```console
+ # output
+
+ frozenset({'sai', 'ram', 'shyam'})
+ ```
+  
+## **Conditional statements**
+  
+### If statement:
+<span style="color: blue;"> if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not. For an If stateemt the elif and else are optional. while writing if statements we should see whether we are writing the code with proper Indentation else it throws error.
+
+ Conditions of if statement:
+- Equals: a == b
+- Not Equals: a != b
+- Less than: a < b
+- Less than or equal to: a <= b
+- Greater than: a > b
+- Greater than or equal to: a >= b
+
+Example for If statement:
+  
+```python
+weight = int(input("give your weight "))
+if(weight > 70):
+  print("You have to reduce your weight.")
+ 
+ running script
+  PS C:\Users\Documents\Training\code> python conditions.py
+  
+ output
+ give your weight 80
+ You have to reduce your weight.
+```
+Example for If else statement:
+  
+```python
+number= int(input("Enter the number "))
+if number > 40:
+    print("you are old")
+else:
+    print("you are young")
+  
+running script
+PS C:\Users\Documents\Training\code> python conditions_1.py
+  
+output
+Enter the number 12
+you are young
+```
+
+Example for If elif else statement:
+  
+```python
+Mutiple_wishes = int(input("Please enter an integer: "))
+if Mutiple_wishes < 0:
+    print('Less than zero')
+elif Mutiple_wishes == 0:
+    print('Zero')
+else:
+    print('greater than zero')
+
+Output:
+Please enter an integer: 1
+greater than zero
+```
+  
+ <br /> 
+  
+  ## **Exercise-11** 
+  
+  1. Write a script to check whether given year is leap year or not. the input (year) should be given as command line parameter.
+  2. check whether the given number is odd or even by asking input from the user.
+  3. write a script that asks the user to give a value in inches and it convert to feet and inches
+  ```python
+  Example input is in inches - 27  then the output should be 2 feet 3 inches.
+  ```
+ 
+  
+   <br /> 
+ 
+## **Loop statements**
+  
+### While loop
+  1. syntax for while is 
+    While expression:
+      code to write
+    - the code in the while executes continously as long as the expression evaluates to be true.
+    - When the expression evaluates as False, then the loop terminates.
+  2. Examples of while loop
+  ```python
+  i = 2
+  while i > 0:
+    print(" i is ", i)
+    i = i - 1
+  print("loop executed")
+  
+  running script
+  PS C:\Users\Documents\Training\code> python while_statement.py  
+  
+  output
+  i is  2
+  i is  1
+  loop executed
+  ```
+  
+### for loop
+<span style="color: blue;"> The for loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.
+
+Example:
+
+```python
+str = "MultipleWishes"  
+for i in str:  
+    print(i)  
+
+Output:
+M
+u
+l
+t
+i
+p
+l
+e
+W
+i
+s
+h
+e
+s
+```
+Example of for statement using 'f' formatting:
+
+```python
+s = "Multiple_wishes"
+"""
+Name s is attached to 'Multiple_wishes' string. When you call str(s) the
+interpreter puts 'Multiple_wishes' instead of s and then calls str('Multiple_wishes').
+"""
+print(str(s))
+print(repr(s))
+for x in range(1, 7):
+    print(str(x).rjust(2), str(x*x).rjust(5), sep=":", end=" ")
+    # Note use of 'end' in the above
+    print(str(x*x*x).rjust(4), end=" ")
+    print(str(x*x*x*x).rjust(4), end=" ")
+    print(str(x*x).rjust(6))
+
+print()
+for x in range(1, 5):
+    print('{0:2d} {1:4d} {2:4d}'.format(x, x*x, x*x*x))
+print()
+print('12'.zfill(10))
+print('3.14159265'.zfill(5))
+print('-3.14'.zfill(6))
+print('{0:2} {1:2} {2:2}'.format('company', 'and', 'Multiple_wishes'))
+print()
+print("PI value is approximately {0:.5f}".format(3.14159265))
+print('{0} is {1}'.format('Country', 'India'))
+print('{1} {2} {0}'.format('Country', 'India', 'is'))
+print('Our {key} is {data}'.format(key='country', data='india'))
+print('{0} {company}'.format('Multiple_wishes', company='dream'))
+
+Output:-
+
+Multiple_wishes
+'Multiple_wishes'
+ 1:    1    1    1      1
+ 2:    4    8   16      4
+ 3:    9   27   81      9
+ 4:   16   64  256     16
+ 5:   25  125  625     25
+ 6:   36  216 1296     36
+
+ 1    1    1
+ 2    4    8
+ 3    9   27
+ 4   16   64
+
+0000000012
+3.14159265
+-03.14
+company and Multiple_wishes
+
+PI value is approximately 3.14159
+Country is India
+India is Country
+Our country is india
+Multiple_wishes dream
+```
+
+### For statement
+
+```python
+My_Lists = ['Multiple_Wishes', 'Pywishes', 'Hyderabad']
+for x in My_Lists:
+    print("length of", x, "is", len(x))
+
+name = []
+
+for x in My_Lists:
+    if len(x) > 8: name.insert(0, x)
+print(name)
+
+months = ['jan', 'feb', 'march', 'april']
+for i in range(4):
+    print(f"month {i+1}:", (months[i]))
+
+months = ['july', 'august', 'september', 'october']
+for num, name in enumerate(months, start=7):
+    print(f"month {num}: {name}")
+
+Output:
+length of Multiple_Wishes is 15
+length of Pywishes is 8
+length of Hyderabad is 9
+['Hyderabad', 'Multiple_Wishes']
+month 1: jan
+month 2: feb
+month 3: march
+month 4: april
+month 7: july
+month 8: august
+month 9: september
+month 10: october
+```
+
+ <br />
+
+  
+ ## **Exercise-11**  
+ 1. write a script that takes a list and find the largest number and smallest number using while and for loops. 
+ ```python
+  given input as numbers = [7,3,9,-23,0,-21, 2] - largest number - 9, smallest number - -23
+ ```
+ 2. write a script for factorial and take input from the command line parameter. using while and for loops
+ ```python
+  example factorial of 4! is 4 * 3 * 2 * 1 = 24
+ ```
+ 3. print the count of the given number using while and for loops. Take input from the user
+ ```python
+  example is 123 the count of the given number is 3
+ ```
+  
+<br /> 
+### Python Function
+<span style="color: blue;"> Functions are the most important aspect of an application. A function can be defined as the organized block of reusable code, which can be called whenever required. The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+
+The Function helps to programmer to break the program into the smaller part. It organizes the code very effectively and avoids the repetition of the code. As the program grows, function makes the program more organized.
 
