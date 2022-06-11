@@ -785,7 +785,6 @@ sky is blue, Mango is yellow, age of suresh is 22 .
 
 [go to Answers](#answers)
 
-<br />
 
 <br />
 
@@ -894,20 +893,25 @@ sky is blue, Mango is yellow, age of suresh is 22 .
     
  ### **Exercise - 3** <a name="5.3"></a>
  
- 1. Write the script asking the user to give two integers and multiply them 
+ 1. Write the script asking the user to give two integers and multiply them.
  2. Take the command line parameter any name you want (C:> C:\Users\Documents\Training\code> python command_line_parameter.py Girish and print in the following paragraph.
 ```python    
 Girish is very good boy who helps everyone and also Girish participates in all the sports and cultural meet. Girish hobbies are playing virtual games and also watching movies.
 ```
  3. Write the script for calculating area of trainagle ( ask user to enter base and height).
- 4. Write the script of the student form(name_of_student, class_studying, college_name, city_lives) that accepts as command line parameters (arguments) and prints as
+ 4. Write the script of the student form(name_of_student, class_studying, college_name, city_lives) that accepts as command line parameters and prints as
  ```python
-  student_name : Hareesh
+  student_name : Hareesh sai
   class        : 12th
   college_name : SSB
   city_lives   : Hyderabad
  ```
-    
+* Here ```student_name``` value has spaces so keep in quotations to print the whole value. 
+ 
+ <br />
+
+[go to Answers](#answers)
+ 
  <br />
  
  [go to List of Topics](#top)
@@ -1006,7 +1010,9 @@ print(x)
 0.0
 ```
 
-<br />
+ 
+ <br />
+
 
 [go to List of Topics](#top)
 
@@ -1149,53 +1155,59 @@ True
 <br />
 
 
- ### **Exercise - 5** <a name="6.7"></a> 
+ ### **Exercise - 4** <a name="6.7"></a> 
   
- 1. Tell the answer for given Expression
+ 1. Tell the answer for given Expression without running it using python interpreter
  ```python
  print(20 / 2)
+ 
  A. 10.0
  B. 10
  C. 10.00
  ```
- 2. Go through the code 
+ 2. Go through the code without running it using python interpreter
  ```python
 a = 5
 b = 10
-if x ** 2 > 50 and y < 50:
-print(x, y)
+if a ** 2 > 50 and b < 50:
+    print(a, b)
                             
 A. 5 10
 B. No Answer                         
 C. 25 10                         
 ```
-3. See the expression and give answer
+3. See the expression and give answer without running it using python interpreter
 ```python
-print(45 - 3 ** 3) / 6
+number = (45 - 3 ** 3) / 6
+print(number)
                           
-A. 74,088
-B. 18                       
-C. 3  
+A. 4.0
+B. 3.0                       
+C. 18.0  
 ```
-4. Go through the code and give the all the values
+4. Go through the code and give the all the values without running it using python interpreter
 ```python
 a = 2
 b = 10
 c = 6
-a += b  #12
-b %=c   #4
+a += b  
+b %=c   
 print(a, b)
 print(c > b)
 print(a == (a + b + c) - 20)
 d = a < c or a != 12
 print(d)
 ```
-5. Go through the code
+5. Go through the code without running it using python interpreter
 ```python
 x = "kumari"
 y = "ma"
 print(y not in x)
 ```
+ 
+<br />
+
+[go to Answers](#answers) 
  
 <br /> 
 
@@ -1419,21 +1431,32 @@ print(repr(s))
 
 <br />
   
- ## **Exercise - 5** <a name="7.7"></a>
-  
- 1. Write a script that make a new string with the given string. Collect all the capital letters from string and make a new string
- ```python
-  Example - Python_Is_VERY_Easy_LanguagE -    output looks PIVERYELE
- ```
- 2. Write a script that can convert the given lower string to upper case string
+### **Exercise-5** <a name="7.7"></a>
+
+ 1. Write a script that can convert the given lower string to upper case string
  ```python
  Example - python   -   output looks PYTHON
  ```
- 3. Write a script that can replace the first character in string 
+ 2. Write a script that can replace the first character in string 
  ```python
  Example - Cython  -   output looks Python
  ```
+ 3. Write a script that prints the following output( use center method)
+ ```python
+ #output
  
+ ****Python****
+ ```
+ 4. Go through the code and give the answer without running it in the python in interpreter
+```python
+string = "Hello, emma."
+result = string.index("e")
+print(result)
+```
+
+<br />  
+
+[go to Answers](#answers)
 <br />  
 
 [go to List of Topics](#top)
@@ -1473,20 +1496,15 @@ He      is      very    good    boy.
 
   
 ### **Exercise - 6** <a name="8.1"></a>
-
-  1. Write a script to print the following statements using print statement
   
-    - Truth can only be found in one place: the code.
-    - You have baked a really lovely cake, but then you have used dog shit for frosting.
-    - On two occasions, I have been asked [by members of Parliament], Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?
-  
-  2. Write a script to print the following statements using escape sequences
-  
-    - "Talk is 'cheap'. Show me the code."
-    - "I'm not a great programmer! I'm just a good programmer with great habits."
-    - "If your ship doesn’t come in, swim out to it?"
-  
-  3. write a script to print the following shape using print statement
+  1. Write a script to print the following statements using escape sequences and output should be
+```python
+#output
+Talk is 'cheap'. Show me the code.
+I'm not a "great" programmer!I'm just a  good programmer with great habits.
+If your ship doesn 't come in, \swim\ out to it?
+```
+  2. write a script to print the following shape using print statement
   ```python
            * 
        * python * 
@@ -1494,9 +1512,10 @@ He      is      very    good    boy.
    * good  * programming * language * 
  * to * learn * for * beginners * 
  ```
-  4. Write a script to print the following menu using escape sequences and ring the bell sound when the order has finished printing **Thank you, Visit Again!!!!!**.
-  
-  <img src="https://github.com/Vissamsetty-Bharathrath/python3_ebook/blob/master/Training/22.jpg" alt="Escape Sequences" width="300"/>
+ 
+ <br />
+
+[go to Answers](#answers)
   
   <br />
   
@@ -1527,6 +1546,8 @@ print(planet_near_to_sun)
 ```
 6. B
 
+  <br />
+  
 ### Exercie - 2 Answers <a name="E-2"></a>
 
 1. student_name = "Ramesh"
@@ -1548,7 +1569,105 @@ article = "is"
 
 print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  article, number , ".")
 
+  <br />
+  
 ### Exercie - 3 Answers <a name="E-3"></a>
+
+1. Solution code
+```console
+number1 = int(input("Enter the first number "))
+number2 = int(input("Enter the second number "))
+
+multiplication = number1 * number2
+print("The multiplication of two numbers is", multiplication)
+```
+
+2. Solution code
+```console
+from sys import argv
+
+name = argv[1]
+
+print(name, "is very good boy who helps everyone and also",name, "participates in all the sports and cultural meet.", name, "hobbies are playing virtual games and also watching movies.")
+```
+
+3. Solution code
+```console
+base = float(input("Enter the base of the triangle "))
+height = float(input("Enter the height of the triangle "))
+
+area_triangle = (base * height) / 2
+print("The area of triangle is ", area_triangle)
+```
+
+4. Solution code
+```console
+name = argv[1]
+year = argv[2]
+name_of_college = argv[3]
+lives = argv[4]
+
+
+print("student_name :", name)
+print("class        :", year)
+print("college_name :", name_of_college)
+print("city_lives   :", lives)
+```
+
+ <br />
+ 
 ### Exercie - 4 Answers <a name="E-4"></a>
+
+1. A
+2. B
+3. B
+4. 
+12 4
+True
+False
+False
+5. False
+
+ <br />
+ 
 ### Exercie - 5 Answers <a name="E-5"></a>
+
+1. Solution code
+```console
+string = "python"
+print(string.upper())
+```
+
+2. Solution code
+```console
+string = "Cython"
+
+result = string.replace("C", "P", 1)
+print(result)
+```
+3. Solution code
+```python
+string = "Python"
+
+result = string.center(14,"*")
+print(result)
+```
+4. 1
+
+<br />
+
 ### Exercie - 6 Answers <a name="E-6"></a>
+
+1. Solution code
+```console
+print("Talk is \'cheap\'. Show me the code.")
+print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
+print("If your ship doesn \'t come in, \\swim\\ out to it?")
+```
+2. Solution code
+```console
+
+
+
+<br />
+
