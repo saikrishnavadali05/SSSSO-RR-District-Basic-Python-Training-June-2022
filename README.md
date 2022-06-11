@@ -2346,7 +2346,7 @@ by using range statement
 
 ## **OrderedDict module** <a name="16"></a>
 
-An ```OrderedDict``` is a dictionary subclass that remembers the order in which its contents are added, supporting the usual dict methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
+An ```OrderedDict``` is a dictionary subclass that remembers the order in which its contents are added, supporting the usual ```dict``` methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
 
 > Example : OrderDictionary1.py
 
@@ -2520,7 +2520,7 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
  
  
 ### **Exercise - 12** 
-  1. Write a python script and gives the final output
+  1. Write a python script that contains a dictionary with name : "details" and the script should perform the steps from 1 to 7.
  ```console
  
  Consider the following Dictionary  :
