@@ -2609,16 +2609,18 @@ month 10: october
 
   
  ## **Exercise-11**  
- 1. write a script that takes a list and find the largest number and smallest number using while and for loops. 
- ```python
-  given input as numbers = [7,3,9,-23,0,-21, 2] - largest number - 9, smallest number - -23
+ 1. write a script that takes a ```list``` and find the largest number and smallest number using ```while``` and ```for``` loops. 
+ ```console
+  	input list = [7, 3, 9, -23, 0, -21, 2] 
+	The output should show that the 
+	largest number - 9, smallest number - -23
  ```
- 2. write a script for factorial and take input from the command line parameter. using while and for loops
- ```python
+ 2. write a script for factorial and take input from the command line parameter. using ```while``` and ```for``` loops
+ ```console
   example factorial of 4! is 4 * 3 * 2 * 1 = 24
  ```
- 3. print the count of the given number using while and for loops. Take input from the user
- ```python
+ 3. print the count of the given number using ```while``` and ```for``` loops. Take input from the user
+ ```console
   example is 123 the count of the given number is 3
  ```
   
