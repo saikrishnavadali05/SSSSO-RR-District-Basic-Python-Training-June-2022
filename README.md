@@ -898,17 +898,18 @@ Age of the user: 15
 ```
 
 6.  The variable `argv[n]` may be used to access each command line parameter in our program.
+
     - Here n is index of the value.
     - `argv[0]` is script name and `argv[1]`, `argv[2]`, etc are contains values.
     - Example
       PS C:\Users\Documents\Training\code> python test.py Ram 15 70.45
+
       1. test.py is `argv[0]`
       2. They are three command line parameters (arguments)
 
-
-          - Ram is ```argv[1]```
-          - 15 is ```argv[2]```
-          - 70.45 is ```argv[3]```
+         - Ram is `argv[1]`
+         - 15 is `argv[2]`
+         - 70.45 is `argv[3]`
 
 Examples for **command line parameters (arguments)**
 Python script
@@ -1355,8 +1356,7 @@ Id of b variable is 140734982691168
 Id of a variable is 2822056960944
 ```
 
-<br />	
-
+<br />
 
 ### **Program using builtin function**: <a name="7.3"></a>
 
@@ -1516,7 +1516,7 @@ genesis
 
 <br />
   
-### **Exercise-5** <a name="7.7"></a>
+### **Exercise - 5** <a name="7.7"></a>
 
 1.  Write a script that can convert the given lower string to upper case string
 
@@ -1778,376 +1778,6 @@ print("If your ship doesn \'t come in, \\swim\\ out to it?")
 
 2. Solution code
 
-## Lists
-
-<span style="color: blue;"> A list in Python is used to store the sequence of various types of data. Python lists are ordered and mutable type its mean we can modify its element after it created. The items in the list are separated with the comma (,) and enclosed with the square brackets []. Lists can contain items of different types.
-
-Basic examples
-
-```python
->>> numbers = [0, 5, 8, 11, 12]
->>> months = ["january", "March", "April"]
->>> student = ["suresh", 80, 6.2] #list also contain different data types
-```
-
-## list comprehension
-
-1. When you wish to build a new list based on the values of an existing list, list comprehension provides a concise syntax.
-2. example
-
-```python
-students = ["ram", "shyam", "mahesh", "suresh", "ramesh"]
-list_new = []
-for i in students:
-  if "h" in i:
-    list_new.append(i)
-print(list_new)
-
-output is the list ["shyam", "mahesh", "suresh", "ramesh"]
-```
-
-#### using list comprehension
-
-```python
-students = ["ram", "shyam", "mahesh", "suresh", "ramesh"]
-list_new = [i for i in students if "h" in i]
-print(list_new)
-
-output is the list ["shyam", "mahesh", "suresh", "ramesh"]
-```
-
-Example for list using indexing, slicing, and methods:
-
-```python
-My_list = [8, 15, 3, 20]
-print("e1 = ", My_list)
-My_list.append(-2)
-print("e2 = ", My_list)
-del My_list[2]
-print("e3 = ", My_list)
-f = My_list[1:3] # array "slicing": elements 1 through 3-1 = 2
-print("f = ", f)
-print("e4 = ", My_list[1:]) # all elements starting with index 1
-print("e5 = ", My_list[:2]) # all elements upto but excluding index 2
-print("e6 = ", My_list[-1]) # means "1 item from the right end"
-My_list.insert(2, 25) # insert 25 at position 2
-print("e7 = ", My_list)
-print("e8 = ", My_list[::2]) # all elements upto end in steps of 2
-print(12 in My_list) # tests for membership; true, false
-print(20 in My_list)
-# finds the index within the list of the given value
-print("e9 = ", My_list.index(20))
-My_list.remove(20) # If element is not found it returns valueError
-print("e10 = ", My_list)
-
-Output:
-
-e1 =  [8, 15, 3, 20]
-e2 =  [8, 15, 3, 20, -2]
-e3 =  [8, 15, 20, -2]
-f =  [15, 20]
-e4 =  [15, 20, -2]
-e5 =  [8, 15]
-e6 =  -2
-e7 =  [8, 15, 25, 20, -2]
-e8 =  [8, 25, -2]
-False
-True
-e9 =  3
-e10 =  [8, 15, 25, -2]
-```
-
-Like string indices, list indices start at 0, and lists can be sliced, concatenated and so on.
-
-Example 2 for list:-
-
-```python
-a = 5
-b = 10
-[a, b] = [b, a]  # Elegant way to swap two variables
-print("a = ", a, "b = ", b)
-# Multidimensional lists can be implemented as lists
-c = []
-c.append([1, 2])
-print("c = ", c)
-c.append([3, 4])
-print("c1 = ", c)
-x = 4 * [2]
-print("x = ", x)
-y = 3 * [x]  # [[2,2,2,2],[2,2,2,2],[2,2,2,2]]
-print("y = ", y)
-print("y1 ", y[1][2])  # y[in index 1][in index 1 printing value of index 2]
-print("id no for y", id(y))
-print("id no for index[1]y: ", id(y[1]))
-print("id no for index[1]y: ", id(y[2]))
-# As index values are same id no are same for 1&2
-y[0][2] = 1  # changing y[0] index, index[2] value as 1
-print("y2 ", y)
-
-Output:
-
-a =  10 b =  5
-c =  [[1, 2]]
-c1 =  [[1, 2], [3, 4]]
-x =  [2, 2, 2, 2]
-y =  [[2, 2, 2, 2], [2, 2, 2, 2], [2, 2, 2, 2]]
-y1  2
-id no for y 2872664392384
-id no for index[1]y:  2872668888896
-id no for index[1]y:  2872668888896
-y2  [[2, 2, 1, 2], [2, 2, 1, 2], [2, 2, 1, 2]]
-```
-
-<br />   
- 
- ## **Exercise-6**
-  
- 1. write a script for given a list and get the final output
- ```python
- Given list Cars = ["polo", "i10", "punch"]
-    1. append "bettle" to the list
-    2. give the total number of items in the list.
-    3. place the "verna" to the list at the third position. 
-    4. Sort the list from descending order.
-    5. Duplicate the Cars list to backup list.
-    6. Remove the "punch" from the Cars list.
-```
-  
-<br /> 
-  
-## range function:
-
-<span style="color: blue;"> If you do need to iterate over a sequence of numbers, use the built-in function range(). It generates lists containing arithmetic progressions:
-
-<span style="color: blue;"> Python’s range(1, 10) function returns a list of consecutive integers, in this case the list [1,2,3,4,5,6,7,8,9].
-
-<span style="color: blue;"> So, the for statement (for i in range(1, 10)) is equivalent to:
-
-<span style="color: blue;"> for i in [1,2,3,4,5,6,7,8,9]
-
-Example problem for range:
-
-```python
-for i in range(1, 5):
-    print(i, " ", i * i)
-print()
-for i in range(0, 25, 5):
-    print(i, " ", i * i)
-print()
-print(list(range(0, -10, -2)))
-
-Output:
-
-1   1
-2   4
-3   9
-4   16
-
-0   0
-5   25
-10   100
-15   225
-20   400
-
-[0, -2, -4, -6, -8]
-```
-
-<span style="color: blue;"> It is possible to nest lists (create lists containing other lists).
-
-Example problem of nested lists:
-
-```python
-data = ["a", 'b', 10, 3]
-print(data)
-print(data[1], data[1:-1])
-print(data[:2], ['c', 3 * 1])
-data[2:3] = [20, 30]  # change items
-print(data)
-data[2:4] = []  # remove items
-print(data)
-data[2:2] = [15, 18, 22]  # insert items
-print(data)
-print("length of data", len(data))
-# nesting of lists
-a = [10, 20, 12, 3]
-b = [5, a, 30]
-print(b)
-print(b, b[1])
-a.sort()
-print(a)
-b[1].append(25)
-print(b)
-
-Output:
-
-['a', 'b', 10, 3]
-b ['b', 10]
-['a', 'b'] ['c', 3]
-['a', 'b', 20, 30, 3]
-['a', 'b', 3]
-['a', 'b', 15, 18, 22, 3]
-length of data 6
-[5, [10, 20, 12, 3], 30]
-[5, [10, 20, 12, 3], 30] [10, 20, 12, 3]
-[3, 10, 12, 20]
-[5, [3, 10, 12, 20, 25], 30]
-```
-
-Example of list with membership operators
-
-```python
->>> student = ["Ramesh", 80, 6.65]
->>> "Ramesh" in stuff
-True
->>> 80 not in stuff
-False
-```
-
- <br />
-   
- 
- ## **Exercise-7**
-  
- 1. write output for the given questions
- ```python
- 1. [0, 2, 4, 6]
- 2. [20, 16, 12, 8, 4]
- 3. [-12, -6, 0, 6, 12]
- 4. range(2, 5)
- 5. range(12, -3, -3)
- 6. range(10, 30, 10)
- ```
-
-  <br />  
-  
-## Tuples:
-
-<span style="color: blue;"> Tuples are like lists, but are ordered and immutable like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). They are enclosed by parentheses or nothing at all, rather than brackets.
-
-```python
-t1 = (12, 5, 8)
-print("index 1 in t1 is :", t1[1])
-print(len(t1), max(t1), min(t1))
-# t1[0] = 10 # illegal, due to immutability
-t2 = ("hello", 5)
-t3 = (t1 + t2)
-print(t3)
-print(5 in t1)
-for val in t1:
-    print(val)
-print(t1[1:])
-del t1
-print(t3)
-# print(t1) throws error as we deleted t1
-print(type(t2[0]))
-print(type(t3))
-
-Output:
-
-index 1 in t1 is : 5
-3 12 5
-(12, 5, 8, 'hello', 5)
-True
-12
-5
-8
-(5, 8)
-(12, 5, 8, 'hello', 5)
-<class 'str'>
-<class 'tuple'>
-```
-
-If we want to change or add values to the tuple then we can only achieve it by changing the tuple into list then update(add/remove) items to it and convert back to tuple.
-
-```python
-phone_tuple = ("Redmi", "LG", "Apple")
-phone_list = list(phone_tuple)
-phone_list.append("Realme")
-phone_tuple = tuple(phone_list)
-print(phone_tuple)
-
-running script
-PS C:\Users\Documents\Training\code> python lists.py
-
-output
-('Redmi', 'LG', 'Apple', 'Realme')
-```
-
- <br />
-  
- 
- ## **Exercise-8**
-  
- 1. Write a script and gives the final output
- ```python
- given tuple Bikes = ("pulsar", "duke", "shine")
- 1. give the total number of items present in the tuple.
- 2. give the index number for shine in the tuple.
- 3. add the item splendor to the tuple.
- 4. remove the item duke from the tuple.
- ```
-  
-<br />
-  
-  
-## Sets
-  1. sets can contain many values in it. It is deneoted with ```{}```. The values in the set are unordered and also it delete the duplicate values. Once the set is created we can not update values but we can add values. In set we cannot access values with the help of index. 
-  2. Examples on sets
-  
-  ```python
-  name_set = {"Harish", "Ramesh", "Suresh"}
-  for i in name_set:
-  print(i)
-  ```
-  ```console
-  running script
-  PS C:\Users\Documents\Training\code> python set.py
-  
-  output
-  Harish 
-  Ramesh 
-  Suresh
-  ```
-  ```set``` Methods examples
-  
-  ```python
-  name_set = {"Harish", "Ramesh", "Suresh"}
-  name_set.add("Mahesh")
-  name_set.remove("Harish")
-  print(name_set)
-  ```
-
-```console
-running script
-PS C:\Users\Documents\Training\code> python set_1.py
-
-output
-{'Ramesh', 'Suresh', 'Mahesh'}
-```
-
- <br />
-
-## **Exercise-10**
-
-1. Write a script that takes the following two sets as inputs and does the following operations on those sets :
-
-Input Sets :
-set1 = {"maaza", "sprite", "fanta", "maaza"}
-set2 = {"pepsi", "frooti", "sprite", "maaza"}
-
-```console
- Operations to be done on those Sets :
- 1. Remove the duplicate elements from the set1.
- 2. Add an item "7_up" to the set1.
- 3. Duplicate the elements of set1 to a new backup set.
- 4. Compute the union and intersetion of set1 and set2.
- 5. Compute the difference of set1 from set2.
- 6. Then remove the "pepsi" element from the set2.
- 7. Then remove all elements from set1
-```
-
-<br />
-
 ## **Conditional statements**
 
 ### `if` statement:
@@ -2219,7 +1849,7 @@ greater than zero
 
  <br /> 
   
-  ## **Exercise - 11** 
+  ## **Exercise - 7** 
   
   1. Write a script to check whether the given year is a *leap year* or not. The input i.e., year, should be given during script execution itself. i.e, as a command line parameter.
   2. Write a script to check whether the given number is *odd or even* by requesting input from the user, using ```input()``` function.
@@ -2235,7 +1865,7 @@ greater than zero
   
    <br /> 
  
-## **Looping statements**
+## **Loops**
   
 ### While loop
   1. syntax for ```while``` is 
@@ -2392,7 +2022,7 @@ month 10: october
 
  <br />
 
-## **Exercise-11**
+## **Exercise - 8**
 
 1.  write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
 
@@ -2412,6 +2042,253 @@ month 10: october
 
 ```console
  example is 123 the count of the given number is 3
+```
+
+<br />
+
+## Lists
+
+<span style="color: blue;"> A list in Python is used to store the sequence of various types of data. Python lists are ordered and mutable type its mean we can modify its element after it created. The items in the list are separated with the comma (,) and enclosed with the square brackets []. Lists can contain items of different types.
+
+Basic examples
+
+```python
+>>> numbers = [0, 5, 8, 11, 12]
+>>> months = ["january", "March", "April"]
+>>> student = ["suresh", 80, 6.2] #list also contain different data types
+```
+
+## range function:
+
+<span style="color: blue;"> If you do need to iterate over a sequence of numbers, use the built-in function range(). It generates lists containing arithmetic progressions:
+
+<span style="color: blue;"> Python’s range(1, 10) function returns a list of consecutive integers, in this case the list [1,2,3,4,5,6,7,8,9].
+
+<span style="color: blue;"> So, the for statement (for i in range(1, 10)) is equivalent to:
+
+<span style="color: blue;"> for i in [1,2,3,4,5,6,7,8,9]
+
+Example problem for range:
+
+```python
+for i in range(1, 5):
+    print(i, " ", i * i)
+print()
+for i in range(0, 25, 5):
+    print(i, " ", i * i)
+print()
+print(list(range(0, -10, -2)))
+
+Output:
+
+1   1
+2   4
+3   9
+4   16
+
+0   0
+5   25
+10   100
+15   225
+20   400
+
+[0, -2, -4, -6, -8]
+```
+
+<span style="color: blue;"> It is possible to nest lists (create lists containing other lists).
+
+Example problem of nested lists:
+
+```python
+data = ["a", 'b', 10, 3]
+print(data)
+print(data[1], data[1:-1])
+print(data[:2], ['c', 3 * 1])
+data[2:3] = [20, 30]  # change items
+print(data)
+data[2:4] = []  # remove items
+print(data)
+data[2:2] = [15, 18, 22]  # insert items
+print(data)
+print("length of data", len(data))
+# nesting of lists
+a = [10, 20, 12, 3]
+b = [5, a, 30]
+print(b)
+print(b, b[1])
+a.sort()
+print(a)
+b[1].append(25)
+print(b)
+
+Output:
+
+['a', 'b', 10, 3]
+b ['b', 10]
+['a', 'b'] ['c', 3]
+['a', 'b', 20, 30, 3]
+['a', 'b', 3]
+['a', 'b', 15, 18, 22, 3]
+length of data 6
+[5, [10, 20, 12, 3], 30]
+[5, [10, 20, 12, 3], 30] [10, 20, 12, 3]
+[3, 10, 12, 20]
+[5, [3, 10, 12, 20, 25], 30]
+```
+
+Example of list with membership operators
+
+```python
+>>> student = ["Ramesh", 80, 6.65]
+>>> "Ramesh" in stuff
+True
+>>> 80 not in stuff
+False
+```
+
+ <br />
+   
+ 
+ ## **Exercise - 9**
+  
+ 1. write output for the given questions
+ ```python
+ 1. [0, 2, 4, 6]
+ 2. [20, 16, 12, 8, 4]
+ 3. [-12, -6, 0, 6, 12]
+ 4. range(2, 5)
+ 5. range(12, -3, -3)
+ 6. range(10, 30, 10)
+ ```
+
+  <br />  
+  
+## Tuples:
+
+<span style="color: blue;"> Tuples are like lists, but are ordered and immutable like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). They are enclosed by parentheses or nothing at all, rather than brackets.
+
+```python
+t1 = (12, 5, 8)
+print("index 1 in t1 is :", t1[1])
+print(len(t1), max(t1), min(t1))
+# t1[0] = 10 # illegal, due to immutability
+t2 = ("hello", 5)
+t3 = (t1 + t2)
+print(t3)
+print(5 in t1)
+for val in t1:
+    print(val)
+print(t1[1:])
+del t1
+print(t3)
+# print(t1) throws error as we deleted t1
+print(type(t2[0]))
+print(type(t3))
+
+Output:
+
+index 1 in t1 is : 5
+3 12 5
+(12, 5, 8, 'hello', 5)
+True
+12
+5
+8
+(5, 8)
+(12, 5, 8, 'hello', 5)
+<class 'str'>
+<class 'tuple'>
+```
+
+If we want to change or add values to the tuple then we can only achieve it by changing the tuple into list then update(add/remove) items to it and convert back to tuple.
+
+```python
+phone_tuple = ("Redmi", "LG", "Apple")
+phone_list = list(phone_tuple)
+phone_list.append("Realme")
+phone_tuple = tuple(phone_list)
+print(phone_tuple)
+
+running script
+PS C:\Users\Documents\Training\code> python lists.py
+
+output
+('Redmi', 'LG', 'Apple', 'Realme')
+```
+
+ <br />
+  
+ 
+ ## **Exercise - 10**
+  
+ 1. Write a script and gives the final output
+ ```python
+ given tuple Bikes = ("pulsar", "duke", "shine")
+ 1. give the total number of items present in the tuple.
+ 2. give the index number for shine in the tuple.
+ 3. add the item splendor to the tuple.
+ 4. remove the item duke from the tuple.
+ ```
+  
+<br />
+
+## Sets
+
+1. sets can contain many values in it. It is deneoted with `{}`. The values in the set are unordered and also it delete the duplicate values. Once the set is created we can not update values but we can add values. In set we cannot access values with the help of index.
+2. Examples on sets
+
+```python
+name_set = {"Harish", "Ramesh", "Suresh"}
+for i in name_set:
+print(i)
+```
+
+```console
+running script
+PS C:\Users\Documents\Training\code> python set.py
+
+output
+Harish
+Ramesh
+Suresh
+```
+
+`set` Methods examples
+
+```python
+name_set = {"Harish", "Ramesh", "Suresh"}
+name_set.add("Mahesh")
+name_set.remove("Harish")
+print(name_set)
+```
+
+```console
+running script
+PS C:\Users\Documents\Training\code> python set_1.py
+
+output
+{'Ramesh', 'Suresh', 'Mahesh'}
+```
+
+ <br />
+
+## **Exercise - 11**
+
+1. Write a script that takes the following two sets as inputs and does the following operations on those sets :
+
+Input Sets :
+set1 = {"maaza", "sprite", "fanta", "maaza"}
+set2 = {"pepsi", "frooti", "sprite", "maaza"}
+
+```console
+ Operations to be done on those Sets :
+ 1. Remove the duplicate elements from the set1.
+ 2. Add an item "7_up" to the set1.
+ 3. Duplicate the elements of set1 to a new backup set.
+ 4. Compute the union and intersetion of set1 and set2.
+ 5. Compute the difference of set1 from set2.
+ 6. Then remove the "pepsi" element from the set2.
+ 7. Then remove all elements from set1
 ```
 
 <br />
@@ -2712,7 +2589,7 @@ c C
 <br />
  
  
- ## **Exercise-9** 
+ ## **Exercise - 12** 
   1. Write a script and gives the final output
  ```python
  Given the dictionary  
