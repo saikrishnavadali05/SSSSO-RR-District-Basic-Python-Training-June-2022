@@ -785,7 +785,6 @@ sky is blue, Mango is yellow, age of suresh is 22 .
 
 [go to Answers](#answers)
 
-<br />
 
 <br />
 
@@ -908,7 +907,11 @@ Girish is very good boy who helps everyone and also Girish participates in all t
   city_lives   : Hyderabad
  ```
 * Here ```student_name``` value has spaces so keep in quotations to print the whole value. 
-    
+ 
+ <br />
+
+[go to Answers](#answers)
+ 
  <br />
  
  [go to List of Topics](#top)
@@ -1007,7 +1010,9 @@ print(x)
 0.0
 ```
 
-<br />
+ 
+ <br />
+
 
 [go to List of Topics](#top)
 
@@ -1199,6 +1204,10 @@ x = "kumari"
 y = "ma"
 print(y not in x)
 ```
+ 
+<br />
+
+[go to Answers](#answers) 
  
 <br /> 
 
@@ -1446,7 +1455,8 @@ print(result)
 ```
 
 <br />  
- 
+
+[go to Answers](#answers)
 <br />  
 
 [go to List of Topics](#top)
@@ -1502,6 +1512,10 @@ If your ship doesn 't come in, \swim\ out to it?
    * good  * programming * language * 
  * to * learn * for * beginners * 
  ```
+ 
+ <br />
+
+[go to Answers](#answers)
   
   <br />
   
