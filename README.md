@@ -39,12 +39,12 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [boolean](#3.4)
 	* [frozen sets](#3.5)
 	* [Conversion of one data type to another](#3.6)
-	* [Exercise-1](#3.7)
+	* [Exercise - 1](#3.7)
 4. [Variables](#4)
 	* [Python Variables](#4.1)
-	* [Naming conventions of variables](#4.2)
+	* [Common conventions followed for variable names](#4.2)
 	* [Creating good names](#4.3)
-	* [Exercise-2](#4.4)
+	* [Exercise - 2](#4.4)
 5. [User Input](#5)
 	* [Input function](#5.1)
 	* [Command line parameters](#5.2)
@@ -56,7 +56,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Logical](#6.4)
 	* [Membership](#6.5)
 	* [Identity](#6.6)
-	* [Exercise- 4](#6.7)
+	* [Exercise -  4](#6.7)
 7. [strings](#7)
 	* [Indexing](#7.1)
 	* [Object Identity](#7.2)
@@ -64,7 +64,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Formatting with .format method](#7.4)
 	* [Important points to remember](#7.5)
 	* [builtin functions, methods of string](#7.6)
-	* [Exercise-5](#7.7)
+	* [Exercise - 5](#7.7)
 8. [Escape sequences](#8)
     * '\n' - [Newline character](#8)
     * '\r' - [Return character](#8)
@@ -713,69 +713,71 @@ print(b)
   
 ### **Python Variable** <a name="4.1"></a>
 
-1. **Variable** is a name that is used to refer to **memory location**. 
-2. Python variable is also known as an identifier and used to hold value. Variable names can be a group of both the **letters** and **digits**, but they have to begin with a letter or an underscore. No need to mention the datatype of the variable because python automatically detects the type of the variable. 
-3. Variables names are **case sensitive** for example they are two variables **amount** and another variable is **Amount**. Both the variables are different.
+1. **Variable** is a name that is used to refer to a **memory location**. 
+2. Variables are also known as **identifiers** and they are used to hold specific values. Variable names can be a group of both the **letters** and **digits**, but they have to begin with a letter or an underscore. 
+> we need not mention the datatypes of the variables because python automatically detects the types of the variables, based on the values that you assign to those variables.
+3. Variables names are **case sensitive**. For example, there are two variables **amount** and another variable is **Amount**. Both the variables are different, and both of them will be accessed and used seperately.
  
 ```python
 x = 10
 _x = 20
 ```
-Here the variable ```x``` and ```_x``` refers to an integer object.
-Examples of variables are
+Here the variable ```x``` and ```_x``` refers to an integer object. Leading Underscore before variable/function/method name indicates to programmer that It is for internal use only, that can be modified whenever class want.
+
+The following are some examples of a few variables 
 ```python
 name = 'Ram'
 Weight = 60
 height = 80.50
 ```
 
-We can get the data type of any object by using the type() function:
-Example : 
+We can get the data type of any object by using the ```type()``` function:
+For Example : 
 ```python
-Print the data type of the variable x:
+## Print the data type of the variable x:
 
 >>> x = 5
 >>> print(type(x)) 
 <class 'int'>
->>>
 ```
-Here we get output as <class 'int'> because integer value is assigned to variable.
+Here the output provided by the interpreter is :  ```<class 'int'>``` because an integer value is assigned to the variable ```x```.
 
 <br />
   
-### **Naming conventions of variables** <a name="4.2"></a>
+### **Common conventions followed for variable names** <a name="4.2"></a>
   
-They are two types we can create a variable name
+The following are the two most common types of variable naming conventions followed across the globe
   1. **Snake Case** : This looks like instead of space we use **underscore(_)**. For example is **name_of_the_student**
   2. **Camel Case** : This looks like for each new word it starts with **capital letter**. For example is **NameOfTheStudent**
-  3. **My view** : In my view I prefer to use Snake case because it is easy to understand and also it is recommended by organization of python. 
   
 <br />
+
+> **PEP8** is Python's official style guide and it recommends : Function names should be lowercase, with words separated by underscores as necessary to improve readability. i.e., **Snake Case**
 
 ### **Creating good names** <a name="4.3"></a>
 
-1. Variable names should have **meaningful** and also it should **represent something**.
+1. Variable names should be *meaningful*, *self explanatory*, and also they should **represent the purpose for which they are created**.
 2. Meaningful variable names can make our **code more readable**, **easier to debug code** and also **maintain it**. 
-3. Examples:  
-   -  n  -                    do not know what is n
-   -  name   -                able to understand but what name
-   -  name_of_the_student  -  yes, very easy to understand
+3. Some scenarios to explain why a proper naming convention is essential for **readability** of the code.
+   -  ```n```  -                    We cannot get any information from this variable name ```n```.
+   -  ```name```   -                able to understand but what name
+   -  ```name_of_the_student```  -  very easy to understand and very appropriate for its purpose of usage.
   
 <br />
 
-### **Exercise-2** <a name="4.4"></a>
+### **Exercise - 2** <a name="4.4"></a>
 
-  1. Create a variable as **student_name** and assign the value as **Ramesh** to the variable.
-  2. given the problem to substract 10 and 5, using variables: ```number1``` and ```number2``` and store the final result in ```number3```. print the final output.   
-  3. Write a script that defines the following variables
-  ```python
+  1. Create a variable having the name: ```student_name``` and assign the value ```Ramesh``` to that newly created variable.
+  2. Given the problem to substract 5 from 10, using two variables with names: ```number1``` and ```number2``` and store the final result in ```number3```.Print the final output.   
+  3. Write a script that defines and uses the following variables for writing a meaningful english line
+  ```console
   colour = "blue"
   fruit = "Mango"
   number = 22
   article = "is"
   ```
 * use the variables above to print the following statements exactly 
-```python
+```console
 sky is blue, Mango is yellow, age of suresh is 22 .
 ```  
 
@@ -1373,10 +1375,9 @@ Here by using .format the string_name is insterted in ```{}```.
   
 ## **Important points to remember** <a name="7.5"></a>
 
-1. Python includes methods for converting any value to a string, such as ```repr()`` and ```str()```.
+1. Python includes methods for converting any value to a string, such as ```repr()``` and ```str()```.
 2. The ```str()``` method is intended to yield **human-readable** representations of values, whereas ```repr()``` is intended to provide **interpreter-readable** representations . When providing output for end users, almost always use str.
-3. The repr function is mostly for **troubleshooting and exploration**. For example, if you think a string has non-printing characters or a float contains a little rounding mistake, repr will disclose it but str may not.
-4. example
+3. The ```repr()``` function is mostly for **troubleshooting and exploration**. For example, if you think a string has non-printing characters or a float contains a little rounding mistake, ```repr()``` will disclose it but ```str()``` may not.
 ```python
 s="genesis"
 """
@@ -1388,7 +1389,7 @@ print(repr(s))
 ```
  
  ```console
- #output
+ # output
  
  genesis
 'genesis'
@@ -1408,7 +1409,7 @@ print(repr(s))
 
 <br />
   
- ## **Exercise-5** <a name="7.7"></a>
+ ## **Exercise - 5** <a name="7.7"></a>
   
  1. Write a script that make a new string with the given string. Collect all the capital letters from string and make a new string
  ```python
