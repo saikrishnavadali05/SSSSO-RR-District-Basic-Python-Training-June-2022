@@ -1665,9 +1665,5 @@ print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great
 print("If your ship doesn \'t come in, \\swim\\ out to it?")
 ```
 2. Solution code
-```console
 
-
-
-<br />
 
