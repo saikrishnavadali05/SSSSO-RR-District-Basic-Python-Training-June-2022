@@ -2372,28 +2372,30 @@ print(y)
   
 ## **Conditional statements**
   
-### If statement:
+### ```if``` statement:
 <span style="color: blue;"> if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not. For an If stateemt the elif and else are optional. while writing if statements we should see whether we are writing the code with proper Indentation else it throws error.
 
- Conditions of if statement:
-- Equals: a == b
-- Not Equals: a != b
-- Less than: a < b
-- Less than or equal to: a <= b
-- Greater than: a > b
-- Greater than or equal to: a >= b
+ Conditions of ```if``` statement:
+- Equals: ```a == b```
+- Not Equals: ```a != b```
+- Less than: ```a < b```
+- Less than or equal to: ```a <= b```
+- Greater than: ```a > b```
+- Greater than or equal to: ```a >= b```
 
-Example for If statement:
+Example for ```if``` statement:
   
 ```python
 weight = int(input("give your weight "))
 if(weight > 70):
   print("You have to reduce your weight.")
- 
+```
+
+```console 
  running script
   PS C:\Users\Documents\Training\code> python conditions.py
-  
- output
+
+ Output : 
  give your weight 80
  You have to reduce your weight.
 ```
@@ -2405,7 +2407,8 @@ if number > 40:
     print("you are old")
 else:
     print("you are young")
-  
+```
+```console
 running script
 PS C:\Users\Documents\Training\code> python conditions_1.py
   
@@ -2414,7 +2417,7 @@ Enter the number 12
 you are young
 ```
 
-Example for If elif else statement:
+Example for ```if``` ```elif``` else statement:
   
 ```python
 Mutiple_wishes = int(input("Please enter an integer: "))
@@ -2424,7 +2427,8 @@ elif Mutiple_wishes == 0:
     print('Zero')
 else:
     print('greater than zero')
-
+```
+```console
 Output:
 Please enter an integer: 1
 greater than zero
@@ -2437,29 +2441,33 @@ greater than zero
   1. Write a script to check whether given year is leap year or not. the input (year) should be given as command line parameter.
   2. check whether the given number is odd or even by asking input from the user.
   3. write a script that asks the user to give a value in inches and it convert to feet and inches
-  ```python
+  
+  ```console
   Example input is in inches - 27  then the output should be 2 feet 3 inches.
   ```
  
   
    <br /> 
  
-## **Loop statements**
+## **Looping statements**
   
 ### While loop
-  1. syntax for while is 
+  1. syntax for ```while``` is 
+  ```console
     While expression:
       code to write
+  ```
     - the code in the while executes continously as long as the expression evaluates to be true.
     - When the expression evaluates as False, then the loop terminates.
-  2. Examples of while loop
+  2. Examples of ```while``` loop
   ```python
   i = 2
   while i > 0:
     print(" i is ", i)
     i = i - 1
   print("loop executed")
-  
+  ```
+  ```console
   running script
   PS C:\Users\Documents\Training\code> python while_statement.py  
   
@@ -2469,8 +2477,8 @@ greater than zero
   loop executed
   ```
   
-### for loop
-<span style="color: blue;"> The for loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.
+### ```for``` loop
+<span style="color: blue;"> The ```for``` loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.
 
 Example:
 
@@ -2495,7 +2503,7 @@ h
 e
 s
 ```
-Example of for statement using 'f' formatting:
+Example of ```for``` loop using ```f``` formatting:
 
 ```python
 s = "Multiple_wishes"
@@ -2526,8 +2534,9 @@ print('{0} is {1}'.format('Country', 'India'))
 print('{1} {2} {0}'.format('Country', 'India', 'is'))
 print('Our {key} is {data}'.format(key='country', data='india'))
 print('{0} {company}'.format('Multiple_wishes', company='dream'))
-
-Output:-
+```
+```console
+Outputs
 
 Multiple_wishes
 'Multiple_wishes'
@@ -2555,7 +2564,7 @@ Our country is india
 Multiple_wishes dream
 ```
 
-### For statement
+### ```for``` loop
 
 ```python
 My_Lists = ['Multiple_Wishes', 'Pywishes', 'Hyderabad']
@@ -2575,7 +2584,8 @@ for i in range(4):
 months = ['july', 'august', 'september', 'october']
 for num, name in enumerate(months, start=7):
     print(f"month {num}: {name}")
-
+```
+```console
 Output:
 length of Multiple_Wishes is 15
 length of Pywishes is 8
