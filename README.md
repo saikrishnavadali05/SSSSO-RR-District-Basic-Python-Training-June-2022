@@ -2322,64 +2322,34 @@ c C
 
   
   ## **Exercise-10** 
-  1. Write a script and gives the final output
- ```python 
- Given sets are
+  1. Write a script that takes the following two sets as inputs and does the following operations on those sets : 
+ 
+ 
+ 
+ Input Sets : 
  set1 = {"maaza", "sprite", "fanta", "maaza"}
  set2 = {"pepsi", "frooti", "sprite", "maaza"}
- 1. remove the duplicate elements from the set1.
- 2. add a item "7_up" to the set1.
- 3. duplicate the elements of set1 to backup set.
- 4. give union and intersetion of set1 and set2.
- 5. difference of set1 from set2.
- 6. remove pepsi element from the set2.
- 7. remove all elements from set1
+
+```console
+ Operations to be done on those Sets :
+ 1. Remove the duplicate elements from the set1.
+ 2. Add an item "7_up" to the set1.
+ 3. Duplicate the elements of set1 to a new backup set.
+ 4. Compute the union and intersetion of set1 and set2.
+ 5. Compute the difference of set1 from set2.
+ 6. Then remove the "pepsi" element from the set2.
+ 7. Then remove all elements from set1
 ```
   
 <br />
-  
- ## Frozen sets
-  
-1. The method frozenset  in Python takes an iterable object as input and renders it immutable. Simply put, it renders iterable things unchangeable by freezing them.
-2. In Python, a frozenset is the same as a set, except that frozensets are immutable, which implies that once generated, elements from the frozenset cannot be added or deleted. 
-3. This method accepts any iterable object as input and turns it to an immutable object. The element order is not guaranteed to be kept.
-  
- 
-```python
-person = {"name": "Ram", "age": 21, "sex": "male"}
 
-f_Set = frozenset(person)
-print('The frozen set', f_Set)
-```
-  
-```console
-# output
-The frozen set is: frozenset({'name', 'sex', 'age'})
-  
-```
- use of  dictionary as an iterable for frozen set, the set is created using just the dictionary's keys.
-  
- 
- ```python
- # converting a list into a frozenset using the frozenset() function.
-  
-list = ['sai', 'ram', 'shyam']
-y = frozenset(list)
-print(y)
- ```
-  
- ```console
- # output
-
- frozenset({'sai', 'ram', 'shyam'})
- ```
   
 ## **Conditional statements**
   
 ### ```if``` statement:
-<span style="color: blue;"> if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not. For an If stateemt the elif and else are optional. while writing if statements we should see whether we are writing the code with proper Indentation else it throws error.
+```if``` statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not based on certain conditions that we provide after the ```if``` keyword i.e, if a certain condition is satisified or ```True```, then the block of statements under if will be executed. if that condition is not satisfied or ```False```, the statements that are under the ```if``` block are not executed. For an ```if``` statememt, the ```elif``` and ```else``` blocks are optional. while writing ```if``` statements, we should make sure that, we are writing the code with **proper indentation**, otherwise the code execution stops, displaying indentation related errors.
 
- Conditions of ```if``` statement:
+ Some of the condition checks than can be done within an  ```if``` statement:
 - Equals: ```a == b```
 - Not Equals: ```a != b```
 - Less than: ```a < b```
@@ -2387,7 +2357,7 @@ print(y)
 - Greater than: ```a > b```
 - Greater than or equal to: ```a >= b```
 
-Example for ```if``` statement:
+> Example for a simple ```if``` statement:
   
 ```python
 weight = int(input("give your weight "))
@@ -2396,24 +2366,24 @@ if(weight > 70):
 ```
 
 ```console 
- running script
+ Script Execution in Command Prompt
   PS C:\Users\Documents\Training\code> python conditions.py
 
  Output : 
  give your weight 80
  You have to reduce your weight.
 ```
-Example for If else statement:
+> Example for an ```if``` - ```else``` statement:
   
 ```python
-number= int(input("Enter the number "))
+number = int(input("Enter the number "))
 if number > 40:
     print("you are old")
 else:
     print("you are young")
 ```
 ```console
-running script
+Script Execution in Command Prompt
 PS C:\Users\Documents\Training\code> python conditions_1.py
   
 output
@@ -2421,7 +2391,7 @@ Enter the number 12
 you are young
 ```
 
-Example for ```if``` ```elif``` else statement:
+> Example for an ```if```-```elif```-```else``` statement:
   
 ```python
 Mutiple_wishes = int(input("Please enter an integer: "))
@@ -2440,14 +2410,17 @@ greater than zero
   
  <br /> 
   
-  ## **Exercise-11** 
+  ## **Exercise - 11** 
   
-  1. Write a script to check whether given year is leap year or not. the input (year) should be given as command line parameter.
-  2. check whether the given number is odd or even by asking input from the user.
-  3. write a script that asks the user to give a value in inches and it convert to feet and inches
+  1. Write a script to check whether the given year is a *leap year* or not. The input i.e., year, should be given during script execution itself. i.e, as a command line parameter.
+  2. Write a script to check whether the given number is *odd or even* by requesting input from the user, using ```input()``` function.
+  3. Write a script that requests the user to give an input which is a random value in *inches* and the script shall convert the *inches* value to *feets and inches*
   
   ```console
-  Example input is in inches - 27  then the output should be 2 feet 3 inches.
+  For Example,
+    If the input from the user is : 27 
+    The program shall consider the input to be 27 inches.
+    The output that the program shall provide is 2 feet 3 inches.
   ```
  
   
