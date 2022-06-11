@@ -579,8 +579,9 @@ overs_bowled = 4.3
   shyam_age = 12
   print(ram_age > shyam_age)
   print(ram_age < shyam_age)
-  
-  Output
+  ```
+  ```console
+  Output : 
   True
   False
   ```    
@@ -589,8 +590,8 @@ overs_bowled = 4.3
 
 ### **Frozen sets** <a name="3.5"></a>
   
-1. The method frozenset  in Python takes an iterable object as input and renders it immutable. Simply put, it renders iterable things unchangeable by freezing them.
-2. In Python, a frozenset is the same as a set, except that frozensets are immutable, which implies that once generated, elements from the frozenset cannot be added or deleted. 
+1. The method ```frozenset```  in Python takes an iterable object as input and renders it immutable. Simply put, it renders iterable things unchangeable by freezing them.
+2. In Python, a ```frozenset``` is the same as a set, except that frozensets are immutable, which implies that once generated, elements from the frozenset cannot be added or deleted. 
 3. This method accepts any iterable object as input and turns it to an immutable object. The element order is not guaranteed to be kept.
   
  
@@ -2625,8 +2626,3 @@ month 10: october
  ```
   
 <br /> 
-### Python Function
-<span style="color: blue;"> Functions are the most important aspect of an application. A function can be defined as the organized block of reusable code, which can be called whenever required. The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
-
-The Function helps to programmer to break the program into the smaller part. It organizes the code very effectively and avoids the repetition of the code. As the program grows, function makes the program more organized.
-
