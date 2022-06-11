@@ -2327,9 +2327,9 @@ by using range statement
 
 ## **OrderedDict module** <a name="16"></a>
 
-<span style="color: blue;"> An OrderedDict is a dictionary subclass that remembers the order in which its contents are added, supporting the usual dict methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
+An ```OrderedDict``` is a dictionary subclass that remembers the order in which its contents are added, supporting the usual dict methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
 
-Example of OrderDictionary1 :
+> Example : OrderDictionary1.py
 
 ```python
 from collections import OrderedDict
@@ -2350,9 +2350,9 @@ odict_items([('c', 1), ('b', 2), ('a', 3)])
 dict_items([('c', 1), ('b', 2), ('a', 3)])
 ```
 
-Example of OrderDictionary2 :
+> Example : OrderDictionary2.py
 
-<span style="color: blue;"> Key value Change: If the value of a certain key is changed, the position of the key remains unchanged in OrderedDict.
+Key value Change: If the value of a certain key is changed, the position of the key remains unchanged in OrderedDict.
 
 ```python
 from collections import OrderedDict
@@ -2384,9 +2384,9 @@ c 5
 d 4
 ```
 
-Example for OrderDictionary3:
+> Example : OrderDictionary3.py
 
-<span style="color: blue;"> Deletion and Re-Inserting: Deleting and re-inserting the same key will push it to the back as OrderedDict, however, maintains the order of insertion.
+**Deletion and Re-Insertion** - Deleting and re-inserting the same key will push it to the back as OrderedDict, however, maintains the order of insertion.
 
 ```python
 from collections import OrderedDict
@@ -2427,7 +2427,7 @@ d 4
 c 3
 ```
 
-Example of OrderDictionary4 :
+> Example : OrderDictionary4.py
 
 ```python
 import collections
@@ -2456,7 +2456,7 @@ dict: True
 OrderedDict: False
 ```
 
-Example for OrderDictionary5 :
+> Example : OrderDictionary5.py
 
 ```python
 import collections
@@ -2495,26 +2495,30 @@ a A
 c C
 ```
 
-<span style="color: blue;"> The only difference between dict() and OrderedDict() is that: OrderedDict preserves the order in which the keys are inserted.
+The only difference between ```dict()``` and ```OrderedDict()``` is that: ```OrderedDict``` preserves the order in which the keys are inserted.
 
 <br />
  
  
 ### **Exercise - 12** 
-  1. Write a script and gives the final output
- ```python
- Given the dictionary  
+  1. Write a python script and gives the final output
+ ```console
+ 
+ Consider the following Dictionary  :
+  
   details = {
               "name": "Steve",
               "education": "Reed College",
               "born": 1955
             }
- 1. get separately all the keys and values from the dictionary.
- 2. add a key died and the value is 2011 to the dictionary.
- 3. remove the education from the dictionary.
- 4. duplicate the entire dictionary details to backup.
- 5. I want the value of the key name from the dictionary.
- 6. remove all elements form the dictionary.
+
+ 1. Print all the keys and values from the dictionary separately.
+ 2. Add a new key "died" and assign the value "2011" to the above dictionary. And then print the updated dictionary again.
+ 3. Remove the "education" key from the dictionary and print the changed dictionary again.
+ 4. Create another duplicate dictionary with name "details_duplicate" from the above dictionary to have a backup of the existing dictionary.
+ 5. Retrieve the values of the dictionary just by using corresponding keys.
+ 6. Remove all the elements of the "details" dictionary and then print the entire empty dictionary.
+ 7. Print the entire duplicate dictionary
 ```
    
  <br />
