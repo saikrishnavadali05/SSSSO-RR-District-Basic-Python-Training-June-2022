@@ -2058,17 +2058,19 @@ Basic examples
 >>> student = ["suresh", 80, 6.2] #list also contain different data types
 ```
 
-## range function:
+## ```range``` function:
 
-<span style="color: blue;"> If you do need to iterate over a sequence of numbers, use the built-in function range(). It generates lists containing arithmetic progressions:
+If you do need to iterate over a sequence of numbers, use the built-in function ```range()```. It generates lists containing arithmetic progressions:
 
-<span style="color: blue;"> Python’s range(1, 10) function returns a list of consecutive integers, in this case the list [1,2,3,4,5,6,7,8,9].
+Python’s ```range(1, 10)``` function returns a list of consecutive integers, in this case the list [1,2,3,4,5,6,7,8,9].
 
-<span style="color: blue;"> So, the for statement (for i in range(1, 10)) is equivalent to:
+So, the ```for``` statement ```for i in range(1, 10))``` is equivalent to:
 
-<span style="color: blue;"> for i in [1,2,3,4,5,6,7,8,9]
+```python
+for i in [1,2,3,4,5,6,7,8,9]
+```
 
-Example problem for range:
+An example scenario for ```range()```:
 
 ```python
 for i in range(1, 5):
@@ -2078,7 +2080,8 @@ for i in range(0, 25, 5):
     print(i, " ", i * i)
 print()
 print(list(range(0, -10, -2)))
-
+```
+```console
 Output:
 
 1   1
@@ -2095,7 +2098,7 @@ Output:
 [0, -2, -4, -6, -8]
 ```
 
-<span style="color: blue;"> It is possible to nest lists (create lists containing other lists).
+It is possible to nest lists (create lists containing other lists).
 
 Example problem of nested lists:
 
@@ -2120,7 +2123,8 @@ a.sort()
 print(a)
 b[1].append(25)
 print(b)
-
+```
+```console
 Output:
 
 ['a', 'b', 10, 3]
@@ -2136,8 +2140,9 @@ length of data 6
 [5, [3, 10, 12, 20, 25], 30]
 ```
 
-Example of list with membership operators
+Example of list with **membership** operators
 
+ <br />
 ```python
 >>> student = ["Ramesh", 80, 6.65]
 >>> "Ramesh" in stuff
