@@ -2619,8 +2619,3 @@ month 10: october
  ```
   
 <br /> 
-### Python Function
-<span style="color: blue;"> Functions are the most important aspect of an application. A function can be defined as the organized block of reusable code, which can be called whenever required. The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
-
-The Function helps to programmer to break the program into the smaller part. It organizes the code very effectively and avoids the repetition of the code. As the program grows, function makes the program more organized.
-
