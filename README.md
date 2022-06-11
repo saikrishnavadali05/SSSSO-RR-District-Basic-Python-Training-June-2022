@@ -47,7 +47,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 	* [Exercise - 2](#4.4)
 5. [User Input](#5)
 	* [Input function](#5.1)
-	* [Command line parameters](#5.2)
+	* [Command line parameters (arguments)](#5.2)
 	* [Exercise - 3](#5.3)
 6. [Operators](#6)
 	* [Numeric](#6.1)
@@ -466,7 +466,7 @@ exponentation  144
   4. Now let's understand with an example
   
   ```python
-# Convert the command line parameters to numbers
+# Convert the command line parameters (arguments) to numbers
 num1 = 7
 num2 = 10
 
@@ -725,7 +725,7 @@ _x = 20
 Here the variable ```x``` and ```_x``` refers to an integer object. Leading Underscore before variable/function/method name indicates to programmer that It is for internal use only, that can be modified whenever class want.
 
 The following are some examples of a few variables 
-```python
+```console
 name = 'Ram'
 Weight = 60
 height = 80.50
@@ -797,7 +797,9 @@ sky is blue, Mango is yellow, age of suresh is 22 .
 
 ## **User input** <a name="5"></a>
 
-  1. They are **two** methods where user can give input and they are using **input function** and another one is using **command line parameters**.
+  1. They are **two** possibilities in which the user can give inputs to the python programs. They are :
+    1. Using ```input()``` function 
+    2. Using **command line parameters (arguments)**.
 
 ### **input function**  <a name="5.1"></a>
  
@@ -815,7 +817,7 @@ sky is blue, Mango is yellow, age of suresh is 22 .
   print(type(age_of_user))
   print(age_of_user)
   print()
-  
+
   converted_age_of_user_to_integer = int(input("Age of the user: "))
   print(type(converted_age_of_user_to_integer))
   print(converted_age_of_user_to_integer)
@@ -840,13 +842,13 @@ sky is blue, Mango is yellow, age of suresh is 22 .
   <br />
   
  
-### **Command line parameters** <a name="5.2"></a>
+### **Command line parameters (arguments)** <a name="5.2"></a>
 
- 1. Command line parameters are also called as Command line arguments.
- 2. The values or parameters are provided in the command to run the program.
- 3. A list of strings named **argv** is provided inside the code for values.
+ 1. Command line parameters are also known as *Command line arguments*.
+ 2. The values or parameters that we would like to give as inputs within the program, are provided directly with the python script execution command, before we even run the program.
+ 3. A list of strings named ```argv``` is provided inside the code for values.
  4. Each value given in the command is consider as string and also have infinite number of values that are separated with spaces.
- 5. To use **argv** we should import the module into the script
+ 5. To use ```argv``` we should import the module into the script
  ```python
   from sys import argv
   ```
@@ -856,12 +858,12 @@ sky is blue, Mango is yellow, age of suresh is 22 .
      - Example
       PS C:\Users\Documents\Training\code> python test.py Ram 15 70.45
         1. test.py is ```argv[0]```
-        2. They are three command line parameters
+        2. They are three command line parameters (arguments)
           - Ram is ```argv[1]```
           - 15 is ```argv[2]``` 
           - 70.45 is ```argv[3]```
     
-  Examples for **command line parameters**
+  Examples for **command line parameters (arguments)**
   Python script
   
   ```python
@@ -898,7 +900,7 @@ sky is blue, Mango is yellow, age of suresh is 22 .
 Girish is very good boy who helps everyone and also Girish participates in all the sports and cultural meet. Girish hobbies are playing virtual games and also watching movies.
 ```
  3. Write the script for calculating area of trainagle ( ask user to enter base and height).
- 4. Write the script of the student form(name_of_student, class_studying, college_name, city_lives) that accepts as command line parameters and prints as
+ 4. Write the script of the student form(name_of_student, class_studying, college_name, city_lives) that accepts as command line parameters (arguments) and prints as
  ```python
   student_name : Hareesh
   class        : 12th
