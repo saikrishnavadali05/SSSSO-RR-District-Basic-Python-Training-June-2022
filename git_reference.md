@@ -41,7 +41,9 @@ git push origin develop
    * Python learning (new folder to be created).
    * Improved and practice python files
 
-### Steps to push your entire work onto develop branch (not master)
+> In the intial stages you can do your work on the master branch and a pull request can be put to merge your work into the python training repo.
+
+### Steps to push your entire work onto develop branch (not master) as you gain some knowledge in git
 1. First clone the repo into your local system with the command in step 2
 2. ```git clone <repo link>```
 3. create a branch called develop in local with the command in step 4
