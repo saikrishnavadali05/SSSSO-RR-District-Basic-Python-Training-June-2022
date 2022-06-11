@@ -31,15 +31,15 @@ git push origin develop
 ```
 
 ### Folders to be created with id_name 
-1. folder_name : ```18565_saikrishna```.
+1. folder_name : ```vadali_sai_krishna```.
 2. Everyday learning progress to be pushed onto github.
-3. ```Id_name``` folder for each student should be visible in the repo.
+3. ```initial_full_name``` folder for each contributor should be visible in the repo.
 4. Every folder should contain :
    * Code files with Outputs (in Comments)
    * special notes prepared for yourself
    * Problem Solving (new folder to be created).
    * Python learning (new folder to be created).
-   * Improved ```tictactoe.py``` file
+   * Improved and practice python files
 
 ### Steps to push your entire work onto develop branch (not master)
 1. First clone the repo into your local system with the command in step 2
