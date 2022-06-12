@@ -2,6 +2,26 @@
 # # Slicing in Lists and Strings
 # # Reference Video : https://www.youtube.com/watch?v=ajrtAuDg3yw
 
+# List of Topics :
+# Slicing in detail... complete explanation
+# Escape sequences
+# '\n' - Newline character
+# '\r' - Return character
+# '\b' - Backspace character
+# '\' - Backslash character
+# '\”' - Double quote character
+# '\’' - Single quote character
+# '\t' - Tab character
+# '\a' - Alarm character
+# Exercise - 6
+# Conditional statements
+# If
+# If else
+# Nested If elif else
+# Loops
+# While
+
+
 # # Slicing in Lists and Strings
 # my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # #          0, 1, 2, 3, 4, 5, 6, 7, 8, 9
