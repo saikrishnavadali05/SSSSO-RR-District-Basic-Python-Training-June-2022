@@ -1,4 +1,30 @@
-# Python Class 3 - 11.06.2022
+# Python Classroom Code Day3 - 11.06.2022 - Saturday
+
+# Topics Covered : 
+# Variables
+# Python Variables
+# Common conventions followed for variable names
+# Creating good names
+# Exercise - 2
+# User Input
+# Input function
+# Command line parameters (arguments)
+# Exercise - 3
+# Operators
+# Numeric
+# Assignment
+# Comparision
+# Logical
+# Membership
+# Identity
+# Exercise - 4
+# strings
+# Indexing
+# Object Identity
+# Program using builtin function
+# Formatting with .format method
+# Important points to remember
+# builtin functions, methods of string
 
 # # amount1 = 1000
 # # amount2 = 2000
