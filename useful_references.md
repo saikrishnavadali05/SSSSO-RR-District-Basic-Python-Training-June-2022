@@ -6,3 +6,4 @@
 4. [Guido Van Rossum - Wikipedia](https://en.wikipedia.org/wiki/Guido_van_Rossum)
 5. [Guido Van Rossum's GitHub Profile](https://github.com/gvanrossum)
 6. [Guido Van Rossum's Personal Website](https://gvanrossum.github.io/)
+7. [Complete Python Tutorials Corey Schafer](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
