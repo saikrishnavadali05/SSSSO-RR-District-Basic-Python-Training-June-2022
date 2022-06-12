@@ -62,7 +62,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
    - [Logical](#6.4)
    - [Membership](#6.5)
    - [Identity](#6.6)
-   - [Exercise - 4](#6.7)
+   - [Bitwise](#6.7)
+   - [Exercise - 4](#6.8)
 7. [strings](#7)
    - [Indexing](#7.1)
    - [Object Identity](#7.2)
@@ -1216,11 +1217,53 @@ True
 
 <br />
 
+### **Bitwise Operators** <a name="6.7"></a>
+
+> &, |, ^, ~, <<, >>
+
+1. ```&```  -   if both bits are 1 then set each bit to 1 (AND)
+2. ```|```  -	if one of two bits is 1 then set each bit to 1 (OR)
+3. ```^```  - 	if only one of two bits is 1 then Set each bit to 1 (XOR)
+4. ```~```  - 	if the bit is 1 then it changes to 0 and also vice versa. (NOT)
+5. ```<<``` - 	Move left by bringing in zeros from the right and letting the leftmost bits fall off (Zero fill left shift)
+6. ```>>``` - 	Move right by copying the leftmost bit from the left and letting the rightmost bits fall off.(Signed right shift)
+7. Examples
+```python
+a = 12
+b = 6
+
+
+print("Bitwise AND", a & b)
+print("Bitwise OR", a | b)
+print("Bitwise NOT", ~a)
+print("Bitwise XOR", a ^ b)
+```
+```console
+Bitwise AND 4
+Bitwise OR 14
+Bitwise NOT -13
+Bitwise XOR 10
+```
+
+```python
+right_shift = 10 #0000 1010 (Binary)
+print(a >> 1)
+left_shift = 5  #0000 0101 (Binary)
+print(a << 1) 
+```
+```console
+#output
+5
+10
+```
+
+<br />
+
 [go to List of Topics](#top)
 
 <br />
 
-### **Exercise - 4** <a name="6.7"></a>
+### **Exercise - 4** <a name="6.8"></a>
 
 1.  Tell the answer for given Expression without running it using python interpreter
 
