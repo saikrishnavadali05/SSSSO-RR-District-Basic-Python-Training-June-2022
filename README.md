@@ -1322,7 +1322,7 @@ print(y not in x)
 Example :-
 
 ```python
-name = multiple
+name = "multiple"
 print(name[3])
 ```
 
