@@ -1562,7 +1562,7 @@ print(result)
 
 <br />
 
-## **Slicing Operator** in Strings
+## **Slicing Operator** in Lists and Strings 
 
 The syntax is:
 ```python
