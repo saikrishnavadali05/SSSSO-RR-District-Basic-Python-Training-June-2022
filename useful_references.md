@@ -8,3 +8,4 @@
 6. [Guido Van Rossum's Personal Website](https://gvanrossum.github.io/)
 7. [Complete Python Tutorials Corey Schafer](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
 8. [Understanding Slicing - Stackoverflow](https://stackoverflow.com/questions/509211/understanding-slicing)
+9. [Python Tutorial: Slicing Lists and Strings - Corey Schafer](https://www.youtube.com/watch?v=ajrtAuDg3yw)
