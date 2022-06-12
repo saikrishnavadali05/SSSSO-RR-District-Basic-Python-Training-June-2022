@@ -1,4 +1,5 @@
 # # 12.6.2022
+# # Day4 - Sunday
 # # Slicing in Lists and Strings
 # # Reference Video : https://www.youtube.com/watch?v=ajrtAuDg3yw
 
