@@ -84,28 +84,40 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
    - '\a' - [Alarm character](#8)
    - [Exercise - 6](#8.1)
 9. [Conditional statements](#9)
-   - [If](#9)
-   - [If else](#9)
-   - [Nested If elif else](#9)
+   - [If](#9.1)
+   - [If else](#9.2)
+   - [Nested If elif else](#9.3)
+   - [Exercise - 7](#9.4)
 10. [Loops](#10)
-    - [While](#10)
-    - [for](#10)
-11. [Lists](#11)
+    - [While](#10.1)
+    - [for](#10.2)
+    - [Exercise - 8](#10.3)
+11. [Lists](#11)	
 12. [range function](#12)
+    - [Exercise - 9](#12.1)
 13. [Tuples](#13)
+    - [Exercise - 10](#13.1)
 14. [Sets](#14)
+    - [Exercise - 11](#14.1)
 15. [Dictionaries](#15)
-16. Functions
-17. Modules
-18. Namespaces
-19. Packages
-20. File Handling
-    - Read
-    - Write
-    - delete
-21. Exception Handling 
-22. Built in tools
-23. repr()
+    - [OrderedDict module]#15.1)
+    - [Exercise - 12](#15.2)
+16. [Functions](#16)
+    - [Exercise - 13](#16.1)
+17. [Modules](#17)
+    - [Standard Modules] (#17.1)
+18. [Namespaces](#18)
+19. [Packages](#19)
+20. [File Handling](#20)
+    - [Read](#20.1)
+    - [Write](#20.2)
+    - [delete](#20.3)
+    - [Important functions and points for file handling] (#20.4)
+    - [Exercise - 14](#20.5)
+21. [Exception Handling](#21)
+    -[Exercise-15](#21.1)
+22. [Built in tools](#22)
+23. [repr()]
 24. difference between running the code in vs code and jupyter notebook
 25. assert (basic debugging) - to set a breakpoint
 26. What are the different editors that are popular for python programming
@@ -1710,7 +1722,7 @@ If your ship doesn 't come in, \swim\ out to it?
    
 ## **Conditional statements** <a name="9"></a>
 
-### `if` statement: <a name="9.1"></a>
+### ```if``` statement: <a name="9.1"></a>
 
 1.```if``` statement is the most simple ***decision-making*** statement. 
 2. It is used to decide whether a certain statement or block of statements will be executed or not based on certain conditions that we provide after the ```if``` keyword i.e, if a certain condition is satisified or ```True```, then the block of statements under if will be executed. if that condition is not satisfied or ```False```, the statements that are under the ```if``` block are not executed. 
@@ -1782,7 +1794,7 @@ greater than zero
 
  <br /> 
   
-### **Exercise - 7**  <a name="E-7"></a>
+### **Exercise - 7**  <a name="9.2"></a>
   
   1. Write a script to check whether the given year is a *leap year* or not. The input i.e., year, should be given during script execution itself. i.e, as a command line parameter.
   2. Write a script to check whether the given number is *odd or even* by requesting input from the user, using ```input()``` function.
@@ -1808,7 +1820,7 @@ greater than zero
 
 ## **Loops**<a name="10"></a>
 
-### **``While loop```**
+### **``While loop```** <a name="10.1"></a>
 
 1. syntax for `while` is
 
@@ -1840,7 +1852,7 @@ i is  1
 loop executed
 ```
 
-### **```for```** loop
+### **```for```** loop <a name="10.2"></a>
 
 1. The ```for``` loop in Python is used to **iterate the statements** or a part of the program several times. 
 2. It is frequently used to traverse the data structures like list, tuple, or dictionary.
@@ -1971,7 +1983,7 @@ month 10: october
 
  <br />
 
-### **Exercise - 8** <a name="E-8"></a>
+### **Exercise - 8** <a name="10.3"></a>
 
 1.  Write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
 
@@ -2031,7 +2043,7 @@ Basic examples
 
 <br />
 
-## **`range` function:** <a name="12"></a>
+## **```range``` function:** <a name="12"></a>
 
 1.If you do need to iterate over a **sequence of numbers**, use the built-in function ```range()```. 
 2.It generates lists containing arithmetic progressions:
@@ -2131,7 +2143,7 @@ False
 <br />
    
  
-### **Exercise - 9** <a name="E-9"></a>
+### **Exercise - 9** <a name="12.1"></a>
   
  1. write output for the given questions
  ```console
@@ -2212,7 +2224,7 @@ output
  <br />
   
  
-### **Exercise - 10** <a name="E-10"></a>
+### **Exercise - 10** <a name="13.1"></a>
   
  1. Write a python script that does the following operations:
  ```console
@@ -2275,7 +2287,7 @@ output
 
 <br />
 
-### **Exercise - 11**
+### **Exercise - 11**<a name="14.1"></a>
 
 1. Write a python script that takes the following two sets as inputs and does the following operations on those sets :
 
@@ -2442,7 +2454,7 @@ by using range statement
 
 <br />
 
-## **OrderedDict module** <a name="16"></a>
+## **OrderedDict module** <a name="15.1"></a>
 
 An ```OrderedDict``` is a dictionary subclass that remembers the order in which its contents are added, supporting the usual ```dict``` methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
 
@@ -2617,7 +2629,7 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
 <br />
  
  
-### **Exercise - 12** 
+### **Exercise - 12** <a name="15.2"></a>
   1. Write a python script that contains a dictionary with name : "details" and the script should perform the steps from 1 to 7.
  ```console
  
@@ -2640,26 +2652,26 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
    
  <br />
   
-  [go to Answers](#answers)
+[go to Answers](#answers)
 
-<br />
+
 
 [go to List of Topics](#top)
 
 <br />
 	
-### Python Function
-<span style="color: blue;"> Functions are the most important aspect of an application. A function can be defined as the organized block of reusable code, which can be called whenever required. The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+### Python Functions <a name="16"></a>
+1. Functions are the most important aspect of an application. 
+2. A function can be defined as the organized block of **reusable code**, which can be called whenever required. 
+3. The keyword ```def``` introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+4. The Function helps to programmer to break the program into the smaller part. It **organizes** the code very effectively and **avoids** the repetition of the code. As the program grows, function makes the program more organized.
+5. There are mainly two types of functions.
 
-The Function helps to programmer to break the program into the smaller part. It organizes the code very effectively and avoids the repetition of the code. As the program grows, function makes the program more organized.
+- User-define functions - The user-defined functions are those define by the **user to perform the specific task**.
 
-There are mainly two types of functions.
+- Built-in functions - The built-in functions are those functions that are **pre-defined** in Python.
 
-- User-define functions - The user-defined functions are those define by the user to perform the specific task.
-
-- Built-in functions - The built-in functions are those functions that are pre-defined in Python.
-
-Example of Function 1:
+6.Example of Function 1:
 ```python
 def square(a):
  return a * a
@@ -2672,16 +2684,16 @@ print(type(val))
 
 val = square
 print("val(2)",val(2))
-  
+```
+```console
 Output:
 None
 9
 <class 'int'>
 val(2) 4
-
 ```  
  
-Example of Functions 2: 
+7. Example of Functions 2: 
  ```python
 def sumodd(n = 5):
   val = 0
@@ -2692,18 +2704,20 @@ def sumodd(n = 5):
       index += 1
       continue
   # if odd we add it
-      val += index
-      index += 1
+    val += index
+    index += 1
   return val
 def funNotImplemented(): pass
 print("sumodd is", sumodd(3))
 print("sumodd is", sumodd())
 funNotImplemented()
-
+```
+```console
 Output:
-
+sumodd is 4
+sumodd is 9
 ```  
-Example of Functions 3 with Keyword Argument:
+8.Example of Functions 3 with Keyword Argument:
 ```python
 def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
   print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
@@ -2713,13 +2727,18 @@ funckeyword(arg1="value1")
 funckeyword(10, arg2="Multiple")
 funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
 funckeyword(arg3="Hyderabad", arg1="value1")
-  
-funckeyword()
-funckeyword(arg2 = "MultipleWishes")
 ```
+```console
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= MultipleWishes arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Hyderabad
+```
+
  <br />
    
- ## **Exercise-12** 
+ ## **Exercise-12** <a name="16.1"></a>
   
  1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
  ```python
@@ -2740,154 +2759,8 @@ funckeyword(arg2 = "MultipleWishes")
 [go to List of Topics](#top)
 
 <br />
-	
-## **File Handling**
-  
-### Reading file
-1. syntax for reading the file is
-  open(file_name, mode)
-  - The function open used to open the file and return the file object
-  - mode are three types
-    1. 'w' = write
-    2. 'r' = read
-    3. 'a' = append
-2. example for file read
-```
-file_open = open("text.txt", "r")
-print(file_open.read())
-```
-  
-3. file read using loop
-```python
-file = open ("test.txt",'r')
-for line in file:
-  print(line, end='')
-file.close()
 
-Explaination of code
-A newline character is already present in line print read from file. To prevent publishing two lines, override the default end argument after each line, newline characters.
- 
-running code
-PS C:\Users\Documents\Training\code> python file_handling.py  
-  
-output
-I need to learn python
-I like programming 
-```
- 
-### Writing and appending to file
-  
-```python 
-file = open("test.txt", "w") #writing
-file.write("I like teaching")
-file.close()
-  
-running code
-PS C:\Users\Documents\Training\code> python file_handling_writing.py    
-  
-output seen in file
-I like teaching 
-```
-```python 
-file = open("test.txt", "a") #appending
-file.write("I like playing games")
-file.close()
-  
-running code
-PS C:\Users\Documents\Training\code> python file_handling_appending.py   
-  
-output seen in file
-I like teaching I like playing games
-```
-
- ### Deleting file
- ```python
-import os 
-os.remove("test.txt") #The file test.txt will be removed form the folder.
-```  
-  
-### Important functions and points for file handling
-  
-function | represents 
-:----- | :----: 
-readline() | Read the contents from the file until it finds newline or end of file and returns a single string
-write(s) | Write the string s into the file
-close()| Flush the buffer and close the file
-  
-1. The Python operating system module has methods for performing file-processing actions such as renaming and removing files.
-2. To use this module, first import it, and then use any relevant functions.
-  - The rename() function accepts two parameters: the current filename and the new filename.
-  - You can delete files by passing the name of the file to be destroyed as an argument to the remove() function.
-  - The os module has numerous methods for creating, removing, and changing directories.
-  - To create directories in the current directory, use the os module's mkdir() function. This procedure requires an argument containing the name of the directory to be created.
-  - To change the current directory, use the chdir() technique. The chdir() function accepts one argument, which is the name of the directory to be made the current directory.
- - The getcwd() function returns the path to the current working directory.
- - The rmdir() function deletes the directory that is supplied as an argument. Before eliminating a directory, it is necessary to delete all of its contents.
-  
-   
- <br />
-  
-  
- ## **Exercise-13** 
-  
- 1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
- 2. Write a script that count the number of lines in a file. Take any file you wish
- 3. Write a script that write lines to the file and they are
- ```python
-1. Steve Jobs is a popular name in the world.
-2. He was the co-founder and chairman of Apple Inc.
-3. He is also referred to as an industrial designer, investor, and media tycoon.
-4. His full name was Steven Paul Jobs.
-5. He was born on 24th February in the year 1955.
-```
-4. Write a script that append lines to the file that are created in problem 3 and they are
-```python
-1. Steve Paul Jobs is regarded as a successful American businessman.
-2. He had attained success in different fields.
-3. He had a great contribution to the development of computers and mobiles.
-4. He is stated as the initiator of the personal computer revolution.
-5. He had served as the CEO of Apple Inc from 1997 to 2011.
-```
-  
-   <br />
-  
-  
-## **Exception Handling**
-  1. python handles when the error/exception are occured in code by printing error message. 
-  2. In try code it will check whether the code has errorsd
-  3. In except code it will handles the code by printing the error message.
-```python
-from sys import argv
-try:
-    addition = float(argv[1]) + float(argv[2])
-    print("The additon is", addition)
-except:
-    print("Error: Provide two numbers")
-  
-running script
-PS C:\Users\Documents\Training\code> python exception_handling.py suresh haresh
-  
-output
-Error: Provide two numbers
-```
-
- <br />
-  
- ## **Exercise-14**   
- 1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
- ```python 
- example two strings are Multiple Wishes -  output is MultipleWishes
- example user gives numbers are 1 5 - output is "Error: Provide two strings"
- ```
- 2. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
-```python
-example two numbers are 2 5 - output is 10
-example user gives are happy life - utput is "Error: Provide two numbers"
-```
-	
-	
-	
-## **Python Modules**
+## **Python Modules** <a name="17"></a>
 
 1. Python relies heavily on modules. A Python module is a file that contains Python definitions and statements. The file name is the module name plus the suffix '.py'.
 2. Module definitions can be imported into other modules or the main module.
@@ -2939,9 +2812,9 @@ assert(type(num) == int)
 chkassert('india')
 sys.exit()
 ```
+ <br />
 
-
-## **Standard Modules**
+## **Standard Modules** <a name="17.1"></a>
 
 1.The Library Reference, which comes with Python, is a library of standard modules. The interpreter includes several modules that allow access to activities that are not part of the language's core but are included for efficiency or to enable access to operating system primitives such system calls.
 2. example
@@ -2956,8 +2829,14 @@ print(pi)
 ```
 
  <br />
+  
+[go to Answers](#answers)
 
-## **Python Namespace** 
+[go to List of Topics](#top)
+
+<br />
+
+## **Python Namespace** <a name="18"></a>
 
 1. A namespace is a collection of identifiers that are stored in a container. Namespaces provide individual identifiers a sense of direction, making it feasible to distinguish between identifiers with the same exact name.
 2. Namespaces in Python are specified by individual modules, and because modules can be housed in hierarchical packages, namespaces are also hierarchical.
@@ -2996,7 +2875,7 @@ print(num)
 ```
  <br />
 
-## **Python Packages**
+## **Python Packages** <a name="19"></a>
 
 1. Packages are a method of organising Python's module namespace through the use of "dotted module names."
 2. For instance, the module name C.D denotes a submodule named 'D' within a package named 'C.'
@@ -3049,9 +2928,171 @@ running script
 ```
 
  <br />
- 
+  
+[go to Answers](#answers)
 
-## **Python Buildtool**
+[go to List of Topics](#top)
+
+<br />
+	
+## **File Handling** <a name="20"></a>
+  
+### **Reading file** <a name="20.1"></a>
+1. syntax for reading the file is
+  open(file_name, mode)
+  - The function open used to open the file and return the file object
+  - mode are three types
+    1. 'w' = write
+    2. 'r' = read
+    3. 'a' = append
+2. example for file read
+```
+file_open = open("text.txt", "r")
+print(file_open.read())
+```
+  
+3. file read using loop
+```python
+file = open ("test.txt",'r')
+for line in file:
+  print(line, end='')
+file.close()
+
+Explaination of code
+A newline character is already present in line print read from file. To prevent publishing two lines, override the default end argument after each line, newline characters.
+ 
+running code
+PS C:\Users\Documents\Training\code> python file_handling.py  
+  
+output
+I need to learn python
+I like programming 
+```
+ 
+### **Writing and appending to file** <a name="20.2"></a>
+  
+```python 
+file = open("test.txt", "w") #writing
+file.write("I like teaching")
+file.close()
+  
+running code
+PS C:\Users\Documents\Training\code> python file_handling_writing.py    
+  
+output seen in file
+I like teaching 
+```
+```python 
+file = open("test.txt", "a") #appending
+file.write("I like playing games")
+file.close()
+  
+running code
+PS C:\Users\Documents\Training\code> python file_handling_appending.py   
+  
+output seen in file
+I like teaching I like playing games
+```
+
+ ### **Deleting file** <a name="20.3"></a>
+ ```python
+import os 
+os.remove("test.txt") #The file test.txt will be removed form the folder.
+```  
+
+ <br />
+  
+[go to Answers](#answers)
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Important functions and points for file handling** <a name="20.4"></a>
+  
+function | represents 
+:----- | :----: 
+readline() | Read the contents from the file until it finds newline or end of file and returns a single string
+write(s) | Write the string s into the file
+close()| Flush the buffer and close the file
+  
+1. The Python operating system module has methods for performing file-processing actions such as renaming and removing files.
+2. To use this module, first import it, and then use any relevant functions.
+  - The rename() function accepts two parameters: the current filename and the new filename.
+  - You can delete files by passing the name of the file to be destroyed as an argument to the remove() function.
+  - The os module has numerous methods for creating, removing, and changing directories.
+  - To create directories in the current directory, use the os module's mkdir() function. This procedure requires an argument containing the name of the directory to be created.
+  - To change the current directory, use the chdir() technique. The chdir() function accepts one argument, which is the name of the directory to be made the current directory.
+ - The getcwd() function returns the path to the current working directory.
+ - The rmdir() function deletes the directory that is supplied as an argument. Before eliminating a directory, it is necessary to delete all of its contents.
+  
+   
+ <br />
+  
+  
+ ### **Exercise-14** <a name="20.5"></a> 
+  
+ 1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
+ 2. Write a script that count the number of lines in a file. Take any file you wish
+ 3. Write a script that write lines to the file and they are
+ ```python
+1. Steve Jobs is a popular name in the world.
+2. He was the co-founder and chairman of Apple Inc.
+3. He is also referred to as an industrial designer, investor, and media tycoon.
+4. His full name was Steven Paul Jobs.
+5. He was born on 24th February in the year 1955.
+```
+4. Write a script that append lines to the file that are created in problem 3 and they are
+```python
+1. Steve Paul Jobs is regarded as a successful American businessman.
+2. He had attained success in different fields.
+3. He had a great contribution to the development of computers and mobiles.
+4. He is stated as the initiator of the personal computer revolution.
+5. He had served as the CEO of Apple Inc from 1997 to 2011.
+```
+  <br />
+  
+[go to Answers](#answers)
+
+[go to List of Topics](#top)
+
+<br />
+  
+## **Exception Handling** <a name="21"></a> 
+  1. python handles when the error/exception are occured in code by printing error message. 
+  2. In try code it will check whether the code has errorsd
+  3. In except code it will handles the code by printing the error message.
+```python
+from sys import argv
+try:
+    addition = float(argv[1]) + float(argv[2])
+    print("The additon is", addition)
+except:
+    print("Error: Provide two numbers")
+  
+running script
+PS C:\Users\Documents\Training\code> python exception_handling.py suresh haresh
+  
+output
+Error: Provide two numbers
+```
+
+ <br />
+  
+ ### **Exercise-15**   <a name="21.1"></a> 
+ 1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
+ ```python 
+ example two strings are Multiple Wishes -  output is MultipleWishes
+ example user gives numbers are 1 5 - output is "Error: Provide two strings"
+ ```
+ 2. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
+```python
+example two numbers are 2 5 - output is 10
+example user gives are happy life - utput is "Error: Provide two numbers"
+```
+
+
+## **Python Buildtool**  <a name="22"></a> 
 
 1. These libraries aid in Python development by allowing you to walk through code, inspect stack frames, and set breakpoints, among other things.
 2. The pdb module defines an interactive Python source code debugger. It allows you to establish (conditional) breakpoints and single step at the source line level, inspect stack frames, list source code, and evaluate arbitrary Python code in the context of any stack frame.
