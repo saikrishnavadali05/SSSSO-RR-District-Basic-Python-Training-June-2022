@@ -1712,9 +1712,12 @@ If your ship doesn 't come in, \swim\ out to it?
 
 ### `if` statement: <a name="9.1"></a>
 
-`if` statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not based on certain conditions that we provide after the `if` keyword i.e, if a certain condition is satisified or `True`, then the block of statements under if will be executed. if that condition is not satisfied or `False`, the statements that are under the `if` block are not executed. For an `if` statememt, the `elif` and `else` blocks are optional. while writing `if` statements, we should make sure that, we are writing the code with **proper indentation**, otherwise the code execution stops, displaying indentation related errors.
+1.```if``` statement is the most simple ***decision-making*** statement. 
+2. It is used to decide whether a certain statement or block of statements will be executed or not based on certain conditions that we provide after the ```if``` keyword i.e, if a certain condition is satisified or ```True```, then the block of statements under if will be executed. if that condition is not satisfied or ```False```, the statements that are under the ```if``` block are not executed. 
+3. For an ```if``` statememt, the ```elif``` and ```else``` blocks are **optional**. 
+4. while writing ```if``` statements, we should make sure that, we are writing the code with **proper indentation**, otherwise the code execution stops, displaying indentation related errors.
 
-Some of the condition checks than can be done within an `if` statement:
+5. Some of the condition checks than can be done within an `if` statement:
 
 - Equals: `a == b`
 - Not Equals: `a != b`
@@ -1805,7 +1808,7 @@ greater than zero
 
 ## **Loops**<a name="10"></a>
 
-### While loop
+### **``While loop```**
 
 1. syntax for `while` is
 
@@ -1837,11 +1840,12 @@ i is  1
 loop executed
 ```
 
-### `for` loop
+### **```for```** loop
 
-<span style="color: blue;"> The `for` loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.
+1. The ```for``` loop in Python is used to **iterate the statements** or a part of the program several times. 
+2. It is frequently used to traverse the data structures like list, tuple, or dictionary.
 
-Example:
+3. Example:
 
 ```python
 str = "MultipleWishes"
@@ -1865,7 +1869,7 @@ e
 s
 ```
 
-Example of `for` loop using `f` formatting:
+4. Example of `for` loop using `f` formatting:
 
 ```python
 s = "Multiple_wishes"
@@ -1927,7 +1931,7 @@ Our country is india
 Multiple_wishes dream
 ```
 
-### `for` loop
+### **```for``` loop help in lists**
 
 ```python
 My_Lists = ['Multiple_Wishes', 'Pywishes', 'Hyderabad']
@@ -2005,7 +2009,9 @@ Hence the output count should return 3.
 
 ## **Lists** <a name="11"></a>
 
-A ```list``` in Python is used to store the sequence of various types of data. Python lists are ordered and mutable type its mean we can modify its element after it created. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
+1. A ```list``` in Python is used to store the **sequence of various types of data**. 
+2. Python lists are **ordered** and **mutable** type its mean we can modify its element after it created. 
+3. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
 
 Basic examples
 
@@ -2027,7 +2033,8 @@ Basic examples
 
 ## **`range` function:** <a name="12"></a>
 
-If you do need to iterate over a sequence of numbers, use the built-in function `range()`. It generates lists containing arithmetic progressions:
+1.If you do need to iterate over a **sequence of numbers**, use the built-in function ```range()```. 
+2.It generates lists containing arithmetic progressions:
 
 Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
 
@@ -2148,7 +2155,8 @@ False
 
 ## **Tuples:** <a name="13"></a>
 
-Tuples are like lists, but are ordered and immutable like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). They are enclosed by parentheses or nothing at all, rather than brackets.
+1.Tuples are like lists, but are **ordered** and **immutable** like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). 
+2. They are enclosed by **parentheses** or nothing at all, rather than brackets.
 
 ```python
 t1 = (12, 5, 8)
@@ -2300,7 +2308,12 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 
 ## **Dictionary:** <a name="15"></a>
 
-Dictionary (hash) which is also called associative arrays. Dictionary is a built-in Python Data Structure that is mutable. Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered. Deletion of an element from a dictionary can be done via ```pop()```. The in operator works on dictionary keys. As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+1. Dictionary (hash) which is also called **associative arrays**. 
+2. Dictionary is a built-in Python Data Structure that is **mutable**. 
+3. Dictionaries are used to store data values in **key:value** pairs. 
+4. A dictionary is a collection which is **ordered**. 
+5. Deletion of an element from a dictionary can be done via ```pop()```. The ```in``` operator works on dictionary keys. 
+6. As of Python **version 3.7**, dictionaries are **ordered**. In Python **3.6** and earlier, dictionaries are **unordered**.
 
 > An example program to illustrate the creation and usage of a dictionary
 
@@ -2634,166 +2647,6 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
 [go to List of Topics](#top)
 
 <br />
-
-## **Answers**
-
-### Exercise - 1 <a name="E-1"></a>
-
-1. C
-2. D
-3. A, B, C
-4. Solution Code
-
-```python
-#output
-
-wonders_of_world = 7
-print(wonders_of_world)
-```
-
-5. Solution Code
-
-```python
-#output
-
-planet_near_to_sun = "Mercury"
-print(planet_near_to_sun)
-```
-
-6. B
-
-  <br />
-  
-### Exercise - 2 <a name="E-2"></a>
-
-1. student_name = "Ramesh"
-2. Solution Code
-
-```python
-#output
-
-number1 = 10
-number2 = 5
-number3 = number1 + number2
-print(number3)
-
-```
-
-3. Solution Code
-
-```python
-colour = "blue"
-fruit = "Mango"
-number = 22
-article = "is"
-
-print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  article, number , ".")
-```
-
-  <br />
-  
-### Exercise - 3 <a name="E-3"></a>
-
-1. Solution code
-
-```python
-number1 = int(input("Enter the first number "))
-number2 = int(input("Enter the second number "))
-
-multiplication = number1 * number2
-print("The multiplication of two numbers is", multiplication)
-```
-
-2. Solution code
-
-```python
-from sys import argv
-
-name = argv[1]
-
-print(name, "is very good boy who helps everyone and also",name, "participates in all the sports and cultural meet.", name, "hobbies are playing virtual games and also watching movies.")
-```
-
-3. Solution code
-
-```python
-base = float(input("Enter the base of the triangle "))
-height = float(input("Enter the height of the triangle "))
-
-area_triangle = (base * height) / 2
-print("The area of triangle is ", area_triangle)
-```
-
-4. Solution code
-
-```python
-name = argv[1]
-year = argv[2]
-name_of_college = argv[3]
-lives = argv[4]
-
-
-print("student_name :", name)
-print("class        :", year)
-print("college_name :", name_of_college)
-print("city_lives   :", lives)
-```
-
- <br />
- 
-### Exercise - 4 <a name="E-4"></a>
-
-1. A
-2. B
-3. B
-4. 12 4
-   True
-   False
-   False
-5. False
-
- <br />
- 
-### Exercise - 5  <a name="E-5"></a>
-
-1. Solution code
-
-```python
-string = "python"
-print(string.upper())
-```
-
-2. Solution code
-
-```python
-string = "Cython"
-
-result = string.replace("C", "P", 1)
-print(result)
-```
-
-3. Solution code
-
-```python
-string = "Python"
-
-result = string.center(14,"*")
-print(result)
-```
-
-4. 1
-
-<br />
-
-### Exercise - 6 <a name="E-6"></a>
-
-1. Solution code
-
-```python
-print("Talk is \'cheap\'. Show me the code.")
-print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
-print("If your ship doesn \'t come in, \\swim\\ out to it?")
-```
 	
 ### Python Function
 <span style="color: blue;"> Functions are the most important aspect of an application. A function can be defined as the organized block of reusable code, which can be called whenever required. The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
@@ -2880,10 +2733,13 @@ funckeyword(arg2 = "MultipleWishes")
  ```python
   example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
  ```
-  
-  
- <br />
- 
+ [go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
 	
 ## **File Handling**
   
@@ -3222,3 +3078,173 @@ running script
  - (optionally) write a setup configuration file
  - Create one or more built (binary) distributions (optional).
 
+<br />
+
+	
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+	
+## **Answers**
+
+### Exercise - 1 <a name="E-1"></a>
+
+1. C
+2. D
+3. A, B, C
+4. Solution Code
+
+```python
+#output
+
+wonders_of_world = 7
+print(wonders_of_world)
+```
+
+5. Solution Code
+
+```python
+#output
+
+planet_near_to_sun = "Mercury"
+print(planet_near_to_sun)
+```
+
+6. B
+
+  <br />
+  
+### Exercise - 2 <a name="E-2"></a>
+
+1. student_name = "Ramesh"
+2. Solution Code
+
+```python
+#output
+
+number1 = 10
+number2 = 5
+number3 = number1 + number2
+print(number3)
+
+```
+
+3. Solution Code
+
+```python
+colour = "blue"
+fruit = "Mango"
+number = 22
+article = "is"
+
+print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  article, number , ".")
+```
+
+  <br />
+  
+### Exercise - 3 <a name="E-3"></a>
+
+1. Solution code
+
+```python
+number1 = int(input("Enter the first number "))
+number2 = int(input("Enter the second number "))
+
+multiplication = number1 * number2
+print("The multiplication of two numbers is", multiplication)
+```
+
+2. Solution code
+
+```python
+from sys import argv
+
+name = argv[1]
+
+print(name, "is very good boy who helps everyone and also",name, "participates in all the sports and cultural meet.", name, "hobbies are playing virtual games and also watching movies.")
+```
+
+3. Solution code
+
+```python
+base = float(input("Enter the base of the triangle "))
+height = float(input("Enter the height of the triangle "))
+
+area_triangle = (base * height) / 2
+print("The area of triangle is ", area_triangle)
+```
+
+4. Solution code
+
+```python
+name = argv[1]
+year = argv[2]
+name_of_college = argv[3]
+lives = argv[4]
+
+
+print("student_name :", name)
+print("class        :", year)
+print("college_name :", name_of_college)
+print("city_lives   :", lives)
+```
+
+ <br />
+ 
+### Exercise - 4 <a name="E-4"></a>
+
+1. A
+2. B
+3. B
+4. 12 4
+   True
+   False
+   False
+5. False
+
+ <br />
+ 
+### Exercise - 5  <a name="E-5"></a>
+
+1. Solution code
+
+```python
+string = "python"
+print(string.upper())
+```
+
+2. Solution code
+
+```python
+string = "Cython"
+
+result = string.replace("C", "P", 1)
+print(result)
+```
+
+3. Solution code
+
+```python
+string = "Python"
+
+result = string.center(14,"*")
+print(result)
+```
+
+4. 1
+
+<br />
+
+### Exercise - 6 <a name="E-6"></a>
+
+1. Solution code
+
+```python
+print("Talk is \'cheap\'. Show me the code.")
+print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
+print("If your ship doesn \'t come in, \\swim\\ out to it?")
+```
