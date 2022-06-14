@@ -2794,3 +2794,431 @@ print("Talk is \'cheap\'. Show me the code.")
 print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
 print("If your ship doesn \'t come in, \\swim\\ out to it?")
 ```
+	
+### Python Function
+<span style="color: blue;"> Functions are the most important aspect of an application. A function can be defined as the organized block of reusable code, which can be called whenever required. The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+
+The Function helps to programmer to break the program into the smaller part. It organizes the code very effectively and avoids the repetition of the code. As the program grows, function makes the program more organized.
+
+There are mainly two types of functions.
+
+- User-define functions - The user-defined functions are those define by the user to perform the specific task.
+
+- Built-in functions - The built-in functions are those functions that are pre-defined in Python.
+
+Example of Function 1:
+```python
+def square(a):
+ return a * a
+
+print(square.__doc__)
+
+val = square(3)
+print(val)
+print(type(val))
+
+val = square
+print("val(2)",val(2))
+  
+Output:
+None
+9
+<class 'int'>
+val(2) 4
+
+```  
+ 
+Example of Functions 2: 
+ ```python
+def sumodd(n = 5):
+  val = 0
+  index = 1
+  while (index <= n):
+  # if even we continue with next iteration
+    if (index % 2 == 0):
+      index += 1
+      continue
+  # if odd we add it
+      val += index
+      index += 1
+  return val
+def funNotImplemented(): pass
+print("sumodd is", sumodd(3))
+print("sumodd is", sumodd())
+funNotImplemented()
+
+Output:
+
+```  
+Example of Functions 3 with Keyword Argument:
+```python
+def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
+  print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
+funckeyword(10)
+funckeyword(arg1="value1")
+  
+funckeyword(10, arg2="Multiple")
+funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
+funckeyword(arg3="Hyderabad", arg1="value1")
+  
+funckeyword()
+funckeyword(arg2 = "MultipleWishes")
+```
+ <br />
+   
+ ## **Exercise-12** 
+  
+ 1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
+ ```python
+  example the string is Multiple - output is elpitluM
+ ```
+ 2. Write a function that print the reverse of the given number. The input is given in the command line parameter.
+ ```python
+  example the number is 456 - output os 654.
+ ```
+ 3.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
+ ```python
+  example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
+ ```
+  
+  
+ <br />
+ 
+	
+## **File Handling**
+  
+### Reading file
+1. syntax for reading the file is
+  open(file_name, mode)
+  - The function open used to open the file and return the file object
+  - mode are three types
+    1. 'w' = write
+    2. 'r' = read
+    3. 'a' = append
+2. example for file read
+```
+file_open = open("text.txt", "r")
+print(file_open.read())
+```
+  
+3. file read using loop
+```python
+file = open ("test.txt",'r')
+for line in file:
+  print(line, end='')
+file.close()
+
+Explaination of code
+A newline character is already present in line print read from file. To prevent publishing two lines, override the default end argument after each line, newline characters.
+ 
+running code
+PS C:\Users\Documents\Training\code> python file_handling.py  
+  
+output
+I need to learn python
+I like programming 
+```
+ 
+### Writing and appending to file
+  
+```python 
+file = open("test.txt", "w") #writing
+file.write("I like teaching")
+file.close()
+  
+running code
+PS C:\Users\Documents\Training\code> python file_handling_writing.py    
+  
+output seen in file
+I like teaching 
+```
+```python 
+file = open("test.txt", "a") #appending
+file.write("I like playing games")
+file.close()
+  
+running code
+PS C:\Users\Documents\Training\code> python file_handling_appending.py   
+  
+output seen in file
+I like teaching I like playing games
+```
+
+ ### Deleting file
+ ```python
+import os 
+os.remove("test.txt") #The file test.txt will be removed form the folder.
+```  
+  
+### Important functions and points for file handling
+  
+function | represents 
+:----- | :----: 
+readline() | Read the contents from the file until it finds newline or end of file and returns a single string
+write(s) | Write the string s into the file
+close()| Flush the buffer and close the file
+  
+1. The Python operating system module has methods for performing file-processing actions such as renaming and removing files.
+2. To use this module, first import it, and then use any relevant functions.
+  - The rename() function accepts two parameters: the current filename and the new filename.
+  - You can delete files by passing the name of the file to be destroyed as an argument to the remove() function.
+  - The os module has numerous methods for creating, removing, and changing directories.
+  - To create directories in the current directory, use the os module's mkdir() function. This procedure requires an argument containing the name of the directory to be created.
+  - To change the current directory, use the chdir() technique. The chdir() function accepts one argument, which is the name of the directory to be made the current directory.
+ - The getcwd() function returns the path to the current working directory.
+ - The rmdir() function deletes the directory that is supplied as an argument. Before eliminating a directory, it is necessary to delete all of its contents.
+  
+   
+ <br />
+  
+  
+ ## **Exercise-13** 
+  
+ 1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
+ 2. Write a script that count the number of lines in a file. Take any file you wish
+ 3. Write a script that write lines to the file and they are
+ ```python
+1. Steve Jobs is a popular name in the world.
+2. He was the co-founder and chairman of Apple Inc.
+3. He is also referred to as an industrial designer, investor, and media tycoon.
+4. His full name was Steven Paul Jobs.
+5. He was born on 24th February in the year 1955.
+```
+4. Write a script that append lines to the file that are created in problem 3 and they are
+```python
+1. Steve Paul Jobs is regarded as a successful American businessman.
+2. He had attained success in different fields.
+3. He had a great contribution to the development of computers and mobiles.
+4. He is stated as the initiator of the personal computer revolution.
+5. He had served as the CEO of Apple Inc from 1997 to 2011.
+```
+  
+   <br />
+  
+  
+## **Exception Handling**
+  1. python handles when the error/exception are occured in code by printing error message. 
+  2. In try code it will check whether the code has errorsd
+  3. In except code it will handles the code by printing the error message.
+```python
+from sys import argv
+try:
+    addition = float(argv[1]) + float(argv[2])
+    print("The additon is", addition)
+except:
+    print("Error: Provide two numbers")
+  
+running script
+PS C:\Users\Documents\Training\code> python exception_handling.py suresh haresh
+  
+output
+Error: Provide two numbers
+```
+
+ <br />
+  
+ ## **Exercise-14**   
+ 1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
+ ```python 
+ example two strings are Multiple Wishes -  output is MultipleWishes
+ example user gives numbers are 1 5 - output is "Error: Provide two strings"
+ ```
+ 2. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
+```python
+example two numbers are 2 5 - output is 10
+example user gives are happy life - utput is "Error: Provide two numbers"
+```
+	
+	
+	
+## **Python Modules**
+
+1. Python relies heavily on modules. A Python module is a file that contains Python definitions and statements. The file name is the module name plus the suffix '.py'.
+2. Module definitions can be imported into other modules or the main module.
+3. Example
+ - Let us employ the addition module (addition.py). Enter the Python interpreter and run the following command to import this module.
+ PS C:\Users\Documents\Training\code>python
+ ```python
+ >>> import addition
+ ```
+ - This just adds the module name  addition to the existing symbol table, not the names of the functions added in addition. The functions can be accessed by using the module name, as illustrated below.
+ ```python
+ >>> addition.add(5,6)
+ ```
+ - If you intend to use a function frequently, you may give it a local name:
+ ```python
+ >>> add_func = addition.add(4,5)
+ >>> add_func
+ ```
+4. A module have both executable statements and function definitions. These statements are used to get the module started. They are only executed the first time the module is imported. 
+5. example:
+```python
+>>> from addition import add, add_to_n
+>>> add(7, 8)
+>>> add_to_n(3)
+```
+6. example
+```python
+>>> from fibonacci import *
+All names except those beginning with an underscore (_) are imported.
+```
+7. When you import a module called addition, the interpreter looks for a file called 'addition.py' in the current directory, then in the list of directories given by the environment variable PYTHONPATH.
+8. When the Python interpreter is run with the -O switch, optimised code is created and saved in.pyo files. The optimizer is currently ineffective; it simply eliminates assert statements. When -O is used, all bytecode is optimized;.pyc files are ignored, while.py files are compiled to optimised bytecode.
+9. Passing two -O options to the Python interpreter (-OO) causes the bytecode compiler to execute optimizations, which may result in malfunctioning applications in rare instances. Only __doc__ strings are currently deleted from the bytecode, resulting in smaller '.pyo' files. Because certain programmes may rely on having them available, you should exercise caution while using this option.
+10. A programme does not execute any quicker when read from a '.pyc' or '.pyo' file than when read from a '.py' file; the only difference is the speed with which '.pyc' or '.pyo' files are loaded.
+11. It is conceivable for the same module to have a file called 'fibonacci.pyc' (or 'fibonacci.pyo' when -O is used) but no file called 'fibonacci.py'. This may be used to publish a Python code library that is relatively difficult to reverse engineer.
+12. example
+```python
+import sys
+# __debug__ is true by default, unless we run
+# using -O (optimized code)
+# python -O assert.py
+print(__debug__)
+# assert comes into affect only when __debug__ is true
+num = int(input('Enter a positive number: '))
+print(num)
+assert(num > 0), 'Only positive numbers are allowed!'
+def chkassert(num):
+assert(type(num) == int)
+chkassert('india')
+sys.exit()
+```
+
+
+## **Standard Modules**
+
+1.The Library Reference, which comes with Python, is a library of standard modules. The interpreter includes several modules that allow access to activities that are not part of the language's core but are included for efficiency or to enable access to operating system primitives such system calls.
+2. example
+```python
+from math import *
+print(fabs(-2.3))
+print(factorial(5))
+print(fmod(5, 2))
+print(sqrt(25))
+print(pow(2, 3))
+print(pi)
+```
+
+ <br />
+
+## **Python Namespace** 
+
+1. A namespace is a collection of identifiers that are stored in a container. Namespaces provide individual identifiers a sense of direction, making it feasible to distinguish between identifiers with the same exact name.
+2. Namespaces in Python are specified by individual modules, and because modules can be housed in hierarchical packages, namespaces are also hierarchical.
+3. When a module is imported, the names specified in the module are defined via that module's namespace and are accessed from calling modules by using the fully qualified name.
+4. Examples include the collection of built-in names (functions like abs() and built-in exception names), global names in a module, and local names in a function invocation. A namespace is formed by the collection of attributes of an object.
+5. Python searches the many levels of namespaces using the LEGB rule before locating the nameto-object mapping.
+Local -> Enclosed -> Global -> Built-in, with arrows indicating the namespace-hierarchy search order.
+- Local can be used within a function or a class method.
+- Enclosed can refer to the function that is enclosing it, for example, if a function is wrapped inside another function.
+- Global refers to the highest level of the executing script, and 
+- Built-in are unique names reserved by Python for itself.
+6. if a particular name:object mapping is not found in the local namespaces, the namespaces of
+the enclosed scope is searched next. If the search in the enclosed scope is unsuccessful, too,
+Python moves on to the global namespace, and eventually, it will search the built-in namespace
+(if a name cannot found in any of the namespaces, a NameError is raised).
+7. example
+```python
+lst = []
+num = 10
+def outer(n):
+ lst.append(n)
+ print(lst)
+ global num
+ num = 20
+ print(num)
+ def inner():
+ num = 30
+ print(num)
+ return inner
+
+func = outer(2)
+func()
+func = outer(3)
+func()
+print(num) 
+```
+ <br />
+
+## **Python Packages**
+
+1. Packages are a method of organising Python's module namespace through the use of "dotted module names."
+2. For instance, the module name C.D denotes a submodule named 'D' within a package named 'C.'
+3. Just like using modules frees writers of various modules from having to worry about each other's global variable names, using dotted module names frees authors of multimodule packages from name collisions.
+4. The __init .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
+```python
+--+ PackageDemo
+ |-- mod1.py
+ |-- mod12Demo.py
+ |-- mod2.py
+ |-- __init__.py
+```
+5. The presence of the __init .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
+6. When using from package import item, the item can be a package submodule (or subpackage) or any other name declared in the package, such as a function, class, or variable. If the item is not declared in the package, the import statement assumes it is a module and attempts to load it. If it cannot find it, an ImportError exception is thrown.
+7. If a package's __init .py' code includes a list called __all__, it is assumed to be a list of module names that should be imported when a from package import * is found. When a new version of the package is released, it is the responsibility of the package author to keep this list up to date. If package authors do not see a purpose for importing * from their package, they may choose not to support it.
+8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init .py') and then imports whatever names are declared in the package. Any names specified by '__init .py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
+ 
+9. file of mod1.py present in demo folder
+ ```python
+import demo.mod2
+def f():
+ global x
+ x = 6
+def getX():
+ return x
+def main():
+ x = 5
+ f()
+ print(x)
+ demo.mod2.g()
+ x += 2
+ print(x)
+```
+10. File of mod2.py present in demo folder
+```python
+import demo.mod1
+def g():
+ x = 10
+ print(x)
+ print(demo.mod1.getX())
+```
+11. File of mod12Demo.py present in demo folder
+```python
+from demo import *
+if __name__ == '__main__':
+mod1.main()
+
+running script
+ PS C:\Users\Documents\Training\code>python demo/mod12Demo.py
+```
+
+ <br />
+ 
+
+## **Python Buildtool**
+
+1. These libraries aid in Python development by allowing you to walk through code, inspect stack frames, and set breakpoints, among other things.
+2. The pdb module defines an interactive Python source code debugger. It allows you to establish (conditional) breakpoints and single step at the source line level, inspect stack frames, list source code, and evaluate arbitrary Python code in the context of any stack frame.
+3. The debugger is extendable; in fact, it is specified as the class Pdb. The modules bdb and cmd are used in the extension interface.
+4. The prompt from the debugger is (Pdb). pdb.py may also be used to debug other scripts as a script.
+```python
+ PS C:\Users\Documents\Training\code>python -m pdb addition.py
+```
+5. s(tep) - Execute the current line, stopping at the first feasible opportunity (either in a called function or on the next line in the current function).
+6. n(ext) - Continue execution until the current function's next line is reached or it returns. (The distinction between next and step is that step stops within a called function, whereas next runs called functions at (near) full speed, pausing only at the next line in the current function.)
+7. unt(il) - Continue execution until a line with a line number larger than the current one is reached, or until the current frame is returned.
+8. r(eturn) - Keep running until the current function returns.
+9. c(ont(inue)) - Continue execution, stopping only when a breakpoint is reached.
+[first[, last]] l(ist] - Display the source code for the currently selected file. List 11 lines surrounding the current line or continue the previous listing without arguments. List 11 lines that are centred on one argument. List the specified range using two parameters; if the second argument is smaller than the first, it is understood as a count.
+11. a(rgs) - Print the current function's argument list.
+12. p(rint) expression - Evaluate the expression and print its value in the current context.
+13. execute [args...] - Run the debugged Python programme again (with without an argument). Breakpoints, actions, and debugger choices are all saved. "restart" is an abbreviation for "run."
+14. q(uit) - Exit the debugger. The currently running programme is terminated.
+15. The distutils package allows you to generate and install new modules into your Python system. The new modules may be entirely Python, extension modules written in C, or collections of Python packages including modules written in both Python and C.
+
+16. As a programmer, we should do is
+ - generate a source distribution 
+ - write a setup script (setup.py by standard) 
+ - (optionally) write a setup configuration file
+ - Create one or more built (binary) distributions (optional).
+
