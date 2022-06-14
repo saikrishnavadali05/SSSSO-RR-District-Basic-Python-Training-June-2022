@@ -1724,10 +1724,10 @@ If your ship doesn 't come in, \swim\ out to it?
 
 ### ```if``` statement: <a name="9.1"></a>
 
-1.```if``` statement is the most simple ***decision-making*** statement. 
+1. ```if``` statement is the most simple ***decision-making*** statement.
 2. It is used to decide whether a certain statement or block of statements will be executed or not based on certain conditions that we provide after the ```if``` keyword i.e, if a certain condition is satisified or ```True```, then the block of statements under if will be executed. if that condition is not satisfied or ```False```, the statements that are under the ```if``` block are not executed. 
-3. For an ```if``` statememt, the ```elif``` and ```else``` blocks are **optional**. 
-4. while writing ```if``` statements, we should make sure that, we are writing the code with **proper indentation**, otherwise the code execution stops, displaying indentation related errors.
+3.  For an ```if``` statememt, the ```elif``` and ```else``` blocks are **optional**. 
+4.  while writing ```if``` statements, we should make sure that, we are writing the code with **proper indentation**, otherwise the code execution stops, displaying indentation related errors. 
 
 5. Some of the condition checks than can be done within an `if` statement:
 
@@ -1833,7 +1833,6 @@ greater than zero
     - When the expression evaluates as False, then the loop terminates.
 
 2. Examples of `while` loop
-
 ```python
 i = 2
 while i > 0:
@@ -1855,9 +1854,10 @@ loop executed
 ### **```for```** loop <a name="10.2"></a>
 
 1. The ```for``` loop in Python is used to **iterate the statements** or a part of the program several times. 
-2. It is frequently used to traverse the data structures like list, tuple, or dictionary.
+2.  It is frequently used to traverse the data structures like list, tuple, or dictionary.
 
-3. Example:
+3.   Example:
+
 
 ```python
 str = "MultipleWishes"
@@ -1881,7 +1881,7 @@ e
 s
 ```
 
-4. Example of `for` loop using `f` formatting:
+4.  Example of `for` loop using `f` formatting:
 
 ```python
 s = "Multiple_wishes"
@@ -2045,12 +2045,11 @@ Basic examples
 
 ## **```range``` function:** <a name="12"></a>
 
-1.If you do need to iterate over a **sequence of numbers**, use the built-in function ```range()```. 
-2.It generates lists containing arithmetic progressions:
+1. If you do need to iterate over a **sequence of numbers**, use the built-in function ```range()```. 
+2. It generates lists containing arithmetic progressions:
 
-Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
-
-So, the `for` statement `for i in range(1, 10))` is equivalent to:
+ - Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
+   So, the `for` statement `for i in range(1, 10))` is equivalent to:
 
 ```python
 for i in [1,2,3,4,5,6,7,8,9]
@@ -2167,7 +2166,7 @@ False
 
 ## **Tuples:** <a name="13"></a>
 
-1.Tuples are like lists, but are **ordered** and **immutable** like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). 
+1. Tuples are like lists, but are **ordered** and **immutable** like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple).
 2. They are enclosed by **parentheses** or nothing at all, rather than brackets.
 
 ```python
