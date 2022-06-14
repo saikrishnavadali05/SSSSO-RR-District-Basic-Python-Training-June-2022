@@ -115,7 +115,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [Important functions and points for file handling](#20.4)
     - [Exercise - 14](#20.5)
 21. [Exception Handling](#21)
-    -[Exercise-15](#21.1)
+    - [Exercise-15](#21.1)
 22. [Built in tools](#22)
 23. [repr()]
 24. difference between running the code in vs code and jupyter notebook
