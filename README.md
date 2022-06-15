@@ -62,7 +62,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
    - [Logical](#6.4)
    - [Membership](#6.5)
    - [Identity](#6.6)
-   - [Exercise - 4](#6.7)
+   - [Bitwise](#6.7)
+   - [Exercise - 4](#6.8)
 7. [strings](#7)
    - [Indexing](#7.1)
    - [Object Identity](#7.2)
@@ -70,7 +71,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
    - [Formatting with .format method](#7.4)
    - [Important points to remember](#7.5)
    - [builtin functions, methods of string](#7.6)
-   - [Exercise - 5](#7.7)
+   - [Slicing Operator in Lists and Strings](#7.7)
+   - [Exercise - 5](#7.8)
 8. [Escape sequences](#8)
    - '\n' - [Newline character](#8)
    - '\r' - [Return character](#8)
@@ -82,28 +84,40 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
    - '\a' - [Alarm character](#8)
    - [Exercise - 6](#8.1)
 9. [Conditional statements](#9)
-   - [If](#9)
-   - [If else](#9)
-   - [Nested If elif else](#9)
+   - [If](#9.1)
+   - [If else](#9.2)
+   - [Nested If elif else](#9.3)
+   - [Exercise - 7](#9.4)
 10. [Loops](#10)
-    - [While](#10)
-    - [for](#10)
-11. [Lists](#11)
+    - [While](#10.1)
+    - [for](#10.2)
+    - [Exercise - 8](#10.3)
+11. [Lists](#11)	
 12. [range function](#12)
+    - [Exercise - 9](#12.1)
 13. [Tuples](#13)
+    - [Exercise - 10](#13.1)
 14. [Sets](#14)
+    - [Exercise - 11](#14.1)
 15. [Dictionaries](#15)
-16. Functions
-17. Modules
-18. Namespaces
-19. Packages
-20. File Handling
-    - Read
-    - Write
-    - delete
-21. Exception Handling 
-22. Built in tools
-23. repr()
+    - [OrderedDict module](#15.1)
+    - [Exercise - 12](#15.2)
+16. [Functions](#16)
+    - [Exercise - 13](#16.1)
+17. [Modules](#17)
+    - [Standard Modules](#17.1)
+18. [Namespaces](#18)
+19. [Packages](#19)
+20. [File Handling](#20)
+    - [Read](#20.1)
+    - [Write](#20.2)
+    - [delete](#20.3)
+    - [Important functions and points for file handling](#20.4)
+    - [Exercise - 14](#20.5)
+21. [Exception Handling](#21)
+    - [Exercise-15](#21.1)
+22. [Built in tools](#22)
+23. [repr()]
 24. difference between running the code in vs code and jupyter notebook
 25. assert (basic debugging) - to set a breakpoint
 26. What are the different editors that are popular for python programming
@@ -1216,11 +1230,53 @@ True
 
 <br />
 
+### **Bitwise Operators** <a name="6.7"></a>
+
+> &, |, ^, ~, <<, >>
+
+1. ```&```  -   if both bits are 1 then set each bit to 1 (AND)
+2. ```|```  -	if one of two bits is 1 then set each bit to 1 (OR)
+3. ```^```  - 	if only one of two bits is 1 then Set each bit to 1 (XOR)
+4. ```~```  - 	if the bit is 1 then it changes to 0 and also vice versa. (NOT)
+5. ```<<``` - 	Move left by bringing in zeros from the right and letting the leftmost bits fall off (Zero fill left shift)
+6. ```>>``` - 	Move right by copying the leftmost bit from the left and letting the rightmost bits fall off.(Signed right shift)
+7. Examples
+```python
+a = 12
+b = 6
+
+
+print("Bitwise AND", a & b)
+print("Bitwise OR", a | b)
+print("Bitwise NOT", ~a)
+print("Bitwise XOR", a ^ b)
+```
+```console
+Bitwise AND 4
+Bitwise OR 14
+Bitwise NOT -13
+Bitwise XOR 10
+```
+
+```python
+right_shift = 10 #0000 1010 (Binary)
+print(a >> 1)
+left_shift = 5  #0000 0101 (Binary)
+print(a << 1) 
+```
+```console
+#output
+5
+10
+```
+
+<br />
+
 [go to List of Topics](#top)
 
 <br />
 
-### **Exercise - 4** <a name="6.7"></a>
+### **Exercise - 4** <a name="6.8"></a>
 
 1.  Tell the answer for given Expression without running it using python interpreter
 
@@ -1513,13 +1569,52 @@ genesis
 - [Python String Methods](https://github.com/saikrishnavadali05/python3_ebook/blob/36c9f6d569020420975b78432e6f093a21c3829c/Methods&keywords/STRING_BUILTIN_METHODS.md)
 - [Python keywords](https://github.com/saikrishnavadali05/python3_ebook/blob/36c9f6d569020420975b78432e6f093a21c3829c/Methods&keywords/Python%20Keywords.MD)
 
-<br />
-
-[go to List of Topics](#top)
 
 <br />
+
+## **Slicing Operator** in Lists and Strings <a name="7.7"></a>
+
+The syntax is:
+```python
+a[start:stop]  # items start through stop-1
+a[start:]      # items start through the rest of the array
+a[:stop]       # items from the beginning through stop-1
+a[:]           # a copy of the whole array
+```
+There is also the step value, which can be used with any of the above:
+```python
+a[start:stop:step] # start through not past stop, by step
+```
+The key point to remember is that the ```:stop``` value represents the first value that is not in the selected slice. So, the difference between stop and start is the number of elements selected (if step is 1, the default).
+
+The other feature is that start or stop may be a negative number, which means it counts from the end of the array instead of the beginning. So:
+
+```python
+a[-1]    # last item in the array
+a[-2:]   # last two items in the array
+a[:-2]   # everything except the last two items
+```
+Similarly, step may be a negative number:
+```python
+a[::-1]    # all items in the array, reversed
+a[1::-1]   # the first two items, reversed
+a[:-3:-1]  # the last two items, reversed
+a[-3::-1]  # everything except the last two items, reversed
+```
+Python is kind to the programmer if there are fewer items than you ask for. For example, if you ask for ```a[:-2]``` and a only contains one element, you get an empty list instead of an error. Sometimes you would prefer the error, so you have to be aware that this may happen.
+
+Relationship with the slice object
+A slice object can represent a slicing operation, i.e.:
+
+```a[start:stop:step]```
+is equivalent to:
+```a[slice(start, stop, step)]```
+Slice objects also behave slightly differently depending on the number of arguments, similarly to ```range()```, i.e. both slice(stop) and slice(start, stop[, step]) are supported. To skip specifying a given argument, one might use None, so that e.g. a[start:] is equivalent to a[slice(start, None)] or a[::-1] is equivalent to a[slice(None, None, -1)].
+
+While the `:`-based notation is very helpful for simple slicing, the explicit use of slice() objects simplifies the programmatic generation of slicing.
+
   
-### **Exercise - 5** <a name="7.7"></a>
+### **Exercise - 5** <a name="7.8"></a>
 
 1.  Write a script that can convert the given lower string to upper case string
 
@@ -1562,46 +1657,6 @@ print(result)
 
 <br />
 
-## **Slicing Operator** in Lists and Strings 
-
-The syntax is:
-```python
-a[start:stop]  # items start through stop-1
-a[start:]      # items start through the rest of the array
-a[:stop]       # items from the beginning through stop-1
-a[:]           # a copy of the whole array
-```
-There is also the step value, which can be used with any of the above:
-```python
-a[start:stop:step] # start through not past stop, by step
-```
-The key point to remember is that the ```:stop``` value represents the first value that is not in the selected slice. So, the difference between stop and start is the number of elements selected (if step is 1, the default).
-
-The other feature is that start or stop may be a negative number, which means it counts from the end of the array instead of the beginning. So:
-
-```python
-a[-1]    # last item in the array
-a[-2:]   # last two items in the array
-a[:-2]   # everything except the last two items
-```
-Similarly, step may be a negative number:
-```python
-a[::-1]    # all items in the array, reversed
-a[1::-1]   # the first two items, reversed
-a[:-3:-1]  # the last two items, reversed
-a[-3::-1]  # everything except the last two items, reversed
-```
-Python is kind to the programmer if there are fewer items than you ask for. For example, if you ask for ```a[:-2]``` and a only contains one element, you get an empty list instead of an error. Sometimes you would prefer the error, so you have to be aware that this may happen.
-
-Relationship with the slice object
-A slice object can represent a slicing operation, i.e.:
-
-```a[start:stop:step]```
-is equivalent to:
-```a[slice(start, stop, step)]```
-Slice objects also behave slightly differently depending on the number of arguments, similarly to ```range()```, i.e. both slice(stop) and slice(start, stop[, step]) are supported. To skip specifying a given argument, one might use None, so that e.g. a[start:] is equivalent to a[slice(start, None)] or a[::-1] is equivalent to a[slice(None, None, -1)].
-
-While the `:`-based notation is very helpful for simple slicing, the explicit use of slice() objects simplifies the programmatic generation of slicing.
 
 
 ## **Escape sequences** <a name="8"></a>
@@ -1667,11 +1722,14 @@ If your ship doesn 't come in, \swim\ out to it?
    
 ## **Conditional statements** <a name="9"></a>
 
-### `if` statement: <a name="9.1"></a>
+### ```if``` statement: <a name="9.1"></a>
 
-`if` statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not based on certain conditions that we provide after the `if` keyword i.e, if a certain condition is satisified or `True`, then the block of statements under if will be executed. if that condition is not satisfied or `False`, the statements that are under the `if` block are not executed. For an `if` statememt, the `elif` and `else` blocks are optional. while writing `if` statements, we should make sure that, we are writing the code with **proper indentation**, otherwise the code execution stops, displaying indentation related errors.
+1. ```if``` statement is the most simple ***decision-making*** statement.
+2. It is used to decide whether a certain statement or block of statements will be executed or not based on certain conditions that we provide after the ```if``` keyword i.e, if a certain condition is satisified or ```True```, then the block of statements under if will be executed. if that condition is not satisfied or ```False```, the statements that are under the ```if``` block are not executed. 
+3.  For an ```if``` statememt, the ```elif``` and ```else``` blocks are **optional**. 
+4.  while writing ```if``` statements, we should make sure that, we are writing the code with **proper indentation**, otherwise the code execution stops, displaying indentation related errors. 
 
-Some of the condition checks than can be done within an `if` statement:
+5. Some of the condition checks than can be done within an `if` statement:
 
 - Equals: `a == b`
 - Not Equals: `a != b`
@@ -1736,7 +1794,7 @@ greater than zero
 
  <br /> 
   
-### **Exercise - 7**  <a name="E-7"></a>
+### **Exercise - 7**  <a name="9.2"></a>
   
   1. Write a script to check whether the given year is a *leap year* or not. The input i.e., year, should be given during script execution itself. i.e, as a command line parameter.
   2. Write a script to check whether the given number is *odd or even* by requesting input from the user, using ```input()``` function.
@@ -1762,7 +1820,7 @@ greater than zero
 
 ## **Loops**<a name="10"></a>
 
-### While loop
+### **``While loop```** <a name="10.1"></a>
 
 1. syntax for `while` is
 
@@ -1775,7 +1833,6 @@ greater than zero
     - When the expression evaluates as False, then the loop terminates.
 
 2. Examples of `while` loop
-
 ```python
 i = 2
 while i > 0:
@@ -1794,11 +1851,13 @@ i is  1
 loop executed
 ```
 
-### `for` loop
+### **```for```** loop <a name="10.2"></a>
 
-<span style="color: blue;"> The `for` loop in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.
+1. The ```for``` loop in Python is used to **iterate the statements** or a part of the program several times. 
+2.  It is frequently used to traverse the data structures like list, tuple, or dictionary.
 
-Example:
+3.   Example:
+
 
 ```python
 str = "MultipleWishes"
@@ -1822,7 +1881,7 @@ e
 s
 ```
 
-Example of `for` loop using `f` formatting:
+4.  Example of `for` loop using `f` formatting:
 
 ```python
 s = "Multiple_wishes"
@@ -1884,7 +1943,7 @@ Our country is india
 Multiple_wishes dream
 ```
 
-### `for` loop
+### **```for``` loop help in lists**
 
 ```python
 My_Lists = ['Multiple_Wishes', 'Pywishes', 'Hyderabad']
@@ -1924,7 +1983,7 @@ month 10: october
 
  <br />
 
-### **Exercise - 8** <a name="E-8"></a>
+### **Exercise - 8** <a name="10.3"></a>
 
 1.  Write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
 
@@ -1962,7 +2021,9 @@ Hence the output count should return 3.
 
 ## **Lists** <a name="11"></a>
 
-A ```list``` in Python is used to store the sequence of various types of data. Python lists are ordered and mutable type its mean we can modify its element after it created. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
+1. A ```list``` in Python is used to store the **sequence of various types of data**. 
+2. Python lists are **ordered** and **mutable** type its mean we can modify its element after it created. 
+3. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
 
 Basic examples
 
@@ -1982,13 +2043,13 @@ Basic examples
 
 <br />
 
-## **`range` function:** <a name="12"></a>
+## **```range``` function:** <a name="12"></a>
 
-If you do need to iterate over a sequence of numbers, use the built-in function `range()`. It generates lists containing arithmetic progressions:
+1. If you do need to iterate over a **sequence of numbers**, use the built-in function ```range()```. 
+2. It generates lists containing arithmetic progressions:
 
-Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
-
-So, the `for` statement `for i in range(1, 10))` is equivalent to:
+ - Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
+   So, the `for` statement `for i in range(1, 10))` is equivalent to:
 
 ```python
 for i in [1,2,3,4,5,6,7,8,9]
@@ -2081,7 +2142,7 @@ False
 <br />
    
  
-### **Exercise - 9** <a name="E-9"></a>
+### **Exercise - 9** <a name="12.1"></a>
   
  1. write output for the given questions
  ```console
@@ -2105,7 +2166,8 @@ False
 
 ## **Tuples:** <a name="13"></a>
 
-Tuples are like lists, but are ordered and immutable like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple). They are enclosed by parentheses or nothing at all, rather than brackets.
+1. Tuples are like lists, but are **ordered** and **immutable** like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple).
+2. They are enclosed by **parentheses** or nothing at all, rather than brackets.
 
 ```python
 t1 = (12, 5, 8)
@@ -2161,7 +2223,7 @@ output
  <br />
   
  
-### **Exercise - 10** <a name="E-10"></a>
+### **Exercise - 10** <a name="13.1"></a>
   
  1. Write a python script that does the following operations:
  ```console
@@ -2224,7 +2286,7 @@ output
 
 <br />
 
-### **Exercise - 11**
+### **Exercise - 11**<a name="14.1"></a>
 
 1. Write a python script that takes the following two sets as inputs and does the following operations on those sets :
 
@@ -2257,7 +2319,12 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 
 ## **Dictionary:** <a name="15"></a>
 
-Dictionary (hash) which is also called associative arrays. Dictionary is a built-in Python Data Structure that is mutable. Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered. Deletion of an element from a dictionary can be done via ```pop()```. The in operator works on dictionary keys. As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+1. Dictionary (hash) which is also called **associative arrays**. 
+2. Dictionary is a built-in Python Data Structure that is **mutable**. 
+3. Dictionaries are used to store data values in **key:value** pairs. 
+4. A dictionary is a collection which is **ordered**. 
+5. Deletion of an element from a dictionary can be done via ```pop()```. The ```in``` operator works on dictionary keys. 
+6. As of Python **version 3.7**, dictionaries are **ordered**. In Python **3.6** and earlier, dictionaries are **unordered**.
 
 > An example program to illustrate the creation and usage of a dictionary
 
@@ -2386,7 +2453,7 @@ by using range statement
 
 <br />
 
-## **OrderedDict module** <a name="16"></a>
+## **OrderedDict module** <a name="15.1"></a>
 
 An ```OrderedDict``` is a dictionary subclass that remembers the order in which its contents are added, supporting the usual ```dict``` methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
 
@@ -2561,7 +2628,7 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
 <br />
  
  
-### **Exercise - 12** 
+### **Exercise - 12** <a name="15.2"></a>
   1. Write a python script that contains a dictionary with name : "details" and the script should perform the steps from 1 to 7.
  ```console
  
@@ -2584,7 +2651,107 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
    
  <br />
   
-  [go to Answers](#answers)
+[go to Answers](#answers)
+
+
+
+[go to List of Topics](#top)
+
+<br />
+	
+### Python Functions <a name="16"></a>
+1. Functions are the most important aspect of an application. 
+2. A function can be defined as the organized block of **reusable code**, which can be called whenever required. 
+3. The keyword ```def``` introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+4. The Function helps to programmer to break the program into the smaller part. It **organizes** the code very effectively and **avoids** the repetition of the code. As the program grows, function makes the program more organized.
+5. There are mainly two types of functions.
+
+- User-define functions - The user-defined functions are those define by the **user to perform the specific task**.
+
+- Built-in functions - The built-in functions are those functions that are **pre-defined** in Python.
+
+6.Example of Function 1:
+```python
+def square(a):
+ return a * a
+
+print(square.__doc__)
+
+val = square(3)
+print(val)
+print(type(val))
+
+val = square
+print("val(2)",val(2))
+```
+```console
+Output:
+None
+9
+<class 'int'>
+val(2) 4
+```  
+ 
+7. Example of Functions 2: 
+ ```python
+def sumodd(n = 5):
+  val = 0
+  index = 1
+  while (index <= n):
+  # if even we continue with next iteration
+    if (index % 2 == 0):
+      index += 1
+      continue
+  # if odd we add it
+    val += index
+    index += 1
+  return val
+def funNotImplemented(): pass
+print("sumodd is", sumodd(3))
+print("sumodd is", sumodd())
+funNotImplemented()
+```
+```console
+Output:
+sumodd is 4
+sumodd is 9
+```  
+8.Example of Functions 3 with Keyword Argument:
+```python
+def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
+  print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
+funckeyword(10)
+funckeyword(arg1="value1")
+  
+funckeyword(10, arg2="Multiple")
+funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
+funckeyword(arg3="Hyderabad", arg1="value1")
+```
+```console
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= MultipleWishes arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Hyderabad
+```
+
+ <br />
+   
+ ## **Exercise-12** <a name="16.1"></a>
+  
+ 1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
+ ```python
+  example the string is Multiple - output is elpitluM
+ ```
+ 2. Write a function that print the reverse of the given number. The input is given in the command line parameter.
+ ```python
+  example the number is 456 - output os 654.
+ ```
+ 3.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
+ ```python
+  example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
+ ```
+ [go to Answers](#answers)
 
 <br />
 
@@ -2592,6 +2759,376 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
 
 <br />
 
+## **Python Modules** <a name="17"></a>
+
+1. Python relies heavily on modules. A Python module is a file that contains Python definitions and statements. The file name is the module name plus the suffix '.py'.
+2. Module definitions can be imported into other modules or the main module.
+3. Example
+ - Let us employ the addition module (addition.py). Enter the Python interpreter and run the following command to import this module.
+ PS C:\Users\Documents\Training\code>python
+ ```python
+ >>> import addition
+ ```
+ - This just adds the module name  addition to the existing symbol table, not the names of the functions added in addition. The functions can be accessed by using the module name, as illustrated below.
+ ```python
+ >>> addition.add(5,6)
+ ```
+ - If you intend to use a function frequently, you may give it a local name:
+ ```python
+ >>> add_func = addition.add(4,5)
+ >>> add_func
+ ```
+4. A module have both executable statements and function definitions. These statements are used to get the module started. They are only executed the first time the module is imported. 
+5. example:
+```python
+>>> from addition import add, add_to_n
+>>> add(7, 8)
+>>> add_to_n(3)
+```
+6. example
+```python
+>>> from fibonacci import *
+All names except those beginning with an underscore (_) are imported.
+```
+7. When you import a module called addition, the interpreter looks for a file called 'addition.py' in the current directory, then in the list of directories given by the environment variable PYTHONPATH.
+8. When the Python interpreter is run with the -O switch, optimised code is created and saved in.pyo files. The optimizer is currently ineffective; it simply eliminates assert statements. When -O is used, all bytecode is optimized;.pyc files are ignored, while.py files are compiled to optimised bytecode.
+9. Passing two -O options to the Python interpreter (-OO) causes the bytecode compiler to execute optimizations, which may result in malfunctioning applications in rare instances. Only __doc__ strings are currently deleted from the bytecode, resulting in smaller '.pyo' files. Because certain programmes may rely on having them available, you should exercise caution while using this option.
+10. A programme does not execute any quicker when read from a '.pyc' or '.pyo' file than when read from a '.py' file; the only difference is the speed with which '.pyc' or '.pyo' files are loaded.
+11. It is conceivable for the same module to have a file called 'fibonacci.pyc' (or 'fibonacci.pyo' when -O is used) but no file called 'fibonacci.py'. This may be used to publish a Python code library that is relatively difficult to reverse engineer.
+12. example
+```python
+import sys
+# __debug__ is true by default, unless we run
+# using -O (optimized code)
+# python -O assert.py
+print(__debug__)
+# assert comes into affect only when __debug__ is true
+num = int(input('Enter a positive number: '))
+print(num)
+assert(num > 0), 'Only positive numbers are allowed!'
+def chkassert(num):
+assert(type(num) == int)
+chkassert('india')
+sys.exit()
+```
+ <br />
+
+## **Standard Modules** <a name="17.1"></a>
+
+1.The Library Reference, which comes with Python, is a library of standard modules. The interpreter includes several modules that allow access to activities that are not part of the language's core but are included for efficiency or to enable access to operating system primitives such system calls.
+2. example
+```python
+from math import *
+print(fabs(-2.3))
+print(factorial(5))
+print(fmod(5, 2))
+print(sqrt(25))
+print(pow(2, 3))
+print(pi)
+```
+
+ <br />
+  
+[go to Answers](#answers)
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Python Namespace** <a name="18"></a>
+
+1. A namespace is a collection of identifiers that are stored in a container. Namespaces provide individual identifiers a sense of direction, making it feasible to distinguish between identifiers with the same exact name.
+2. Namespaces in Python are specified by individual modules, and because modules can be housed in hierarchical packages, namespaces are also hierarchical.
+3. When a module is imported, the names specified in the module are defined via that module's namespace and are accessed from calling modules by using the fully qualified name.
+4. Examples include the collection of built-in names (functions like abs() and built-in exception names), global names in a module, and local names in a function invocation. A namespace is formed by the collection of attributes of an object.
+5. Python searches the many levels of namespaces using the LEGB rule before locating the nameto-object mapping.
+Local -> Enclosed -> Global -> Built-in, with arrows indicating the namespace-hierarchy search order.
+- Local can be used within a function or a class method.
+- Enclosed can refer to the function that is enclosing it, for example, if a function is wrapped inside another function.
+- Global refers to the highest level of the executing script, and 
+- Built-in are unique names reserved by Python for itself.
+6. if a particular name:object mapping is not found in the local namespaces, the namespaces of
+the enclosed scope is searched next. If the search in the enclosed scope is unsuccessful, too,
+Python moves on to the global namespace, and eventually, it will search the built-in namespace
+(if a name cannot found in any of the namespaces, a NameError is raised).
+7. example
+```python
+lst = []
+num = 10
+def outer(n):
+ lst.append(n)
+ print(lst)
+ global num
+ num = 20
+ print(num)
+ def inner():
+ num = 30
+ print(num)
+ return inner
+
+func = outer(2)
+func()
+func = outer(3)
+func()
+print(num) 
+```
+ <br />
+
+## **Python Packages** <a name="19"></a>
+
+1. Packages are a method of organising Python's module namespace through the use of "dotted module names."
+2. For instance, the module name C.D denotes a submodule named 'D' within a package named 'C.'
+3. Just like using modules frees writers of various modules from having to worry about each other's global variable names, using dotted module names frees authors of multimodule packages from name collisions.
+4. The __init .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
+```python
+--+ PackageDemo
+ |-- mod1.py
+ |-- mod12Demo.py
+ |-- mod2.py
+ |-- __init__.py
+```
+5. The presence of the __init .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
+6. When using from package import item, the item can be a package submodule (or subpackage) or any other name declared in the package, such as a function, class, or variable. If the item is not declared in the package, the import statement assumes it is a module and attempts to load it. If it cannot find it, an ImportError exception is thrown.
+7. If a package's __init .py' code includes a list called __all__, it is assumed to be a list of module names that should be imported when a from package import * is found. When a new version of the package is released, it is the responsibility of the package author to keep this list up to date. If package authors do not see a purpose for importing * from their package, they may choose not to support it.
+8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init .py') and then imports whatever names are declared in the package. Any names specified by '__init .py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
+ 
+9. file of mod1.py present in demo folder
+ ```python
+import demo.mod2
+def f():
+ global x
+ x = 6
+def getX():
+ return x
+def main():
+ x = 5
+ f()
+ print(x)
+ demo.mod2.g()
+ x += 2
+ print(x)
+```
+10. File of mod2.py present in demo folder
+```python
+import demo.mod1
+def g():
+ x = 10
+ print(x)
+ print(demo.mod1.getX())
+```
+11. File of mod12Demo.py present in demo folder
+```python
+from demo import *
+if __name__ == '__main__':
+mod1.main()
+
+running script
+ PS C:\Users\Documents\Training\code>python demo/mod12Demo.py
+```
+
+ <br />
+  
+[go to Answers](#answers)
+
+[go to List of Topics](#top)
+
+<br />
+	
+## **File Handling** <a name="20"></a>
+  
+### **Reading file** <a name="20.1"></a>
+1. syntax for reading the file is
+  open(file_name, mode)
+  - The function open used to open the file and return the file object
+  - mode are three types
+    1. 'w' = write
+    2. 'r' = read
+    3. 'a' = append
+2. example for file read
+```
+file_open = open("text.txt", "r")
+print(file_open.read())
+```
+  
+3. file read using loop
+```python
+file = open ("test.txt",'r')
+for line in file:
+  print(line, end='')
+file.close()
+
+Explaination of code
+A newline character is already present in line print read from file. To prevent publishing two lines, override the default end argument after each line, newline characters.
+ 
+running code
+PS C:\Users\Documents\Training\code> python file_handling.py  
+  
+output
+I need to learn python
+I like programming 
+```
+ 
+### **Writing and appending to file** <a name="20.2"></a>
+  
+```python 
+file = open("test.txt", "w") #writing
+file.write("I like teaching")
+file.close()
+  
+running code
+PS C:\Users\Documents\Training\code> python file_handling_writing.py    
+  
+output seen in file
+I like teaching 
+```
+```python 
+file = open("test.txt", "a") #appending
+file.write("I like playing games")
+file.close()
+  
+running code
+PS C:\Users\Documents\Training\code> python file_handling_appending.py   
+  
+output seen in file
+I like teaching I like playing games
+```
+
+ ### **Deleting file** <a name="20.3"></a>
+ ```python
+import os 
+os.remove("test.txt") #The file test.txt will be removed form the folder.
+```  
+
+ <br />
+  
+[go to Answers](#answers)
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Important functions and points for file handling** <a name="20.4"></a>
+  
+function | represents 
+:----- | :----: 
+readline() | Read the contents from the file until it finds newline or end of file and returns a single string
+write(s) | Write the string s into the file
+close()| Flush the buffer and close the file
+  
+1. The Python operating system module has methods for performing file-processing actions such as renaming and removing files.
+2. To use this module, first import it, and then use any relevant functions.
+  - The rename() function accepts two parameters: the current filename and the new filename.
+  - You can delete files by passing the name of the file to be destroyed as an argument to the remove() function.
+  - The os module has numerous methods for creating, removing, and changing directories.
+  - To create directories in the current directory, use the os module's mkdir() function. This procedure requires an argument containing the name of the directory to be created.
+  - To change the current directory, use the chdir() technique. The chdir() function accepts one argument, which is the name of the directory to be made the current directory.
+ - The getcwd() function returns the path to the current working directory.
+ - The rmdir() function deletes the directory that is supplied as an argument. Before eliminating a directory, it is necessary to delete all of its contents.
+  
+   
+ <br />
+  
+  
+ ### **Exercise-14** <a name="20.5"></a> 
+  
+ 1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
+ 2. Write a script that count the number of lines in a file. Take any file you wish
+ 3. Write a script that write lines to the file and they are
+ ```python
+1. Steve Jobs is a popular name in the world.
+2. He was the co-founder and chairman of Apple Inc.
+3. He is also referred to as an industrial designer, investor, and media tycoon.
+4. His full name was Steven Paul Jobs.
+5. He was born on 24th February in the year 1955.
+```
+4. Write a script that append lines to the file that are created in problem 3 and they are
+```python
+1. Steve Paul Jobs is regarded as a successful American businessman.
+2. He had attained success in different fields.
+3. He had a great contribution to the development of computers and mobiles.
+4. He is stated as the initiator of the personal computer revolution.
+5. He had served as the CEO of Apple Inc from 1997 to 2011.
+```
+  <br />
+  
+[go to Answers](#answers)
+
+[go to List of Topics](#top)
+
+<br />
+  
+## **Exception Handling** <a name="21"></a> 
+  1. python handles when the error/exception are occured in code by printing error message. 
+  2. In try code it will check whether the code has errorsd
+  3. In except code it will handles the code by printing the error message.
+```python
+from sys import argv
+try:
+    addition = float(argv[1]) + float(argv[2])
+    print("The additon is", addition)
+except:
+    print("Error: Provide two numbers")
+  
+running script
+PS C:\Users\Documents\Training\code> python exception_handling.py suresh haresh
+  
+output
+Error: Provide two numbers
+```
+
+ <br />
+  
+ ### **Exercise-15**   <a name="21.1"></a> 
+ 1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
+ ```python 
+ example two strings are Multiple Wishes -  output is MultipleWishes
+ example user gives numbers are 1 5 - output is "Error: Provide two strings"
+ ```
+ 2. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
+```python
+example two numbers are 2 5 - output is 10
+example user gives are happy life - utput is "Error: Provide two numbers"
+```
+
+
+## **Python Buildtool**  <a name="22"></a> 
+
+1. These libraries aid in Python development by allowing you to walk through code, inspect stack frames, and set breakpoints, among other things.
+2. The pdb module defines an interactive Python source code debugger. It allows you to establish (conditional) breakpoints and single step at the source line level, inspect stack frames, list source code, and evaluate arbitrary Python code in the context of any stack frame.
+3. The debugger is extendable; in fact, it is specified as the class Pdb. The modules bdb and cmd are used in the extension interface.
+4. The prompt from the debugger is (Pdb). pdb.py may also be used to debug other scripts as a script.
+```python
+ PS C:\Users\Documents\Training\code>python -m pdb addition.py
+```
+5. s(tep) - Execute the current line, stopping at the first feasible opportunity (either in a called function or on the next line in the current function).
+6. n(ext) - Continue execution until the current function's next line is reached or it returns. (The distinction between next and step is that step stops within a called function, whereas next runs called functions at (near) full speed, pausing only at the next line in the current function.)
+7. unt(il) - Continue execution until a line with a line number larger than the current one is reached, or until the current frame is returned.
+8. r(eturn) - Keep running until the current function returns.
+9. c(ont(inue)) - Continue execution, stopping only when a breakpoint is reached.
+[first[, last]] l(ist] - Display the source code for the currently selected file. List 11 lines surrounding the current line or continue the previous listing without arguments. List 11 lines that are centred on one argument. List the specified range using two parameters; if the second argument is smaller than the first, it is understood as a count.
+11. a(rgs) - Print the current function's argument list.
+12. p(rint) expression - Evaluate the expression and print its value in the current context.
+13. execute [args...] - Run the debugged Python programme again (with without an argument). Breakpoints, actions, and debugger choices are all saved. "restart" is an abbreviation for "run."
+14. q(uit) - Exit the debugger. The currently running programme is terminated.
+15. The distutils package allows you to generate and install new modules into your Python system. The new modules may be entirely Python, extension modules written in C, or collections of Python packages including modules written in both Python and C.
+
+16. As a programmer, we should do is
+ - generate a source distribution 
+ - write a setup script (setup.py by standard) 
+ - (optionally) write a setup configuration file
+ - Create one or more built (binary) distributions (optional).
+
+<br />
+
+	
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+	
 ## **Answers**
 
 ### Exercise - 1 <a name="E-1"></a>
