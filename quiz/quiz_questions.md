@@ -1,4 +1,8 @@
-### basics of python quiz (15 minutes - 30 questions)
+### A Simple Quiz on Basics of Python Programming 
+Time Duration
+> 15 minutes
+Number of Questions
+> 30 
 
 1.	Provide the name of the person, from whom the python language got originated? (Short answer)
 
@@ -139,7 +143,7 @@ select the correct terminal command that can help you go to `training` folder fo
     3.  256.9e-4
     4.  0.2569e-6
 
-> B
+> 2
 
 20.	we cannot change datatype from complex to float (true/false)
 
@@ -207,7 +211,7 @@ print (-17 // 4)
     3. MotherName
     4. brother_name
 
-    > a, d
+    > 1,2
 
 25.	Can you recognize the *camel-case* examples (multiple choice)
 
