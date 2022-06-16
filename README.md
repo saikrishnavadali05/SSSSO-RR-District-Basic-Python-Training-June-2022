@@ -117,10 +117,6 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 21. [Exception Handling](#21)
     - [Exercise-15](#21.1)
 22. [Built in tools](#22)
-23. [repr()]
-24. difference between running the code in vs code and jupyter notebook
-25. assert (basic debugging) - to set a breakpoint
-26. What are the different editors that are popular for python programming
 
 ## Answers <a name="answers"></a>
 
