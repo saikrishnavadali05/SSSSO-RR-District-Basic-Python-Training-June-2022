@@ -61,7 +61,7 @@
 
 > commenting or comments or a comment
 
-10.	Suggested way to indent the code in python which keys we use (multiple choice)
+10.	What are the correct keyboard keys that would facilitate proper indentation of the code in python? (multiple choice)
 
     1. ctrl
     2. tab
