@@ -79,7 +79,7 @@
     3. 2
     4. 3
 
-    > 3
+    > iii
 
 12.	`string` is not immutable (`True` or `False`)
 
@@ -235,7 +235,7 @@ print (-17 // 4)
 
 27.	Observe the path carefully and select the option having the correct values of `argv[0]`, `argv[3]`, `argv[5]`(following the same order as mentioned in the question)
 	
-    ```PS C:\Users\Documents\Training\code> python program.py 10 20 30 40```
+```PS C:\Users\Documents\Training\code> python program.py 10 20 30 40```
 
    1. program.py, 20, 40
    2. 20, program.py, not given
