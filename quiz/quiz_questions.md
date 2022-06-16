@@ -31,14 +31,14 @@
 
 > 4
 
-5.	Which languages among the following would use interpreter for running the code? (Multiple choice)
+5.	Which languages among the following would use interpreter for running the code? (Single Choice)
 
     1. Python, Perl
     2. C, C++
-    3. Java
-    4. Scala
+    3. Java, Python
+    4. C#, Python
 
-> 1,4
+> 1
 
 6.	Can you write the symbol with which the python interactive mode prompts the user? what is the English name of that symbol? (short answer)
 
