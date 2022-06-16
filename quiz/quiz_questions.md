@@ -128,16 +128,16 @@ give the command to go to training folder for running the python file
 
 > 2
 
-18.	I created game.py file and I dont know how to execute this file in python in command prompt(cmd) 
+18.	Consider a python file such as, ```game.py```. and provide the command to run this python file in the command prompt : 
 
-can you please > python game.py
+> ``python game.py``
 
-19.	 Write the scientific notation for given float number 0.002569 is (single choice)
+19.	 Choose the option that contains the correct scientific notation for the floating point number `0.002569` is (single choice)
 
-A. 2569e-5
-B. 2.569e-3
-C. 256.9e-4
-D. 0.2569e-6
+    1.  2569e-5
+    2.  2.569e-3
+    3.  256.9e-4
+    4.  0.2569e-6
 
 > B
 
@@ -146,38 +146,56 @@ D. 0.2569e-6
 > True
 
 
-21.	see the below code and give the output with help of using python interpreter (single choice)
+21.	Go through the code given below and choose the option that contains the correct output(single choice)
 
 ```python
 number1 = 7
 number1= 15
+print ("output")
 print (number1 | number1)
 print (number1 >> 3)
 print (number1 << 3)
 ```
 
-options
-A.	15
-1
-56
-B.	15
-1
-56
-C.	15
-2
-58
-D.	15
-10
-51
 
->  A
+1.	output
+```console
+    15
+    1
+    56
+```
+2.	output
+```console
+    15
+    1
+    56
+```
+3. output
+```console
+    15
+    2
+    58
+```
+4. output
+```console
+    15
+    10
+    51
+```
 
-22.	What is the output of the expression print (-17 // 4) (single choice)
-> 
-a.	4
-b.	-4
-c.	-5
-d.	5
+>  1
+
+22.	Chosse the option that shows the coorect output for the following expression? (single choice)
+```python
+print (-17 // 4) 
+```
+
+1.  4
+2.  -4
+3.  -5
+4.  5
+
+> 3
 
 23.	Variable names are not case sensitive (true/false)
 > False
@@ -246,5 +264,3 @@ d.	5
 30.	Between ```elif``` and ``else if``, which keyword is valid?
 
     > ```elif```
-
-
