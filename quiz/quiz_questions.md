@@ -4,7 +4,7 @@
 
 > Guido van Rossum
 
-2.	 What are the two technologies among the following that were related to software development for which python language is being used extensively? (Multiple choice)
+2.	 What are the two technologies among the following that were related to software development, for which python language is being used extensively? (Multiple choice)
 
     1. Scons
     2. Scipy
@@ -70,7 +70,7 @@
 
 > 2,4
 
-11.	Give the number of built-in datatype(numeric) in python (single choice)
+11.	Total number of built-in numeric datatypes in python (single choice)
 
     1. 4
     2. 5
@@ -83,11 +83,11 @@
 
     > `False`
 
-13. Tell the datatype of given questions (short answer)
+13. Provide the datatypes for the following variables (short answer)
 
-    1.	```salary = 20e3```
+    1.	```salary = 20e-3```
     
-       > floating point data type
+       > ``float``
     
     2.	```animals = ["elephant", "lion", "deer"]```
     
@@ -97,15 +97,15 @@
 
        > ```Tuple```
 
-14.	the data type which has two values called (short answer)
+14.	The data type that can store values of trueness and falsity is
 
-    > ```boolean``` data type
+    > ```boolean``` 
 
-15.	the representation of keys and values and the datatype is called (short choice)
+15.	The data type that stores the data in the form of keys and values is :(short choice)
 
-    > ```dictionary``` data type
+    > ```dictionary``` 
 
-16.	how to get out of the python Interpreter (multiple choice)
+16.	Choose all the correct options among the following that can help us to exit out of the python Interpreter (multiple choice)
 
     1. ``quit()``
     2. ``exit()``
@@ -114,17 +114,17 @@
 
     > 1, 2, 3
 
-17. the python file is present in Training folder and the path is (C:\Users\Documents\training) (single choice)
+17. Consider a python file that is present in a folder with name `training` and the path is `C:\Users\Documents\training` (single choice)
 
-Now you are in the given path is
-C:\Users\Documents
+Lets say you are in the given path :
+`C:\Users\Documents`
 
-give the command to go to training folder for running the python file
+select the correct terminal command that can help you go to `training` folder for running the python file?
 
-1. dir
-2. cd
-3. cd ..
-4. ls
+1. `dir`
+2. `cd`
+3. `ls -l`
+4. `ls`
 
 > 2
 
@@ -132,7 +132,7 @@ give the command to go to training folder for running the python file
 
 > ``python game.py``
 
-19.	 Choose the option that contains the correct scientific notation for the floating point number `0.002569` is (single choice)
+19.	 Choose the option that contains the correct scientific notation for the floating point number `0.002569` (single choice)
 
     1.  2569e-5
     2.  2.569e-3
@@ -185,7 +185,7 @@ print (number1 << 3)
 
 >  1
 
-22.	Chosse the option that shows the coorect output for the following expression? (single choice)
+22.	Choose the option that shows the correct output for the following expression? (single choice)
 ```python
 print (-17 // 4) 
 ```
