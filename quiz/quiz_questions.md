@@ -1,8 +1,6 @@
 ### A Simple Quiz on Basics of Python Programming 
-Time Duration
-> 15 minutes
-Number of Questions
-> 30 
+
+> Time Duration : 15 minutes, Number of Questions : 30
 
 1.	Provide the name of the person, from whom the python language got originated? (Short answer)
 
