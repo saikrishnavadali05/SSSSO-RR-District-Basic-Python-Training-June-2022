@@ -2321,6 +2321,9 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 4. A dictionary is a collection which is **ordered**. 
 5. Deletion of an element from a dictionary can be done via ```pop()```. The ```in``` operator works on dictionary keys. 
 6. As of Python **version 3.7**, dictionaries are **ordered**. In Python **3.6** and earlier, dictionaries are **unordered**.
+7. Terminology Key/Value pairs definition
+First example (Student using a dictionary) { }, Dict notation, curly braces,  adding elements [ ] Square bracket access of the dict Dict items can be many things, they’re not bound to one “type” Keys can be any immutable data type Example of an Integer being the key Accessing a key that does not exist Alternative to “throwing an error” if a key does not exist Sometimes you will want to return None or a default value if key does not exist `get( )` access of the dict accessing a key that does not exist with the .`get` method as opposed to `[]` square bracket access Specifying a default value for keys that do not exist Adding a new entry to dictionary Changing/updating values via key access Changing/updating values via `update`() method
+`update()` takes in a dict as an argument Deleting a specific key and its value Option 1 for deleting a key and value: `del` keyword Option 2 for removing a key and value: `pop()` method Remember the `pop()` method not only removes the item put pops it off or returns it to you Therefore you can recover the popped item with a variable assignment How to loop through all the keys and values Finding out the number of keys in dict with len() function Print all keys with `keys`() method Print all values with `values`() method Print both keys and values with `items`() method Looping is slightly different then lists because dicts are concerned with pairs (Key : Value) How to loop through keys AND values
 
 > An example program to illustrate the creation and usage of a dictionary
 
