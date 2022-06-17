@@ -3030,13 +3030,15 @@ close()| Flush the buffer and close the file
  1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
  2. Write a script that count the number of lines in a file. Take any file you wish
  3. Write a script that write lines to the file and they are
- ```python
+
+```python
 1. Steve Jobs is a popular name in the world.
 2. He was the co-founder and chairman of Apple Inc.
 3. He is also referred to as an industrial designer, investor, and media tycoon.
 4. His full name was Steven Paul Jobs.
 5. He was born on 24th February in the year 1955.
 ```
+
 4. Write a script that append lines to the file that are created in problem 3 and they are
 ```python
 1. Steve Paul Jobs is regarded as a successful American businessman.
@@ -3057,6 +3059,7 @@ close()| Flush the buffer and close the file
   1. python handles when the error/exception are occured in code by printing error message. 
   2. In try code it will check whether the code has errorsd
   3. In except code it will handles the code by printing the error message.
+
 ```python
 from sys import argv
 try:
@@ -3064,7 +3067,8 @@ try:
     print("The additon is", addition)
 except:
     print("Error: Provide two numbers")
-  
+```
+```console  
 running script
 PS C:\Users\Documents\Training\code> python exception_handling.py suresh haresh
   
@@ -3076,36 +3080,37 @@ Error: Provide two numbers
   
  ### **Exercise-15**   <a name="21.1"></a> 
  1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
- ```python 
+ ```console 
  example two strings are Multiple Wishes -  output is MultipleWishes
  example user gives numbers are 1 5 - output is "Error: Provide two strings"
  ```
  2. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
-```python
+```console
 example two numbers are 2 5 - output is 10
 example user gives are happy life - utput is "Error: Provide two numbers"
 ```
 
 
-## **Python Buildtool**  <a name="22"></a> 
+## **Python Build-in tools**  <a name="22"></a> 
 
 1. These libraries aid in Python development by allowing you to walk through code, inspect stack frames, and set breakpoints, among other things.
-2. The pdb module defines an interactive Python source code debugger. It allows you to establish (conditional) breakpoints and single step at the source line level, inspect stack frames, list source code, and evaluate arbitrary Python code in the context of any stack frame.
+2. The ``pdb`` module defines an interactive Python source code debugger. It allows you to establish (conditional) breakpoints and single step at the source line level, inspect stack frames, list source code, and evaluate arbitrary Python code in the context of any stack frame.
 3. The debugger is extendable; in fact, it is specified as the class Pdb. The modules bdb and cmd are used in the extension interface.
-4. The prompt from the debugger is (Pdb). pdb.py may also be used to debug other scripts as a script.
-```python
+4. The prompt from the debugger is (Pdb). ``pdb.py`` may also be used to debug other scripts as a script.
+
+```console
  PS C:\Users\Documents\Training\code>python -m pdb addition.py
 ```
-5. s(tep) - Execute the current line, stopping at the first feasible opportunity (either in a called function or on the next line in the current function).
-6. n(ext) - Continue execution until the current function's next line is reached or it returns. (The distinction between next and step is that step stops within a called function, whereas next runs called functions at (near) full speed, pausing only at the next line in the current function.)
-7. unt(il) - Continue execution until a line with a line number larger than the current one is reached, or until the current frame is returned.
-8. r(eturn) - Keep running until the current function returns.
-9. c(ont(inue)) - Continue execution, stopping only when a breakpoint is reached.
-[first[, last]] l(ist] - Display the source code for the currently selected file. List 11 lines surrounding the current line or continue the previous listing without arguments. List 11 lines that are centred on one argument. List the specified range using two parameters; if the second argument is smaller than the first, it is understood as a count.
-11. a(rgs) - Print the current function's argument list.
-12. p(rint) expression - Evaluate the expression and print its value in the current context.
-13. execute [args...] - Run the debugged Python programme again (with without an argument). Breakpoints, actions, and debugger choices are all saved. "restart" is an abbreviation for "run."
-14. q(uit) - Exit the debugger. The currently running programme is terminated.
+5. `s(tep)` - Execute the current line, stopping at the first feasible opportunity (either in a called function or on the next line in the current function).
+6. `n(ext)` - Continue execution until the current function's next line is reached or it returns. (The distinction between next and step is that step stops within a called function, whereas next runs called functions at (near) full speed, pausing only at the next line in the current function.)
+7. `unt(il)` - Continue execution until a line with a line number larger than the current one is reached, or until the current frame is returned.
+8. `r(eturn)` - Keep running until the current function returns.
+9. `c(ont(inue))` - Continue execution, stopping only when a breakpoint is reached.
+`[first[, last]] l(ist]` - Display the source code for the currently selected file. List 11 lines surrounding the current line or continue the previous listing without arguments. List 11 lines that are centred on one argument. List the specified range using two parameters; if the second argument is smaller than the first, it is understood as a count.
+11. `a(rgs)` - Print the current function's argument list.
+12. `p(rint)` expression - Evaluate the expression and print its value in the current context.
+13. `execute [args...]` - Run the debugged Python programme again (with without an argument). Breakpoints, actions, and debugger choices are all saved. "restart" is an abbreviation for "run."
+14. `q(uit)` - Exit the debugger. The currently running programme is terminated.
 15. The distutils package allows you to generate and install new modules into your Python system. The new modules may be entirely Python, extension modules written in C, or collections of Python packages including modules written in both Python and C.
 
 16. As a programmer, we should do is
