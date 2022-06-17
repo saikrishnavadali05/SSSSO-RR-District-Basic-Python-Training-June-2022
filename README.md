@@ -2414,23 +2414,25 @@ Jan
 > Another example program to illustrate the usage and purpose of a dictionary in python
 
 ```python
-Dict_my = {}
+my_dict = {}
 # Creating a Dictionary with Mixed keys
-Dict_my = {'Name': 'Multiple_wishes', 1: [1, 2]}
-Dict_my[1] = 5, 6
-Dict_my[2] = 2, 3, 4
+my_dict = {'Name': 'Multiple_wishes', 1: [1, 2]}
+print(my_dict['Name'])
+print(my_dict[1])
+my_dict[1] = 5, 6
+my_dict[2] = 2, 3, 4
 print("\nDictionary with the use of Mixed Keys: ")
-Dict_my[3] = {'Nested': {1: 'Hyderabad', 2: 'Telangana'}}
-print(Dict_my)
-print(Dict_my[3]['Nested'][2])
+my_dict[3] = {'Nested': {1: 'Hyderabad', 2: 'Telangana'}}
+print(my_dict)
+print(my_dict[3]['Nested'][2])
 # Creating a Dictionary with dict() method
-Dict_my = dict({1: 'Multiple_wishes', 2: 'Py_wishes', 3: 'Company'})
+my_dict = dict({1: 'Multiple_wishes', 2: 'Py_wishes', 3: 'Company'})
 print("\nDictionary with the use of dict(): ")
-print(Dict_my)
+print(my_dict)
 # Creating a Dictionary with each item as a Pair
-Dict_my = dict([(1, 'Multiple_wishes'), (2, 'Hyderabad')])
+my_dict = dict([(1, 'Multiple_wishes'), (2, 'Hyderabad')])
 print("\nDictionary with each item as a pair: ")
-print(Dict_my)
+print(my_dict)
 cubes = {1: 1, 2: 8, 3: 27, 4: 64, 5: 125}
 for i in cubes:
     print(cubes[i])
