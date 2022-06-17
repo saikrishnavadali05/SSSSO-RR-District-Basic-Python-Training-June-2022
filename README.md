@@ -2322,10 +2322,34 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 5. Deletion of an element from a dictionary can be done via ```pop()```. The ```in``` operator works on dictionary keys. 
 6. As of Python **version 3.7**, dictionaries are **ordered**. In Python **3.6** and earlier, dictionaries are **unordered**.
 7. Terminology Key/Value pairs definition
-First example (Student using a dictionary) { }, Dict notation, curly braces,  adding elements [ ] Square bracket access of the dict Dict items can be many things, they’re not bound to one “type” Keys can be any immutable data type Example of an Integer being the key Accessing a key that does not exist Alternative to “throwing an error” if a key does not exist Sometimes you will want to return None or a default value if key does not exist `get( )` access of the dict accessing a key that does not exist with the .`get` method as opposed to `[]` square bracket access Specifying a default value for keys that do not exist Adding a new entry to dictionary Changing/updating values via key access Changing/updating values via `update`() method
-`update()` takes in a dict as an argument Deleting a specific key and its value Option 1 for deleting a key and value: `del` keyword Option 2 for removing a key and value: `pop()` method Remember the `pop()` method not only removes the item put pops it off or returns it to you Therefore you can recover the popped item with a variable assignment How to loop through all the keys and values Finding out the number of keys in dict with len() function Print all keys with `keys`() method Print all values with `values`() method Print both keys and values with `items`() method Looping is slightly different then lists because dicts are concerned with pairs (Key : Value) How to loop through keys AND values
+> An example dictionary with the variable name `student` :
 
-> An example program to illustrate the creation and usage of a dictionary
+```python
+
+# Dict notation : {} (curly braces)
+student = {'name': 'John', 'age': 25, 'courses': ['Math', 'CompSci']}
+
+# Dictionary values can be accessed with the help of using corresponing keys in (square brackets) []
+print(student['name'])
+
+# Finding out the number of keys in dict can be done with the help of len() function
+print(len(student))
+
+# Print all the keys with keys() method 
+for key in student.keys():
+    print(key)
+
+# Print all the values with values() method 
+for value in student.values():
+    print(value)
+
+# Print both the keys as well as the values with items() method
+for key, value in student.items():
+    print(key, value)
+```
+
+8. `get()` access of the dict accessing a key that does not exist with the `get()` method as opposed to `[]` square bracket access Specifying a default value for keys that do not exist Adding a new entry to dictionary Changing/updating values via key access Changing/updating values via `update`() method. `update()` takes in a dict as an argument Deleting a specific key and its value Option 1 for deleting a key and value: `del` keyword Option 2 for removing a key and value: `pop()` method Remember the `pop()` method not only removes the item put pops it off or returns it to you Therefore you can recover the popped item with a variable assignment How to loop through all the keys and values 
+> Another example program to illustrate the creation and usage of a dictionary
 
 ```python
   user_dict = {
@@ -2334,8 +2358,8 @@ First example (Student using a dictionary) { }, Dict notation, curly braces,  ad
   "Weight": 60,
   "Height": 5.8
 }
-student = thisdict["name"]
-print(student)
+employee = user_dict["name"]
+print(employee)
 ```
 ```console
 Script Execution and Outputs
@@ -2348,21 +2372,21 @@ Ganesh
 > Another example program to illustrate a dictionary:
 
 ```python
-months = {4: 'April', 2: 'Feb', 5: 'May', 1: 'Jan'}
+months = {'fourth_month': 'April', 'second_month': 'Feb', 'fifth_month': 'May', 'first_month': 'Jan'}
 print(months)
-print(months[4])
+print(months['fourth_month'])
 months[3] = 'March'
 print(months)
 print("keys assigned in dictionary :", months.keys())
 print("values assigned to keys :", months.values())
-del months[2]
+del months['second_month']
 for key in months:
     print(key, months[key])
 print(months.pop(3))
 print(months)
 print(5 in months)
 print(3 in months)
-print(months.get(1))
+print(months.get('first_month'))
 # del months
 months.clear()
 print(months)
