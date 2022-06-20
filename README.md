@@ -12,6 +12,10 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 ## Rewards
 > Top 10 Contributors to this Repository will get a Merit Certificate and Special Rewards from the SSSSO RR District Python Training Organizers
 
+## How to contribute to this github repo?
+
+![github steps being shown in this image](https://github.com/saikrishnavadali05/SSSSO-RR-District-Basic-Python-Training-June-2022/blob/master/github_steps.jpg)
+
 # Setting up git and github, python 3.10, VS Code
 
 1. [programming knowledge channel - How to Install Git on Windows 10 + Setting Up Git and GitHub on Windows 10](https://www.youtube.com/watch?v=bb_LoXAC-zE)
