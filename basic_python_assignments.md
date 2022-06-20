@@ -41,4 +41,12 @@ Never
 
 > Very IMPORTANT! Please search in google whenever you are stuck. Even if you get an error (traceback). Search about that traceback on google. For every difficulty or uncertainity, don't forget to search on google.
 
-**HAPPY PYTHON CODING**
+##### Steps to submit:
+1. Create a folder with name : submissionnumber_fullname_contributions 
+2. include all of your programs in that folder. Each program for each question.
+3. then drag and drop the entire folder to your cloned repo 
+4. then raise a pull request.
+
+> Top 10 contributors will be rewarded.
+
+**HAPPY PYTHON CODING AND ALL THE BEST**
