@@ -1,9 +1,1 @@
-string = "Love All Serve All Help Ever Hurt Never"
-result = string.split()
-index = 0
-for i in result:
-    print(i)
 
-while index<len(result):
-    print(result[index])
-    index = index + 1
