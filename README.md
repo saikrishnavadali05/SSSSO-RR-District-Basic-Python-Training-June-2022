@@ -139,11 +139,13 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 13. [Exercise - 13](#E-13)
 14. [Exercise - 14](#E-14)
 
-## **1. Let's begin the Python Show** <a name="1"></a>
+## **Let's begin the Python Show** <a name="1"></a>
 
 ### **History of Python** <a name="1.1"></a>
 
 **Python** was developed by **_Guido van Rossum_** and was released first on **February 20, 1991** (31 years ago). It is one of the most widely-used and loved programming languages. It is also a **free** and **open-source language** with very simple and clean syntax.
+
+<br />
 
 ### **What is Python?** <a name="1.2"></a>
 
@@ -151,6 +153,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 2. Its standard library is large and comprehensive. This makes it easy for **developers** to learn python.
 3. Additionally, python supports **objects**, **modules**, **threads**, **exception-handling**, and **automatic memory management** which will help in modeling real-world problems and building applications to solve those problems.
 4. Python is widely used among the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, **Data Mining**, **Data Visualization**, **Data Science** and various other trending domains.
+
+<br />
 
 ### **Applications of Python?** <a name="1.3"></a>
 
