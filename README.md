@@ -130,12 +130,22 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 4. [Exercise - 4](#E-4)
 5. [Exercise - 5](#E-5)
 6. [Exercise - 6](#E-6)
+7. [Exercise - 7](#E-7)
+8. [Exercise - 8](#E-8)
+9. [Exercise - 9](#E-9)
+10. [Exercise - 10](#E-10)
+11. [Exercise - 11](#E-11)
+12. [Exercise - 12](#E-12)
+13. [Exercise - 13](#E-13)
+14. [Exercise - 14](#E-14)
 
-## **1. Let's begin the Python Show** <a name="1"></a>
+## **Let's begin the Python Show** <a name="1"></a>
 
 ### **History of Python** <a name="1.1"></a>
 
 **Python** was developed by **_Guido van Rossum_** and was released first on **February 20, 1991** (31 years ago). It is one of the most widely-used and loved programming languages. It is also a **free** and **open-source language** with very simple and clean syntax.
+
+<br />
 
 ### **What is Python?** <a name="1.2"></a>
 
@@ -143,6 +153,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 2. Its standard library is large and comprehensive. This makes it easy for **developers** to learn python.
 3. Additionally, python supports **objects**, **modules**, **threads**, **exception-handling**, and **automatic memory management** which will help in modeling real-world problems and building applications to solve those problems.
 4. Python is widely used among the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, **Data Mining**, **Data Visualization**, **Data Science** and various other trending domains.
+
+<br />
 
 ### **Applications of Python?** <a name="1.3"></a>
 
@@ -1698,16 +1710,6 @@ He      is      very    good    boy.
 Talk is 'cheap'. Show me the code.
 I'm not a "great" programmer!I'm just a  good programmer with great habits.
 If your ship doesn 't come in, \swim\ out to it?
-```
-
-2. write a script to display the following shape using ```print()``` statements
-
-```console
-         *
-     * python *
-   * is  *  a    *
- * good  * programming * language *
-* to * learn * for * beginners *
 ```
 
  <br />
@@ -3322,3 +3324,30 @@ print("Talk is \'cheap\'. Show me the code.")
 print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
 print("If your ship doesn \'t come in, \\swim\\ out to it?")
 ```
+
+### Exercise - 7 <a name="E-7"></a>
+
+1. Solution code
+```python code
+from sys import argv
+
+year = int(argv[1])
+
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+else:
+    print("{0} is not a leap year".format(year))
+```
+
+2.  Solution code
+```python code
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
+```
+
+3. 
