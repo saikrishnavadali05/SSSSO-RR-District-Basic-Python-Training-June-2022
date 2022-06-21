@@ -96,18 +96,19 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [While](#10.1)
     - [for](#10.2)
     - [Exercise - 8](#10.3)
-11. [Lists](#11)	
-12. [range function](#12)
-    - [Exercise - 9](#12.1)
-13. [Tuples](#13)
-    - [Exercise - 10](#13.1)
-14. [Sets](#14)
-    - [Exercise - 11](#14.1)
-15. [Dictionaries](#15)
-    - [OrderedDict module](#15.1)
-    - [Exercise - 12](#15.2)
-16. [Functions](#16)
-    - [Exercise - 13](#16.1)
+11. [range function](#11)
+    - [Exercise - 9](#11.1)
+12. [Functions](#12)
+    - [Exercise - 10](#12.1)
+13. [Lists](#13)
+    - [Exercise - 11](#13.1)	
+14. [Tuples](#14)
+    - [Exercise - 12](#14.1)
+15. [Sets](#15)
+    - [Exercise - 13](#15.1)
+16. [Dictionaries](#16)
+    - [OrderedDict module](#16.1)
+    - [Exercise - 14](#15.2)
 17. [Modules](#17)
     - [Standard Modules](#17.1)
 18. [Namespaces](#18)
@@ -117,9 +118,9 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [Write](#20.2)
     - [delete](#20.3)
     - [Important functions and points for file handling](#20.4)
-    - [Exercise - 14](#20.5)
+    - [Exercise - 15](#20.5)
 21. [Exception Handling](#21)
-    - [Exercise-15](#21.1)
+    - [Exercise-16](#21.1)
 22. [Built in tools](#22)
 
 ## Answers <a name="answers"></a>
@@ -2021,31 +2022,8 @@ Hence the output count should return 3.
 
 <br />
 
-## **Lists** <a name="11"></a>
 
-1. A ```list``` in Python is used to store the **sequence of various types of data**. 
-2. Python lists are **ordered** and **mutable** type its mean we can modify its element after it created. 
-3. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
-
-Basic examples
-
-```python
->>> numbers = [0, 5, 8, 11, 12]
->>> months = ["january", "March", "April"]
->>> student = ["suresh", 80, 6.2] #list also contain different data types
-```
-
-<br />
-
-[go to Answers](#answers)
-
-<br />
-
-[go to List of Topics](#top)
-
-<br />
-
-## **```range``` function:** <a name="12"></a>
+## **```range``` function:** <a name="11"></a>
 
 1. If you do need to iterate over a **sequence of numbers**, use the built-in function ```range()```. 
 2. It generates lists containing arithmetic progressions:
@@ -2144,7 +2122,7 @@ False
 <br />
    
  
-### **Exercise - 9** <a name="12.1"></a>
+### **Exercise - 9** <a name="11.1"></a>
   
  1. write output for the given questions
  ```console
@@ -2156,7 +2134,7 @@ False
  6. range(10, 30, 10)
  ```
 
-  <br />  
+ <br />  
   
   [go to Answers](#answers)
 
@@ -2166,7 +2144,135 @@ False
 
 <br />
 
-## **Tuples:** <a name="13"></a>
+
+### Python Functions <a name="12"></a>
+1. Functions are the most important aspect of an application. 
+2. A function can be defined as the organized block of **reusable code**, which can be called whenever required. 
+3. The keyword ```def``` introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+4. The Function helps to programmer to break the program into the smaller part. It **organizes** the code very effectively and **avoids** the repetition of the code. As the program grows, function makes the program more organized.
+5. There are mainly two types of functions.
+
+- User-define functions - The user-defined functions are those define by the **user to perform the specific task**.
+
+- Built-in functions - The built-in functions are those functions that are **pre-defined** in Python.
+
+6.Example of Function 1:
+```python
+def square(a):
+ return a * a
+
+print(square.__doc__)
+
+val = square(3)
+print(val)
+print(type(val))
+
+val = square
+print("val(2)",val(2))
+```
+```console
+Output:
+None
+9
+<class 'int'>
+val(2) 4
+```  
+ 
+7. Example of Functions 2: 
+ ```python
+def sumodd(n = 5):
+  val = 0
+  index = 1
+  while (index <= n):
+  # if even we continue with next iteration
+    if (index % 2 == 0):
+      index += 1
+      continue
+  # if odd we add it
+    val += index
+    index += 1
+  return val
+def funNotImplemented(): pass
+print("sumodd is", sumodd(3))
+print("sumodd is", sumodd())
+funNotImplemented()
+```
+```console
+Output:
+sumodd is 4
+sumodd is 9
+```  
+8.Example of Functions 3 with Keyword Argument:
+```python
+def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
+  print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
+funckeyword(10)
+funckeyword(arg1="value1")
+  
+funckeyword(10, arg2="Multiple")
+funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
+funckeyword(arg3="Hyderabad", arg1="value1")
+```
+```console
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= MultipleWishes arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Hyderabad
+```
+
+ <br />
+   
+ ## **Exercise-10** <a name="12.1"></a>
+  
+ 1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
+ ```python
+  example the string is Multiple - output is elpitluM
+ ```
+ 2. Write a function that print the reverse of the given number. The input is given in the command line parameter.
+ ```python
+  example the number is 456 - output os 654.
+ ```
+ 3.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
+ ```python
+  example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
+ ```
+ 
+ <br />
+
+## **Lists** <a name="13"></a>
+
+1. A ```list``` in Python is used to store the **sequence of various types of data**. 
+2. Python lists are **ordered** and **mutable** type its mean we can modify its element after it created. 
+3. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
+
+Basic examples
+
+```python
+>>> numbers = [0, 5, 8, 11, 12]
+>>> months = ["january", "March", "April"]
+>>> student = ["suresh", 80, 6.2] #list also contain different data types
+```
+
+<br />
+
+### **Exercise-11** <a name="13.1"></a>
+
+1. Given a list of numbers, write a Python program to find the sum of all the elements in the list.
+2. Write a Program in Python to Find the Smallest and the Largest List Elements on Inputs Provided by the User
+
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Tuples:** <a name="14"></a>
 
 1. Tuples are like lists, but are **ordered** and **immutable** like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple).
 2. They are enclosed by **parentheses** or nothing at all, rather than brackets.
@@ -2225,7 +2331,7 @@ output
  <br />
   
  
-### **Exercise - 10** <a name="13.1"></a>
+### **Exercise - 12** <a name="14.1"></a>
   
  1. Write a python script that does the following operations:
  ```console
@@ -2248,7 +2354,7 @@ output
 
 <br />
 
-## **Sets** <a name="14"></a>
+## **Sets** <a name="15"></a>
 
 1. A ```set``` contains uniques values in it. It is denoted with *curly braces :* `{}`. The values in the ```set``` are unordered and also it deletes the duplicate values. Once the ```set``` is created, we can not update the existing values. But new values can be added (appended). In ```set``` we cannot access values with the help of index, which is possible in tuples and lists easily.
 2. A few examples of code snippets showing the usage of sets
@@ -2288,7 +2394,7 @@ output
 
 <br />
 
-### **Exercise - 11**<a name="14.1"></a>
+### **Exercise - 13**<a name="15.1"></a>
 
 1. Write a python script that takes the following two sets as inputs and does the following operations on those sets :
 
@@ -2319,7 +2425,7 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 
 <br />
 
-## **Dictionary:** <a name="15"></a>
+## **Dictionary:** <a name="16"></a>
 
 1. Dictionary (hash) which is also called **associative arrays**. 
 2. Dictionary is a built-in Python Data Structure that is **mutable**. 
@@ -2484,7 +2590,7 @@ by using range statement
 
 <br />
 
-## **OrderedDict module** <a name="15.1"></a>
+## **OrderedDict module** <a name="16.1"></a>
 
 An ```OrderedDict``` is a dictionary subclass that remembers the order in which its contents are added, supporting the usual ```dict``` methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
 
@@ -2659,7 +2765,7 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
 <br />
  
  
-### **Exercise - 12** <a name="15.2"></a>
+### **Exercise - 14** <a name="16.2"></a>
   1. Write a python script that contains a dictionary with name : "details" and the script should perform the steps from 1 to 7.
  ```console
  
@@ -2684,105 +2790,6 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
   
 [go to Answers](#answers)
 
-
-
-[go to List of Topics](#top)
-
-<br />
-	
-### Python Functions <a name="16"></a>
-1. Functions are the most important aspect of an application. 
-2. A function can be defined as the organized block of **reusable code**, which can be called whenever required. 
-3. The keyword ```def``` introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
-4. The Function helps to programmer to break the program into the smaller part. It **organizes** the code very effectively and **avoids** the repetition of the code. As the program grows, function makes the program more organized.
-5. There are mainly two types of functions.
-
-- User-define functions - The user-defined functions are those define by the **user to perform the specific task**.
-
-- Built-in functions - The built-in functions are those functions that are **pre-defined** in Python.
-
-6.Example of Function 1:
-```python
-def square(a):
- return a * a
-
-print(square.__doc__)
-
-val = square(3)
-print(val)
-print(type(val))
-
-val = square
-print("val(2)",val(2))
-```
-```console
-Output:
-None
-9
-<class 'int'>
-val(2) 4
-```  
- 
-7. Example of Functions 2: 
- ```python
-def sumodd(n = 5):
-  val = 0
-  index = 1
-  while (index <= n):
-  # if even we continue with next iteration
-    if (index % 2 == 0):
-      index += 1
-      continue
-  # if odd we add it
-    val += index
-    index += 1
-  return val
-def funNotImplemented(): pass
-print("sumodd is", sumodd(3))
-print("sumodd is", sumodd())
-funNotImplemented()
-```
-```console
-Output:
-sumodd is 4
-sumodd is 9
-```  
-8.Example of Functions 3 with Keyword Argument:
-```python
-def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
-  print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
-funckeyword(10)
-funckeyword(arg1="value1")
-  
-funckeyword(10, arg2="Multiple")
-funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
-funckeyword(arg3="Hyderabad", arg1="value1")
-```
-```console
-arg1= 10 arg2= Multiple arg3= Wishes
-arg1= value1 arg2= Multiple arg3= Wishes
-arg1= 10 arg2= Multiple arg3= Wishes
-arg1= 10 arg2= MultipleWishes arg3= Wishes
-arg1= value1 arg2= Multiple arg3= Hyderabad
-```
-
- <br />
-   
- ## **Exercise-12** <a name="16.1"></a>
-  
- 1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
- ```python
-  example the string is Multiple - output is elpitluM
- ```
- 2. Write a function that print the reverse of the given number. The input is given in the command line parameter.
- ```python
-  example the number is 456 - output os 654.
- ```
- 3.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
- ```python
-  example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
- ```
- [go to Answers](#answers)
 
 <br />
 
@@ -3060,7 +3067,7 @@ close()| Flush the buffer and close the file
  <br />
   
   
- ### **Exercise-14** <a name="20.5"></a> 
+ ### **Exercise-15** <a name="20.5"></a> 
   
  1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
  2. Write a script that count the number of lines in a file. Take any file you wish
@@ -3113,7 +3120,7 @@ Error: Provide two numbers
 
  <br />
   
- ### **Exercise-15**   <a name="21.1"></a> 
+ ### **Exercise-16**   <a name="21.1"></a> 
  1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
  ```console 
  example two strings are Multiple Wishes -  output is MultipleWishes
