@@ -2399,11 +2399,9 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
  Operations to be done on those Sets :
  1. Remove the duplicate elements from the set1.
  2. Add an item "7_up" to the set1.
- 3. Duplicate the elements of set1 to a new backup set.
- 4. Compute the union and intersetion of set1 and set2.
- 5. Compute the difference of set1 from set2.
- 6. Then remove the "pepsi" element from the set2.
- 7. Then remove all elements from set1
+ 3. Compute the union and intersetion of set1 and set2.
+ 4. Compute the difference of set1 from set2.
+ 5. Then remove the "pepsi" element from the set2.
 ```
 
 <br />
@@ -2772,9 +2770,8 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
  2. Add a new key "died" and assign the value "2011" to the above dictionary. And then print the updated dictionary again.
  3. Remove the "education" key from the dictionary and print the changed dictionary again.
  4. Create another duplicate dictionary with name "details_duplicate" from the above dictionary to have a backup of the existing dictionary.
- 5. Retrieve the values of the dictionary just by using corresponding keys.
- 6. Remove all the elements of the "details" dictionary and then print the entire empty dictionary.
- 7. Print the entire duplicate dictionary
+ 5. Remove all the elements of the "details" dictionary and then print the entire empty dictionary.
+ 6. Print the entire duplicate dictionary
 ```
    
  <br />
@@ -3428,5 +3425,131 @@ print("The number of digits in the number are:",count)
 <br />
 
 ### Exercise - 10 <a name="E-10"></a>
+
+1. Solution code
+```python
+def reverse(str):
+    string = " "
+    for i in str:
+        string = i + string
+    return string
+str = input("Enter the string ")
+print("The reverse string is:", reverse(str)) 
+```
+2. Solution code
+```python
+number1 = int(input('Enter First number : '))
+number2 = int(input('Enter Second number : '))
+number3 = int(input('Enter Third number : '))
+def largest(num1, num2, num3):
+    if (num1 > num2) and (num1 > num3):
+        largest_num = num1
+    elif (num2 > num1) and (num2 > num3):
+        largest_num = num2
+    else:
+        largest_num = num3
+    print("The largest of the 3 numbers is : ", largest_num)
+def smallest(num1, num2, num3):
+    if (num1 < num2) and (num1 < num3):
+        smallest_num = num1
+    elif (num2 < num1) and (num2 < num3):
+        smallest_num = num2
+    else:
+        smallest_num = num3
+    print("The smallest of the 3 numbers is : ", smallest_num)
+largest(number1, number2, number3)
+smallest(number1, number2, number3)
+```
+
+<br />
+
+### Exercise - 11 <a name="E-11"></a>
+
+1. Solution code
+```python
+total = 0
+list1 = [11, 5, 17, 18, 23]
+for ele in range(0, len(list1)):
+	total = total + list1[ele]
+print("Sum of all elements in given list: ", total)
+```
+2. Solution code
+```python
+res_list = []
+num = int(input("How many elements in list: "))
+for x in range(num):
+  numbers = int(input('Enter number '))
+  res_list.append(numbers)
+ 
+print("\nMaximum element in the list is :", max(res_list))
+print("Minimum element in the list is :", min(res_list))
+```
+
+<br />
+
+### Exercise - 12 <a name="E-12"></a>
+
+1. Solution code
+```python
+tuples = ("pulsar", "duke", "shine")
+length = len(tuples)
+print(length)
+index_character = tuples.index("shine")
+print(index_character)
+new_tuple= tuples + ("splendor",)
+print(new_tuple)
+listx = list(new_tuple) 
+listx.remove("duke") 
+tuplex = tuple(listx)
+print(tuplex)
+```
+
+<br />
+
+### Exercise - 13 <a name="E-13"></a>
+
+1. Solution code
+```python
+set1 = {"maaza", "sprite", "fanta", "maaza"}
+set2 = {"pepsi", "frooti", "sprite", "maaza"}
+
+print(set1)
+set1.add("7_up")
+print(set1)
+combine = set1.union(set2)
+print(combine)
+diff = set2.difference(set1)
+print(diff)
+set2.remove("pepsi")
+print(set2)
+```
+<br />
+
+### Exercise - 14 <a name="E-14"></a>
+
+1. Solution code
+```python
+details = {"name": "Steve","education": "Reed College", "born": 1955}
+key = details.keys()
+print(key)
+value = details.values()
+print(value)
+details["died"] = 2011
+print(details)
+details.pop("education")
+print(details)
+details_duplicate = details.copy()
+print(details_duplicate)
+details.clear()
+print(details)
+```
+
+<br />
+
+### Exercise - 15 <a name="E-15"></a>
+
+1. Solution code
+```python
+
 
 
