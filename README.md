@@ -108,7 +108,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [Exercise - 13](#15.1)
 16. [Dictionaries](#16)
     - [OrderedDict module](#16.1)
-    - [Exercise - 14](#15.2)
+    - [Exercise - 14](#16.2)
 17. [Modules](#17)
     - [Standard Modules](#17.1)
 18. [Namespaces](#18)
@@ -139,6 +139,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 12. [Exercise - 12](#E-12)
 13. [Exercise - 13](#E-13)
 14. [Exercise - 14](#E-14)
+15. [Exercise - 15](#E-15)
+16. [Exercise - 16](#E-16)
 
 ## **Let's begin the Python Show** <a name="1"></a>
 
@@ -1801,13 +1803,12 @@ greater than zero
   
   1. Write a script to check whether the given year is a *leap year* or not. The input i.e., year, should be given during script execution itself. i.e, as a command line parameter.
   2. Write a script to check whether the given number is *odd or even* by requesting input from the user, using ```input()``` function.
-  3. Write a script that requests the user to give an input which is a random value in *inches* and the script shall convert the *inches* value to *feets and inches*
+  3. Write a script that requests the user to give an input and given Kilometers convert to Miles. if there are more digits after decimal round to two digits.
   
   ```console
   For Example,
-    If the input from the user is : 27 
-    The program shall consider the input to be 27 inches.
-    The output that the program shall provide is 2 feet 3 inches.
+    If the input from the user is : 4.8
+    The output that the program shall provide is 2.98 miles.
   ```
  
   
@@ -1988,15 +1989,8 @@ month 10: october
 
 ### **Exercise - 8** <a name="10.3"></a>
 
-1.  Write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
 
-```console
- 	input list = [7, 3, 9, -23, 0, -21, 2]
-	The output should show that the
-	largest number is 9 and the smallest number is -23
-```
-
-2.  Write a script for factorial and take input from the command line parameter. using `while` and `for` loops
+1.  Write a script for factorial and take input from the command line parameter. using `while` and `for` loops
 
 ```console
 For example, factorial of 4! is 4 * 3 * 2 * 1 = 24.
@@ -2004,7 +1998,7 @@ Input of your code should take n as input.
 Output of your code should be n!
 ```
 
-3.  Write a script to print the count of number of digits within the given input number using `while` and `for` loops. 
+2.  Write a script to print the count of number of digits within the given input number using `while` loop 
 
 ```console
 input from the user is 123.
@@ -2229,11 +2223,8 @@ arg1= value1 arg2= Multiple arg3= Hyderabad
  ```python
   example the string is Multiple - output is elpitluM
  ```
- 2. Write a function that print the reverse of the given number. The input is given in the command line parameter.
- ```python
-  example the number is 456 - output os 654.
- ```
- 3.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
+ 
+ 2.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
  ```python
   example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
  ```
@@ -3332,10 +3323,12 @@ print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great
 print("If your ship doesn \'t come in, \\swim\\ out to it?")
 ```
 
+<br />
+
 ### Exercise - 7 <a name="E-7"></a>
 
 1. Solution code
-```python code
+```python 
 from sys import argv
 
 year = int(argv[1])
@@ -3349,7 +3342,7 @@ else:
 ```
 
 2.  Solution code
-```python code
+```python 
 num = int(input("Enter a number: "))
 if (num % 2) == 0:
    print("{0} is Even".format(num))
@@ -3357,4 +3350,83 @@ else:
    print("{0} is Odd".format(num))
 ```
 
-3. 
+3. Solution Code
+```python 
+kilometers = float(input("Enter value in kilometers: "))
+conv_fac = 0.621371
+miles = kilometers * conv_fac
+print(kilometers,'kilometers is equal to', round(miles,2), "miles.")
+```
+
+<br />
+
+### Exercise - 8 <a name="E-8"></a>
+
+1. Solution code
+
+* while loop
+```python
+from sys import argv
+
+num = int(argv[1])
+factorial = 1
+
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+    i=1
+    while i <= num:
+        factorial = factorial * i
+        i = i + 1
+    print("factorial of ", num, " is ", factorial)
+
+```
+
+* for loop
+```python
+from sys import argv
+
+num = int(argv[1])
+factorial = 1
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+```
+
+2. Solution code
+
+
+```python
+n=int(input("Enter number:"))
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+print("The number of digits in the number are:",count)
+```
+
+<br />
+
+### Exercise - 9 <a name="E-9"></a>
+
+1. print(list(range(0,8,2)))
+2. print(list(range(20,3,-4)))
+3. print(list(range(-12,13,6)))
+4. [2, 3, 4]
+5. [12, 9, 6, 3, 0]
+6. [10, 20]
+
+
+<br />
+
+### Exercise - 10 <a name="E-10"></a>
+
+
