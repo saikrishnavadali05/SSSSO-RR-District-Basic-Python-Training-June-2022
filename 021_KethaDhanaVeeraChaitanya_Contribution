@@ -1,0 +1,145 @@
+Assignment questions
+Question:1
+string="pen is mightier than sword "
+for i in string:
+  if(i==" "):
+     print(end='\n')
+  else:
+     print(i)
+
+Question:2
+a=20
+b=50
+print("maximum of two numbers is:",max(a,b))
+print('minimum of two numbers is:',min(a,b))
+average= (a+b)/2
+print('average of two numbers is:',average )
+print("addition of two numbers is:",(a+b))
+print("multiplication of a and b is:",(a*b))
+
+Question:3
+
+list=[62,17,1,6,81,716,'sairam',56.61,6]
+print('the list in reverse order is:',list[::-1])
+
+Question:4
+
+tup = eval(input("Enter input for tuple:")) 
+tup2 = () 
+tup3 = ()
+i = 0 
+while i < len(tup): 
+  if i % 2 == 0: 
+    tup2 += (tup[i],)  
+  else: tup3 += (tup[i],) 
+  i += 1
+print(tup2) 
+print(tup3)
+
+Question:5
+Dict_student = {
+  "name": "chaitanya",
+  "roll_number": "CSEAL&LML",
+  "year": 1,
+  "age" : 19
+}
+#for printing both key value pairs 
+
+print(Dict_student)
+for key,value in Dict_student.items():
+  print(key, ':',value)
+  
+  #printing only values
+
+print(Dict_student.values())
+
+Question:7
+
+print(" \t\t\t\t\t\t\t*")
+print('\t\t\t*\t \t python \t *\n\t* is\t \t* \t\t\ta \t\t\t* ')
+print("* good * programming * language *")
+print("*\tto *\tlearn\tfor\t*beginners\t*")
+
+Question:8
+a = ("Hello World")    
+b = (20)    
+c = (20.5)    
+d= (1j)    
+e= ["apple", "banana", "cherry"]
+f = ("apple", "banana", "cherry")
+g = range(6)    
+h = dict(name="John", age=36)    
+i = set(("apple", "banana", "cherry"))        
+j = frozenset(("apple", "banana", "cherry"))    
+k = bool(5)    
+l = bytes(5)    
+m = (5)
+n = (bytes(5))
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
+print(type(g))
+print(type(h))
+print(type(i))
+print(type(j))
+print(type(k))
+print(type(l))
+print(type(m))
+print(type(n))
+
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0'
+
+list=[a,b,c,d,e,f,g,h,i,j,k,l,m,n]
+print(list)
+
+Question:9
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+import pandas as pd
+
+print('modules are imported successfuly')
+
+Question:10
+The Zen of Python is a collection of 19 "guiding principles" for writing computer programs that influence the design of the Python programming language. Software engineer Tim Peters wrote this set of principles and posted it on the Python mailing list in 1999.
+
+example found on google is :
+>>> import this
+
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
