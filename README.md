@@ -3600,7 +3600,7 @@ with open('readme.txt', 'a') as f:
 
 <br />
 
-### **Exercise - 16** <a name="E-15"></a>
+### **Exercise - 16** <a name="E-16"></a>
 
 1. Solution code
 ```python
