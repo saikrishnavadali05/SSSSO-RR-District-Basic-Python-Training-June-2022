@@ -1,0 +1,1 @@
+print("Love\nAll\nServe\nAll\nHelp\nEver\nHurt\nNever")
