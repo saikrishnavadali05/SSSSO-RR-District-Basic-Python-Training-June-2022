@@ -96,18 +96,19 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [While](#10.1)
     - [for](#10.2)
     - [Exercise - 8](#10.3)
-11. [Lists](#11)	
-12. [range function](#12)
-    - [Exercise - 9](#12.1)
-13. [Tuples](#13)
-    - [Exercise - 10](#13.1)
-14. [Sets](#14)
-    - [Exercise - 11](#14.1)
-15. [Dictionaries](#15)
-    - [OrderedDict module](#15.1)
-    - [Exercise - 12](#15.2)
-16. [Functions](#16)
-    - [Exercise - 13](#16.1)
+11. [range function](#11)
+    - [Exercise - 9](#11.1)
+12. [Functions](#12)
+    - [Exercise - 10](#12.1)
+13. [Lists](#13)
+    - [Exercise - 11](#13.1)	
+14. [Tuples](#14)
+    - [Exercise - 12](#14.1)
+15. [Sets](#15)
+    - [Exercise - 13](#15.1)
+16. [Dictionaries](#16)
+    - [OrderedDict module](#16.1)
+    - [Exercise - 14](#16.2)
 17. [Modules](#17)
     - [Standard Modules](#17.1)
 18. [Namespaces](#18)
@@ -117,9 +118,9 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [Write](#20.2)
     - [delete](#20.3)
     - [Important functions and points for file handling](#20.4)
-    - [Exercise - 14](#20.5)
+    - [Exercise - 15](#20.5)
 21. [Exception Handling](#21)
-    - [Exercise-15](#21.1)
+    - [Exercise-16](#21.1)
 22. [Built in tools](#22)
 
 ## Answers <a name="answers"></a>
@@ -138,6 +139,8 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 12. [Exercise - 12](#E-12)
 13. [Exercise - 13](#E-13)
 14. [Exercise - 14](#E-14)
+15. [Exercise - 15](#E-15)
+16. [Exercise - 16](#E-16)
 
 ## **Let's begin the Python Show** <a name="1"></a>
 
@@ -1800,13 +1803,12 @@ greater than zero
   
   1. Write a script to check whether the given year is a *leap year* or not. The input i.e., year, should be given during script execution itself. i.e, as a command line parameter.
   2. Write a script to check whether the given number is *odd or even* by requesting input from the user, using ```input()``` function.
-  3. Write a script that requests the user to give an input which is a random value in *inches* and the script shall convert the *inches* value to *feets and inches*
+  3. Write a script that requests the user to give an input and given Kilometers convert to Miles. if there are more digits after decimal round to two digits.
   
   ```console
   For Example,
-    If the input from the user is : 27 
-    The program shall consider the input to be 27 inches.
-    The output that the program shall provide is 2 feet 3 inches.
+    If the input from the user is : 4.8
+    The output that the program shall provide is 2.98 miles.
   ```
  
   
@@ -1987,15 +1989,8 @@ month 10: october
 
 ### **Exercise - 8** <a name="10.3"></a>
 
-1.  Write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
 
-```console
- 	input list = [7, 3, 9, -23, 0, -21, 2]
-	The output should show that the
-	largest number is 9 and the smallest number is -23
-```
-
-2.  Write a script for factorial and take input from the command line parameter. using `while` and `for` loops
+1.  Write a script for factorial and take input from the command line parameter. using `while` and `for` loops
 
 ```console
 For example, factorial of 4! is 4 * 3 * 2 * 1 = 24.
@@ -2003,7 +1998,7 @@ Input of your code should take n as input.
 Output of your code should be n!
 ```
 
-3.  Write a script to print the count of number of digits within the given input number using `while` and `for` loops. 
+2.  Write a script to print the count of number of digits within the given input number using `while` loop 
 
 ```console
 input from the user is 123.
@@ -2021,31 +2016,8 @@ Hence the output count should return 3.
 
 <br />
 
-## **Lists** <a name="11"></a>
 
-1. A ```list``` in Python is used to store the **sequence of various types of data**. 
-2. Python lists are **ordered** and **mutable** type its mean we can modify its element after it created. 
-3. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
-
-Basic examples
-
-```python
->>> numbers = [0, 5, 8, 11, 12]
->>> months = ["january", "March", "April"]
->>> student = ["suresh", 80, 6.2] #list also contain different data types
-```
-
-<br />
-
-[go to Answers](#answers)
-
-<br />
-
-[go to List of Topics](#top)
-
-<br />
-
-## **```range``` function:** <a name="12"></a>
+## **```range``` function:** <a name="11"></a>
 
 1. If you do need to iterate over a **sequence of numbers**, use the built-in function ```range()```. 
 2. It generates lists containing arithmetic progressions:
@@ -2144,7 +2116,7 @@ False
 <br />
    
  
-### **Exercise - 9** <a name="12.1"></a>
+### **Exercise - 9** <a name="11.1"></a>
   
  1. write output for the given questions
  ```console
@@ -2156,7 +2128,7 @@ False
  6. range(10, 30, 10)
  ```
 
-  <br />  
+ <br />  
   
   [go to Answers](#answers)
 
@@ -2166,7 +2138,132 @@ False
 
 <br />
 
-## **Tuples:** <a name="13"></a>
+
+### Python Functions <a name="12"></a>
+1. Functions are the most important aspect of an application. 
+2. A function can be defined as the organized block of **reusable code**, which can be called whenever required. 
+3. The keyword ```def``` introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+4. The Function helps to programmer to break the program into the smaller part. It **organizes** the code very effectively and **avoids** the repetition of the code. As the program grows, function makes the program more organized.
+5. There are mainly two types of functions.
+
+- User-define functions - The user-defined functions are those define by the **user to perform the specific task**.
+
+- Built-in functions - The built-in functions are those functions that are **pre-defined** in Python.
+
+6.Example of Function 1:
+```python
+def square(a):
+ return a * a
+
+print(square.__doc__)
+
+val = square(3)
+print(val)
+print(type(val))
+
+val = square
+print("val(2)",val(2))
+```
+```console
+Output:
+None
+9
+<class 'int'>
+val(2) 4
+```  
+ 
+7. Example of Functions 2: 
+ ```python
+def sumodd(n = 5):
+  val = 0
+  index = 1
+  while (index <= n):
+  # if even we continue with next iteration
+    if (index % 2 == 0):
+      index += 1
+      continue
+  # if odd we add it
+    val += index
+    index += 1
+  return val
+def funNotImplemented(): pass
+print("sumodd is", sumodd(3))
+print("sumodd is", sumodd())
+funNotImplemented()
+```
+```console
+Output:
+sumodd is 4
+sumodd is 9
+```  
+8.Example of Functions 3 with Keyword Argument:
+```python
+def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
+  print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
+funckeyword(10)
+funckeyword(arg1="value1")
+  
+funckeyword(10, arg2="Multiple")
+funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
+funckeyword(arg3="Hyderabad", arg1="value1")
+```
+```console
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= MultipleWishes arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Hyderabad
+```
+
+ <br />
+   
+ ## **Exercise-10** <a name="12.1"></a>
+  
+ 1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
+ ```python
+  example the string is Multiple - output is elpitluM
+ ```
+ 
+ 2.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
+ ```python
+  example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
+ ```
+ 
+ <br />
+
+## **Lists** <a name="13"></a>
+
+1. A ```list``` in Python is used to store the **sequence of various types of data**. 
+2. Python lists are **ordered** and **mutable** type its mean we can modify its element after it created. 
+3. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
+
+Basic examples
+
+```python
+>>> numbers = [0, 5, 8, 11, 12]
+>>> months = ["january", "March", "April"]
+>>> student = ["suresh", 80, 6.2] #list also contain different data types
+```
+
+<br />
+
+### **Exercise-11** <a name="13.1"></a>
+
+1. Given a list of numbers, write a Python program to find the sum of all the elements in the list.
+2. Write a Program in Python to Find the Smallest and the Largest List Elements on Inputs Provided by the User
+
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Tuples:** <a name="14"></a>
 
 1. Tuples are like lists, but are **ordered** and **immutable** like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple).
 2. They are enclosed by **parentheses** or nothing at all, rather than brackets.
@@ -2225,7 +2322,7 @@ output
  <br />
   
  
-### **Exercise - 10** <a name="13.1"></a>
+### **Exercise - 12** <a name="14.1"></a>
   
  1. Write a python script that does the following operations:
  ```console
@@ -2248,7 +2345,7 @@ output
 
 <br />
 
-## **Sets** <a name="14"></a>
+## **Sets** <a name="15"></a>
 
 1. A ```set``` contains uniques values in it. It is denoted with *curly braces :* `{}`. The values in the ```set``` are unordered and also it deletes the duplicate values. Once the ```set``` is created, we can not update the existing values. But new values can be added (appended). In ```set``` we cannot access values with the help of index, which is possible in tuples and lists easily.
 2. A few examples of code snippets showing the usage of sets
@@ -2288,7 +2385,7 @@ output
 
 <br />
 
-### **Exercise - 11**<a name="14.1"></a>
+### **Exercise - 13**<a name="15.1"></a>
 
 1. Write a python script that takes the following two sets as inputs and does the following operations on those sets :
 
@@ -2302,11 +2399,9 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
  Operations to be done on those Sets :
  1. Remove the duplicate elements from the set1.
  2. Add an item "7_up" to the set1.
- 3. Duplicate the elements of set1 to a new backup set.
- 4. Compute the union and intersetion of set1 and set2.
- 5. Compute the difference of set1 from set2.
- 6. Then remove the "pepsi" element from the set2.
- 7. Then remove all elements from set1
+ 3. Compute the union and intersetion of set1 and set2.
+ 4. Compute the difference of set1 from set2.
+ 5. Then remove the "pepsi" element from the set2.
 ```
 
 <br />
@@ -2319,7 +2414,7 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 
 <br />
 
-## **Dictionary:** <a name="15"></a>
+## **Dictionary:** <a name="16"></a>
 
 1. Dictionary (hash) which is also called **associative arrays**. 
 2. Dictionary is a built-in Python Data Structure that is **mutable**. 
@@ -2484,7 +2579,7 @@ by using range statement
 
 <br />
 
-## **OrderedDict module** <a name="15.1"></a>
+## **OrderedDict module** <a name="16.1"></a>
 
 An ```OrderedDict``` is a dictionary subclass that remembers the order in which its contents are added, supporting the usual ```dict``` methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
 
@@ -2659,7 +2754,7 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
 <br />
  
  
-### **Exercise - 12** <a name="15.2"></a>
+### **Exercise - 14** <a name="16.2"></a>
   1. Write a python script that contains a dictionary with name : "details" and the script should perform the steps from 1 to 7.
  ```console
  
@@ -2675,114 +2770,14 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
  2. Add a new key "died" and assign the value "2011" to the above dictionary. And then print the updated dictionary again.
  3. Remove the "education" key from the dictionary and print the changed dictionary again.
  4. Create another duplicate dictionary with name "details_duplicate" from the above dictionary to have a backup of the existing dictionary.
- 5. Retrieve the values of the dictionary just by using corresponding keys.
- 6. Remove all the elements of the "details" dictionary and then print the entire empty dictionary.
- 7. Print the entire duplicate dictionary
+ 5. Remove all the elements of the "details" dictionary and then print the entire empty dictionary.
+ 6. Print the entire duplicate dictionary
 ```
    
  <br />
   
 [go to Answers](#answers)
 
-
-
-[go to List of Topics](#top)
-
-<br />
-	
-### Python Functions <a name="16"></a>
-1. Functions are the most important aspect of an application. 
-2. A function can be defined as the organized block of **reusable code**, which can be called whenever required. 
-3. The keyword ```def``` introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
-4. The Function helps to programmer to break the program into the smaller part. It **organizes** the code very effectively and **avoids** the repetition of the code. As the program grows, function makes the program more organized.
-5. There are mainly two types of functions.
-
-- User-define functions - The user-defined functions are those define by the **user to perform the specific task**.
-
-- Built-in functions - The built-in functions are those functions that are **pre-defined** in Python.
-
-6.Example of Function 1:
-```python
-def square(a):
- return a * a
-
-print(square.__doc__)
-
-val = square(3)
-print(val)
-print(type(val))
-
-val = square
-print("val(2)",val(2))
-```
-```console
-Output:
-None
-9
-<class 'int'>
-val(2) 4
-```  
- 
-7. Example of Functions 2: 
- ```python
-def sumodd(n = 5):
-  val = 0
-  index = 1
-  while (index <= n):
-  # if even we continue with next iteration
-    if (index % 2 == 0):
-      index += 1
-      continue
-  # if odd we add it
-    val += index
-    index += 1
-  return val
-def funNotImplemented(): pass
-print("sumodd is", sumodd(3))
-print("sumodd is", sumodd())
-funNotImplemented()
-```
-```console
-Output:
-sumodd is 4
-sumodd is 9
-```  
-8.Example of Functions 3 with Keyword Argument:
-```python
-def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
-  print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
-funckeyword(10)
-funckeyword(arg1="value1")
-  
-funckeyword(10, arg2="Multiple")
-funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
-funckeyword(arg3="Hyderabad", arg1="value1")
-```
-```console
-arg1= 10 arg2= Multiple arg3= Wishes
-arg1= value1 arg2= Multiple arg3= Wishes
-arg1= 10 arg2= Multiple arg3= Wishes
-arg1= 10 arg2= MultipleWishes arg3= Wishes
-arg1= value1 arg2= Multiple arg3= Hyderabad
-```
-
- <br />
-   
- ## **Exercise-12** <a name="16.1"></a>
-  
- 1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
- ```python
-  example the string is Multiple - output is elpitluM
- ```
- 2. Write a function that print the reverse of the given number. The input is given in the command line parameter.
- ```python
-  example the number is 456 - output os 654.
- ```
- 3.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
- ```python
-  example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
- ```
- [go to Answers](#answers)
 
 <br />
 
@@ -3060,11 +3055,10 @@ close()| Flush the buffer and close the file
  <br />
   
   
- ### **Exercise-14** <a name="20.5"></a> 
+ ### **Exercise-15** <a name="20.5"></a> 
   
- 1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
- 2. Write a script that count the number of lines in a file. Take any file you wish
- 3. Write a script that write lines to the file and they are
+ 1. Write a script that count the number of lines in a file. Take any file you wish
+ 2. Write a script that write lines to the file and they are
 
 ```python
 1. Steve Jobs is a popular name in the world.
@@ -3074,7 +3068,7 @@ close()| Flush the buffer and close the file
 5. He was born on 24th February in the year 1955.
 ```
 
-4. Write a script that append lines to the file that are created in problem 3 and they are
+3. Write a script that append lines to the file that are created in problem 3 and they are
 ```python
 1. Steve Paul Jobs is regarded as a successful American businessman.
 2. He had attained success in different fields.
@@ -3113,13 +3107,9 @@ Error: Provide two numbers
 
  <br />
   
- ### **Exercise-15**   <a name="21.1"></a> 
- 1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
- ```console 
- example two strings are Multiple Wishes -  output is MultipleWishes
- example user gives numbers are 1 5 - output is "Error: Provide two strings"
- ```
- 2. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
+ ### **Exercise-16**   <a name="21.1"></a> 
+
+ 1. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
 ```console
 example two numbers are 2 5 - output is 10
 example user gives are happy life - utput is "Error: Provide two numbers"
@@ -3167,7 +3157,7 @@ example user gives are happy life - utput is "Error: Provide two numbers"
 	
 ## **Answers**
 
-### Exercise - 1 <a name="E-1"></a>
+### **Exercise - 1** <a name="E-1"></a>
 
 1. C
 2. D
@@ -3194,7 +3184,7 @@ print(planet_near_to_sun)
 
   <br />
   
-### Exercise - 2 <a name="E-2"></a>
+### **Exercise - 2** <a name="E-2"></a>
 
 1. student_name = "Ramesh"
 2. Solution Code
@@ -3222,7 +3212,7 @@ print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  art
 
   <br />
   
-### Exercise - 3 <a name="E-3"></a>
+### **Exercise - 3** <a name="E-3"></a>
 
 1. Solution code
 
@@ -3271,7 +3261,7 @@ print("city_lives   :", lives)
 
  <br />
  
-### Exercise - 4 <a name="E-4"></a>
+### **Exercise - 4** <a name="E-4"></a>
 
 1. A
 2. B
@@ -3284,7 +3274,15 @@ print("city_lives   :", lives)
 
  <br />
  
-### Exercise - 5  <a name="E-5"></a>
+ [go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+ 
+### **Exercise - 5**  <a name="E-5"></a>
 
 1. Solution code
 
@@ -3315,7 +3313,7 @@ print(result)
 
 <br />
 
-### Exercise - 6 <a name="E-6"></a>
+### **Exercise - 6** <a name="E-6"></a>
 
 1. Solution code
 
@@ -3325,10 +3323,12 @@ print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great
 print("If your ship doesn \'t come in, \\swim\\ out to it?")
 ```
 
-### Exercise - 7 <a name="E-7"></a>
+<br />
+
+### **Exercise - 7** <a name="E-7"></a>
 
 1. Solution code
-```python code
+```python 
 from sys import argv
 
 year = int(argv[1])
@@ -3342,7 +3342,7 @@ else:
 ```
 
 2.  Solution code
-```python code
+```python 
 num = int(input("Enter a number: "))
 if (num % 2) == 0:
    print("{0} is Even".format(num))
@@ -3350,4 +3350,279 @@ else:
    print("{0} is Odd".format(num))
 ```
 
-3. 
+3. Solution Code
+```python 
+kilometers = float(input("Enter value in kilometers: "))
+conv_fac = 0.621371
+miles = kilometers * conv_fac
+print(kilometers,'kilometers is equal to', round(miles,2), "miles.")
+```
+
+<br />
+
+### **Exercise - 8** <a name="E-8"></a>
+
+1. Solution code
+
+* while loop
+```python
+from sys import argv
+
+num = int(argv[1])
+factorial = 1
+
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+    i=1
+    while i <= num:
+        factorial = factorial * i
+        i = i + 1
+    print("factorial of ", num, " is ", factorial)
+
+```
+
+* for loop
+```python
+from sys import argv
+
+num = int(argv[1])
+factorial = 1
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+```
+
+2. Solution code
+
+
+```python
+n=int(input("Enter number:"))
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+print("The number of digits in the number are:",count)
+```
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Exercise - 9** <a name="E-9"></a>
+
+1. print(list(range(0,8,2)))
+2. print(list(range(20,3,-4)))
+3. print(list(range(-12,13,6)))
+4. [2, 3, 4]
+5. [12, 9, 6, 3, 0]
+6. [10, 20]
+
+
+<br />
+
+### **Exercise - 10** <a name="E-10"></a>
+
+1. Solution code
+```python
+def reverse(str):
+    string = " "
+    for i in str:
+        string = i + string
+    return string
+str = input("Enter the string ")
+print("The reverse string is:", reverse(str)) 
+```
+2. Solution code
+```python
+number1 = int(input('Enter First number : '))
+number2 = int(input('Enter Second number : '))
+number3 = int(input('Enter Third number : '))
+def largest(num1, num2, num3):
+    if (num1 > num2) and (num1 > num3):
+        largest_num = num1
+    elif (num2 > num1) and (num2 > num3):
+        largest_num = num2
+    else:
+        largest_num = num3
+    print("The largest of the 3 numbers is : ", largest_num)
+def smallest(num1, num2, num3):
+    if (num1 < num2) and (num1 < num3):
+        smallest_num = num1
+    elif (num2 < num1) and (num2 < num3):
+        smallest_num = num2
+    else:
+        smallest_num = num3
+    print("The smallest of the 3 numbers is : ", smallest_num)
+largest(number1, number2, number3)
+smallest(number1, number2, number3)
+```
+
+<br />
+
+### **Exercise - 11** <a name="E-11"></a>
+
+1. Solution code
+```python
+total = 0
+list1 = [11, 5, 17, 18, 23]
+for ele in range(0, len(list1)):
+	total = total + list1[ele]
+print("Sum of all elements in given list: ", total)
+```
+2. Solution code
+```python
+res_list = []
+num = int(input("How many elements in list: "))
+for x in range(num):
+  numbers = int(input('Enter number '))
+  res_list.append(numbers)
+ 
+print("\nMaximum element in the list is :", max(res_list))
+print("Minimum element in the list is :", min(res_list))
+```
+
+<br />
+
+### **Exercise - 12** <a name="E-12"></a>
+
+1. Solution code
+```python
+tuples = ("pulsar", "duke", "shine")
+length = len(tuples)
+print(length)
+index_character = tuples.index("shine")
+print(index_character)
+new_tuple= tuples + ("splendor",)
+print(new_tuple)
+listx = list(new_tuple) 
+listx.remove("duke") 
+tuplex = tuple(listx)
+print(tuplex)
+```
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Exercise - 13** <a name="E-13"></a>
+
+1. Solution code
+```python
+set1 = {"maaza", "sprite", "fanta", "maaza"}
+set2 = {"pepsi", "frooti", "sprite", "maaza"}
+
+print(set1)
+set1.add("7_up")
+print(set1)
+combine = set1.union(set2)
+print(combine)
+diff = set2.difference(set1)
+print(diff)
+set2.remove("pepsi")
+print(set2)
+```
+<br />
+
+### **Exercise - 14** <a name="E-14"></a>
+
+1. Solution code
+```python
+details = {"name": "Steve","education": "Reed College", "born": 1955}
+key = details.keys()
+print(key)
+value = details.values()
+print(value)
+details["died"] = 2011
+print(details)
+details.pop("education")
+print(details)
+details_duplicate = details.copy()
+print(details_duplicate)
+details.clear()
+print(details)
+```
+
+<br />
+
+### **Exercise - 15** <a name="E-15"></a>
+
+1. Solution code
+```python
+with open("about.txt", 'r') as fp:
+    x = len(fp.readlines())
+    print('Total lines:', x) 
+```
+
+2. Solution code
+```python
+lines = ['Steve Jobs is a popular name in the world.', 
+        'He was the co-founder and chairman of Apple Inc.', 
+        'He is also referred to as an industrial designer,investor, and media tycoon.', 
+        'His full name was Steven Paul Jobs.',
+        'He was born on 24th February in the year 1955.']
+	
+with open('readme.txt', 'w') as f:
+    f.writelines('\n'.join(lines))
+```
+
+3. Solution code
+```python
+appending_lines = ['Steve Paul Jobs is regarded as a successful American businessman.',
+            'He had attained success in different fields.',
+            'He had a great contribution to the development of computers and mobiles.',
+            'He is stated as the initiator of the personal computer revolution.',
+            'He had served as the CEO of Apple Inc from 1997 to 2011.']
+	    
+with open('readme.txt', 'a') as f:
+    f.writelines('\n'.join(lines))
+```
+
+<br />
+
+### **Exercise - 16** <a name="E-16"></a>
+
+1. Solution code
+```python
+try:
+    number1 = float(input("Enter first number "))
+    number2 = float(input("Enter second number "))
+    final = number1 * number1
+    print(final)
+except:
+    print("Error: Provide two numbers")
+```
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+
+
+#                                                              ** SAI RAM **                                                      
