@@ -3057,9 +3057,8 @@ close()| Flush the buffer and close the file
   
  ### **Exercise-15** <a name="20.5"></a> 
   
- 1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
- 2. Write a script that count the number of lines in a file. Take any file you wish
- 3. Write a script that write lines to the file and they are
+ 1. Write a script that count the number of lines in a file. Take any file you wish
+ 2. Write a script that write lines to the file and they are
 
 ```python
 1. Steve Jobs is a popular name in the world.
@@ -3069,7 +3068,7 @@ close()| Flush the buffer and close the file
 5. He was born on 24th February in the year 1955.
 ```
 
-4. Write a script that append lines to the file that are created in problem 3 and they are
+3. Write a script that append lines to the file that are created in problem 3 and they are
 ```python
 1. Steve Paul Jobs is regarded as a successful American businessman.
 2. He had attained success in different fields.
@@ -3109,12 +3108,8 @@ Error: Provide two numbers
  <br />
   
  ### **Exercise-16**   <a name="21.1"></a> 
- 1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
- ```console 
- example two strings are Multiple Wishes -  output is MultipleWishes
- example user gives numbers are 1 5 - output is "Error: Provide two strings"
- ```
- 2. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
+
+ 1. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
 ```console
 example two numbers are 2 5 - output is 10
 example user gives are happy life - utput is "Error: Provide two numbers"
@@ -3162,7 +3157,7 @@ example user gives are happy life - utput is "Error: Provide two numbers"
 	
 ## **Answers**
 
-### Exercise - 1 <a name="E-1"></a>
+### **Exercise - 1** <a name="E-1"></a>
 
 1. C
 2. D
@@ -3189,7 +3184,7 @@ print(planet_near_to_sun)
 
   <br />
   
-### Exercise - 2 <a name="E-2"></a>
+### **Exercise - 2** <a name="E-2"></a>
 
 1. student_name = "Ramesh"
 2. Solution Code
@@ -3217,7 +3212,7 @@ print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  art
 
   <br />
   
-### Exercise - 3 <a name="E-3"></a>
+### **Exercise - 3** <a name="E-3"></a>
 
 1. Solution code
 
@@ -3266,7 +3261,7 @@ print("city_lives   :", lives)
 
  <br />
  
-### Exercise - 4 <a name="E-4"></a>
+### **Exercise - 4** <a name="E-4"></a>
 
 1. A
 2. B
@@ -3279,7 +3274,15 @@ print("city_lives   :", lives)
 
  <br />
  
-### Exercise - 5  <a name="E-5"></a>
+ [go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+ 
+### **Exercise - 5**  <a name="E-5"></a>
 
 1. Solution code
 
@@ -3310,7 +3313,7 @@ print(result)
 
 <br />
 
-### Exercise - 6 <a name="E-6"></a>
+### **Exercise - 6** <a name="E-6"></a>
 
 1. Solution code
 
@@ -3322,7 +3325,7 @@ print("If your ship doesn \'t come in, \\swim\\ out to it?")
 
 <br />
 
-### Exercise - 7 <a name="E-7"></a>
+### **Exercise - 7** <a name="E-7"></a>
 
 1. Solution code
 ```python 
@@ -3357,7 +3360,7 @@ print(kilometers,'kilometers is equal to', round(miles,2), "miles.")
 
 <br />
 
-### Exercise - 8 <a name="E-8"></a>
+### **Exercise - 8** <a name="E-8"></a>
 
 1. Solution code
 
@@ -3412,7 +3415,15 @@ print("The number of digits in the number are:",count)
 
 <br />
 
-### Exercise - 9 <a name="E-9"></a>
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Exercise - 9** <a name="E-9"></a>
 
 1. print(list(range(0,8,2)))
 2. print(list(range(20,3,-4)))
@@ -3424,7 +3435,7 @@ print("The number of digits in the number are:",count)
 
 <br />
 
-### Exercise - 10 <a name="E-10"></a>
+### **Exercise - 10** <a name="E-10"></a>
 
 1. Solution code
 ```python
@@ -3463,7 +3474,7 @@ smallest(number1, number2, number3)
 
 <br />
 
-### Exercise - 11 <a name="E-11"></a>
+### **Exercise - 11** <a name="E-11"></a>
 
 1. Solution code
 ```python
@@ -3487,7 +3498,7 @@ print("Minimum element in the list is :", min(res_list))
 
 <br />
 
-### Exercise - 12 <a name="E-12"></a>
+### **Exercise - 12** <a name="E-12"></a>
 
 1. Solution code
 ```python
@@ -3506,7 +3517,15 @@ print(tuplex)
 
 <br />
 
-### Exercise - 13 <a name="E-13"></a>
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Exercise - 13** <a name="E-13"></a>
 
 1. Solution code
 ```python
@@ -3525,7 +3544,7 @@ print(set2)
 ```
 <br />
 
-### Exercise - 14 <a name="E-14"></a>
+### **Exercise - 14** <a name="E-14"></a>
 
 1. Solution code
 ```python
@@ -3546,10 +3565,64 @@ print(details)
 
 <br />
 
-### Exercise - 15 <a name="E-15"></a>
+### **Exercise - 15** <a name="E-15"></a>
 
 1. Solution code
 ```python
+with open("about.txt", 'r') as fp:
+    x = len(fp.readlines())
+    print('Total lines:', x) 
+```
+
+2. Solution code
+```python
+lines = ['Steve Jobs is a popular name in the world.', 
+        'He was the co-founder and chairman of Apple Inc.', 
+        'He is also referred to as an industrial designer,investor, and media tycoon.', 
+        'His full name was Steven Paul Jobs.',
+        'He was born on 24th February in the year 1955.']
+	
+with open('readme.txt', 'w') as f:
+    f.writelines('\n'.join(lines))
+```
+
+3. Solution code
+```python
+appending_lines = ['Steve Paul Jobs is regarded as a successful American businessman.',
+            'He had attained success in different fields.',
+            'He had a great contribution to the development of computers and mobiles.',
+            'He is stated as the initiator of the personal computer revolution.',
+            'He had served as the CEO of Apple Inc from 1997 to 2011.']
+	    
+with open('readme.txt', 'a') as f:
+    f.writelines('\n'.join(lines))
+```
+
+<br />
+
+### **Exercise - 16** <a name="E-16"></a>
+
+1. Solution code
+```python
+try:
+    number1 = float(input("Enter first number "))
+    number2 = float(input("Enter second number "))
+    final = number1 * number1
+    print(final)
+except:
+    print("Error: Provide two numbers")
+```
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
 
 
 
+#                                                              ** SAI RAM **                                                      
