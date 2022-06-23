@@ -1,1 +1,0 @@
-print('OM SRI SAI RAM')
