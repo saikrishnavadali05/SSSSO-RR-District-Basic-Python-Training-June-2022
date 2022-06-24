@@ -1,0 +1,7 @@
+a=int(input("enter number1:"))
+b=int(input("enter number2:"))
+print("maximum :",max(a,b))
+print("minimum :",min(a,b))
+print("average :",(a+b)/2)
+print("addition :",(a+b))
+print("multipication :",(a*b))
