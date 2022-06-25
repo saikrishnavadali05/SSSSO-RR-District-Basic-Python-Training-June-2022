@@ -2024,6 +2024,24 @@ Hence the output count should return 3.
 
  - Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
    So, the `for` statement `for i in range(1, 10))` is equivalent to:
+   
+This is a range object. If you want a list with numbers 1 to 1000 with 2 as steps in it you can do like this:
+
+```list(range(1, 1000, 2))```
+If you don't want to change the values in the list, using tuple is a better option:
+
+```tuple(range(1, 1000, 2))```
+Range object is different from a list. It doesn't actually contain numbers from 1 to 1000. When you use it in a for loop it generates numbers as it loops through.
+
+For example if you create a range from one to then thousand its not gonna take a lot of memory; but when you convert it to a list, that's when all the actual numbers are gonna be stored in the memory.
+
+In Python 2, range would return a list, but in Python 3 range is an immutable sequence of type range. As stated in python documents:
+
+The advantage of the range type over a regular list or tuple is that a range object will always take the same (small) amount of memory, no matter the size of the range it represents (as it only stores the start, stop and step values, calculating individual items and subranges as needed).
+
+But this doesn't mean you can't use indexing for a range object. Since they are immutable sequences, you can apply indexing on them the same way as a list. The return value will be a range object as well (unless its not sliced and it's only selecting one single element, then it would return that number as int).
+
+```range()``` function only works with the integers i.e. whole numbers. All arguments must be integers. Users can not pass a string or float number or any other type in a start, stop and step argument of a ```range()```. All three arguments can be positive or negative.
 
 ```python
 for i in [1,2,3,4,5,6,7,8,9]
