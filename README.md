@@ -2041,6 +2041,8 @@ The advantage of the range type over a regular list or tuple is that a range obj
 
 But this doesn't mean you can't use indexing for a range object. Since they are immutable sequences, you can apply indexing on them the same way as a list. The return value will be a range object as well (unless its not sliced and it's only selecting one single element, then it would return that number as int).
 
+```range()``` function only works with the integers i.e. whole numbers. All arguments must be integers. Users can not pass a string or float number or any other type in a start, stop and step argument of a ```range()```. All three arguments can be positive or negative.
+
 ```python
 for i in [1,2,3,4,5,6,7,8,9]
 ```
