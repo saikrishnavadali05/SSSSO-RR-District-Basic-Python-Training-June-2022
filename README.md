@@ -3657,4 +3657,7 @@ def outer():
 outer()
 ```
 
+5. [Closures reference - Amulya's Academy](https://www.youtube.com/watch?v=tvWRhMkUcoU)
+6. 
+
 #                                                              ** SAI RAM **                                                      
