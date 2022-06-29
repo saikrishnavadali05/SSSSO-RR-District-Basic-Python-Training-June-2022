@@ -3642,5 +3642,19 @@ except:
 <br />
 
 
+> Some of the important topics : 
+1. Nested Functions
+2. LEGB Rule
+3. Closures
+4. What is the Enclosed Function and What is the nested Function in the following ?
+
+```python
+def outer():
+	x = 3
+	def inner():
+		print(x)
+	inner()
+outer()
+```
 
 #                                                              ** SAI RAM **                                                      
