@@ -3658,6 +3658,6 @@ outer()
 ```
 
 5. [Closures reference - Amulya's Academy](https://www.youtube.com/watch?v=tvWRhMkUcoU)
-6. 
+6. [Closures reference - Corey Schafer Academy](https://www.youtube.com/watch?v=swU3c34d2NQ)
 
 #                                                              ** SAI RAM **                                                      
