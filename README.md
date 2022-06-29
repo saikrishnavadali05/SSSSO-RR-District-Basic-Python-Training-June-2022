@@ -3660,5 +3660,6 @@ outer()
 5. [Closures reference - Amulya's Academy](https://www.youtube.com/watch?v=tvWRhMkUcoU)
 6. [Closures reference - Corey Schafer Academy](https://www.youtube.com/watch?v=swU3c34d2NQ)
 7. [Scoping in Python - LEGB Rule - Corey Schafer](https://www.youtube.com/watch?v=QVdf0LgmICw)
+8. ``global`` and `nonlocal` keywords
 
 #                                                              ** SAI RAM **                                                      
