@@ -122,6 +122,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 21. [Exception Handling](#21)
     - [Exercise-16](#21.1)
 22. [Built in tools](#22)
+23. [List Comprehensions](#23)
 
 ## Answers <a name="answers"></a>
 
@@ -3172,7 +3173,56 @@ example user gives are happy life - utput is "Error: Provide two numbers"
 [go to List of Topics](#top)
 
 <br />
-	
+
+### **List Comprehension** <a name="23"></a> 
+
+1. List comprehensions are a modern approach to construct **new lists**.
+2. Syntax of list comprehension
+> list_syntax = [expression for item in iterable if condition == True]
+3. Note: An if condition may or may not be present in list comprehension. Multiple fors can be found in a list comprehension (nested list comprehensions).
+4. Example - 1 (Iterating through a string Using List Comprehension)
+
+```python
+# using loop
+
+separate_to_letters = []
+
+for letter in 'Multiple Wishes':
+    separate_to_letters.append(letter)
+
+print(separate_to_letters)
+```
+```console
+#output
+['M', 'u', 'l', 't', 'i', 'p', 'l', 'e', ' ', 'W', 'i', 's', 'h', 'e', 's']
+```
+
+
+```python
+#using list comprehension
+
+separate_to_letters = [ letter for letter in 'Multiple Wishes' ]
+print(separate_to_letters)
+```
+```console
+#output
+
+['M', 'u', 'l', 't', 'i', 'p', 'l', 'e', ' ', 'W', 'i', 's', 'h', 'e', 's']
+```
+
+5.  Example - 2 (Conditionals in List Comprehension)
+```python
+number_list = [ x for x in range(10) if x % 2 == 0]
+print(number_list)
+```
+```console
+#output
+
+[0, 2, 4, 6, 8]
+```
+
+<br />
+
 ## **Answers**
 
 ### **Exercise - 1** <a name="E-1"></a>
@@ -3640,6 +3690,7 @@ except:
 [go to List of Topics](#top)
 
 <br />
+
 
 
 > Some of the important topics : 
