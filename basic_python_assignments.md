@@ -73,10 +73,10 @@ numbers.
 17) Write a script to read first n lines of a file. Accept filename and n as input from the user. Similar to Unix head command. (understand how unix `head` command works by searching on google or youtube).
 18) Write a script to read last n lines of a file. Accept filename and n as input from the user. Similar to Unix tail command. (understand how unix `tail` command works by searching on google or youtube).
 19) Write a program to count the number of words in an input file that contains 2 Huge paragraphs. (Take random text from websites containing multiple paragraphs and store that text in a text file). Perform Exception Handling for the code to work even if the input file doesn't exist.
-20) Write a script that accepts a comma separated list of words and prints a hypen separated list of words in sorted ordered :
+20) Write a script that accepts a comma separated list of characters (and words) and prints an underscore `_` separated list of characters (and words) in the sorted order as shown below :
 > Input: b,c,a,d,a,e,b,f
 > Output: a_a_b_b_c_d_e_f.
-> Next apply this logic to words. Input : om sri sai ram. Output : om_sri_sai_ram.
+> Next apply this logic to words. Input : om sri sai ram. Output : om_ram_sai_sri
 
 
 > Top 10 contributors will be rewarded.
