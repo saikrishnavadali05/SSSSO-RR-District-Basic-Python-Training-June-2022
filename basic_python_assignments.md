@@ -54,7 +54,7 @@ Never
 ### Assignments (SET-2)
 
 1) Write a program to print the add, subtract, divide, multiply,  of the digits using functions. Add, subtract, divide, multiply functions should be created. For example, if the input is 235, the result should be 10. Next, Load the input number 235 from a text file `input.txt`. Next, Save the program output into a text file `output.txt`. 
-2) Given a Full name stored in a input file `input_name.txt` which contains first name, middle name and last name. All the first, middle and last name are seperated by spaces. Print the output in the following order: Last Name, First Name, middle name. Next, Save the last name in `last_name.txt` file. Save the first name in `first_name.txt. Save the middle name in `middle_name.txt` file.
+2) Given a Full name stored in a input file `input_name.txt` which contains first name, middle name and last name. All the first, middle and last name are seperated by spaces. Print the output in the following order: Last Name, First Name, middle name. Next, Save the last name in `last_name.txt` file. Save the first name in `first_name.txt`. Save the middle name in `middle_name.txt` file.
 3) Write a program that accepts a positive integer `n`. Next, write a function to find factorial of the number. and next, write another function to compute the value of `n+nn+nnn`. If n is 5, first output should be 5! = 120 and the next output should be 5+55+555 = 615.
 4) Write a program to load, open and save an image. (hint : use opencv-python or PIL modules. Research about them on google and youtube)
 5) Given a list of numbers write a program to calculate the sum of odd and even numbers and print the same. Accept from the user the count of numbers and the actual 
@@ -67,15 +67,16 @@ numbers.
 11) What is a json file? Write a script to load and print a json file. (hint : use `json` library)
 12) Write a script to get the maximum and minimum value in a csv column containing 10 numbers. (hint : use `pandas` or `csv` libraries).
 13) Write a function that accepts a sentence from a paragraph stored in a text file `input.txt` and calculates the number of letters and digits within that sentence string.
-14) Write a function add which takes variable parameters and it returns the sum of all arguments which are integers.
-15) Write a function mathOp() such that it can accept two variables and calculate the  addition, multiplication and subtraction of it. The result must be returned a single return call.
-16) Create a function showStudent() which has student id, student name and marks as input. It should display all the data. If marks is missing it should display 75.
-17) Write a script to read first n lines of a file. Accept filename and n as input from the user. Similar to Unix head command.
-18) Write a script to read last n lines of a file. Accept filename and n as input from the user. Similar to Unix tail command.
-19) Write a program to count the number of words in an input file. Accept filename as input from the user.
+14) Write a function `add` which takes variable parameters using `*args and **kwargs`. and it returns the sum of all arguments which are integers (hint : research about `*args and **kwargs` in python on google).
+15) Write a function `calculate()` such that it can accept two variables and calculate the  addition, multiplication of them. The result must be returned a single return call. The two variables are lists. (Do arithmetic operations on lists).
+16) Create a function `display_student_data()` which takes student id, student name and marks as input. It should display all the data. If marks is missing it should display 75.
+17) Write a script to read first n lines of a file. Accept filename and n as input from the user. Similar to Unix head command. (understand how unix `head` command works by searching on google or youtube).
+18) Write a script to read last n lines of a file. Accept filename and n as input from the user. Similar to Unix tail command. (understand how unix `tail` command works by searching on google or youtube).
+19) Write a program to count the number of words in an input file that contains 2 Huge paragraphs. (Take random text from websites containing multiple paragraphs and store that text in a text file). Perform Exception Handling for the code to work even if the input file doesn't exist.
 20) Write a script that accepts a comma separated list of words and prints a hypen separated list of words in sorted ordered :
 > Input: b,c,a,d,a,e,b,f
-> Output: a_a_b_b_c_d_e_f
+> Output: a_a_b_b_c_d_e_f.
+> Next apply this logic to words. Input : om sri sai ram. Output : om_sri_sai_ram.
 
 
 > Top 10 contributors will be rewarded.
