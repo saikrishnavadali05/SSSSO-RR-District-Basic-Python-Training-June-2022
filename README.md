@@ -2924,7 +2924,7 @@ print(num)
 1. Packages are a method of organising Python's module namespace through the use of "dotted module names."
 2. For instance, the module name C.D denotes a submodule named 'D' within a package named 'C.'
 3. Just like using modules frees writers of various modules from having to worry about each other's global variable names, using dotted module names frees authors of multimodule packages from name collisions.
-4. The __init .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
+4. The __init__ .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
 ```python
 --+ PackageDemo
  |-- mod1.py
@@ -2932,10 +2932,10 @@ print(num)
  |-- mod2.py
  |-- __init__.py
 ```
-5. The presence of the __init .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
+5. The presence of the __init__ .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init__ .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
 6. When using from package import item, the item can be a package submodule (or subpackage) or any other name declared in the package, such as a function, class, or variable. If the item is not declared in the package, the import statement assumes it is a module and attempts to load it. If it cannot find it, an ImportError exception is thrown.
 7. If a package's __init .py' code includes a list called __all__, it is assumed to be a list of module names that should be imported when a from package import * is found. When a new version of the package is released, it is the responsibility of the package author to keep this list up to date. If package authors do not see a purpose for importing * from their package, they may choose not to support it.
-8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init .py') and then imports whatever names are declared in the package. Any names specified by '__init .py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
+8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init__.py') and then imports whatever names are declared in the package. Any names specified by '__init__.py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
  
 9. file of mod1.py present in demo folder
  ```python
