@@ -122,6 +122,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 21. [Exception Handling](#21)
     - [Exercise-16](#21.1)
 22. [Built in tools](#22)
+23. [List Comprehensions](#23)
 
 ## Answers <a name="answers"></a>
 
@@ -2024,6 +2025,24 @@ Hence the output count should return 3.
 
  - Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
    So, the `for` statement `for i in range(1, 10))` is equivalent to:
+   
+This is a range object. If you want a list with numbers 1 to 1000 with 2 as steps in it you can do like this:
+
+```list(range(1, 1000, 2))```
+If you don't want to change the values in the list, using tuple is a better option:
+
+```tuple(range(1, 1000, 2))```
+Range object is different from a list. It doesn't actually contain numbers from 1 to 1000. When you use it in a for loop it generates numbers as it loops through.
+
+For example if you create a range from one to then thousand its not gonna take a lot of memory; but when you convert it to a list, that's when all the actual numbers are gonna be stored in the memory.
+
+In Python 2, range would return a list, but in Python 3 range is an immutable sequence of type range. As stated in python documents:
+
+The advantage of the range type over a regular list or tuple is that a range object will always take the same (small) amount of memory, no matter the size of the range it represents (as it only stores the start, stop and step values, calculating individual items and subranges as needed).
+
+But this doesn't mean you can't use indexing for a range object. Since they are immutable sequences, you can apply indexing on them the same way as a list. The return value will be a range object as well (unless its not sliced and it's only selecting one single element, then it would return that number as int).
+
+```range()``` function only works with the integers i.e. whole numbers. All arguments must be integers. Users can not pass a string or float number or any other type in a start, stop and step argument of a ```range()```. All three arguments can be positive or negative.
 
 ```python
 for i in [1,2,3,4,5,6,7,8,9]
@@ -2905,7 +2924,7 @@ print(num)
 1. Packages are a method of organising Python's module namespace through the use of "dotted module names."
 2. For instance, the module name C.D denotes a submodule named 'D' within a package named 'C.'
 3. Just like using modules frees writers of various modules from having to worry about each other's global variable names, using dotted module names frees authors of multimodule packages from name collisions.
-4. The __init .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
+4. The __init__ .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
 ```python
 --+ PackageDemo
  |-- mod1.py
@@ -2913,10 +2932,10 @@ print(num)
  |-- mod2.py
  |-- __init__.py
 ```
-5. The presence of the __init .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
+5. The presence of the __init__ .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init__ .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
 6. When using from package import item, the item can be a package submodule (or subpackage) or any other name declared in the package, such as a function, class, or variable. If the item is not declared in the package, the import statement assumes it is a module and attempts to load it. If it cannot find it, an ImportError exception is thrown.
 7. If a package's __init .py' code includes a list called __all__, it is assumed to be a list of module names that should be imported when a from package import * is found. When a new version of the package is released, it is the responsibility of the package author to keep this list up to date. If package authors do not see a purpose for importing * from their package, they may choose not to support it.
-8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init .py') and then imports whatever names are declared in the package. Any names specified by '__init .py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
+8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init__.py') and then imports whatever names are declared in the package. Any names specified by '__init__.py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
  
 9. file of mod1.py present in demo folder
  ```python
@@ -3154,7 +3173,56 @@ example user gives are happy life - utput is "Error: Provide two numbers"
 [go to List of Topics](#top)
 
 <br />
-	
+
+### **List Comprehension** <a name="23"></a> 
+
+1. List comprehensions are a modern approach to construct **new lists**.
+2. Syntax of list comprehension
+> list_syntax = [expression for item in iterable if condition == True]
+3. Note: An if condition may or may not be present in list comprehension. Multiple fors can be found in a list comprehension (nested list comprehensions).
+4. Example - 1 (Iterating through a string Using List Comprehension)
+
+```python
+# using loop
+
+separate_to_letters = []
+
+for letter in 'Multiple Wishes':
+    separate_to_letters.append(letter)
+
+print(separate_to_letters)
+```
+```console
+#output
+['M', 'u', 'l', 't', 'i', 'p', 'l', 'e', ' ', 'W', 'i', 's', 'h', 'e', 's']
+```
+
+
+```python
+#using list comprehension
+
+separate_to_letters = [ letter for letter in 'Multiple Wishes' ]
+print(separate_to_letters)
+```
+```console
+#output
+
+['M', 'u', 'l', 't', 'i', 'p', 'l', 'e', ' ', 'W', 'i', 's', 'h', 'e', 's']
+```
+
+5.  Example - 2 (Conditionals in List Comprehension)
+```python
+number_list = [ x for x in range(10) if x % 2 == 0]
+print(number_list)
+```
+```console
+#output
+
+[0, 2, 4, 6, 8]
+```
+
+<br />
+
 ## **Answers**
 
 ### **Exercise - 1** <a name="E-1"></a>
@@ -3624,5 +3692,26 @@ except:
 <br />
 
 
+
+> Some of the important topics : 
+1. Nested Functions
+2. LEGB Rule
+3. Closures
+4. What is the Enclosed Function and What is the nested Function in the following ?
+
+```python
+def outer():
+	x = 3
+	def inner():
+		print(x)
+	inner()
+outer()
+```
+
+5. [Closures reference - Amulya's Academy](https://www.youtube.com/watch?v=tvWRhMkUcoU)
+6. [Closures reference - Corey Schafer Academy](https://www.youtube.com/watch?v=swU3c34d2NQ)
+7. [Scoping in Python - LEGB Rule - Corey Schafer](https://www.youtube.com/watch?v=QVdf0LgmICw)
+8. ``global`` and `nonlocal` keywords
+9. [Namespaces in python](https://realpython.com/python-namespaces-scope/#:~:text=the%20next%20level.-,Namespaces%20in%20Python,values%20are%20the%20objects%20themselves.)
 
 #                                                              ** SAI RAM **                                                      
