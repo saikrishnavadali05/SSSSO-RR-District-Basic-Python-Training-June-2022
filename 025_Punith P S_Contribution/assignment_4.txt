@@ -1,0 +1,5 @@
+4.Write a program to print all the alternative elements of a tuple. The elements to the tuple have to be given to the program using input() function.
+ans:
+
+	tuple_input = tuple(input("enter the tuple"))
+	print(tuple_input[0::2])
