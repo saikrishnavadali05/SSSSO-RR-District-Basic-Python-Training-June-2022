@@ -25,4 +25,12 @@ print("Factorial of Given Number is :", f)
 #Factorial of Given Number is : 120
 
 #Write a script to print the count of number of digits within the given input number using while loop
+n=int(input("Enter Number : "))
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+print("The Number of digits in the given number are :", count)
+#Enter Number : 25896
+#The Number of digits in the given number are : 5
 
