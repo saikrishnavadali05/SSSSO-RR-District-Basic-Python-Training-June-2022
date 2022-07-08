@@ -34,8 +34,7 @@ Lines=["\n1. Steve Paul Jobs is regarded as a successful American businessman.",
 "\n3. He had a great contribution to the development of computers and mobiles.",
 "\n4. He is stated as the initiator of the personal computer revolution.",
 "\n5. He had served as the CEO of Apple Inc from 1997 to 2011."]
-file.writelines(Lines)
-file.close()
+
 file=open("demo.txt", "r")
 print(file.read())
 #These lines were appeded in a demo.txt file
