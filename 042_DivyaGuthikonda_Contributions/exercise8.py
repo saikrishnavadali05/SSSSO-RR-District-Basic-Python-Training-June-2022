@@ -24,7 +24,6 @@ print("Factorial of Given Number is :", f)
 #Enter Number :5
 #Factorial of Given Number is : 120
 
-# of digits within the given input number using while loop
 n=int(input("Enter Number : "))
 count=0
 while(n>0):
