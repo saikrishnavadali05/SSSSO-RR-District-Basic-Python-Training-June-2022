@@ -26,6 +26,7 @@ print(file.read())
  6. This line is uploaded to the existing file
 '''
 
+
 #Write a script that append lines to the file that are created in problem 3 and they are
 file=open("demo.txt", "a")
 Lines=["\n1. Steve Paul Jobs is regarded as a successful American businessman.",
@@ -34,11 +35,12 @@ Lines=["\n1. Steve Paul Jobs is regarded as a successful American businessman.",
 "\n4. He is stated as the initiator of the personal computer revolution.",
 "\n5. He had served as the CEO of Apple Inc from 1997 to 2011."]
 file.writelines(Lines)
-
 file.close()
 file=open("demo.txt", "r")
 print(file.read())
-
+#These lines were appeded in a demo.txt file
+#multiple lines can't be add 
+#to add multiple lines the content must be write in a list
 '''
 1. Steve Paul Jobs is regarded as a successful American businessman.
 2. He had attained success in different fields.
