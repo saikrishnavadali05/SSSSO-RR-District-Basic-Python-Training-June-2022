@@ -1,6 +1,6 @@
 # SSSSO-RR-District-Basic-Python-Training-June-2022
 
-Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District in the month of June 2022.
+Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District in June 2022.
 
 ## Timings
 
@@ -12,7 +12,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 ## Rewards
 > Top 10 Contributors to this Repository will get a Merit Certificate and Special Rewards from the SSSSO RR District Python Training Organizers
 
-## How to contribute to this github repo?
+## How to contribute to this GitHub repo?
 
 ![github steps being shown in this image](https://github.com/saikrishnavadali05/SSSSO-RR-District-Basic-Python-Training-June-2022/blob/master/github_steps.jpg)
 
@@ -156,7 +156,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 1. **Python** is a **general-purpose high-level** programming language. Being a general-purpose language, it can be used to build almost any type of application with the right **tools** or **libraries**.
 2. Its standard library is large and comprehensive. This makes it easy for **developers** to learn python.
 3. Additionally, python supports **objects**, **modules**, **threads**, **exception-handling**, and **automatic memory management** which will help in modeling real-world problems and building applications to solve those problems.
-4. Python is widely used among the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, **Data Mining**, **Data Visualization**, **Data Science** and various other trending domains.
+4. Python is widely used in the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, **Data Mining**, **Data Visualization**, **Data Science**, and various other trending domains.
 
 <br />
 
@@ -164,12 +164,12 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 **Python** has grown to become an integral part of most of the recent web-based, desktop-based, graphic design, scientific, and computational applications. **The following are just a few applications of the enormous python language**. The List goes on and goes, as we keep exploring more and more fields, where python is used extensively.
 
-- GUI based desktop applications
+- GUI-based desktop applications
 
-  > Tkinter, PyQT, Kivy, WxPython, PyGUI these are most widely used and best Python graphical user interface frameworks available.
+  > Tkinter, PyQT, Kivy, WxPython, and PyGUI are the most widely used and best Python graphical user interface frameworks available.
 
 - Graphic design, image processing applications, Games.
-  > OpenCV, Pillow, SimpleITK are some libraries of image processing .
+  > OpenCV, Pillow, and SimpleITK are some libraries of image processing.
 - Web frameworks and applications.
 
   > Django, Flask, TurboGears, web2py and some other Python web framework are used for Python Web development.
@@ -205,7 +205,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 ### **How does Python Programming Language support a Complex Problem Decomposition?** <a name="1.4"></a>
 
-1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages. Python is often used as a **scripting language**.
+1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl, etc. Like other dynamic languages. Python is often used as a **scripting language**.
 2. If you have to work with several C libraries, and the usual is order of C is
 
    > write code -> compile it -> test it -> re-write -> re-compile the code -> re-test.
