@@ -6,7 +6,7 @@
 file=open('input.txt','r')
 data=file.read()
 file.close()#here input is taken from input.txt file
-h=open('input.txt','r')
+h=open('input.txt','r')#142637
 content=h.readlines()
 def getSum(data):
     sum=0
@@ -36,3 +36,10 @@ print("Multiplication of digits of given number: ",getMultiply(data),file=f)
 print("Division of digits of given number: ",getdiv(data),file=f)
 f.close()
 #Here the output is stored in output.txt file
+'''output
+The data that is storing in this text file is from assignment 2.1 :
+addition of digits of given number:  23
+substraction of digits of given number:  -23
+Multiplication of digits of given number:  1008
+Division of digits of given number:  0.000992063492063492
+'''
