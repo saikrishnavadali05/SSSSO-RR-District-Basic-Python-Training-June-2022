@@ -1,0 +1,5 @@
+The data that is storing in this text file is from assignment 2.1 :
+addition of digits of given number:  23
+substraction of digits of given number:  -23
+Multiplication of digits of given number:  1008
+Division of digits of given number:  0.000992063492063492
