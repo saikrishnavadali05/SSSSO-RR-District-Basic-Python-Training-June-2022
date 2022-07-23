@@ -1,0 +1,3 @@
+Hi all good morning how are you all,
+Today I'm discussing about the how to count the letters and digits from a text file 
+For example the apple cost is 120 Rupees per Kg.

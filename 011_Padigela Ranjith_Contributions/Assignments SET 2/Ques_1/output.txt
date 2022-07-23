@@ -1,0 +1,4 @@
+The addition of given numbers of input text is:---10
+The subtraction of given nubmers of input text is:----10
+The Division of given numbers of input text is:---0.03333333333333333
+The Multiplication of given numbers of input text is:---30
