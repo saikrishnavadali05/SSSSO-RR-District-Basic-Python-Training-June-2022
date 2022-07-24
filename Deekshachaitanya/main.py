@@ -19,5 +19,5 @@ sumof4 = addEven(num1, num2, num3, num4)
 productof4 = multiplyEven(num1, num2, num3, num4)
 
 outputfile = open("output.txt", "w")
-lst = ["sum:", str(sumof4), "\nproduct:", str(productof4)]
+lst = ["sum of even numbers:", str(sumof4), "\nproduct of even numbers:", str(productof4)]
 outputfile.writelines(lst)
