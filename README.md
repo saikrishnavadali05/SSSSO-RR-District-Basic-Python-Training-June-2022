@@ -1,6 +1,6 @@
 # SSSSO-RR-District-Basic-Python-Training-June-2022
 
-Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District in the month of June 2022.
+Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District in June 2022.
 
 ## Timings
 
@@ -12,7 +12,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 ## Rewards
 > Top 10 Contributors to this Repository will get a Merit Certificate and Special Rewards from the SSSSO RR District Python Training Organizers
 
-## How to contribute to this github repo?
+## How to contribute to this GitHub repo?
 
 ![github steps being shown in this image](https://github.com/saikrishnavadali05/SSSSO-RR-District-Basic-Python-Training-June-2022/blob/master/github_steps.jpg)
 
@@ -122,6 +122,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 21. [Exception Handling](#21)
     - [Exercise-16](#21.1)
 22. [Built in tools](#22)
+23. [List Comprehensions](#23)
 
 ## Answers <a name="answers"></a>
 
@@ -155,7 +156,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 1. **Python** is a **general-purpose high-level** programming language. Being a general-purpose language, it can be used to build almost any type of application with the right **tools** or **libraries**.
 2. Its standard library is large and comprehensive. This makes it easy for **developers** to learn python.
 3. Additionally, python supports **objects**, **modules**, **threads**, **exception-handling**, and **automatic memory management** which will help in modeling real-world problems and building applications to solve those problems.
-4. Python is widely used among the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, **Data Mining**, **Data Visualization**, **Data Science** and various other trending domains.
+4. Python is widely used in the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, **Data Mining**, **Data Visualization**, **Data Science**, and various other trending domains.
 
 <br />
 
@@ -163,12 +164,12 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 **Python** has grown to become an integral part of most of the recent web-based, desktop-based, graphic design, scientific, and computational applications. **The following are just a few applications of the enormous python language**. The List goes on and goes, as we keep exploring more and more fields, where python is used extensively.
 
-- GUI based desktop applications
+- GUI-based desktop applications
 
-  > Tkinter, PyQT, Kivy, WxPython, PyGUI these are most widely used and best Python graphical user interface frameworks available.
+  > Tkinter, PyQT, Kivy, WxPython, and PyGUI are the most widely used and best Python graphical user interface frameworks available.
 
 - Graphic design, image processing applications, Games.
-  > OpenCV, Pillow, SimpleITK are some libraries of image processing .
+  > OpenCV, Pillow, and SimpleITK are some libraries of image processing.
 - Web frameworks and applications.
 
   > Django, Flask, TurboGears, web2py and some other Python web framework are used for Python Web development.
@@ -204,7 +205,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 ### **How does Python Programming Language support a Complex Problem Decomposition?** <a name="1.4"></a>
 
-1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages. Python is often used as a **scripting language**.
+1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl, etc. Like other dynamic languages. Python is often used as a **scripting language**.
 2. If you have to work with several C libraries, and the usual is order of C is
 
    > write code -> compile it -> test it -> re-write -> re-compile the code -> re-test.
@@ -2923,7 +2924,7 @@ print(num)
 1. Packages are a method of organising Python's module namespace through the use of "dotted module names."
 2. For instance, the module name C.D denotes a submodule named 'D' within a package named 'C.'
 3. Just like using modules frees writers of various modules from having to worry about each other's global variable names, using dotted module names frees authors of multimodule packages from name collisions.
-4. The __init .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
+4. The __init__ .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
 ```python
 --+ PackageDemo
  |-- mod1.py
@@ -2931,10 +2932,10 @@ print(num)
  |-- mod2.py
  |-- __init__.py
 ```
-5. The presence of the __init .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
+5. The presence of the __init__ .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init__ .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
 6. When using from package import item, the item can be a package submodule (or subpackage) or any other name declared in the package, such as a function, class, or variable. If the item is not declared in the package, the import statement assumes it is a module and attempts to load it. If it cannot find it, an ImportError exception is thrown.
 7. If a package's __init .py' code includes a list called __all__, it is assumed to be a list of module names that should be imported when a from package import * is found. When a new version of the package is released, it is the responsibility of the package author to keep this list up to date. If package authors do not see a purpose for importing * from their package, they may choose not to support it.
-8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init .py') and then imports whatever names are declared in the package. Any names specified by '__init .py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
+8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init__.py') and then imports whatever names are declared in the package. Any names specified by '__init__.py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
  
 9. file of mod1.py present in demo folder
  ```python
@@ -3172,7 +3173,56 @@ example user gives are happy life - utput is "Error: Provide two numbers"
 [go to List of Topics](#top)
 
 <br />
-	
+
+### **List Comprehension** <a name="23"></a> 
+
+1. List comprehensions are a modern approach to construct **new lists**.
+2. Syntax of list comprehension
+> list_syntax = [expression for item in iterable if condition == True]
+3. Note: An if condition may or may not be present in list comprehension. Multiple fors can be found in a list comprehension (nested list comprehensions).
+4. Example - 1 (Iterating through a string Using List Comprehension)
+
+```python
+# using loop
+
+separate_to_letters = []
+
+for letter in 'Multiple Wishes':
+    separate_to_letters.append(letter)
+
+print(separate_to_letters)
+```
+```console
+#output
+['M', 'u', 'l', 't', 'i', 'p', 'l', 'e', ' ', 'W', 'i', 's', 'h', 'e', 's']
+```
+
+
+```python
+#using list comprehension
+
+separate_to_letters = [ letter for letter in 'Multiple Wishes' ]
+print(separate_to_letters)
+```
+```console
+#output
+
+['M', 'u', 'l', 't', 'i', 'p', 'l', 'e', ' ', 'W', 'i', 's', 'h', 'e', 's']
+```
+
+5.  Example - 2 (Conditionals in List Comprehension)
+```python
+number_list = [ x for x in range(10) if x % 2 == 0]
+print(number_list)
+```
+```console
+#output
+
+[0, 2, 4, 6, 8]
+```
+
+<br />
+
 ## **Answers**
 
 ### **Exercise - 1** <a name="E-1"></a>
@@ -3642,5 +3692,26 @@ except:
 <br />
 
 
+
+> Some of the important topics : 
+1. Nested Functions
+2. LEGB Rule
+3. Closures
+4. What is the Enclosed Function and What is the nested Function in the following ?
+
+```python
+def outer():
+	x = 3
+	def inner():
+		print(x)
+	inner()
+outer()
+```
+
+5. [Closures reference - Amulya's Academy](https://www.youtube.com/watch?v=tvWRhMkUcoU)
+6. [Closures reference - Corey Schafer Academy](https://www.youtube.com/watch?v=swU3c34d2NQ)
+7. [Scoping in Python - LEGB Rule - Corey Schafer](https://www.youtube.com/watch?v=QVdf0LgmICw)
+8. ``global`` and `nonlocal` keywords
+9. [Namespaces in python](https://realpython.com/python-namespaces-scope/#:~:text=the%20next%20level.-,Namespaces%20in%20Python,values%20are%20the%20objects%20themselves.)
 
 #                                                              ** SAI RAM **                                                      
