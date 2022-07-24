@@ -16,3 +16,8 @@ print("addition of given numbers: ",add(a,b,c,d),file=f)
 print("multiplication of given numbers: ",multiply(a,b,c,d),file=f)
 f.close()
 
+#output
+#Give first number: 3
+#Give second number: 4
+#Give third number: 5
+#Give fourth number: 6
