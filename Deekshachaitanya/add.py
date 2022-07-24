@@ -1,4 +1,4 @@
-def AddEvenNumbers(num1, num2, num3, num4):
+def addEven(num1, num2, num3, num4):
     if(num1 % 2) != 0:
         num1 = 0
     if(num2 % 2) != 0:
