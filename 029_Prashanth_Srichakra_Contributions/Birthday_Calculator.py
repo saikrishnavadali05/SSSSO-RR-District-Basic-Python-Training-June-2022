@@ -22,7 +22,10 @@ user_date = input("Enter date in DDMMYYYY format please: ")
 if len(user_date)!=8:
     print("Enter a valid date please!")
 else:
-    user_bday = user_date - today
-    print("Countdown for birthday is", user_bday.days,"days!!!")
+    user_year = int(user_date[4:8])
+    user_mon = int(user_date[2:4])
+    user_day = int(user_date[0:2])
+    user_date = dt.date(user_year, user_mon, user_day)
 
-    
+    user_bday = user_date - date.today()
+    print("Countdown for birthday is", user_bday.days,"days!!!")
