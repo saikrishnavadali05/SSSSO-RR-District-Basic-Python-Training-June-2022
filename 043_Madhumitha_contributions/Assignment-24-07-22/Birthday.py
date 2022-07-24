@@ -1,5 +1,5 @@
 import datetime
-from sqlite3 import Date
+
 
 rules = {0: "Monday",
          1: "Tuesday",
