@@ -1,0 +1,7 @@
+
+from python_module_add import add_four_numbers
+print("addition:",add_four_numbers(10,20,30,40))
+
+
+# from python_module_multiple import multiple_four_numbers
+# print("multiplication:",multiple_four_numbers(3,4,5,6 ))
