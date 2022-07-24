@@ -1,6 +1,6 @@
 # SSSSO-RR-District-Basic-Python-Training-June-2022
 
-Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District in the month of June 2022.
+Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District in June 2022.
 
 ## Timings
 
@@ -12,7 +12,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 ## Rewards
 > Top 10 Contributors to this Repository will get a Merit Certificate and Special Rewards from the SSSSO RR District Python Training Organizers
 
-## How to contribute to this github repo?
+## How to contribute to this GitHub repo?
 
 ![github steps being shown in this image](https://github.com/saikrishnavadali05/SSSSO-RR-District-Basic-Python-Training-June-2022/blob/master/github_steps.jpg)
 
@@ -96,18 +96,19 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [While](#10.1)
     - [for](#10.2)
     - [Exercise - 8](#10.3)
-11. [Lists](#11)	
-12. [range function](#12)
-    - [Exercise - 9](#12.1)
-13. [Tuples](#13)
-    - [Exercise - 10](#13.1)
-14. [Sets](#14)
-    - [Exercise - 11](#14.1)
-15. [Dictionaries](#15)
-    - [OrderedDict module](#15.1)
-    - [Exercise - 12](#15.2)
-16. [Functions](#16)
-    - [Exercise - 13](#16.1)
+11. [range function](#11)
+    - [Exercise - 9](#11.1)
+12. [Functions](#12)
+    - [Exercise - 10](#12.1)
+13. [Lists](#13)
+    - [Exercise - 11](#13.1)	
+14. [Tuples](#14)
+    - [Exercise - 12](#14.1)
+15. [Sets](#15)
+    - [Exercise - 13](#15.1)
+16. [Dictionaries](#16)
+    - [OrderedDict module](#16.1)
+    - [Exercise - 14](#16.2)
 17. [Modules](#17)
     - [Standard Modules](#17.1)
 18. [Namespaces](#18)
@@ -117,10 +118,11 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
     - [Write](#20.2)
     - [delete](#20.3)
     - [Important functions and points for file handling](#20.4)
-    - [Exercise - 14](#20.5)
+    - [Exercise - 15](#20.5)
 21. [Exception Handling](#21)
-    - [Exercise-15](#21.1)
+    - [Exercise-16](#21.1)
 22. [Built in tools](#22)
+23. [List Comprehensions](#23)
 
 ## Answers <a name="answers"></a>
 
@@ -130,30 +132,44 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 4. [Exercise - 4](#E-4)
 5. [Exercise - 5](#E-5)
 6. [Exercise - 6](#E-6)
+7. [Exercise - 7](#E-7)
+8. [Exercise - 8](#E-8)
+9. [Exercise - 9](#E-9)
+10. [Exercise - 10](#E-10)
+11. [Exercise - 11](#E-11)
+12. [Exercise - 12](#E-12)
+13. [Exercise - 13](#E-13)
+14. [Exercise - 14](#E-14)
+15. [Exercise - 15](#E-15)
+16. [Exercise - 16](#E-16)
 
-## **1. Let's begin the Python Show** <a name="1"></a>
+## **Let's begin the Python Show** <a name="1"></a>
 
 ### **History of Python** <a name="1.1"></a>
 
 **Python** was developed by **_Guido van Rossum_** and was released first on **February 20, 1991** (31 years ago). It is one of the most widely-used and loved programming languages. It is also a **free** and **open-source language** with very simple and clean syntax.
+
+<br />
 
 ### **What is Python?** <a name="1.2"></a>
 
 1. **Python** is a **general-purpose high-level** programming language. Being a general-purpose language, it can be used to build almost any type of application with the right **tools** or **libraries**.
 2. Its standard library is large and comprehensive. This makes it easy for **developers** to learn python.
 3. Additionally, python supports **objects**, **modules**, **threads**, **exception-handling**, and **automatic memory management** which will help in modeling real-world problems and building applications to solve those problems.
-4. Python is widely used among the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, **Data Mining**, **Data Visualization**, **Data Science** and various other trending domains.
+4. Python is widely used in the latest and most emerging fields such as **Machine Learning**, **Deep Learning**, **Artificial Intelligence**, **Web Development**, **Web Scraping**, **Data Mining**, **Data Visualization**, **Data Science**, and various other trending domains.
+
+<br />
 
 ### **Applications of Python?** <a name="1.3"></a>
 
 **Python** has grown to become an integral part of most of the recent web-based, desktop-based, graphic design, scientific, and computational applications. **The following are just a few applications of the enormous python language**. The List goes on and goes, as we keep exploring more and more fields, where python is used extensively.
 
-- GUI based desktop applications
+- GUI-based desktop applications
 
-  > Tkinter, PyQT, Kivy, WxPython, PyGUI these are most widely used and best Python graphical user interface frameworks available.
+  > Tkinter, PyQT, Kivy, WxPython, and PyGUI are the most widely used and best Python graphical user interface frameworks available.
 
 - Graphic design, image processing applications, Games.
-  > OpenCV, Pillow, SimpleITK are some libraries of image processing .
+  > OpenCV, Pillow, and SimpleITK are some libraries of image processing.
 - Web frameworks and applications.
 
   > Django, Flask, TurboGears, web2py and some other Python web framework are used for Python Web development.
@@ -189,7 +205,7 @@ Basic Python Training Organized by Sri Sathya Sai Seva Organization RR District 
 
 ### **How does Python Programming Language support a Complex Problem Decomposition?** <a name="1.4"></a>
 
-1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl etc. Like other dynamic languages. Python is often used as a **scripting language**.
+1. **Python** supports **multiple** programming paradigms and features a fully dynamic type system and automatic memory management, similar to Perl, Tcl, etc. Like other dynamic languages. Python is often used as a **scripting language**.
 2. If you have to work with several C libraries, and the usual is order of C is
 
    > write code -> compile it -> test it -> re-write -> re-compile the code -> re-test.
@@ -1700,16 +1716,6 @@ I'm not a "great" programmer!I'm just a  good programmer with great habits.
 If your ship doesn 't come in, \swim\ out to it?
 ```
 
-2. write a script to display the following shape using ```print()``` statements
-
-```console
-         *
-     * python *
-   * is  *  a    *
- * good  * programming * language *
-* to * learn * for * beginners *
-```
-
  <br />
 
 [go to Answers](#answers)
@@ -1798,13 +1804,12 @@ greater than zero
   
   1. Write a script to check whether the given year is a *leap year* or not. The input i.e., year, should be given during script execution itself. i.e, as a command line parameter.
   2. Write a script to check whether the given number is *odd or even* by requesting input from the user, using ```input()``` function.
-  3. Write a script that requests the user to give an input which is a random value in *inches* and the script shall convert the *inches* value to *feets and inches*
+  3. Write a script that requests the user to give an input and given Kilometers convert to Miles. if there are more digits after decimal round to two digits.
   
   ```console
   For Example,
-    If the input from the user is : 27 
-    The program shall consider the input to be 27 inches.
-    The output that the program shall provide is 2 feet 3 inches.
+    If the input from the user is : 4.8
+    The output that the program shall provide is 2.98 miles.
   ```
  
   
@@ -1985,15 +1990,8 @@ month 10: october
 
 ### **Exercise - 8** <a name="10.3"></a>
 
-1.  Write a script that takes a `list` and find the largest number and smallest number using `while` and `for` loops.
 
-```console
- 	input list = [7, 3, 9, -23, 0, -21, 2]
-	The output should show that the
-	largest number is 9 and the smallest number is -23
-```
-
-2.  Write a script for factorial and take input from the command line parameter. using `while` and `for` loops
+1.  Write a script for factorial and take input from the command line parameter. using `while` and `for` loops
 
 ```console
 For example, factorial of 4! is 4 * 3 * 2 * 1 = 24.
@@ -2001,7 +1999,7 @@ Input of your code should take n as input.
 Output of your code should be n!
 ```
 
-3.  Write a script to print the count of number of digits within the given input number using `while` and `for` loops. 
+2.  Write a script to print the count of number of digits within the given input number using `while` loop 
 
 ```console
 input from the user is 123.
@@ -2019,37 +2017,32 @@ Hence the output count should return 3.
 
 <br />
 
-## **Lists** <a name="11"></a>
 
-1. A ```list``` in Python is used to store the **sequence of various types of data**. 
-2. Python lists are **ordered** and **mutable** type its mean we can modify its element after it created. 
-3. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
-
-Basic examples
-
-```python
->>> numbers = [0, 5, 8, 11, 12]
->>> months = ["january", "March", "April"]
->>> student = ["suresh", 80, 6.2] #list also contain different data types
-```
-
-<br />
-
-[go to Answers](#answers)
-
-<br />
-
-[go to List of Topics](#top)
-
-<br />
-
-## **```range``` function:** <a name="12"></a>
+## **```range``` function:** <a name="11"></a>
 
 1. If you do need to iterate over a **sequence of numbers**, use the built-in function ```range()```. 
 2. It generates lists containing arithmetic progressions:
 
  - Python’s `range(1, 10)` function returns a list of consecutive integers, in this case the list ```[1,2,3,4,5,6,7,8,9]```.
    So, the `for` statement `for i in range(1, 10))` is equivalent to:
+   
+This is a range object. If you want a list with numbers 1 to 1000 with 2 as steps in it you can do like this:
+
+```list(range(1, 1000, 2))```
+If you don't want to change the values in the list, using tuple is a better option:
+
+```tuple(range(1, 1000, 2))```
+Range object is different from a list. It doesn't actually contain numbers from 1 to 1000. When you use it in a for loop it generates numbers as it loops through.
+
+For example if you create a range from one to then thousand its not gonna take a lot of memory; but when you convert it to a list, that's when all the actual numbers are gonna be stored in the memory.
+
+In Python 2, range would return a list, but in Python 3 range is an immutable sequence of type range. As stated in python documents:
+
+The advantage of the range type over a regular list or tuple is that a range object will always take the same (small) amount of memory, no matter the size of the range it represents (as it only stores the start, stop and step values, calculating individual items and subranges as needed).
+
+But this doesn't mean you can't use indexing for a range object. Since they are immutable sequences, you can apply indexing on them the same way as a list. The return value will be a range object as well (unless its not sliced and it's only selecting one single element, then it would return that number as int).
+
+```range()``` function only works with the integers i.e. whole numbers. All arguments must be integers. Users can not pass a string or float number or any other type in a start, stop and step argument of a ```range()```. All three arguments can be positive or negative.
 
 ```python
 for i in [1,2,3,4,5,6,7,8,9]
@@ -2142,7 +2135,7 @@ False
 <br />
    
  
-### **Exercise - 9** <a name="12.1"></a>
+### **Exercise - 9** <a name="11.1"></a>
   
  1. write output for the given questions
  ```console
@@ -2154,7 +2147,7 @@ False
  6. range(10, 30, 10)
  ```
 
-  <br />  
+ <br />  
   
   [go to Answers](#answers)
 
@@ -2164,7 +2157,132 @@ False
 
 <br />
 
-## **Tuples:** <a name="13"></a>
+
+### Python Functions <a name="12"></a>
+1. Functions are the most important aspect of an application. 
+2. A function can be defined as the organized block of **reusable code**, which can be called whenever required. 
+3. The keyword ```def``` introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+4. The Function helps to programmer to break the program into the smaller part. It **organizes** the code very effectively and **avoids** the repetition of the code. As the program grows, function makes the program more organized.
+5. There are mainly two types of functions.
+
+- User-define functions - The user-defined functions are those define by the **user to perform the specific task**.
+
+- Built-in functions - The built-in functions are those functions that are **pre-defined** in Python.
+
+6.Example of Function 1:
+```python
+def square(a):
+ return a * a
+
+print(square.__doc__)
+
+val = square(3)
+print(val)
+print(type(val))
+
+val = square
+print("val(2)",val(2))
+```
+```console
+Output:
+None
+9
+<class 'int'>
+val(2) 4
+```  
+ 
+7. Example of Functions 2: 
+ ```python
+def sumodd(n = 5):
+  val = 0
+  index = 1
+  while (index <= n):
+  # if even we continue with next iteration
+    if (index % 2 == 0):
+      index += 1
+      continue
+  # if odd we add it
+    val += index
+    index += 1
+  return val
+def funNotImplemented(): pass
+print("sumodd is", sumodd(3))
+print("sumodd is", sumodd())
+funNotImplemented()
+```
+```console
+Output:
+sumodd is 4
+sumodd is 9
+```  
+8.Example of Functions 3 with Keyword Argument:
+```python
+def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
+  print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
+funckeyword(10)
+funckeyword(arg1="value1")
+  
+funckeyword(10, arg2="Multiple")
+funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
+funckeyword(arg3="Hyderabad", arg1="value1")
+```
+```console
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= Multiple arg3= Wishes
+arg1= 10 arg2= MultipleWishes arg3= Wishes
+arg1= value1 arg2= Multiple arg3= Hyderabad
+```
+
+ <br />
+   
+ ## **Exercise-10** <a name="12.1"></a>
+  
+ 1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
+ ```python
+  example the string is Multiple - output is elpitluM
+ ```
+ 
+ 2.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
+ ```python
+  example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
+ ```
+ 
+ <br />
+
+## **Lists** <a name="13"></a>
+
+1. A ```list``` in Python is used to store the **sequence of various types of data**. 
+2. Python lists are **ordered** and **mutable** type its mean we can modify its element after it created. 
+3. The items in the list are separated with the (comma) ```,``` and enclosed with the square brackets ```[]```. Lists can contain items of different types.
+
+Basic examples
+
+```python
+>>> numbers = [0, 5, 8, 11, 12]
+>>> months = ["january", "March", "April"]
+>>> student = ["suresh", 80, 6.2] #list also contain different data types
+```
+
+<br />
+
+### **Exercise-11** <a name="13.1"></a>
+
+1. Given a list of numbers, write a Python program to find the sum of all the elements in the list.
+2. Write a Program in Python to Find the Smallest and the Largest List Elements on Inputs Provided by the User
+
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+## **Tuples:** <a name="14"></a>
 
 1. Tuples are like lists, but are **ordered** and **immutable** like strings, i.e. unchangeable (it is not possible to assign to the individual items of a tuple).
 2. They are enclosed by **parentheses** or nothing at all, rather than brackets.
@@ -2223,7 +2341,7 @@ output
  <br />
   
  
-### **Exercise - 10** <a name="13.1"></a>
+### **Exercise - 12** <a name="14.1"></a>
   
  1. Write a python script that does the following operations:
  ```console
@@ -2246,7 +2364,7 @@ output
 
 <br />
 
-## **Sets** <a name="14"></a>
+## **Sets** <a name="15"></a>
 
 1. A ```set``` contains uniques values in it. It is denoted with *curly braces :* `{}`. The values in the ```set``` are unordered and also it deletes the duplicate values. Once the ```set``` is created, we can not update the existing values. But new values can be added (appended). In ```set``` we cannot access values with the help of index, which is possible in tuples and lists easily.
 2. A few examples of code snippets showing the usage of sets
@@ -2286,7 +2404,7 @@ output
 
 <br />
 
-### **Exercise - 11**<a name="14.1"></a>
+### **Exercise - 13**<a name="15.1"></a>
 
 1. Write a python script that takes the following two sets as inputs and does the following operations on those sets :
 
@@ -2300,11 +2418,9 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
  Operations to be done on those Sets :
  1. Remove the duplicate elements from the set1.
  2. Add an item "7_up" to the set1.
- 3. Duplicate the elements of set1 to a new backup set.
- 4. Compute the union and intersetion of set1 and set2.
- 5. Compute the difference of set1 from set2.
- 6. Then remove the "pepsi" element from the set2.
- 7. Then remove all elements from set1
+ 3. Compute the union and intersetion of set1 and set2.
+ 4. Compute the difference of set1 from set2.
+ 5. Then remove the "pepsi" element from the set2.
 ```
 
 <br />
@@ -2317,7 +2433,7 @@ set2 = {"pepsi", "frooti", "sprite", "maaza"}
 
 <br />
 
-## **Dictionary:** <a name="15"></a>
+## **Dictionary:** <a name="16"></a>
 
 1. Dictionary (hash) which is also called **associative arrays**. 
 2. Dictionary is a built-in Python Data Structure that is **mutable**. 
@@ -2482,7 +2598,7 @@ by using range statement
 
 <br />
 
-## **OrderedDict module** <a name="15.1"></a>
+## **OrderedDict module** <a name="16.1"></a>
 
 An ```OrderedDict``` is a dictionary subclass that remembers the order in which its contents are added, supporting the usual ```dict``` methods. If a new entry overwrites an existing entry, the original insertion position is left unchanged. Deleting an entry and reinserting it will move it to the end.
 
@@ -2657,7 +2773,7 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
 <br />
  
  
-### **Exercise - 12** <a name="15.2"></a>
+### **Exercise - 14** <a name="16.2"></a>
   1. Write a python script that contains a dictionary with name : "details" and the script should perform the steps from 1 to 7.
  ```console
  
@@ -2673,114 +2789,14 @@ The only difference between ```dict()``` and ```OrderedDict()``` is that: ```Ord
  2. Add a new key "died" and assign the value "2011" to the above dictionary. And then print the updated dictionary again.
  3. Remove the "education" key from the dictionary and print the changed dictionary again.
  4. Create another duplicate dictionary with name "details_duplicate" from the above dictionary to have a backup of the existing dictionary.
- 5. Retrieve the values of the dictionary just by using corresponding keys.
- 6. Remove all the elements of the "details" dictionary and then print the entire empty dictionary.
- 7. Print the entire duplicate dictionary
+ 5. Remove all the elements of the "details" dictionary and then print the entire empty dictionary.
+ 6. Print the entire duplicate dictionary
 ```
    
  <br />
   
 [go to Answers](#answers)
 
-
-
-[go to List of Topics](#top)
-
-<br />
-	
-### Python Functions <a name="16"></a>
-1. Functions are the most important aspect of an application. 
-2. A function can be defined as the organized block of **reusable code**, which can be called whenever required. 
-3. The keyword ```def``` introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
-4. The Function helps to programmer to break the program into the smaller part. It **organizes** the code very effectively and **avoids** the repetition of the code. As the program grows, function makes the program more organized.
-5. There are mainly two types of functions.
-
-- User-define functions - The user-defined functions are those define by the **user to perform the specific task**.
-
-- Built-in functions - The built-in functions are those functions that are **pre-defined** in Python.
-
-6.Example of Function 1:
-```python
-def square(a):
- return a * a
-
-print(square.__doc__)
-
-val = square(3)
-print(val)
-print(type(val))
-
-val = square
-print("val(2)",val(2))
-```
-```console
-Output:
-None
-9
-<class 'int'>
-val(2) 4
-```  
- 
-7. Example of Functions 2: 
- ```python
-def sumodd(n = 5):
-  val = 0
-  index = 1
-  while (index <= n):
-  # if even we continue with next iteration
-    if (index % 2 == 0):
-      index += 1
-      continue
-  # if odd we add it
-    val += index
-    index += 1
-  return val
-def funNotImplemented(): pass
-print("sumodd is", sumodd(3))
-print("sumodd is", sumodd())
-funNotImplemented()
-```
-```console
-Output:
-sumodd is 4
-sumodd is 9
-```  
-8.Example of Functions 3 with Keyword Argument:
-```python
-def funckeyword(arg1, arg2='Multiple', arg3='Wishes'):
-  print("arg1=", arg1, "arg2=", arg2, "arg3=", arg3)
-funckeyword(10)
-funckeyword(arg1="value1")
-  
-funckeyword(10, arg2="Multiple")
-funckeyword(10, arg3="Wishes", arg2="MultipleWishes")
-funckeyword(arg3="Hyderabad", arg1="value1")
-```
-```console
-arg1= 10 arg2= Multiple arg3= Wishes
-arg1= value1 arg2= Multiple arg3= Wishes
-arg1= 10 arg2= Multiple arg3= Wishes
-arg1= 10 arg2= MultipleWishes arg3= Wishes
-arg1= value1 arg2= Multiple arg3= Hyderabad
-```
-
- <br />
-   
- ## **Exercise-12** <a name="16.1"></a>
-  
- 1. Write a function that take string as a parameter. the string is given by the user as input. the final output from the function is to reverse the string.
- ```python
-  example the string is Multiple - output is elpitluM
- ```
- 2. Write a function that print the reverse of the given number. The input is given in the command line parameter.
- ```python
-  example the number is 456 - output os 654.
- ```
- 3.  Write a function that take three integers and compare which the largest and smallest among the them. take input from the end user.
- ```python
-  example the given numbers are 45, 22, 60 - output is largest is 60 and smallest is 22
- ```
- [go to Answers](#answers)
 
 <br />
 
@@ -2908,7 +2924,7 @@ print(num)
 1. Packages are a method of organising Python's module namespace through the use of "dotted module names."
 2. For instance, the module name C.D denotes a submodule named 'D' within a package named 'C.'
 3. Just like using modules frees writers of various modules from having to worry about each other's global variable names, using dotted module names frees authors of multimodule packages from name collisions.
-4. The __init .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
+4. The __init__ .py is mostly used to initialise Python packages. The simplest approach to explain this is to examine the structure of a typical Python module.
 ```python
 --+ PackageDemo
  |-- mod1.py
@@ -2916,10 +2932,10 @@ print(num)
  |-- mod2.py
  |-- __init__.py
 ```
-5. The presence of the __init .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
+5. The presence of the __init__ .py file in a directory signals to the Python interpreter that the directory should be handled as a Python package, as seen in the structure above. The '__init__ .py' file can simply be an empty file, but it can also execute package startup code or set the __all__ variable.
 6. When using from package import item, the item can be a package submodule (or subpackage) or any other name declared in the package, such as a function, class, or variable. If the item is not declared in the package, the import statement assumes it is a module and attempts to load it. If it cannot find it, an ImportError exception is thrown.
 7. If a package's __init .py' code includes a list called __all__, it is assumed to be a list of module names that should be imported when a from package import * is found. When a new version of the package is released, it is the responsibility of the package author to keep this list up to date. If package authors do not see a purpose for importing * from their package, they may choose not to support it.
-8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init .py') and then imports whatever names are declared in the package. Any names specified by '__init .py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
+8. If __all__ is not specified, the PackageDemo import * statement just guarantees that the package PackageDemo has been imported (perhaps by running its initialization code, '__init__.py') and then imports whatever names are declared in the package. Any names specified by '__init__.py' are included. It also contains any package submodules that were explicitly loaded by prior import lines.
  
 9. file of mod1.py present in demo folder
  ```python
@@ -3058,11 +3074,10 @@ close()| Flush the buffer and close the file
  <br />
   
   
- ### **Exercise-14** <a name="20.5"></a> 
+ ### **Exercise-15** <a name="20.5"></a> 
   
- 1. Write a script that reads the first 10 lines from the file. Take any file you wish that contain minimum 30 lines.
- 2. Write a script that count the number of lines in a file. Take any file you wish
- 3. Write a script that write lines to the file and they are
+ 1. Write a script that count the number of lines in a file. Take any file you wish
+ 2. Write a script that write lines to the file and they are
 
 ```python
 1. Steve Jobs is a popular name in the world.
@@ -3072,7 +3087,7 @@ close()| Flush the buffer and close the file
 5. He was born on 24th February in the year 1955.
 ```
 
-4. Write a script that append lines to the file that are created in problem 3 and they are
+3. Write a script that append lines to the file that are created in problem 3 and they are
 ```python
 1. Steve Paul Jobs is regarded as a successful American businessman.
 2. He had attained success in different fields.
@@ -3111,13 +3126,9 @@ Error: Provide two numbers
 
  <br />
   
- ### **Exercise-15**   <a name="21.1"></a> 
- 1. Write a script that join two strings and input is given by the user. When the user gives numbers the error should be handled.
- ```console 
- example two strings are Multiple Wishes -  output is MultipleWishes
- example user gives numbers are 1 5 - output is "Error: Provide two strings"
- ```
- 2. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
+ ### **Exercise-16**   <a name="21.1"></a> 
+
+ 1. Write a script for multiplication of two numbers(int or float) and the input is taken from the user. When the user gives strings the error should be       handled.
 ```console
 example two numbers are 2 5 - output is 10
 example user gives are happy life - utput is "Error: Provide two numbers"
@@ -3162,10 +3173,59 @@ example user gives are happy life - utput is "Error: Provide two numbers"
 [go to List of Topics](#top)
 
 <br />
-	
+
+### **List Comprehension** <a name="23"></a> 
+
+1. List comprehensions are a modern approach to construct **new lists**.
+2. Syntax of list comprehension
+> list_syntax = [expression for item in iterable if condition == True]
+3. Note: An if condition may or may not be present in list comprehension. Multiple fors can be found in a list comprehension (nested list comprehensions).
+4. Example - 1 (Iterating through a string Using List Comprehension)
+
+```python
+# using loop
+
+separate_to_letters = []
+
+for letter in 'Multiple Wishes':
+    separate_to_letters.append(letter)
+
+print(separate_to_letters)
+```
+```console
+#output
+['M', 'u', 'l', 't', 'i', 'p', 'l', 'e', ' ', 'W', 'i', 's', 'h', 'e', 's']
+```
+
+
+```python
+#using list comprehension
+
+separate_to_letters = [ letter for letter in 'Multiple Wishes' ]
+print(separate_to_letters)
+```
+```console
+#output
+
+['M', 'u', 'l', 't', 'i', 'p', 'l', 'e', ' ', 'W', 'i', 's', 'h', 'e', 's']
+```
+
+5.  Example - 2 (Conditionals in List Comprehension)
+```python
+number_list = [ x for x in range(10) if x % 2 == 0]
+print(number_list)
+```
+```console
+#output
+
+[0, 2, 4, 6, 8]
+```
+
+<br />
+
 ## **Answers**
 
-### Exercise - 1 <a name="E-1"></a>
+### **Exercise - 1** <a name="E-1"></a>
 
 1. C
 2. D
@@ -3192,7 +3252,7 @@ print(planet_near_to_sun)
 
   <br />
   
-### Exercise - 2 <a name="E-2"></a>
+### **Exercise - 2** <a name="E-2"></a>
 
 1. student_name = "Ramesh"
 2. Solution Code
@@ -3220,7 +3280,7 @@ print("sky", article, colour +",", fruit, article, "yellow, age of suresh",  art
 
   <br />
   
-### Exercise - 3 <a name="E-3"></a>
+### **Exercise - 3** <a name="E-3"></a>
 
 1. Solution code
 
@@ -3269,7 +3329,7 @@ print("city_lives   :", lives)
 
  <br />
  
-### Exercise - 4 <a name="E-4"></a>
+### **Exercise - 4** <a name="E-4"></a>
 
 1. A
 2. B
@@ -3282,7 +3342,15 @@ print("city_lives   :", lives)
 
  <br />
  
-### Exercise - 5  <a name="E-5"></a>
+ [go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+ 
+### **Exercise - 5**  <a name="E-5"></a>
 
 1. Solution code
 
@@ -3313,7 +3381,7 @@ print(result)
 
 <br />
 
-### Exercise - 6 <a name="E-6"></a>
+### **Exercise - 6** <a name="E-6"></a>
 
 1. Solution code
 
@@ -3322,3 +3390,328 @@ print("Talk is \'cheap\'. Show me the code.")
 print("I\'m not a \"great\" programmer!I\'m just a \t good programmer with great habits.")
 print("If your ship doesn \'t come in, \\swim\\ out to it?")
 ```
+
+<br />
+
+### **Exercise - 7** <a name="E-7"></a>
+
+1. Solution code
+```python 
+from sys import argv
+
+year = int(argv[1])
+
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+else:
+    print("{0} is not a leap year".format(year))
+```
+
+2.  Solution code
+```python 
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
+```
+
+3. Solution Code
+```python 
+kilometers = float(input("Enter value in kilometers: "))
+conv_fac = 0.621371
+miles = kilometers * conv_fac
+print(kilometers,'kilometers is equal to', round(miles,2), "miles.")
+```
+
+<br />
+
+### **Exercise - 8** <a name="E-8"></a>
+
+1. Solution code
+
+* while loop
+```python
+from sys import argv
+
+num = int(argv[1])
+factorial = 1
+
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+    i=1
+    while i <= num:
+        factorial = factorial * i
+        i = i + 1
+    print("factorial of ", num, " is ", factorial)
+
+```
+
+* for loop
+```python
+from sys import argv
+
+num = int(argv[1])
+factorial = 1
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+```
+
+2. Solution code
+
+
+```python
+n=int(input("Enter number:"))
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+print("The number of digits in the number are:",count)
+```
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Exercise - 9** <a name="E-9"></a>
+
+1. print(list(range(0,8,2)))
+2. print(list(range(20,3,-4)))
+3. print(list(range(-12,13,6)))
+4. [2, 3, 4]
+5. [12, 9, 6, 3, 0]
+6. [10, 20]
+
+
+<br />
+
+### **Exercise - 10** <a name="E-10"></a>
+
+1. Solution code
+```python
+def reverse(str):
+    string = " "
+    for i in str:
+        string = i + string
+    return string
+str = input("Enter the string ")
+print("The reverse string is:", reverse(str)) 
+```
+2. Solution code
+```python
+number1 = int(input('Enter First number : '))
+number2 = int(input('Enter Second number : '))
+number3 = int(input('Enter Third number : '))
+def largest(num1, num2, num3):
+    if (num1 > num2) and (num1 > num3):
+        largest_num = num1
+    elif (num2 > num1) and (num2 > num3):
+        largest_num = num2
+    else:
+        largest_num = num3
+    print("The largest of the 3 numbers is : ", largest_num)
+def smallest(num1, num2, num3):
+    if (num1 < num2) and (num1 < num3):
+        smallest_num = num1
+    elif (num2 < num1) and (num2 < num3):
+        smallest_num = num2
+    else:
+        smallest_num = num3
+    print("The smallest of the 3 numbers is : ", smallest_num)
+largest(number1, number2, number3)
+smallest(number1, number2, number3)
+```
+
+<br />
+
+### **Exercise - 11** <a name="E-11"></a>
+
+1. Solution code
+```python
+total = 0
+list1 = [11, 5, 17, 18, 23]
+for ele in range(0, len(list1)):
+	total = total + list1[ele]
+print("Sum of all elements in given list: ", total)
+```
+2. Solution code
+```python
+res_list = []
+num = int(input("How many elements in list: "))
+for x in range(num):
+  numbers = int(input('Enter number '))
+  res_list.append(numbers)
+ 
+print("\nMaximum element in the list is :", max(res_list))
+print("Minimum element in the list is :", min(res_list))
+```
+
+<br />
+
+### **Exercise - 12** <a name="E-12"></a>
+
+1. Solution code
+```python
+tuples = ("pulsar", "duke", "shine")
+length = len(tuples)
+print(length)
+index_character = tuples.index("shine")
+print(index_character)
+new_tuple= tuples + ("splendor",)
+print(new_tuple)
+listx = list(new_tuple) 
+listx.remove("duke") 
+tuplex = tuple(listx)
+print(tuplex)
+```
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+### **Exercise - 13** <a name="E-13"></a>
+
+1. Solution code
+```python
+set1 = {"maaza", "sprite", "fanta", "maaza"}
+set2 = {"pepsi", "frooti", "sprite", "maaza"}
+
+print(set1)
+set1.add("7_up")
+print(set1)
+combine = set1.union(set2)
+print(combine)
+diff = set2.difference(set1)
+print(diff)
+set2.remove("pepsi")
+print(set2)
+```
+<br />
+
+### **Exercise - 14** <a name="E-14"></a>
+
+1. Solution code
+```python
+details = {"name": "Steve","education": "Reed College", "born": 1955}
+key = details.keys()
+print(key)
+value = details.values()
+print(value)
+details["died"] = 2011
+print(details)
+details.pop("education")
+print(details)
+details_duplicate = details.copy()
+print(details_duplicate)
+details.clear()
+print(details)
+```
+
+<br />
+
+### **Exercise - 15** <a name="E-15"></a>
+
+1. Solution code
+```python
+with open("about.txt", 'r') as fp:
+    x = len(fp.readlines())
+    print('Total lines:', x) 
+```
+
+2. Solution code
+```python
+lines = ['Steve Jobs is a popular name in the world.', 
+        'He was the co-founder and chairman of Apple Inc.', 
+        'He is also referred to as an industrial designer,investor, and media tycoon.', 
+        'His full name was Steven Paul Jobs.',
+        'He was born on 24th February in the year 1955.']
+	
+with open('readme.txt', 'w') as f:
+    f.writelines('\n'.join(lines))
+```
+
+3. Solution code
+```python
+appending_lines = ['Steve Paul Jobs is regarded as a successful American businessman.',
+            'He had attained success in different fields.',
+            'He had a great contribution to the development of computers and mobiles.',
+            'He is stated as the initiator of the personal computer revolution.',
+            'He had served as the CEO of Apple Inc from 1997 to 2011.']
+	    
+with open('readme.txt', 'a') as f:
+    f.writelines('\n'.join(lines))
+```
+
+<br />
+
+### **Exercise - 16** <a name="E-16"></a>
+
+1. Solution code
+```python
+try:
+    number1 = float(input("Enter first number "))
+    number2 = float(input("Enter second number "))
+    final = number1 * number1
+    print(final)
+except:
+    print("Error: Provide two numbers")
+```
+
+<br />
+
+[go to Answers](#answers)
+
+<br />
+
+[go to List of Topics](#top)
+
+<br />
+
+
+
+> Some of the important topics : 
+1. Nested Functions
+2. LEGB Rule
+3. Closures
+4. What is the Enclosed Function and What is the nested Function in the following ?
+
+```python
+def outer():
+	x = 3
+	def inner():
+		print(x)
+	inner()
+outer()
+```
+
+5. [Closures reference - Amulya's Academy](https://www.youtube.com/watch?v=tvWRhMkUcoU)
+6. [Closures reference - Corey Schafer Academy](https://www.youtube.com/watch?v=swU3c34d2NQ)
+7. [Scoping in Python - LEGB Rule - Corey Schafer](https://www.youtube.com/watch?v=QVdf0LgmICw)
+8. ``global`` and `nonlocal` keywords
+9. [Namespaces in python](https://realpython.com/python-namespaces-scope/#:~:text=the%20next%20level.-,Namespaces%20in%20Python,values%20are%20the%20objects%20themselves.)
+
+#                                                              ** SAI RAM **                                                      
