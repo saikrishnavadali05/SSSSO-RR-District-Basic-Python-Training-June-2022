@@ -23,11 +23,11 @@ print(result)
 
 for num in lst:  
     if num % 2 == 0:
-       
-        temp = num * temp 
+       prev_num = num
+       mul_result = int((num * prev_num)/2)
         
         
-print(result)
+print(mul_result)
 
 
 
