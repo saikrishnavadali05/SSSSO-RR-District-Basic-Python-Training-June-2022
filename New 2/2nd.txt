@@ -1,3 +1,4 @@
+# birthday of Sri Sathya Sai Baba
 import datetime as dt
 inputdate=input()
 if len(inputdate)›10:
