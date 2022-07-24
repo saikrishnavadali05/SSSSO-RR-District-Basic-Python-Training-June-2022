@@ -34,7 +34,7 @@ Exam.add(25,45,56,34)       #  addition is: 160
 def mul(m,n,o,p):
     print("multiplication is:",m*n*o*p)
     import Exam 
-Exam.mul(23,30,45,62)       #multiplication is:    
+Exam.mul(23,30,45,62)       #multiplication is:1925100    
 
 #2Write a program to calculate number of days, hours, minutes, seconds to the birthday of Sri Sathya Sai Baba from the current timestamp(Birthday is on 23-November). 
 	a) Use datetime module. 
