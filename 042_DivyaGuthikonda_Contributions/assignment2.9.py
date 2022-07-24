@@ -1,6 +1,6 @@
 #Store student name, id, age, class, course in a dictionary.
 # Write a script to lookup a student name, age, class, course given the student ids.
-'''
+
 students={"1":{"Name":"Divya","Age":20,"Class":12,"Course":'MPC'},
           "2":{"Name":"Sandhya","Age":20,"Class":12,"Course":'BiPC'},
           "3":{"Name":"Shilpa","Age":20,"Class":12,"Course":'CEC'},
@@ -24,8 +24,8 @@ def Studentdetails():
     name,id_,age,class_,course = "Krithika",4,20,12,"HEC"
     print("Name: {}\nId: {}\nAge: {}\nClass: {}\nCourse: {}".format(name,id_,age,class_,course))
 Studentdetails()
+
 #output
-'''
 Name: Divya
 Id: 1
 Age: 20
