@@ -1,0 +1,5 @@
+
+The data that is storing in this text file :
+addition of given numbers:  18
+multiplication of given numbers:  360
+
