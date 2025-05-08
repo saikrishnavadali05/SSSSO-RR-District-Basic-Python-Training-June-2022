@@ -1,4 +1,4 @@
-**Basic Python MCQs** 
+**2025 Python Training Pre-assessment MCQs** 
 
 ---
 
@@ -118,7 +118,7 @@ D. `Error`
 
 ```python
 x = "python"
-print(x[:-1])
+print(x[::-1])
 ```
 
 A. `python`
