@@ -1,0 +1,10 @@
+var1=10
+print(type(var1))
+var2=11.5
+print(type(var2))
+var3="25"
+print(type(var3))
+var1=float(var1)
+var2=str(var2)
+var3=int(var3)
+print([var1,var2,var3])

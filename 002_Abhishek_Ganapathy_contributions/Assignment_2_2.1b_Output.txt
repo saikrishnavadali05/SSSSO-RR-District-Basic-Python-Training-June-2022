@@ -1,4 +1,0 @@
-The Sum of the number is 10
-The Difference of the number is 0
-The Multiplication of the number is 30
-The Division of the number is 1.2

@@ -1,0 +1,23 @@
+2.Write a program to find the maximum, minimum, average, addition, multiplication of any 2 integer numbers (for example : 23 and 34)
+ans:
+
+
+num1 = 23
+num2 = 34
+ 
+if num1 > num2:
+    print("the maximum number is",num1)
+else:
+    print("the maximum number is:",num2)
+    
+if num1 < num2:
+    print("the minimum number is",num1)
+else:
+    print("the minimum number is:",num2)    
+add = (num1 + num2) 
+avg = add / 2
+print("the average of two number is:",avg)
+print("the sum of two number is ",add)
+mul = num1 * num2
+print("product of two number is ",mul)
+

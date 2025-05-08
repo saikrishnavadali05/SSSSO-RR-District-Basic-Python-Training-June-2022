@@ -1,0 +1,8 @@
+# Write a program to find the maximum, minimum, average, addition, multiplication of any 2 integer numbers (for example : 23 and 34)
+num_1 = int(input("Enter a number: "))
+num_2 = int(input("Enter another number: "))
+print("Largest among two numbers is",max(num_1, num_2))
+print("Smallest among two numbers is",min(num_1, num_2))
+print("Average of two numbers is",(num_1+num_2)/2)
+print("Sum of two numbers is",num_1+num_2)
+print("Product of two numbers is",num_1*num_2)

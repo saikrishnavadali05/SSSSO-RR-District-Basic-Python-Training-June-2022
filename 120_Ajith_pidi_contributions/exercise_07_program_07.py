@@ -1,9 +1,0 @@
-print("      *")
-
-print("   *python*")
-
-print("  * is  *  a *")
-
-print(" * good * programming * language*")
-
-print("* to * learn * for * beginners *")

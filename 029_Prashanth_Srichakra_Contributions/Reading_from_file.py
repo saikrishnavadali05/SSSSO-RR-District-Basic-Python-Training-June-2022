@@ -1,6 +1,0 @@
-myfile = open("test.txt", 'r')
-line1 = myfile.readline()
-line2 = myfile.readline()
-print(line1)
-print(line2)
-myfile.close()

@@ -1,0 +1,13 @@
+These are the possible ways to get the random sentences in python. We have covered all the possible ways to get random sentences.
+
+In case if any methods are missing kindly let us know in the comment section. And if you have any doubts feel free to ask us. We are always here to help you.
+
+Given a list of numbers write a program to calculate the sum of odd and even numbers and print the same. Accept from the user the count of numbers and the actual numbers.
+Find out what is a timestamp? Print date and time in a timestamp. Print the seconds, hours, minutes as sepearate integer numbers from that timestamp. (hint : use datetime module. Search on google when stuck).
+Given a string print all the lowercase characters, upper case characters and numeric characters and their counts.
+Write a program to check if the input string is a palindrome? Next, Make the program to work on integers as well. Write a palindrome function. Call that function of 5 different inputs to test whether the function is written properly or not.
+Store student name, id, age, class, course in a dictionary. Write a script to lookup a student name, age, class, course given the student ids.
+Write a script to print all the rows of a csv file. (hint : use pandas library).
+What is a json file? Write a script to load and print a json file. (hint : use json library)
+Write a script to get the maximum and minimum value in a csv column containing 10 numbers. (hint : use pandas or csv libraries).
+Write a function that accepts a sentence from a paragraph stored in a text file input.txt and calculates the number of letters and digits within that sentence string.

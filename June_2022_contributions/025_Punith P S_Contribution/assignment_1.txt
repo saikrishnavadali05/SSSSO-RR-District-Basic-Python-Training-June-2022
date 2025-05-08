@@ -1,0 +1,20 @@
+1.Write a program to print each word of the line in a new line using both while and for loops.
+ans:
+       #using for loop
+        sentence = "Love All Serve All Help Ever Hurt Never"
+	print(sentence)
+	space = sentence.split()
+	for i in space:
+    		print(i)
+      #using while loop
+
+	sentence = "Love All Serve All Help Ever Hurt Never"
+	print(sentence)
+	space = sentence.split()
+
+	i = 0
+	while i < len(space):
+   	      print(space[i])     
+   	      i += 1
+
+
