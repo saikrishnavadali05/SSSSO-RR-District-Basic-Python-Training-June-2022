@@ -1,2 +1,0 @@
-sum:6
-product:8
