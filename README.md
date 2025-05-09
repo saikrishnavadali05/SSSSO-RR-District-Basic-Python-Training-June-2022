@@ -4,3 +4,6 @@
 # 2025 Training Covers
 1. Python Training 
 2. Prompt Engineering
+
+# Poster
+![Image](Skill_Development_2025_Poster.jpeg)
