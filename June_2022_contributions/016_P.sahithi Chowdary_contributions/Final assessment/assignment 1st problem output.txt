@@ -1,2 +1,0 @@
-The addition of the even numbers is  6
-The multiplication of the even numbers is  8

@@ -1,1 +1,0 @@
-{'sum': 6, 'difference': -4, 'product': 6, 'division result': 0.16666666666666666}

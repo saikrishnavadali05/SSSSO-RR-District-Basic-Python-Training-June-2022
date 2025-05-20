@@ -1,1 +1,0 @@
-print("How are you?\nI am fine thank you.")
