@@ -1,5 +1,5 @@
 Q5. Logical operators
-a = input("Enter true or false : ")==true   #defining a 
+a = input("Enter true or false : ")         #defining a 
 b = input("Enter true ot false : ")         #defining b
 print("a and b : ", a and b)                #printing the result of a and b
 print("a or b : ", a or b)                  #printing the result of a or b
