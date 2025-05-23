@@ -1,0 +1,4 @@
+"""Create two variables, first_name and last_name, assign your own name to them, then print the full name on one line."""
+first_name="Rajury"
+last_name="Manvitha"
+print(F"{first_name} {last_name}")
