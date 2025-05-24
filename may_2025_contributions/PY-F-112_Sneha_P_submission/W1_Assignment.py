@@ -1,7 +1,7 @@
 #1.variables- fullname
 first_name=str(input("Enter your first name:"))
 last_name=str(input("Enter your last name:"))
-print(first_name+last_name)
+print(first_name+" "+last_name)
 
 #2.numeric operators- sum,ddifference,product and quotient of two numbers
 a=int(input("Enter number 1:"))
@@ -9,11 +9,14 @@ b=int(input("Enter number 2:"))
 print("Sum",a+b)
 print("Difference",a-b)
 print("Product",a*b)
-print("Quotient",a//b)
+if b != 0:
+    print("Quotient", a // b)
+else:
+    print("Cannot divide by zero")
 
 #3.assignment operators - increment count three times
 count=0
-while count != 3:
+while count<3:
     count += 1
 print("Count",count)
 
@@ -30,7 +33,8 @@ l1=bool(input("Enter value 1:"))
 l2=bool(input("Enter value 2:"))
 print("Value 1 AND Value 2",l1 and l2)
 print("Value 1 OR Value 2",l1 or l2)
-print("Value 1 NOT Value 2",l1 and (not l2))
+print("NOT Value 1", not l1)
+print("NOT Value 2",not l2)
 
 #6.Boolean type- print items in list using loop
 lt=[0,'',42]
@@ -118,7 +122,7 @@ else:
 
 #20.numeric operators &changemakers-calculate the money 50 notes and 10 coins to get the amount
 Amount=int(input("Enter amount less than 100 rupees:"))
-if Amount>=100 or Amount==0:
+if Amount>=100 or Amount<=0:
     print("Enter valid amount below 100")
 else:
     Notes=Amount//50
